@@ -1,0 +1,19 @@
+{
+  "name": "lol-events",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zlypher/lol-events.git"
+  },
+  "author": "Thomas Prochazka <thomas.prochazka@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zlypher/lol-events/issues"
+  },
+  "homepage": "https://github.com/zlypher/lol-events#readme"
+}
