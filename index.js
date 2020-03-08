@@ -12,6 +12,13 @@ const output = ical({
             timestamp: moment(),
             summary: "Test Event",
             organizer: "Test <test.example.com>"
+        },
+        {
+            start: moment().add(3, "hour"),
+            end: moment().add(4, "hour"),
+            timestamp: moment(),
+            summary: "Test Event 2",
+            organizer: "Test <test.example.com>"
         }
     ]
 }).toString();
