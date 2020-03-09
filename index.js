@@ -4,9 +4,10 @@ const fs = require("fs");
 
 function toIcalEvents(jsonData) {
     const date = moment(jsonData.date);
+    debugger;
     return {
         start: date,
-        end: date.add(1, "hour"),
+        end: moment(date).add(1, "hour"),
         timestamp: date,
         summary: jsonData.title,
         organizer: "Test <test.example.com>"
@@ -25,6 +26,7 @@ function toIcal(jsonData) {
 function main() {
     const lcs = JSON.parse(fs.readFileSync("./sources/2020/lcs.json").toString());
     const lcsIcal = toIcal(lcs);
+    console.log(lcsIcal);
     fs.writeFileSync("./output/lcs.ical", lcsIcal);
 }
 
