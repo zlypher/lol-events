@@ -14,7 +14,6 @@ function toIcalEvents(jsonData) {
 }
 
 function toIcal(jsonData) {
-    console.log(jsonData);
     const data = ical({
         domain: "example.com",
         prodId: "//example.com//ical-gen//EN",
@@ -25,10 +24,8 @@ function toIcal(jsonData) {
 
 function main() {
     const lcs = JSON.parse(fs.readFileSync("./sources/2020/lcs.json").toString());
-    console.log(lcs);
-
     const lcsIcal = toIcal(lcs);
-    console.log(lcsIcal);
+    fs.writeFileSync("./output/lcs.ical", lcsIcal);
 }
 
 main();
