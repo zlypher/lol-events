@@ -3,7 +3,7 @@ const moment = require("moment");
 const fs = require("fs");
 
 function toIcalEvents(jsonData) {
-    const date = moment(jsonData.date);
+    const date = moment.utc(jsonData.date);
     debugger;
     return {
         start: date,
@@ -18,6 +18,7 @@ function toIcal(jsonData) {
     const data = ical({
         domain: "example.com",
         prodId: "//example.com//ical-gen//EN",
+        timezone: "UTC",
         events: jsonData.map(toIcalEvents),
     });
     return data.toString();
