@@ -1,6 +1,6 @@
 require("dotenv").config();
 const pandascore = require("./lib/pandascore");
-const { mapPandaScoreResult } = require("./lib/utils");
+const { mapPandaScoreResult } = require("./lib/pandascore-utils");
 
 const lcsId = 4198;
 
