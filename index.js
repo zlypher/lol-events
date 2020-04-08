@@ -10,7 +10,7 @@ function toIcalEvents(jsonData) {
         end: moment(date).add(1, "hour"),
         timestamp: date,
         summary: jsonData.title,
-        organizer: "Test <test.example.com>"
+        organizer: "Test <test.example.com>",
     };
 }
 
@@ -22,10 +22,12 @@ function toIcal(jsonData) {
         events: jsonData.map(toIcalEvents),
     });
     return data.toString();
-};
+}
 
 function main() {
-    const lcs = JSON.parse(fs.readFileSync("./sources/2020/lcs.json").toString());
+    const lcs = JSON.parse(
+        fs.readFileSync("./sources/2020/lcs.json").toString(),
+    );
     const lcsIcal = toIcal(lcs);
     console.log(lcsIcal);
     fs.writeFileSync("./output/lcs.ical", lcsIcal);

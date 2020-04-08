@@ -1,31 +1,31 @@
 {
-  "name": "lol-events",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "clean": "rimraf ./output/*",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node .",
-    "scripts:leagues": "node _scripts/get-leagues.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zlypher/lol-events.git"
-  },
-  "author": "Thomas Prochazka <thomas.prochazka@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/zlypher/lol-events/issues"
-  },
-  "homepage": "https://github.com/zlypher/lol-events#readme",
-  "dependencies": {
-    "ical-generator": "^1.9.2",
-    "moment": "^2.24.0",
-    "node-fetch": "^2.6.0"
-  },
-  "devDependencies": {
-    "dotenv": "^8.2.0",
-    "rimraf": "^3.0.2"
-  }
+    "name": "lol-events",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "clean": "rimraf ./output/*",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node .",
+        "scripts:leagues": "node _scripts/get-leagues.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/zlypher/lol-events.git"
+    },
+    "author": "Thomas Prochazka <thomas.prochazka@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/zlypher/lol-events/issues"
+    },
+    "homepage": "https://github.com/zlypher/lol-events#readme",
+    "dependencies": {
+        "ical-generator": "^1.9.2",
+        "moment": "^2.24.0",
+        "node-fetch": "^2.6.0"
+    },
+    "devDependencies": {
+        "dotenv": "^8.2.0",
+        "rimraf": "^3.0.2"
+    }
 }
