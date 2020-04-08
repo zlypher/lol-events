@@ -1,6 +1,8 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//Zlypher//LOL Events//EN
+NAME:Prime League Pro Division
+X-WR-CALNAME:Prime League Pro Division
 TIMEZONE-ID:UTC
 X-WR-TIMEZONE:UTC
 END:VCALENDAR

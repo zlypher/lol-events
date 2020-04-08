@@ -16,6 +16,6 @@ async function generateIcalCalendar(league) {
 
     const matches = await PandaScore.getUpcomingMatches(league.id);
     const mappedMatches = PandaScoreUtils.mapPandaScoreResult(matches);
-    const icalData = IcalUtils.toIcal(mappedMatches);
+    const icalData = IcalUtils.toIcal(league.name, mappedMatches);
     fs.writeFileSync(`./output/${league.slug}.ical`, icalData);
 }
