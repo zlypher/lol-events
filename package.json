@@ -5,8 +5,6 @@
     "main": "index.js",
     "scripts": {
         "clean": "rimraf ./output/*",
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node .",
         "scripts:leagues": "node _scripts/get-leagues.js",
         "scripts:ical": "node _scripts/create-ical.js"
     },
