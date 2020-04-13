@@ -64,6 +64,7 @@ TBD
 ## Further Resources
 
 - [Official LoL Esports Schedule](https://watch.lolesports.com/schedule)
+- [PandaScore](https://pandascore.co/)
 
 ## License
 
