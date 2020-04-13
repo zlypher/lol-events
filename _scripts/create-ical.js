@@ -4,12 +4,16 @@ const PandaScore = require("../lib/pandascore");
 const PandaScoreUtils = require("../lib/pandascore-utils");
 const IcalUtils = require("../lib/ical-utils");
 
-main();
-
-async function main() {
-    const leagues = await PandaScore.getLeagues();
-    leagues.forEach(generateIcalCalendar);
-}
+(async function main() {
+    try {
+        const leagues = await PandaScore.getLeagues();
+        leagues.forEach(generateIcalCalendar);
+        process.exit(0);
+    } catch (err) {
+        console.error(err);
+        process.exit(1);
+    }
+})();
 
 async function generateIcalCalendar(league) {
     console.log("Creating ical for", league.name);
