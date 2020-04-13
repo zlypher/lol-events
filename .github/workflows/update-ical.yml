@@ -15,7 +15,10 @@ jobs:
         with:
           node-version: "10.x"
       - run: npm install
-      - run: npm run scripts:ical
+      - name: Generate iCal files
+        env:
+          ACCESSTOKEN: ${{ secrets.ACCESSTOKEN }}
+        run: npm run scripts:ical
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
