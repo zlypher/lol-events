@@ -7,10 +7,10 @@ const IcalUtils = require("../lib/ical-utils");
 (async function main() {
     try {
         const leagues = await PandaScore.getLeagues();
-        leagues.forEach(generateIcalCalendar);
+        await Promise.all(leagues.map(generateIcalCalendar));
         process.exit(0);
     } catch (err) {
-        console.error(err);
+        console.error("Error:", err);
         process.exit(1);
     }
 })();
