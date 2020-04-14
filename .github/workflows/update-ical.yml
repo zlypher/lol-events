@@ -1,7 +1,5 @@
 name: Update iCal
-on:
-  schedule:
-    - cron: "1 0 * * *"
+on: [push]
 
 jobs:
   build:
