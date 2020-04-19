@@ -19,6 +19,9 @@ jobs:
         env:
           ACCESSTOKEN: ${{ secrets.ACCESSTOKEN }}
         run: npm run scripts:ical
+      - name: Generate Timestamp
+        run: |
+          echo "Last updated on $(date +'%Y-%m-%d')" > output/INFO.md
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
