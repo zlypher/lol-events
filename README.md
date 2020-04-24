@@ -63,8 +63,12 @@ TBD
 
 ## Further Resources
 
-- [Official LoL Esports Schedule](https://watch.lolesports.com/schedule)
-- [PandaScore](https://pandascore.co/)
+-   [Official LoL Esports Schedule](https://watch.lolesports.com/schedule)
+-   [PandaScore](https://pandascore.co/)
+
+## Known Issues
+
+-   There doesn't seem to be a way to tell Google Calendar when to update, so it might take some time until changed/new events show up
 
 ## License
 
