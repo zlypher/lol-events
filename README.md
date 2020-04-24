@@ -6,7 +6,15 @@ Data and Images from [PandaScore](https://pandascore.co/)
 
 ## Getting Started
 
-TBD
+### Google Calendar (web)
+
+See official steps here: [Sync your calendar with computer programs](https://support.google.com/calendar/answer/37648?hl=en#view_only)
+
+1. Open Google Calendar: https://calendar.google.com/
+2. In the left sidebar click on the "+" next to "Other calendars"
+3. Select "From URL" from the dropdown
+4. Paste the URL of the league .ical in the preselected textfield
+5. Click "Add calendar"
 
 ## Supported Leagues
 
