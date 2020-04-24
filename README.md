@@ -1,8 +1,14 @@
 # League of Legends - Event Calendar
 
+![Update iCal](https://github.com/zlypher/lol-events/workflows/Update%20iCal/badge.svg)
+
 League of Legends - Event Calendar offers multiple calendars in an `.ical` format, so that you can keep track of all your favourite leagues.
 
 Data and Images from [PandaScore](https://pandascore.co/)
+
+## General
+
+The `.ical` files for all leagues are updated daily. The last update date can be found in `output/INFO.md` and all `.ical` files are kept up to date under `output/`.
 
 ## Getting Started
 
