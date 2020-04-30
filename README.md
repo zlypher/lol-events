@@ -1,6 +1,7 @@
 # League of Legends - Event Calendar
 
 ![Update iCal](https://github.com/zlypher/lol-events/workflows/Update%20iCal/badge.svg)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
 League of Legends - Event Calendar offers multiple calendars in an `.ical` format, so that you can keep track of all your favourite leagues.
 
