@@ -18,8 +18,14 @@ const IcalUtils = require("../lib/ical-utils");
 async function generateIcalCalendar(league) {
     console.log("Creating ical for", league.name);
 
+    // TODO: Load previous json and increase sequence for existing events
+
     const matches = await PandaScore.getUpcomingMatches(league.id);
     const mappedMatches = PandaScoreUtils.mapPandaScoreResult(matches);
     const icalData = IcalUtils.toIcal(league.name, mappedMatches);
-    fs.writeFileSync(`./output/${league.slug}.ical`, icalData);
+    fs.writeFileSync(`./output/${league.slug}.ical`, icalData.toString());
+    fs.writeFileSync(
+        `./output/${league.slug}.json`,
+        JSON.stringify(icalData.toJSON()),
+    );
 }
