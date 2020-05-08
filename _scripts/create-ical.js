@@ -18,14 +18,38 @@ const IcalUtils = require("../lib/ical-utils");
 async function generateIcalCalendar(league) {
     console.log("Creating ical for", league.name);
 
-    // TODO: Load previous json and increase sequence for existing events
+    const icalData = await createCalendar(league);
+    const jsonPath = `./output/${league.slug}.json`;
+    if (fs.existsSync(jsonPath)) {
+        const jsonData = JSON.parse(fs.readFileSync(jsonPath).toString());
+        updateCalendarEvents(icalData, jsonData);
+    }
 
+    outputCalendar(league.slug, icalData);
+}
+
+async function createCalendar(league) {
     const matches = await PandaScore.getUpcomingMatches(league.id);
     const mappedMatches = PandaScoreUtils.mapPandaScoreResult(matches);
-    const icalData = IcalUtils.toIcal(league.name, mappedMatches);
-    fs.writeFileSync(`./output/${league.slug}.ical`, icalData.toString());
+    return IcalUtils.toIcal(league.name, mappedMatches);
+}
+
+function updateCalendarEvents(icalData, jsonData) {
+    for (const event of icalData.events()) {
+        const prevEvent = jsonData.events.find(
+            (e) => e.uid === event.uid() && e.summary !== event.summary(),
+        );
+
+        if (prevEvent) {
+            event.sequence(prevEvent.sequence + 1);
+        }
+    }
+}
+
+function outputCalendar(name, icalData) {
+    fs.writeFileSync(`./output/${name}.ical`, icalData.toString());
     fs.writeFileSync(
-        `./output/${league.slug}.json`,
+        `./output/${name}.json`,
         JSON.stringify(icalData.toJSON()),
     );
 }
