@@ -6,13 +6,15 @@
     "scripts": {
         "clean": "rimraf ../docs/*.{html,js,css,css.map}",
         "start": "parcel index.html",
-        "build": "parcel build index.html -d ../docs --public-url lol-events"
+        "build": "parcel build index.html -d ../docs --public-url REPLACE_REL_URL && npm run fixrelurl",
+        "fixrelurl": "replace-in-files --string=REPLACE_REL_URL --replacement=. ../docs/index.html"
     },
     "author": "Thomas Prochazka <thomas.prochazka@gmail.com>",
     "license": "MIT",
     "devDependencies": {
         "parcel-bundler": "^1.12.4",
         "postcss-modules": "^2.0.0",
+        "replace-in-files-cli": "^0.3.1",
         "rimraf": "^3.0.2",
         "sass": "^1.26.5",
         "tailwindcss": "^1.4.6"
