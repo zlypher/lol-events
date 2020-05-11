@@ -21,12 +21,12 @@ jobs:
         run: npm run scripts:ical
       - name: Generate Timestamp
         run: |
-          echo "Last updated on $(date +'%Y-%m-%d')" > output/INFO.md
+          echo "Last updated on $(date +'%Y-%m-%d')" > docs/cal/INFO.md
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add output/*
+          git add docs/cal/*
           git commit -m "Update ical files" -a
       - name: Push changes
         uses: ad-m/github-push-action@master

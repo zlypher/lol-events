@@ -19,7 +19,7 @@ async function generateIcalCalendar(league) {
     console.log("Creating ical for", league.name);
 
     const icalData = await createCalendar(league);
-    const jsonPath = `./output/${league.slug}.json`;
+    const jsonPath = `./docs/cal/${league.slug}.json`;
     if (fs.existsSync(jsonPath)) {
         const jsonData = JSON.parse(fs.readFileSync(jsonPath).toString());
         updateCalendarEvents(icalData, jsonData);
@@ -47,9 +47,9 @@ function updateCalendarEvents(icalData, jsonData) {
 }
 
 function outputCalendar(name, icalData) {
-    fs.writeFileSync(`./output/${name}.ical`, icalData.toString());
+    fs.writeFileSync(`./docs/cal/${name}.ical`, icalData.toString());
     fs.writeFileSync(
-        `./output/${name}.json`,
+        `./docs/cal/${name}.json`,
         JSON.stringify(icalData.toJSON()),
     );
 }
