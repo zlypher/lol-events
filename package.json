@@ -4,7 +4,6 @@
     "description": "League of Legends calendar in iCal for all major leagues",
     "main": "index.js",
     "scripts": {
-        "clean": "rimraf ./output/*",
         "scripts:leagues": "node _scripts/get-leagues.js",
         "scripts:ical": "node _scripts/create-ical.js"
     },
