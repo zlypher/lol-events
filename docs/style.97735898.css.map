@@ -1,1 +1,0 @@
-{"version":3,"sources":["style.pcss"],"names":[],"mappings":"AAAA,2EAAc,CAAd,iBAAA,qBAAc,CAAd,sBAAc,CAId,EACI,sBACJ","file":"style.97735898.css","sourceRoot":"..\\web","sourcesContent":["@tailwind base;\r\n@tailwind components;\r\n@tailwind utilities;\r\n\r\n* {\r\n    outline: 1px solid black;\r\n}\r\n"]}

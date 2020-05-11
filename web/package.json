@@ -1,17 +1,19 @@
 {
-    "name": "web",
+    "name": "lol-events-web",
     "version": "1.0.0",
-    "description": "",
+    "description": "Website for League of Legends Event Calendar",
     "main": "index.js",
     "scripts": {
+        "clean": "rimraf ../docs/*.{html,js,css,css.map}",
         "start": "parcel index.html",
-        "build": "parcel build index.html -d ../docs"
+        "build": "parcel build index.html -d ../docs --public-url lol-events"
     },
-    "author": "",
-    "license": "ISC",
+    "author": "Thomas Prochazka <thomas.prochazka@gmail.com>",
+    "license": "MIT",
     "devDependencies": {
         "parcel-bundler": "^1.12.4",
         "postcss-modules": "^2.0.0",
+        "rimraf": "^3.0.2",
         "sass": "^1.26.5",
         "tailwindcss": "^1.4.6"
     }
