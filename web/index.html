@@ -2,10 +2,12 @@
     <head>
         <link rel="stylesheet" href="./style.pcss" />
     </head>
-    <body class="bg-indigo-100">
-        <div class="container mx-auto p-4">
-            <h1 class="text-4xl text-center mb-6">
-                League of Legends - Event Calendar
+    <body class="bg-indigo-100 flex flex-col">
+        <script defer src="./index.js"></script>
+        <header class="container mx-auto py-6 px-4 mb-6">
+            <h1 class="text-5xl font-bold text-center">
+                League of Legends
+                <span class="text-4xl block font-normal">Event Calendar</span>
             </h1>
             <div
                 class="max-w-3xl mx-auto border-solid border border-gray-600 rounded p-4 bg-orange-400 text-orange-900"
@@ -16,6 +18,568 @@
                     Development and will be available soon!
                 </p>
             </div>
+        </header>
+        <div class="container mx-auto flex-grow px-4">
+            <div class="mb-8">
+                <input type="text" class="w-full block h-12 rounded" />
+            </div>
+            <div class="grid grid-cols-3 gap-4 mb-8">
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/4302/220px-Prime_Leaguelogo_square.png"
+                        alt="Prime League Pro Division Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>Prime League Pro Division</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/4300/220px-Ultraliga.PNG"
+                        alt="Ultraliga Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>Ultraliga</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/4292/1200px-LFL_Logo_2020.png"
+                        alt="LFL Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>LFL</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/4288/PCS_logo_full.png"
+                        alt="PCS Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>PCS</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/4264/220px-Esl_de.png"
+                        alt="ESL Meisterschaft Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>ESL Meisterschaft</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/4263/800px-FE_PLE_Logo.png"
+                        alt="Polska Liga Esportowa Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>Polska Liga Esportowa</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/4230/Rift_Rivals_Red_2019.png"
+                        alt="Rift Rivals: LCK vs LPL vs LMS/VCS Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>Rift Rivals: LCK vs LPL vs LMS/</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/4228/image.png"
+                        alt="LCS Academy Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>LCS Academy</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/4226/LDL_logo.png"
+                        alt="LDL Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>LDL</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/4225/NEST.png"
+                        alt="NEST Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>NEST</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/4213/220px-SLO2019logo.png"
+                        alt="LVP SLO Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>LVP SLO</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/4199/220px-Liga_LatinoamSrica_2020.png"
+                        alt="LLA Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>LLA</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/4198/220px-LCS_2020_Logo.png"
+                        alt="LCS Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>LCS</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/4197/LEC-2019.png"
+                        alt="LEC Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>LEC</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/4180/GPL2017SpringLogo.png"
+                        alt="GPL Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>GPL</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/4143/143px-GreenRift2018.png"
+                        alt="Rift Rivals: LCL vs. TCL vs. VCS Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>Rift Rivals: LCL vs. TCL vs. VCS</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/4142/_.png"
+                        alt="Challenger Korea Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>Challenger Korea</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/4141/_.png"
+                        alt="VCS Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>VCS</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/4140/DemaciaCupLogo-lg.png"
+                        alt="Demacia Cup Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>Demacia Cup</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/4139/220px-EM_2020_Logo.png"
+                        alt="European Masters Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>European Masters</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/4104/na-academy-4xtnenn7.png"
+                        alt="NA Academy Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>NA Academy</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/4100/249px-LAS_Preseason.png"
+                        alt="Torneo de Pre-Copa Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>Torneo de Pre-Copa</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/4097/142px-RedRift2018.png"
+                        alt="Rift Rivals: LCK vs. LPL vs. LMS Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>Rift Rivals: LCK vs. LPL vs. LMS</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/4096/na-scouting-grounds-486lp5q8.png"
+                        alt="NA Scouting Grounds Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>NA Scouting Grounds</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/4004/220px-LCL2020_logo.png"
+                        alt="LCL Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>LCL</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/2711/220px-2019_KeSPA_Cup.png"
+                        alt="KeSPA Cup Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>KeSPA Cup</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/2133/213px-YellowRift2018.png"
+                        alt="Rift Rivals: CB vs. CLS vs. LLN Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>Rift Rivals: CB vs. CLS vs. LLN</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/2132/Rift_Rivals_LCL-TCL.png"
+                        alt="Rift Rivals: LCL vs. TCL Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>Rift Rivals: LCL vs. TCL</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/2108/213px-PurpleRift2018.png"
+                        alt="Rift Rivals: GPL vs. LJL vs. OPL Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>Rift Rivals: GPL vs. LJL vs. OPL</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/2107/213px-BlueRift2018.png"
+                        alt="Rift Rivals: NA vs. EU Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>Rift Rivals: NA vs. EU</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/2092/ljl-japan-j27k8oms.png"
+                        alt="LJL Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>LJL</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/2063/league-of-legends-league-of-origin-9s87nnza.png"
+                        alt="League of Origin Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>League of Origin</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/1089/turkey-challenger-series-h3fkut0m.png"
+                        alt="Turkey Challenger Series Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>Turkey Challenger Series</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/1077/cdln-ayrs62ti.png"
+                        alt="CDLN Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>CDLN</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/1003/turkiye-sampiyonluk-ligi-sffudtf.png"
+                        alt="TCL Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>TCL</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/1002/liga-latinoam_C3_A9rica-norte-f994mkpu.png"
+                        alt="Liga Latinoamerica Norte Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>Liga Latinoamerica Norte</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/878/iem2014.png"
+                        alt="Intel Extreme Masters Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>Intel Extreme Masters</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/666/RGlozl2.png"
+                        alt="Challenge France Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>Challenge France</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/527/Circuito_De_Leyendas.png"
+                        alt="CDLS Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>CDLS</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/305/wKco39w.png"
+                        alt="Copa Latinoamérica Norte Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>Copa Latinoamérica Norte</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/302/cblol-brazil-dba70xuw.png"
+                        alt="CBLOL Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>CBLOL</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/301/OPL_2018_Logo_Color.png"
+                        alt="OPL Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>OPL</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/300/msi-c8339nuz.png"
+                        alt="Mid-Season Invitational Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>Mid-Season Invitational</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/299/CwXOhtN.png"
+                        alt="International Wildcard Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>International Wildcard</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/298/r1SeujF8gSklSe_iFUg.png"
+                        alt="Copa Latinoamérica Sur Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>Copa Latinoamérica Sur</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/297/220px-Worlds_2020.png"
+                        alt="World Championship Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>World Championship</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/296/logo_large.png"
+                        alt="All-Star Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>All-Star</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/295/b030bfca-cac7-11e7-92d4-0e6c723feec8.png"
+                        alt="LMS Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>LMS</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/294/lpl-china-6ygsd4c8.png"
+                        alt="LPL Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>LPL</h2>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="league" class="sr-onlyx" />
+                    <img
+                        src="xhttps://cdn.pandascore.co/images/league/image/293/LCK_2018_logo.png"
+                        alt="LCK Logo"
+                        width="24"
+                        height="24"
+                        class="mr-2"
+                    />
+                    <h2>LCK</h2>
+                </label>
+            </div>
         </div>
+        <footer class="bg-indigo-200">
+            <div class="container mx-auto p-4 text-indigo-900">
+                Lorem Ipsum
+            </div>
+        </footer>
     </body>
 </html>
