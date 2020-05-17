@@ -134,6 +134,7 @@ See official steps here: [Sync your calendar with computer programs](https://sup
 ## Further Resources
 
 -   [Official LoL Esports Schedule](https://watch.lolesports.com/schedule)
+-   [Liquipedia League of Legends](https://liquipedia.net/leagueoflegends/Main_Page)
 -   [PandaScore](https://pandascore.co/)
 
 ## Known Issues
