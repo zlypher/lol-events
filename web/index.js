@@ -7,8 +7,6 @@ copyButton.addEventListener("click", () => {
 });
 
 document.addEventListener("change", (evt) => {
-    console.log("change", evt);
-
     const target = evt.target;
     const isToggle = target.getAttribute("name") === "league";
     if (isToggle) {

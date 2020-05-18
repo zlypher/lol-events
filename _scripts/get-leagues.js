@@ -11,7 +11,8 @@ async function main() {
         url: l.url,
     }));
 
-    console.log(renderLeagueTable(leagues));
+    console.log(renderLeaguesForWeb(leagues));
+    // console.log(renderLeagueTable(leagues));
     // console.log(renderLeagues(leagues));
 }
 
@@ -28,6 +29,30 @@ function renderLeagues(leagues) {
     return leagues.map(renderSingleLeague).join("\n");
 }
 
+function renderLeaguesForWeb(leagues) {
+    return leagues.map(renderSingleLeagueForWeb).join("\n");
+}
+
 function renderSingleLeague(league) {
     return `<a href="${league.url}" target="_blank"><img src="${league.image_url}" alt="${league.name} Logo" width="100" height="100" /></a>`;
+}
+
+function renderSingleLeagueForWeb(league) {
+    const icalUrl = `https://zlypher.github.io/lol-events/cal/${league.slug}.ical`;
+    return `
+<label
+    class="border rounded p-2 flex items-center cursor-pointer"
+>
+    <input type="radio" name="league" class="sr-only" />
+    <input type="hidden" class="js-ical" value="${icalUrl}" />
+    <img
+        src="${league.image_url}"
+        alt="${league.name} Logo"
+        width="24"
+        height="24"
+        class="mr-2"
+    />
+    <h2>${league.name}</h2>
+</label>
+    `;
 }
