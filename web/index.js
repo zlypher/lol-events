@@ -1,8 +1,18 @@
-console.log("hello World");
+const copyTextfield = document.querySelector(".js-copy-t");
+const copyButton = document.querySelector(".js-copy-b");
+
+copyButton.addEventListener("click", () => {
+    copyTextfield.select();
+    document.execCommand("copy");
+});
 
 document.addEventListener("change", (evt) => {
     console.log("change", evt);
 
-    // TODO: On change, update textfield
-    // TODO: Add btn to quickly copy content of textfield
+    const target = evt.target;
+    const isToggle = target.getAttribute("name") === "league";
+    if (isToggle) {
+        const icalUrl = target.parentElement.querySelector(".js-ical").value;
+        copyTextfield.value = icalUrl;
+    }
 });
