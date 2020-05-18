@@ -7,7 +7,7 @@
         "clean": "rimraf ../docs/*.{html,js,css,css.map}",
         "start": "parcel index.html",
         "build": "parcel build index.html -d ../docs --public-url REPLACE_REL_URL && npm run fixrelurl",
-        "fixrelurl": "replace-in-files --string=REPLACE_REL_URL --replacement=. ../docs/index.html"
+        "fixrelurl": "replace-in-files --string=REPLACE_REL_URL --replacement=. ../docs/*.*"
     },
     "author": "Thomas Prochazka <thomas.prochazka@gmail.com>",
     "license": "MIT",
