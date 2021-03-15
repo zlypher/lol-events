@@ -16,16 +16,21 @@ const IcalUtils = require("../lib/ical-utils");
 })();
 
 async function generateIcalCalendar(league) {
-    console.log("Creating ical for", league.name);
+    try {
+        console.log("Creating ical for", league.name);
 
-    const icalData = await createCalendar(league);
-    const jsonPath = `./docs/cal/${league.slug}.json`;
-    if (fs.existsSync(jsonPath)) {
-        const jsonData = JSON.parse(fs.readFileSync(jsonPath).toString());
-        updateCalendarEvents(icalData, jsonData);
+        const icalData = await createCalendar(league);
+        const jsonPath = `./docs/cal/${league.slug}.json`;
+        if (fs.existsSync(jsonPath)) {
+            const jsonData = JSON.parse(fs.readFileSync(jsonPath).toString());
+            updateCalendarEvents(icalData, jsonData);
+        }
+
+        outputCalendar(league.slug, icalData);
+    } catch (e) {
+        // Don't rethrow the exception, so that the other calendars are still generated
+        console.error("Error creating ical for", league.name, e);
     }
-
-    outputCalendar(league.slug, icalData);
 }
 
 async function createCalendar(league) {
