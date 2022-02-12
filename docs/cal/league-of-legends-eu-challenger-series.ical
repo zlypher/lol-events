@@ -1,9 +1,9 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//Zlypher//LOL Events//EN
-NAME:Worlds
-X-WR-CALNAME:Worlds
+NAME:EU Challenger Series
+X-WR-CALNAME:EU Challenger Series
 TIMEZONE-ID:UTC
 X-WR-TIMEZONE:UTC
-X-WR-CALDESC:Worlds
+X-WR-CALDESC:EU Challenger Series
 END:VCALENDAR
