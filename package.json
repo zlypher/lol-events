@@ -20,7 +20,7 @@
     "dependencies": {
         "ical-generator": "^1.9.2",
         "moment": "^2.24.0",
-        "node-fetch": "^2.6.7"
+        "node-fetch": "^2.6.7",
         "qs": "^6.10.3"
     },
     "devDependencies": {
