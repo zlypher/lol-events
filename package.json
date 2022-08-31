@@ -19,7 +19,7 @@
     "homepage": "https://github.com/zlypher/lol-events#readme",
     "dependencies": {
         "ical-generator": "^1.9.2",
-        "moment": "^2.24.0",
+        "moment": "^2.29.4",
         "node-fetch": "^2.6.7",
         "qs": "^6.10.3"
     },
