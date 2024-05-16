@@ -34,8 +34,22 @@ async function generateIcalCalendar(league) {
 }
 
 async function createCalendar(league) {
-    const matches = await PandaScore.getUpcomingMatches(league.id);
-    const mappedMatches = PandaScoreUtils.mapPandaScoreResult(matches);
+    // Get only 20 past matches so that we don't dramatically increase the calender,
+    // but so that there are still at least some of the past events.
+    const pastMatches = await PandaScore.getPastMatches(league.id, {
+        page: 1,
+        per_page: 20,
+    });
+    const runningMatches = await PandaScore.getRunningMatches(league.id);
+    const upcomingMatches = await PandaScore.getUpcomingMatches(league.id);
+
+    const relevantMatches = [
+        ...pastMatches,
+        ...runningMatches,
+        ...upcomingMatches,
+    ];
+
+    const mappedMatches = PandaScoreUtils.mapPandaScoreResult(relevantMatches);
     return IcalUtils.toIcal(league.name, mappedMatches);
 }
 
