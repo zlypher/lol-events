@@ -25,7 +25,9 @@ function renderLeagueTable(leagues) {
             (league) =>
                 `| ${renderSingleLogo(league, 24, 24)} | ${
                     league.name
-                } | [Get ical here](output/${league.slug}.ical)|`,
+                } | https://zlypher.github.io/lol-events/cal/${
+                    league.slug
+                }.ical`,
         )
         .join("\n");
 }
