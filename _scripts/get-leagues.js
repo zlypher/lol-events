@@ -1,32 +1,42 @@
 require("dotenv").config();
-const { getLeagues } = require("../lib/pandascore");
+const { getLeagues, getAllPages } = require("../lib/pandascore");
 
 main();
 
 async function main() {
-    const leagues = (await getLeagues()).map((l) => ({
+    const leagues = (await getAllPages(getLeagues)).map((l) => ({
         name: l.name,
         slug: l.slug,
         image_url: l.image_url,
         url: l.url,
     }));
 
-    console.log(renderLeaguesForWeb(leagues));
-    // console.log(renderLeagueTable(leagues));
-    // console.log(renderLeagues(leagues));
+    leagues.sort((a, b) => a.name.localeCompare(b.name));
+
+    // console.log(renderLeaguesForWeb(leagues));
+    console.log(renderLeagueTable(leagues));
+    console.log("---");
+    console.log(renderLeagues(leagues));
 }
 
 function renderLeagueTable(leagues) {
     return leagues
         .map(
             (league) =>
-                `| <img src="${league.image_url}" alt="${league.name} Logo" width="24" height="24" /> | ${league.name} | [Get ical here](output/${league.slug}.ical)|`,
+                `| ${renderSingleLogo(league, 24, 24)} | ${
+                    league.name
+                } | https://zlypher.github.io/lol-events/cal/${
+                    league.slug
+                }.ical`,
         )
         .join("\n");
 }
 
 function renderLeagues(leagues) {
-    return leagues.map(renderSingleLeague).join("\n");
+    return leagues
+        .map(renderSingleLeague)
+        .filter((l) => !!l)
+        .join("\n");
 }
 
 function renderLeaguesForWeb(leagues) {
@@ -34,7 +44,23 @@ function renderLeaguesForWeb(leagues) {
 }
 
 function renderSingleLeague(league) {
-    return `<a href="${league.url}" target="_blank"><img src="${league.image_url}" alt="${league.name} Logo" width="100" height="100" /></a>`;
+    if (!league.image_url) {
+        return null;
+    }
+
+    return `<a href="${league.url}" target="_blank">${renderSingleLogo(
+        league,
+        50,
+        50,
+    )}</a>`;
+}
+
+function renderSingleLogo(league, width = 24, height = 24) {
+    if (!league.image_url) {
+        return "-";
+    }
+
+    return `<img src="${league.image_url}" alt="${league.name} Logo" width="50" height="50" />`;
 }
 
 function renderSingleLeagueForWeb(league) {
