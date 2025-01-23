@@ -6,7 +6,7 @@ const IcalUtils = require("../lib/ical-utils");
 
 (async function main() {
     try {
-        const leagues = await PandaScore.getLeagues();
+        const leagues = await PandaScore.getAllPages(PandaScore.getLeagues);
         await Promise.all(leagues.map(generateIcalCalendar));
         process.exit(0);
     } catch (err) {
