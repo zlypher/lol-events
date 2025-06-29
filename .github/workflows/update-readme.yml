@@ -1,8 +1,5 @@
 name: Update README
 on:
-  push:
-    branches:
-      - master
   schedule:
     - cron: "1 1 * * *"
 
