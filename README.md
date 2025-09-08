@@ -13,7 +13,7 @@ The `.ical` files for all leagues are updated daily. The last update date can be
 
 ## Calendars by League
 
-Last update: 9/7/2025
+Last update: 9/8/2025
 
 |                                                                                                                                                                                  | League                             |                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -117,7 +117,7 @@ Last update: 9/7/2025
 | <img src="https://cdn.pandascore.co/images/league/image/5141/440px-prime_league_lightmode-png" alt="Prime Pokal Logo" width="50" height="50" /> | Prime Pokal | https://zlypher.github.io/lol-events/cal/league-of-legends-prime-pokal.ical
 | <img src="https://cdn.pandascore.co/images/league/image/4392/Pulsefire_Cup_2020.png" alt="Pulsefire Cup Logo" width="50" height="50" /> | Pulsefire Cup | https://zlypher.github.io/lol-events/cal/league-of-legends-pulsefire-cup.ical
 | <img src="https://cdn.pandascore.co/images/league/image/5184/red_bull_league_of_its_own_allmode-png" alt="Red Bull League of Its Own Logo" width="50" height="50" /> | Red Bull League of Its Own | https://zlypher.github.io/lol-events/cal/league-of-legends-red-bull-league-of-its-own.ical
-| - | Rift Legends | https://zlypher.github.io/lol-events/cal/league-of-legends-rift-legends.ical
+| <img src="https://cdn.pandascore.co/images/league/image/5358/rift_legends_icon_allmode-png" alt="Rift Legends Logo" width="50" height="50" /> | Rift Legends | https://zlypher.github.io/lol-events/cal/league-of-legends-rift-legends.ical
 | <img src="https://cdn.pandascore.co/images/league/image/2133/213px-YellowRift2018.png" alt="Rift Rivals: CB vs. CLS vs. LLN Logo" width="50" height="50" /> | Rift Rivals: CB vs. CLS vs. LLN | https://zlypher.github.io/lol-events/cal/league-of-legends-rift-rivals-cblol-vs-cls-vs-lln.ical
 | <img src="https://cdn.pandascore.co/images/league/image/2108/213px-PurpleRift2018.png" alt="Rift Rivals: GPL vs. LJL vs. OPL Logo" width="50" height="50" /> | Rift Rivals: GPL vs. LJL vs. OPL | https://zlypher.github.io/lol-events/cal/league-of-legends-rift-rivals-gpl-vs-ljl-vs-opl.ical
 | <img src="https://cdn.pandascore.co/images/league/image/4230/Rift_Rivals_Red_2019.png" alt="Rift Rivals: LCK vs LPL vs LMS/VCS Logo" width="50" height="50" /> | Rift Rivals: LCK vs LPL vs LMS/VCS | https://zlypher.github.io/lol-events/cal/league-of-legends-rift-rivals-lck-vs-lpl-vs-lms-vcs.ical
@@ -154,7 +154,7 @@ See official steps here: [Sync your calendar with computer programs](https://sup
 
 ## Supported Leagues
 
-Last update: 9/7/2025
+Last update: 9/8/2025
 
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/296/all-star_2020_logo-png" alt="All-Star Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/5292/americas_challengers-png" alt="Americas Challengers Logo" width="50" height="50" /></a>
@@ -247,6 +247,7 @@ Last update: 9/7/2025
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/5141/440px-prime_league_lightmode-png" alt="Prime Pokal Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/4392/Pulsefire_Cup_2020.png" alt="Pulsefire Cup Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/5184/red_bull_league_of_its_own_allmode-png" alt="Red Bull League of Its Own Logo" width="50" height="50" /></a>
+<a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/5358/rift_legends_icon_allmode-png" alt="Rift Legends Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/2133/213px-YellowRift2018.png" alt="Rift Rivals: CB vs. CLS vs. LLN Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/2108/213px-PurpleRift2018.png" alt="Rift Rivals: GPL vs. LJL vs. OPL Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/4230/Rift_Rivals_Red_2019.png" alt="Rift Rivals: LCK vs LPL vs LMS/VCS Logo" width="50" height="50" /></a>
