@@ -13,7 +13,7 @@ The `.ical` files for all leagues are updated daily. The last update date can be
 
 ## Calendars by League
 
-Last update: 9/12/2025
+Last update: 9/13/2025
 
 |                                                                                                                                                                                  | League                             |                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -81,6 +81,7 @@ Last update: 9/12/2025
 | <img src="https://cdn.pandascore.co/images/league/image/5248/legend_cup-png" alt="Legends Cup Logo" width="50" height="50" /> | Legends Cup | https://zlypher.github.io/lol-events/cal/league-of-legends-legends-cup.ical
 | <img src="https://cdn.pandascore.co/images/league/image/4292/1200px-LFL_Logo_2020.png" alt="LFL Logo" width="50" height="50" /> | LFL | https://zlypher.github.io/lol-events/cal/league-of-legends-lfl.ical
 | <img src="https://cdn.pandascore.co/images/league/image/4743/LFL_Division_2.png" alt="LFL Division 2 Logo" width="50" height="50" /> | LFL Division 2 | https://zlypher.github.io/lol-events/cal/league-of-legends-lfl-division-2.ical
+| - | LGC Rising | https://zlypher.github.io/lol-events/cal/league-of-legends-lgc-rising.ical
 | <img src="https://cdn.pandascore.co/images/league/image/4789/liga_honor_entel-png" alt="LHE Logo" width="50" height="50" /> | LHE | https://zlypher.github.io/lol-events/cal/league-of-legends-entel-honor-league.ical
 | <img src="https://cdn.pandascore.co/images/league/image/1002/liga-latinoam_C3_A9rica-norte-f994mkpu.png" alt="Liga Latinoamerica Norte Logo" width="50" height="50" /> | Liga Latinoamerica Norte | https://zlypher.github.io/lol-events/cal/league-of-legends-liga-latinoamerica-norte.ical
 | <img src="https://cdn.pandascore.co/images/league/image/5211/lit_2024_logo-png" alt="LIT Logo" width="50" height="50" /> | LIT | https://zlypher.github.io/lol-events/cal/league-of-legends-lit.ical
@@ -154,7 +155,7 @@ See official steps here: [Sync your calendar with computer programs](https://sup
 
 ## Supported Leagues
 
-Last update: 9/12/2025
+Last update: 9/13/2025
 
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/296/all-star_2020_logo-png" alt="All-Star Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/5292/americas_challengers-png" alt="Americas Challengers Logo" width="50" height="50" /></a>
