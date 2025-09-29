@@ -13,13 +13,14 @@ The `.ical` files for all leagues are updated daily. The last update date can be
 
 ## Calendars by League
 
-Last update: 9/28/2025
+Last update: 9/29/2025
 
 |                                                                                                                                                                                  | League                             |                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |
 | <img src="https://cdn.pandascore.co/images/league/image/296/all-star_2020_logo-png" alt="All-Star Logo" width="50" height="50" /> | All-Star | https://zlypher.github.io/lol-events/cal/league-of-legends-all-star.ical
 | <img src="https://cdn.pandascore.co/images/league/image/5292/americas_challengers-png" alt="Americas Challengers Logo" width="50" height="50" /> | Americas Challengers | https://zlypher.github.io/lol-events/cal/league-of-legends-americas-challengers.ical
 | <img src="https://cdn.pandascore.co/images/league/image/4962/arabian_league-png" alt="Arabian League Logo" width="50" height="50" /> | Arabian League | https://zlypher.github.io/lol-events/cal/league-of-legends-arabian-league.ical
+| - | Asia Invitational | https://zlypher.github.io/lol-events/cal/league-of-legends-asia-invitational.ical
 | - | Asia Masters | https://zlypher.github.io/lol-events/cal/league-of-legends-asia-masters.ical
 | <img src="https://cdn.pandascore.co/images/league/image/4864/asci_2022_logo-png" alt="Asia Star Challengers Invitational Logo" width="50" height="50" /> | Asia Star Challengers Invitational | https://zlypher.github.io/lol-events/cal/league-of-legends-asia-star-challengers-invitational.ical
 | <img src="https://cdn.pandascore.co/images/league/image/5012/asian_game_2022_logo-png" alt="Asian Games Logo" width="50" height="50" /> | Asian Games | https://zlypher.github.io/lol-events/cal/league-of-legends-asian-games.ical
@@ -155,7 +156,7 @@ See official steps here: [Sync your calendar with computer programs](https://sup
 
 ## Supported Leagues
 
-Last update: 9/28/2025
+Last update: 9/29/2025
 
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/296/all-star_2020_logo-png" alt="All-Star Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/5292/americas_challengers-png" alt="Americas Challengers Logo" width="50" height="50" /></a>
