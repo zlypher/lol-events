@@ -13,14 +13,14 @@ The `.ical` files for all leagues are updated daily. The last update date can be
 
 ## Calendars by League
 
-Last update: 11/14/2025
+Last update: 11/15/2025
 
 |                                                                                                                                                                                  | League                             |                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |
 | <img src="https://cdn.pandascore.co/images/league/image/296/all-star_2020_logo-png" alt="All-Star Logo" width="50" height="50" /> | All-Star | https://zlypher.github.io/lol-events/cal/league-of-legends-all-star.ical
 | <img src="https://cdn.pandascore.co/images/league/image/5292/americas_challengers-png" alt="Americas Challengers Logo" width="50" height="50" /> | Americas Challengers | https://zlypher.github.io/lol-events/cal/league-of-legends-americas-challengers.ical
 | <img src="https://cdn.pandascore.co/images/league/image/4962/arabian_league-png" alt="Arabian League Logo" width="50" height="50" /> | Arabian League | https://zlypher.github.io/lol-events/cal/league-of-legends-arabian-league.ical
-| - | Asia Invitational | https://zlypher.github.io/lol-events/cal/league-of-legends-asia-invitational.ical
+| <img src="https://cdn.pandascore.co/images/league/image/5439/900px-asia_invitational_lightmode-png" alt="Asia Invitational Logo" width="50" height="50" /> | Asia Invitational | https://zlypher.github.io/lol-events/cal/league-of-legends-asia-invitational.ical
 | - | Asia Masters | https://zlypher.github.io/lol-events/cal/league-of-legends-asia-masters.ical
 | <img src="https://cdn.pandascore.co/images/league/image/4864/asci_2022_logo-png" alt="Asia Star Challengers Invitational Logo" width="50" height="50" /> | Asia Star Challengers Invitational | https://zlypher.github.io/lol-events/cal/league-of-legends-asia-star-challengers-invitational.ical
 | <img src="https://cdn.pandascore.co/images/league/image/5012/asian_game_2022_logo-png" alt="Asian Games Logo" width="50" height="50" /> | Asian Games | https://zlypher.github.io/lol-events/cal/league-of-legends-asian-games.ical
@@ -82,7 +82,7 @@ Last update: 11/14/2025
 | <img src="https://cdn.pandascore.co/images/league/image/5248/legend_cup-png" alt="Legends Cup Logo" width="50" height="50" /> | Legends Cup | https://zlypher.github.io/lol-events/cal/league-of-legends-legends-cup.ical
 | <img src="https://cdn.pandascore.co/images/league/image/4292/1200px-LFL_Logo_2020.png" alt="LFL Logo" width="50" height="50" /> | LFL | https://zlypher.github.io/lol-events/cal/league-of-legends-lfl.ical
 | <img src="https://cdn.pandascore.co/images/league/image/4743/LFL_Division_2.png" alt="LFL Division 2 Logo" width="50" height="50" /> | LFL Division 2 | https://zlypher.github.io/lol-events/cal/league-of-legends-lfl-division-2.ical
-| - | LGC Rising | https://zlypher.github.io/lol-events/cal/league-of-legends-lgc-rising.ical
+| <img src="https://cdn.pandascore.co/images/league/image/5433/900px-league_of_legends_game_changers_rising_lightmode-png(2)" alt="LGC Rising Logo" width="50" height="50" /> | LGC Rising | https://zlypher.github.io/lol-events/cal/league-of-legends-lgc-rising.ical
 | <img src="https://cdn.pandascore.co/images/league/image/4789/liga_honor_entel-png" alt="LHE Logo" width="50" height="50" /> | LHE | https://zlypher.github.io/lol-events/cal/league-of-legends-entel-honor-league.ical
 | <img src="https://cdn.pandascore.co/images/league/image/1002/liga-latinoam_C3_A9rica-norte-f994mkpu.png" alt="Liga Latinoamerica Norte Logo" width="50" height="50" /> | Liga Latinoamerica Norte | https://zlypher.github.io/lol-events/cal/league-of-legends-liga-latinoamerica-norte.ical
 | <img src="https://cdn.pandascore.co/images/league/image/5211/lit_2024_logo-png" alt="LIT Logo" width="50" height="50" /> | LIT | https://zlypher.github.io/lol-events/cal/league-of-legends-lit.ical
@@ -156,11 +156,12 @@ See official steps here: [Sync your calendar with computer programs](https://sup
 
 ## Supported Leagues
 
-Last update: 11/14/2025
+Last update: 11/15/2025
 
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/296/all-star_2020_logo-png" alt="All-Star Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/5292/americas_challengers-png" alt="Americas Challengers Logo" width="50" height="50" /></a>
 <a href="https://iac.leagueoflegends.com/en" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/4962/arabian_league-png" alt="Arabian League Logo" width="50" height="50" /></a>
+<a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/5439/900px-asia_invitational_lightmode-png" alt="Asia Invitational Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/4864/asci_2022_logo-png" alt="Asia Star Challengers Invitational Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/5012/asian_game_2022_logo-png" alt="Asian Games Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/4450/220px-Baltic_Masters.png" alt="Baltic Masters Logo" width="50" height="50" /></a>
@@ -216,6 +217,7 @@ Last update: 11/14/2025
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/5248/legend_cup-png" alt="Legends Cup Logo" width="50" height="50" /></a>
 <a href="http://www.lollfl.com/" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/4292/1200px-LFL_Logo_2020.png" alt="LFL Logo" width="50" height="50" /></a>
 <a href="https://division2lol.fr" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/4743/LFL_Division_2.png" alt="LFL Division 2 Logo" width="50" height="50" /></a>
+<a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/5433/900px-league_of_legends_game_changers_rising_lightmode-png(2)" alt="LGC Rising Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/4789/liga_honor_entel-png" alt="LHE Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/1002/liga-latinoam_C3_A9rica-norte-f994mkpu.png" alt="Liga Latinoamerica Norte Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/5211/lit_2024_logo-png" alt="LIT Logo" width="50" height="50" /></a>
