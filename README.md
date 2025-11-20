@@ -13,7 +13,7 @@ The `.ical` files for all leagues are updated daily. The last update date can be
 
 ## Calendars by League
 
-Last update: 11/19/2025
+Last update: 11/20/2025
 
 |                                                                                                                                                                                  | League                             |                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -46,6 +46,7 @@ Last update: 11/19/2025
 | <img src="https://cdn.pandascore.co/images/league/image/5147/800px-elite_series_benelux_masters_lightmode-png" alt="Elite Series Benelux Masters Logo" width="50" height="50" /> | Elite Series Benelux Masters | https://zlypher.github.io/lol-events/cal/league-of-legends-elite-series-benelux-masters.ical
 | <img src="https://cdn.pandascore.co/images/league/image/4996/emea_masters_2023-png" alt="EMEA Masters Logo" width="50" height="50" /> | EMEA Masters | https://zlypher.github.io/lol-events/cal/league-of-legends-emea-masters.ical
 | - | ESL Meisterschaft | https://zlypher.github.io/lol-events/cal/league-of-legends-esl-meisterschaft.ical
+| <img src="https://cdn.pandascore.co/images/league/image/5452/2025_eca_logo-webp" alt="Esports Championships Asia Logo" width="50" height="50" /> | Esports Championships Asia | https://zlypher.github.io/lol-events/cal/league-of-legends-esports-championships-asia.ical
 | <img src="https://cdn.pandascore.co/images/league/image/5182/esports_shanghai_masters_logo_allmode-png" alt="Esports Shanghai Masters Logo" width="50" height="50" /> | Esports Shanghai Masters | https://zlypher.github.io/lol-events/cal/league-of-legends-esports-shanghai-masters.ical
 | - | Esports World Cup | https://zlypher.github.io/lol-events/cal/league-of-legends-esports-world-cup.ical
 | <img src="https://cdn.pandascore.co/images/league/image/292/EU_CS_logo.png" alt="EU Challenger Series Logo" width="50" height="50" /> | EU Challenger Series | https://zlypher.github.io/lol-events/cal/league-of-legends-eu-challenger-series.ical
@@ -156,7 +157,7 @@ See official steps here: [Sync your calendar with computer programs](https://sup
 
 ## Supported Leagues
 
-Last update: 11/19/2025
+Last update: 11/20/2025
 
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/296/all-star_2020_logo-png" alt="All-Star Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/5292/americas_challengers-png" alt="Americas Challengers Logo" width="50" height="50" /></a>
@@ -185,6 +186,7 @@ Last update: 11/19/2025
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/4722/Elite_Series_logo.png" alt="Elite Series Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/5147/800px-elite_series_benelux_masters_lightmode-png" alt="Elite Series Benelux Masters Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/4996/emea_masters_2023-png" alt="EMEA Masters Logo" width="50" height="50" /></a>
+<a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/5452/2025_eca_logo-webp" alt="Esports Championships Asia Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/5182/esports_shanghai_masters_logo_allmode-png" alt="Esports Shanghai Masters Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/292/EU_CS_logo.png" alt="EU Challenger Series Logo" width="50" height="50" /></a>
 <a href="https://www.lolesports.com/en_US/eu-lcs/eu_2018_summer/about" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/290/eu-lcs-b29u5nim.png" alt="EU LCS Logo" width="50" height="50" /></a>
