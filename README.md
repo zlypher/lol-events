@@ -13,7 +13,7 @@ The `.ical` files for all leagues are updated daily. The last update date can be
 
 ## Calendars by League
 
-Last update: 11/23/2025
+Last update: 11/24/2025
 
 |                                                                                                                                                                                  | League                             |                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -111,6 +111,7 @@ Last update: 11/23/2025
 | <img src="https://cdn.pandascore.co/images/league/image/4411/nlc_2022_logo-png" alt="NLC Logo" width="50" height="50" /> | NLC | https://zlypher.github.io/lol-events/cal/league-of-legends-nlc.ical
 | - | NNO Cup | https://zlypher.github.io/lol-events/cal/league-of-legends-nno-cup.ical
 | <img src="https://cdn.pandascore.co/images/league/image/4961/nacl_full_logo-png" alt="North American Challengers League Logo" width="50" height="50" /> | North American Challengers League | https://zlypher.github.io/lol-events/cal/league-of-legends-north-american-challengers-league.ical
+| - | Nova Series | https://zlypher.github.io/lol-events/cal/league-of-legends-nova-series.ical
 | <img src="https://cdn.pandascore.co/images/league/image/301/OPL_2018_Logo_Color.png" alt="OPL Logo" width="50" height="50" /> | OPL | https://zlypher.github.io/lol-events/cal/league-of-legends-opl.ical
 | <img src="https://cdn.pandascore.co/images/league/image/4288/PCS_logo_full.png" alt="PCS Logo" width="50" height="50" /> | PCS | https://zlypher.github.io/lol-events/cal/league-of-legends-pcs.ical
 | <img src="https://cdn.pandascore.co/images/league/image/4405/494px-pg_nationals_2021_icon_allmode-png" alt="PG Nationals Logo" width="50" height="50" /> | PG Nationals | https://zlypher.github.io/lol-events/cal/league-of-legends-pg-nationals.ical
@@ -157,7 +158,7 @@ See official steps here: [Sync your calendar with computer programs](https://sup
 
 ## Supported Leagues
 
-Last update: 11/23/2025
+Last update: 11/24/2025
 
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/296/all-star_2020_logo-png" alt="All-Star Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/5292/americas_challengers-png" alt="Americas Challengers Logo" width="50" height="50" /></a>
