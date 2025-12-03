@@ -13,7 +13,7 @@ The `.ical` files for all leagues are updated daily. The last update date can be
 
 ## Calendars by League
 
-Last update: 12/2/2025
+Last update: 12/3/2025
 
 |                                                                                                                                                                                  | League                             |                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -54,6 +54,7 @@ Last update: 12/2/2025
 | <img src="https://cdn.pandascore.co/images/league/image/4139/220px-EM_2020_Logo.png" alt="European Masters Logo" width="50" height="50" /> | European Masters | https://zlypher.github.io/lol-events/cal/league-of-legends-european-masters.ical
 | <img src="https://cdn.pandascore.co/images/league/image/5013/european_pro_league-png" alt="European Pro League Logo" width="50" height="50" /> | European Pro League | https://zlypher.github.io/lol-events/cal/league-of-legends-european-pro-league.ical
 | <img src="https://cdn.pandascore.co/images/league/image/5369/first_stand_logo-png" alt="First Stand Logo" width="50" height="50" /> | First Stand | https://zlypher.github.io/lol-events/cal/league-of-legends-first-stand.ical
+| <img src="https://cdn.pandascore.co/images/league/image/5461/gameon_logo-webp" alt="GAMEON Revival Logo" width="50" height="50" /> | GAMEON Revival | https://zlypher.github.io/lol-events/cal/league-of-legends-gameon-revival.ical
 | <img src="https://cdn.pandascore.co/images/league/image/4723/gll_2024_logo-png" alt="GLL Logo" width="50" height="50" /> | GLL | https://zlypher.github.io/lol-events/cal/league-of-legends-gll.ical
 | <img src="https://cdn.pandascore.co/images/league/image/4180/GPL2017SpringLogo.png" alt="GPL Logo" width="50" height="50" /> | GPL | https://zlypher.github.io/lol-events/cal/league-of-legends-gpl.ical
 | <img src="https://cdn.pandascore.co/images/league/image/4433/800px-hitpoint_masters_lightmode-png" alt="Hitpoint Masters Logo" width="50" height="50" /> | Hitpoint Masters | https://zlypher.github.io/lol-events/cal/league-of-legends-hitpoint-masters.ical
@@ -158,7 +159,7 @@ See official steps here: [Sync your calendar with computer programs](https://sup
 
 ## Supported Leagues
 
-Last update: 12/2/2025
+Last update: 12/3/2025
 
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/296/all-star_2020_logo-png" alt="All-Star Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/5292/americas_challengers-png" alt="Americas Challengers Logo" width="50" height="50" /></a>
@@ -194,6 +195,7 @@ Last update: 12/2/2025
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/4139/220px-EM_2020_Logo.png" alt="European Masters Logo" width="50" height="50" /></a>
 <a href="https://eplesports.com/" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/5013/european_pro_league-png" alt="European Pro League Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/5369/first_stand_logo-png" alt="First Stand Logo" width="50" height="50" /></a>
+<a href="null" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/5461/gameon_logo-webp" alt="GAMEON Revival Logo" width="50" height="50" /></a>
 <a href="https://www.greeklegends.gr/" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/4723/gll_2024_logo-png" alt="GLL Logo" width="50" height="50" /></a>
 <a href="http://gpl.garena.com/" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/4180/GPL2017SpringLogo.png" alt="GPL Logo" width="50" height="50" /></a>
 <a href="https://hitpoint.cz/" target="_blank"><img src="https://cdn.pandascore.co/images/league/image/4433/800px-hitpoint_masters_lightmode-png" alt="Hitpoint Masters Logo" width="50" height="50" /></a>
