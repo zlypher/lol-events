@@ -13,7 +13,7 @@ The `.ical` files for all leagues are updated daily. The last update date can be
 
 ## Calendars by League
 
-Last update: 2/10/2026
+Last update: 2/11/2026
 
 |                                                                                                                                                                                  | League                             |                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -83,6 +83,7 @@ Last update: 2/10/2026
 | <img src="https://cdn-api.pandascore.co/images/league/image/2063/league-of-legends-league-of-origin-9s87nnza.png" alt="League of Origin Logo" width="50" height="50" /> | League of Origin | https://zlypher.github.io/lol-events/cal/league-of-legends-league-of-legends-league-of-origin.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/4197/lec_2023-png" alt="LEC Logo" width="50" height="50" /> | LEC | https://zlypher.github.io/lol-events/cal/league-of-legends-lec.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/5248/legend_cup-png" alt="Legends Cup Logo" width="50" height="50" /> | Legends Cup | https://zlypher.github.io/lol-events/cal/league-of-legends-legends-cup.ical
+| - | LES | https://zlypher.github.io/lol-events/cal/league-of-legends-les.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/4292/1200px-LFL_Logo_2020.png" alt="LFL Logo" width="50" height="50" /> | LFL | https://zlypher.github.io/lol-events/cal/league-of-legends-lfl.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/4743/LFL_Division_2.png" alt="LFL Division 2 Logo" width="50" height="50" /> | LFL Division 2 | https://zlypher.github.io/lol-events/cal/league-of-legends-lfl-division-2.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/5433/900px-league_of_legends_game_changers_rising_lightmode-png(2)" alt="LGC Rising Logo" width="50" height="50" /> | LGC Rising | https://zlypher.github.io/lol-events/cal/league-of-legends-lgc-rising.ical
@@ -160,7 +161,7 @@ See official steps here: [Sync your calendar with computer programs](https://sup
 
 ## Supported Leagues
 
-Last update: 2/10/2026
+Last update: 2/11/2026
 
 <a href="null" target="_blank"><img src="https://cdn-api.pandascore.co/images/league/image/296/all-star_2020_logo-png" alt="All-Star Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn-api.pandascore.co/images/league/image/5292/americas_challengers-png" alt="Americas Challengers Logo" width="50" height="50" /></a>
