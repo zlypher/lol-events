@@ -13,12 +13,13 @@ The `.ical` files for all leagues are updated daily. The last update date can be
 
 ## Calendars by League
 
-Last update: 3/2/2026
+Last update: 3/3/2026
 
 |                                                                                                                                                                                  | League                             |                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |
 | <img src="https://cdn-api.pandascore.co/images/league/image/296/all-star_2020_logo-png" alt="All-Star Logo" width="50" height="50" /> | All-Star | https://zlypher.github.io/lol-events/cal/league-of-legends-all-star.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/5292/americas_challengers-png" alt="Americas Challengers Logo" width="50" height="50" /> | Americas Challengers | https://zlypher.github.io/lol-events/cal/league-of-legends-americas-challengers.ical
+| - | Americas Cup | https://zlypher.github.io/lol-events/cal/league-of-legends-americas-cup.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/4962/arabian_league-png" alt="Arabian League Logo" width="50" height="50" /> | Arabian League | https://zlypher.github.io/lol-events/cal/league-of-legends-arabian-league.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/5439/900px-asia_invitational_lightmode-png" alt="Asia Invitational Logo" width="50" height="50" /> | Asia Invitational | https://zlypher.github.io/lol-events/cal/league-of-legends-asia-invitational.ical
 | - | Asia Masters | https://zlypher.github.io/lol-events/cal/league-of-legends-asia-masters.ical
@@ -161,7 +162,7 @@ See official steps here: [Sync your calendar with computer programs](https://sup
 
 ## Supported Leagues
 
-Last update: 3/2/2026
+Last update: 3/3/2026
 
 <a href="null" target="_blank"><img src="https://cdn-api.pandascore.co/images/league/image/296/all-star_2020_logo-png" alt="All-Star Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn-api.pandascore.co/images/league/image/5292/americas_challengers-png" alt="Americas Challengers Logo" width="50" height="50" /></a>
