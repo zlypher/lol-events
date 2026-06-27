@@ -13,7 +13,7 @@ The `.ical` files for all leagues are updated daily. The last update date can be
 
 ## Calendars by League
 
-Last update: 6/26/2026
+Last update: 6/27/2026
 
 |                                                                                                                                                                                  | League                             |                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -39,6 +39,7 @@ Last update: 6/26/2026
 | <img src="https://cdn-api.pandascore.co/images/league/image/305/wKco39w.png" alt="Copa Latinoamérica Norte Logo" width="50" height="50" /> | Copa Latinoamérica Norte | https://zlypher.github.io/lol-events/cal/league-of-legends-copa-latinoamerica-norte.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/298/r1SeujF8gSklSe_iFUg.png" alt="Copa Latinoamérica Sur Logo" width="50" height="50" /> | Copa Latinoamérica Sur | https://zlypher.github.io/lol-events/cal/league-of-legends-copa-latinoamerica-sur.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/4888/coupe_de_france_2022-png" alt="Coupe de France Logo" width="50" height="50" /> | Coupe de France | https://zlypher.github.io/lol-events/cal/league-of-legends-coupe-de-france.ical
+| - | Cross Regional | https://zlypher.github.io/lol-events/cal/league-of-legends-cross-regional.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/4785/ddh_2020_mexico-png" alt="DDH Logo" width="50" height="50" /> | DDH | https://zlypher.github.io/lol-events/cal/league-of-legends-division-of-honor.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/4140/ezgif-3-8054d3b460-png" alt="Demacia Cup Logo" width="50" height="50" /> | Demacia Cup | https://zlypher.github.io/lol-events/cal/league-of-legends-demacia-cup.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/4402/220px-Dutch_League.png" alt="Dutch League Logo" width="50" height="50" /> | Dutch League | https://zlypher.github.io/lol-events/cal/league-of-legends-dutch-league.ical
@@ -163,7 +164,7 @@ See official steps here: [Sync your calendar with computer programs](https://sup
 
 ## Supported Leagues
 
-Last update: 6/26/2026
+Last update: 6/27/2026
 
 <a href="null" target="_blank"><img src="https://cdn-api.pandascore.co/images/league/image/296/all-star_2020_logo-png" alt="All-Star Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn-api.pandascore.co/images/league/image/5292/americas_challengers-png" alt="Americas Challengers Logo" width="50" height="50" /></a>
