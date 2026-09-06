@@ -13,7 +13,7 @@ The `.ical` files for all leagues are updated daily. The last update date can be
 
 ## Calendars by League
 
-Last update: 9/5/2026
+Last update: 9/6/2026
 
 |                                                                                                                                                                                  | League                             |                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -150,6 +150,7 @@ Last update: 9/5/2026
 | <img src="https://cdn-api.pandascore.co/images/league/image/4300/ultraliga-png" alt="Ultraliga Logo" width="50" height="50" /> | Ultraliga | https://zlypher.github.io/lol-events/cal/league-of-legends-ultraliga.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/4141/800px-vietnam_championship_series_2023_lightmode-png-png" alt="VCS Logo" width="50" height="50" /> | VCS | https://zlypher.github.io/lol-events/cal/league-of-legends-vcs.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/4943/weibo_cup_2022-png" alt="Weibo Cup Logo" width="50" height="50" /> | Weibo Cup | https://zlypher.github.io/lol-events/cal/league-of-legends-weibo-cup.ical
+| <img src="https://cdn-api.pandascore.co/images/league/image/5558/ezgif-7ec1465c1faa44c5-png" alt="World Star Challengers Invitational Logo" width="50" height="50" /> | World Star Challengers Invitational | https://zlypher.github.io/lol-events/cal/league-of-legends-world-star-challengers-invitational.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/297/worlds-png" alt="Worlds Logo" width="50" height="50" /> | Worlds | https://zlypher.github.io/lol-events/cal/league-of-legends-world-championship.ical
 
 ## Getting Started
@@ -166,7 +167,7 @@ See official steps here: [Sync your calendar with computer programs](https://sup
 
 ## Supported Leagues
 
-Last update: 9/5/2026
+Last update: 9/6/2026
 
 <a href="null" target="_blank"><img src="https://cdn-api.pandascore.co/images/league/image/296/all-star_2020_logo-png" alt="All-Star Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn-api.pandascore.co/images/league/image/5292/americas_challengers-png" alt="Americas Challengers Logo" width="50" height="50" /></a>
@@ -284,6 +285,7 @@ Last update: 9/5/2026
 <a href="https://www.ultraliga.pl/" target="_blank"><img src="https://cdn-api.pandascore.co/images/league/image/4300/ultraliga-png" alt="Ultraliga Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn-api.pandascore.co/images/league/image/4141/800px-vietnam_championship_series_2023_lightmode-png-png" alt="VCS Logo" width="50" height="50" /></a>
 <a href="https://weibo.com/u/7463091283" target="_blank"><img src="https://cdn-api.pandascore.co/images/league/image/4943/weibo_cup_2022-png" alt="Weibo Cup Logo" width="50" height="50" /></a>
+<a href="null" target="_blank"><img src="https://cdn-api.pandascore.co/images/league/image/5558/ezgif-7ec1465c1faa44c5-png" alt="World Star Challengers Invitational Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn-api.pandascore.co/images/league/image/297/worlds-png" alt="Worlds Logo" width="50" height="50" /></a>
 
 ## Further Resources
