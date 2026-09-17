@@ -13,7 +13,7 @@ The `.ical` files for all leagues are updated daily. The last update date can be
 
 ## Calendars by League
 
-Last update: 9/16/2026
+Last update: 9/17/2026
 
 |                                                                                                                                                                                  | League                             |                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -42,6 +42,7 @@ Last update: 9/16/2026
 | - | Cross Regional | https://zlypher.github.io/lol-events/cal/league-of-legends-cross-regional.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/4785/ddh_2020_mexico-png" alt="DDH Logo" width="50" height="50" /> | DDH | https://zlypher.github.io/lol-events/cal/league-of-legends-division-of-honor.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/4140/ezgif-3-8054d3b460-png" alt="Demacia Cup Logo" width="50" height="50" /> | Demacia Cup | https://zlypher.github.io/lol-events/cal/league-of-legends-demacia-cup.ical
+| - | Demacia Cup Global Invitational | https://zlypher.github.io/lol-events/cal/league-of-legends-demacia-cup-global-invitational.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/4402/220px-Dutch_League.png" alt="Dutch League Logo" width="50" height="50" /> | Dutch League | https://zlypher.github.io/lol-events/cal/league-of-legends-dutch-league.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/4426/ebl_2021-png" alt="EBL Logo" width="50" height="50" /> | EBL | https://zlypher.github.io/lol-events/cal/league-of-legends-ebl.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/4795/elements_league-png" alt="Elements League Logo" width="50" height="50" /> | Elements League | https://zlypher.github.io/lol-events/cal/league-of-legends-elements-league.ical
@@ -167,7 +168,7 @@ See official steps here: [Sync your calendar with computer programs](https://sup
 
 ## Supported Leagues
 
-Last update: 9/16/2026
+Last update: 9/17/2026
 
 <a href="null" target="_blank"><img src="https://cdn-api.pandascore.co/images/league/image/296/all-star_2020_logo-png" alt="All-Star Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn-api.pandascore.co/images/league/image/5292/americas_challengers-png" alt="Americas Challengers Logo" width="50" height="50" /></a>
