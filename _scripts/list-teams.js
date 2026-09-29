@@ -1,7 +1,5 @@
-require("dotenv").config();
-const { getTeams } = require("../lib/pandascore");
-
-main();
+import "dotenv/config";
+import { getTeams } from "../lib/pandascore.js";
 
 async function main() {
     const options = {
@@ -13,4 +11,8 @@ async function main() {
         return { id: l.id, name: l.name };
     });
     console.log(teams);
+}
+
+if (import.meta.url === `file:///${process.argv[1].replace(/\\/g, "/")}`) {
+    main();
 }

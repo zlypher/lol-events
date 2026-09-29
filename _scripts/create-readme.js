@@ -1,10 +1,8 @@
-require("dotenv").config();
-const fs = require("fs");
-const { getLeagues, getAllPages } = require("../lib/pandascore");
+import "dotenv/config";
+import fs from "node:fs";
+import { getLeagues, getAllPages } from "../lib/pandascore.js";
 
-main();
-
-const README_TEMPLATE = (
+export const README_TEMPLATE = (
     calendarString,
     leagueString,
     lastUpdate,
@@ -62,6 +60,43 @@ ${leagueString}
 [MIT License](LICENSE)
 `;
 
+export function renderSingleLogo(league, width = 24, height = 24) {
+    if (!league.image_url) {
+        return "-";
+    }
+
+    return `<img src="${league.image_url}" alt="${league.name} Logo" width="${width}" height="${height}" />`;
+}
+
+export function renderLeagueTable(leagues) {
+    return leagues
+        .map(
+            (league) =>
+                `| ${renderSingleLogo(league, 24, 24)} | ${
+                    league.name
+                } | https://zlypher.github.io/lol-events/cal/${
+                    league.slug
+                }.ical`,
+        )
+        .join("\n");
+}
+
+export function renderSingleLeague(league) {
+    if (!league.image_url) {
+        return null;
+    }
+
+    return `<a href="${league.url}" target="_blank">${renderSingleLogo(
+        league,
+        50,
+        50,
+    )}</a>`;
+}
+
+export function renderLeagues(leagues) {
+    return leagues.map(renderSingleLeague).filter(Boolean).join("\n");
+}
+
 async function main() {
     const leagues = (await getAllPages(getLeagues)).map((l) => ({
         name: l.name,
@@ -87,42 +122,6 @@ async function main() {
     fs.writeFileSync("./README.md", readmeContent);
 }
 
-function renderLeagueTable(leagues) {
-    return leagues
-        .map(
-            (league) =>
-                `| ${renderSingleLogo(league, 24, 24)} | ${
-                    league.name
-                } | https://zlypher.github.io/lol-events/cal/${
-                    league.slug
-                }.ical`,
-        )
-        .join("\n");
-}
-
-function renderLeagues(leagues) {
-    return leagues
-        .map(renderSingleLeague)
-        .filter((l) => !!l)
-        .join("\n");
-}
-
-function renderSingleLeague(league) {
-    if (!league.image_url) {
-        return null;
-    }
-
-    return `<a href="${league.url}" target="_blank">${renderSingleLogo(
-        league,
-        50,
-        50,
-    )}</a>`;
-}
-
-function renderSingleLogo(league, width = 24, height = 24) {
-    if (!league.image_url) {
-        return "-";
-    }
-
-    return `<img src="${league.image_url}" alt="${league.name} Logo" width="50" height="50" />`;
+if (import.meta.url === `file:///${process.argv[1].replace(/\\/g, "/")}`) {
+    main();
 }

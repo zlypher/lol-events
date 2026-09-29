@@ -168,7 +168,8 @@ flowchart TD
     - Set up `vitest` with offline fixtures for PandaScore and iCal verification.
     - Add ESLint & Prettier configs and npm verification scripts (`npm test`, `npm run lint`, `npm run format:check`).
     - Store assessment and roadmap in [ROADMAP.md](ROADMAP.md).
-- [ ] **Phase 2: Dependency & Runtime Modernization**
+- [x] **Phase 2: Dependency & Runtime Modernization**
+    - Target Node 24 (`"engines": { "node": ">=24.0.0" }` and GitHub Actions).
     - Migrate to ESM (`"type": "module"`).
     - Remove `node-fetch`, `rimraf`, `moment`.
     - Upgrade `ical-generator` to v11+, adapt calendar creation functions.

@@ -1,25 +1,15 @@
-require("dotenv").config();
-const { getLeagues, getAllPages } = require("../lib/pandascore");
+import "dotenv/config";
+import { getLeagues, getAllPages } from "../lib/pandascore.js";
 
-main();
+export function renderSingleLogo(league, width = 24, height = 24) {
+    if (!league.image_url) {
+        return "-";
+    }
 
-async function main() {
-    const leagues = (await getAllPages(getLeagues)).map((l) => ({
-        name: l.name,
-        slug: l.slug,
-        image_url: l.image_url,
-        url: l.url,
-    }));
-
-    leagues.sort((a, b) => a.name.localeCompare(b.name));
-
-    // console.log(renderLeaguesForWeb(leagues));
-    console.log(renderLeagueTable(leagues));
-    console.log("---");
-    console.log(renderLeagues(leagues));
+    return `<img src="${league.image_url}" alt="${league.name} Logo" width="${width}" height="${height}" />`;
 }
 
-function renderLeagueTable(leagues) {
+export function renderLeagueTable(leagues) {
     return leagues
         .map(
             (league) =>
@@ -32,18 +22,7 @@ function renderLeagueTable(leagues) {
         .join("\n");
 }
 
-function renderLeagues(leagues) {
-    return leagues
-        .map(renderSingleLeague)
-        .filter((l) => !!l)
-        .join("\n");
-}
-
-function renderLeaguesForWeb(leagues) {
-    return leagues.map(renderSingleLeagueForWeb).join("\n");
-}
-
-function renderSingleLeague(league) {
+export function renderSingleLeague(league) {
     if (!league.image_url) {
         return null;
     }
@@ -55,15 +34,11 @@ function renderSingleLeague(league) {
     )}</a>`;
 }
 
-function renderSingleLogo(league, width = 24, height = 24) {
-    if (!league.image_url) {
-        return "-";
-    }
-
-    return `<img src="${league.image_url}" alt="${league.name} Logo" width="50" height="50" />`;
+export function renderLeagues(leagues) {
+    return leagues.map(renderSingleLeague).filter(Boolean).join("\n");
 }
 
-function renderSingleLeagueForWeb(league) {
+export function renderSingleLeagueForWeb(league) {
     const icalUrl = `https://zlypher.github.io/lol-events/cal/${league.slug}.ical`;
     return `
 <label
@@ -81,4 +56,27 @@ function renderSingleLeagueForWeb(league) {
     <h2>${league.name}</h2>
 </label>
     `;
+}
+
+export function renderLeaguesForWeb(leagues) {
+    return leagues.map(renderSingleLeagueForWeb).join("\n");
+}
+
+async function main() {
+    const leagues = (await getAllPages(getLeagues)).map((l) => ({
+        name: l.name,
+        slug: l.slug,
+        image_url: l.image_url,
+        url: l.url,
+    }));
+
+    leagues.sort((a, b) => a.name.localeCompare(b.name));
+
+    console.log(renderLeagueTable(leagues));
+    console.log("---");
+    console.log(renderLeagues(leagues));
+}
+
+if (import.meta.url === `file:///${process.argv[1].replace(/\\/g, "/")}`) {
+    main();
 }

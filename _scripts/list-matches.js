@@ -1,7 +1,5 @@
-require("dotenv").config();
-const { getUpcomingMatches } = require("../lib/pandascore");
-
-main();
+import "dotenv/config";
+import { getUpcomingMatches } from "../lib/pandascore.js";
 
 async function main() {
     const options = {
@@ -19,4 +17,8 @@ async function main() {
         };
     });
     console.log(matches);
+}
+
+if (import.meta.url === `file:///${process.argv[1].replace(/\\/g, "/")}`) {
+    main();
 }

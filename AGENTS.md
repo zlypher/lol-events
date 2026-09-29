@@ -85,6 +85,6 @@ lol-events/
 Refer to [ROADMAP.md](ROADMAP.md) for the phased modernization plan:
 
 - **Phase 1 (Complete)**: Agent foundation, Vitest test harness with offline fixtures, ESLint & Prettier configs, `AGENTS.md`.
-- **Phase 2**: Dependency updates (`ical-generator` v11, native `fetch`, native `fs.rm`, ESM migration).
+- **Phase 2 (Complete)**: Target Node 24, ESM migration, dependency updates (`ical-generator` v11, native `fetch`, native `fs`, moment removed).
 - **Phase 3**: Request throttling (`p-limit`), resilient error handling, CLI execution flags (`--league`, `--dry-run`).
 - **Phase 4**: GitHub Actions modernization (Node 22, consolidated workflow) and dynamic web frontend.

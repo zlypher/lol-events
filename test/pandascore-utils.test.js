@@ -1,5 +1,5 @@
-const { mapPandaScoreResult } = require("../lib/pandascore-utils");
-const matchesFixture = require("./fixtures/pandascore-matches.json");
+import { mapPandaScoreResult } from "../lib/pandascore-utils.js";
+import matchesFixture from "./fixtures/pandascore-matches.json" with { type: "json" };
 
 describe("pandascore-utils", () => {
     describe("mapPandaScoreResult", () => {

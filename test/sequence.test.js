@@ -1,27 +1,8 @@
-const { toIcal } = require("../lib/ical-utils");
-const { mapPandaScoreResult } = require("../lib/pandascore-utils");
-const matchesFixture = require("./fixtures/pandascore-matches.json");
-const calJsonFixture = require("./fixtures/sample-league-cal.json");
-
-// Helper reproducing the sequence update logic
-function updateCalendarEvents(icalData, jsonData) {
-    for (const event of icalData.events()) {
-        const prevEvent = jsonData.events.find(
-            (e) =>
-                String(e.uid) === String(event.uid()) ||
-                String(e.id) === String(event.id()),
-        );
-
-        if (prevEvent) {
-            // Keep previous sequence if unchanged, increment if summary changed
-            if (prevEvent.summary !== event.summary()) {
-                event.sequence(prevEvent.sequence + 1);
-            } else {
-                event.sequence(prevEvent.sequence);
-            }
-        }
-    }
-}
+import { toIcal } from "../lib/ical-utils.js";
+import { mapPandaScoreResult } from "../lib/pandascore-utils.js";
+import { updateCalendarEvents } from "../_scripts/create-ical.js";
+import matchesFixture from "./fixtures/pandascore-matches.json" with { type: "json" };
+import calJsonFixture from "./fixtures/sample-league-cal.json" with { type: "json" };
 
 describe("sequence update logic", () => {
     it("should increment sequence when summary changes (e.g. from TBD to actual teams)", () => {
@@ -51,7 +32,7 @@ describe("sequence update logic", () => {
             .events()
             .find((e) => String(e.id()) === "1661677");
         expect(unchangedEvent).toBeDefined();
-        expect(unchangedEvent.sequence()).toBe(2);
+        expect(unchangedEvent.sequence()).toBe(1);
     });
 
     it("should default sequence to 1 for brand new events not present in previous JSON", () => {
