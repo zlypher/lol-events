@@ -11,7 +11,7 @@ import type {
     PandaScoreLeague,
 } from "../lib/types";
 
-export const DEFAULT_CONCURRENCY = 4;
+export const DEFAULT_CONCURRENCY = 2;
 
 export function hasEventChanged(
     currentEvent: ICalEvent,
@@ -129,11 +129,22 @@ export async function generateAllCalendars(
     concurrency = Number(process.env.CONCURRENCY) || DEFAULT_CONCURRENCY,
 ): Promise<void> {
     const limit = pLimit(concurrency);
+    let completed = 0;
     console.log(
-        `Generating calendars for ${leagues.length} leagues (concurrency: ${concurrency})...`,
+        `Generating calendars for ${leagues.length} leagues (concurrency: ${concurrency}, burst limit: 60 req/min)...`,
     );
     await Promise.all(
-        leagues.map((league) => limit(() => generateIcalCalendar(league))),
+        leagues.map((league) =>
+            limit(async () => {
+                await generateIcalCalendar(league);
+                completed++;
+                if (completed % 10 === 0 || completed === leagues.length) {
+                    console.log(
+                        `Progress: ${completed}/${leagues.length} leagues completed (${Math.round((completed / leagues.length) * 100)}%)`,
+                    );
+                }
+            }),
+        ),
     );
 }
 

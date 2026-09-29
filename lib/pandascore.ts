@@ -1,4 +1,5 @@
 import qs from "qs";
+import { defaultRateLimiter, RateLimiter } from "./rate-limiter";
 import type {
     PandaScoreLeague,
     PandaScoreMatch,
@@ -18,6 +19,7 @@ export const getDefaultOptions = (): PandaScoreOptions => {
 export interface RequestOptions {
     retries?: number;
     baseDelayMs?: number;
+    rateLimiter?: RateLimiter;
 }
 
 export const request = async (
@@ -26,8 +28,12 @@ export const request = async (
 ): Promise<Response> => {
     const retries = options.retries ?? 3;
     const baseDelayMs = options.baseDelayMs ?? 1000;
+    const limiter = options.rateLimiter ?? defaultRateLimiter;
 
     for (let attempt = 0; attempt <= retries; attempt++) {
+        // Enforce rate limiting interval (60 req/min burst limit)
+        await limiter.acquire();
+
         const response = await fetch(url, {
             headers: {
                 Authorization: `Bearer ${process.env.ACCESSTOKEN}`,
@@ -161,6 +167,8 @@ export const getAllPages = async <T>(
     return results;
 };
 
+export { defaultRateLimiter, RateLimiter };
+
 export default {
     getPastMatches,
     getRunningMatches,
@@ -170,4 +178,6 @@ export default {
     getAllPages,
     getDefaultOptions,
     request,
+    RateLimiter,
+    defaultRateLimiter,
 };
