@@ -15,12 +15,63 @@ export const getDefaultOptions = (): PandaScoreOptions => {
     };
 };
 
-export const request = async (url: string): Promise<Response> => {
-    return await fetch(url, {
-        headers: {
-            Authorization: `Bearer ${process.env.ACCESSTOKEN}`,
-        },
-    });
+export interface RequestOptions {
+    retries?: number;
+    baseDelayMs?: number;
+}
+
+export const request = async (
+    url: string,
+    options: RequestOptions = {},
+): Promise<Response> => {
+    const retries = options.retries ?? 3;
+    const baseDelayMs = options.baseDelayMs ?? 1000;
+
+    for (let attempt = 0; attempt <= retries; attempt++) {
+        const response = await fetch(url, {
+            headers: {
+                Authorization: `Bearer ${process.env.ACCESSTOKEN}`,
+            },
+        });
+
+        // Handle rate limiting (429) and server errors (5xx) with backoff
+        if (response.status === 429 && attempt < retries) {
+            const retryAfterHeader = response.headers.get("Retry-After");
+            const retryAfterSec = retryAfterHeader
+                ? parseInt(retryAfterHeader, 10)
+                : 0;
+            const delayMs =
+                !isNaN(retryAfterSec) && retryAfterSec > 0
+                    ? retryAfterSec * 1000
+                    : Math.min(
+                          baseDelayMs * Math.pow(2, attempt) +
+                              Math.random() * 500,
+                          15000,
+                      );
+
+            console.warn(
+                `[PandaScore] Rate limited (429). Retrying in ${Math.round(delayMs)}ms (attempt ${attempt + 1}/${retries})...`,
+            );
+            await new Promise((resolve) => setTimeout(resolve, delayMs));
+            continue;
+        }
+
+        if (response.status >= 500 && attempt < retries) {
+            const delayMs = Math.min(
+                baseDelayMs * Math.pow(2, attempt) + Math.random() * 500,
+                15000,
+            );
+            console.warn(
+                `[PandaScore] Server error (${response.status}). Retrying in ${Math.round(delayMs)}ms (attempt ${attempt + 1}/${retries})...`,
+            );
+            await new Promise((resolve) => setTimeout(resolve, delayMs));
+            continue;
+        }
+
+        return response;
+    }
+
+    throw new Error(`Failed to fetch ${url} after ${retries} retries`);
 };
 
 const handleResponse = async <T>(response: Response): Promise<T> => {

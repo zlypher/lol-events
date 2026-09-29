@@ -1,10 +1,13 @@
 import "dotenv/config";
 import type { ICalCalendar } from "ical-generator";
 import fs from "node:fs";
+import pLimit from "p-limit";
 import IcalUtils from "../lib/ical-utils";
 import PandaScore from "../lib/pandascore";
 import PandaScoreUtils from "../lib/pandascore-utils";
 import type { CalendarJSON, PandaScoreLeague } from "../lib/types";
+
+export const DEFAULT_CONCURRENCY = 4;
 
 export function updateCalendarEvents(
     icalData: ICalCalendar,
@@ -76,10 +79,23 @@ export async function generateIcalCalendar(
     }
 }
 
+export async function generateAllCalendars(
+    leagues: PandaScoreLeague[],
+    concurrency = Number(process.env.CONCURRENCY) || DEFAULT_CONCURRENCY,
+): Promise<void> {
+    const limit = pLimit(concurrency);
+    console.log(
+        `Generating calendars for ${leagues.length} leagues (concurrency: ${concurrency})...`,
+    );
+    await Promise.all(
+        leagues.map((league) => limit(() => generateIcalCalendar(league))),
+    );
+}
+
 async function main(): Promise<void> {
     try {
         const leagues = await PandaScore.getAllPages(PandaScore.getLeagues);
-        await Promise.all(leagues.map(generateIcalCalendar));
+        await generateAllCalendars(leagues);
         process.exit(0);
     } catch (err) {
         console.error("Error:", err);
