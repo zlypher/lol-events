@@ -1,10 +1,21 @@
-export const mapPandaScoreOpponent = (opponent) => {
+import type {
+    NormalizedMatch,
+    NormalizedOpponent,
+    PandaScoreMatch,
+    PandaScoreOpponent,
+} from "./types";
+
+export const mapPandaScoreOpponent = (
+    opponent: PandaScoreOpponent,
+): NormalizedOpponent => {
     return {
         name: opponent.opponent.name,
     };
 };
 
-export const mapPandaScoreResult = (result) => {
+export const mapPandaScoreResult = (
+    result: PandaScoreMatch[],
+): NormalizedMatch[] => {
     return result.map((game) => {
         return {
             id: game.id,

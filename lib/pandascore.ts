@@ -1,15 +1,21 @@
 import qs from "qs";
+import type {
+    PandaScoreLeague,
+    PandaScoreMatch,
+    PandaScoreOptions,
+    PandaScoreTeam,
+} from "./types";
 
 const baseUrl = "https://api.pandascore.co";
 
-export const getDefaultOptions = () => {
+export const getDefaultOptions = (): PandaScoreOptions => {
     return {
         page: 1,
         per_page: 100,
     };
 };
 
-export const request = async (url) => {
+export const request = async (url: string): Promise<Response> => {
     return await fetch(url, {
         headers: {
             Authorization: `Bearer ${process.env.ACCESSTOKEN}`,
@@ -17,10 +23,10 @@ export const request = async (url) => {
     });
 };
 
-const handleResponse = async (response) => {
-    let json;
+const handleResponse = async <T>(response: Response): Promise<T> => {
+    let json: { error?: string } & unknown;
     try {
-        json = await response.json();
+        json = (await response.json()) as { error?: string };
     } catch {
         if (!response.ok) {
             throw new Error(`HTTP ${response.status}: ${response.statusText}`);
@@ -34,63 +40,69 @@ const handleResponse = async (response) => {
         );
     }
 
-    return json;
+    return json as T;
 };
 
 export const getPastMatches = async (
-    idOrSlug,
-    options = getDefaultOptions(),
-) => {
+    idOrSlug: number | string,
+    options: PandaScoreOptions = getDefaultOptions(),
+): Promise<PandaScoreMatch[]> => {
     const query = qs.stringify(options);
     const response = await request(
         `${baseUrl}/leagues/${idOrSlug}/matches/past?${query}`,
     );
-    return await handleResponse(response);
+    return await handleResponse<PandaScoreMatch[]>(response);
 };
 
 export const getRunningMatches = async (
-    idOrSlug,
-    options = getDefaultOptions(),
-) => {
+    idOrSlug: number | string,
+    options: PandaScoreOptions = getDefaultOptions(),
+): Promise<PandaScoreMatch[]> => {
     const query = qs.stringify(options);
     const response = await request(
         `${baseUrl}/leagues/${idOrSlug}/matches/running?${query}`,
     );
-    return await handleResponse(response);
+    return await handleResponse<PandaScoreMatch[]>(response);
 };
 
 export const getUpcomingMatches = async (
-    idOrSlug,
-    options = getDefaultOptions(),
-) => {
+    idOrSlug: number | string,
+    options: PandaScoreOptions = getDefaultOptions(),
+): Promise<PandaScoreMatch[]> => {
     const query = qs.stringify(options);
     const response = await request(
         `${baseUrl}/leagues/${idOrSlug}/matches/upcoming?${query}`,
     );
-    return await handleResponse(response);
+    return await handleResponse<PandaScoreMatch[]>(response);
 };
 
-export const getLeagues = async (options = getDefaultOptions()) => {
+export const getLeagues = async (
+    options: PandaScoreOptions = getDefaultOptions(),
+): Promise<PandaScoreLeague[]> => {
     const query = qs.stringify(options);
     const response = await request(`${baseUrl}/lol/leagues?${query}`);
-    return await handleResponse(response);
+    return await handleResponse<PandaScoreLeague[]>(response);
 };
 
-export const getTeams = async (options = getDefaultOptions()) => {
+export const getTeams = async (
+    options: PandaScoreOptions = getDefaultOptions(),
+): Promise<PandaScoreTeam[]> => {
     const query = qs.stringify(options);
     const response = await request(`${baseUrl}/lol/teams?${query}`);
-    return await handleResponse(response);
+    return await handleResponse<PandaScoreTeam[]>(response);
 };
 
-export const getAllPages = async (callback) => {
-    let options = getDefaultOptions();
-    let results = [];
+export const getAllPages = async <T>(
+    callback: (options: PandaScoreOptions) => Promise<T[]>,
+): Promise<T[]> => {
+    const options = getDefaultOptions();
+    let results: T[] = [];
 
     let response = await callback(options);
     results = results.concat(response);
 
-    while (response.length === options.per_page) {
-        options.page++;
+    while (response.length === (options.per_page ?? 100)) {
+        options.page = (options.page ?? 1) + 1;
         response = await callback(options);
         results = results.concat(response);
     }

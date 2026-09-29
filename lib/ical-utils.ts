@@ -1,6 +1,7 @@
-import ical from "ical-generator";
+import ical, { type ICalCalendar, type ICalEventData } from "ical-generator";
+import type { NormalizedMatch } from "./types";
 
-export function toIcalEvents(match) {
+export function toIcalEvents(match: NormalizedMatch): ICalEventData | null {
     if (!match.beginAt) {
         return null;
     }
@@ -20,19 +21,23 @@ export function toIcalEvents(match) {
         id: match.id,
         start,
         end,
-        timestamp: start,
+        stamp: start,
         summary: match.name,
         sequence: 1,
     };
 }
 
-export function toIcal(name, matches) {
+export function toIcal(name: string, matches: NormalizedMatch[]): ICalCalendar {
+    const events = matches
+        .map(toIcalEvents)
+        .filter((e): e is ICalEventData => e !== null);
+
     const data = ical({
         url: "https://zlypher.github.io/lol-events/",
         prodId: "//Zlypher//LOL Events//EN",
         timezone: "UTC",
         name,
-        events: matches.map(toIcalEvents).filter(Boolean),
+        events,
     });
 
     data.x("X-WR-CALDESC", name);

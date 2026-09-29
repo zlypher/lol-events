@@ -1,6 +1,9 @@
-import { toIcal } from "../lib/ical-utils.js";
-import { mapPandaScoreResult } from "../lib/pandascore-utils.js";
-import matchesFixture from "./fixtures/pandascore-matches.json" with { type: "json" };
+import { toIcal } from "../lib/ical-utils";
+import { mapPandaScoreResult } from "../lib/pandascore-utils";
+import type { PandaScoreMatch } from "../lib/types";
+import rawMatchesFixture from "./fixtures/pandascore-matches.json" with { type: "json" };
+
+const matchesFixture = rawMatchesFixture as unknown as PandaScoreMatch[];
 
 describe("ical-utils", () => {
     describe("toIcal", () => {

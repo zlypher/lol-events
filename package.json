@@ -14,9 +14,10 @@
         "lint:fix": "eslint . --fix",
         "format": "prettier --write .",
         "format:check": "prettier --check .",
-        "scripts:leagues": "node _scripts/get-leagues.js",
-        "scripts:ical": "node _scripts/create-ical.js",
-        "scripts:readme": "node _scripts/create-readme.js"
+        "typecheck": "tsc --noEmit",
+        "scripts:leagues": "tsx _scripts/get-leagues.ts",
+        "scripts:ical": "tsx _scripts/create-ical.ts",
+        "scripts:readme": "tsx _scripts/create-readme.ts"
     },
     "repository": {
         "type": "git",
@@ -34,9 +35,14 @@
     },
     "devDependencies": {
         "@eslint/js": "10.0.1",
+        "@types/node": "26.6.3",
+        "@types/qs": "6.15.1",
         "dotenv": "18.0.4",
         "eslint": "10.11.0",
         "prettier": "3.9.9",
+        "tsx": "4.23.15",
+        "typescript": "6.0.3",
+        "typescript-eslint": "8.71.0",
         "vitest": "5.0.2"
     }
 }

@@ -1,10 +1,15 @@
 import "dotenv/config";
+import type { ICalCalendar } from "ical-generator";
 import fs from "node:fs";
-import PandaScore from "../lib/pandascore.js";
-import PandaScoreUtils from "../lib/pandascore-utils.js";
-import IcalUtils from "../lib/ical-utils.js";
+import IcalUtils from "../lib/ical-utils";
+import PandaScore from "../lib/pandascore";
+import PandaScoreUtils from "../lib/pandascore-utils";
+import type { CalendarJSON, PandaScoreLeague } from "../lib/types";
 
-export function updateCalendarEvents(icalData, jsonData) {
+export function updateCalendarEvents(
+    icalData: ICalCalendar,
+    jsonData: CalendarJSON,
+): void {
     for (const event of icalData.events()) {
         const prevEvent = jsonData.events.find(
             (e) =>
@@ -19,7 +24,7 @@ export function updateCalendarEvents(icalData, jsonData) {
     }
 }
 
-export function outputCalendar(name, icalData) {
+export function outputCalendar(name: string, icalData: ICalCalendar): void {
     fs.writeFileSync(`./docs/cal/${name}.ical`, icalData.toString());
     fs.writeFileSync(
         `./docs/cal/${name}.json`,
@@ -27,7 +32,9 @@ export function outputCalendar(name, icalData) {
     );
 }
 
-export async function createCalendar(league) {
+export async function createCalendar(
+    league: PandaScoreLeague,
+): Promise<ICalCalendar> {
     // Get only 20 past matches so that we don't dramatically increase the calendar,
     // but so that there are still at least some of the past events.
     const pastMatches = await PandaScore.getPastMatches(league.id, {
@@ -47,14 +54,18 @@ export async function createCalendar(league) {
     return IcalUtils.toIcal(league.name, mappedMatches);
 }
 
-export async function generateIcalCalendar(league) {
+export async function generateIcalCalendar(
+    league: PandaScoreLeague,
+): Promise<void> {
     try {
         console.log("Creating ical for", league.name);
 
         const icalData = await createCalendar(league);
         const jsonPath = `./docs/cal/${league.slug}.json`;
         if (fs.existsSync(jsonPath)) {
-            const jsonData = JSON.parse(fs.readFileSync(jsonPath).toString());
+            const jsonData = JSON.parse(
+                fs.readFileSync(jsonPath).toString(),
+            ) as CalendarJSON;
             updateCalendarEvents(icalData, jsonData);
         }
 
@@ -65,7 +76,7 @@ export async function generateIcalCalendar(league) {
     }
 }
 
-async function main() {
+async function main(): Promise<void> {
     try {
         const leagues = await PandaScore.getAllPages(PandaScore.getLeagues);
         await Promise.all(leagues.map(generateIcalCalendar));
@@ -76,7 +87,9 @@ async function main() {
     }
 }
 
-// Only run automatically if executed directly as a script
-if (import.meta.url === `file:///${process.argv[1].replace(/\\/g, "/")}`) {
+if (
+    process.argv[1] &&
+    import.meta.url === `file:///${process.argv[1].replace(/\\/g, "/")}`
+) {
     main();
 }

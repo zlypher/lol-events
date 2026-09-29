@@ -170,6 +170,7 @@ flowchart TD
     - Store assessment and roadmap in [ROADMAP.md](ROADMAP.md).
 - [x] **Phase 2: Dependency & Runtime Modernization**
     - Target Node 24 (`"engines": { "node": ">=24.0.0" }` and GitHub Actions).
+    - Full TypeScript migration across all `lib/`, `_scripts/`, and `test/` modules with comprehensive type definitions in `lib/types.ts`.
     - Migrate to ESM (`"type": "module"`).
     - Remove `node-fetch`, `rimraf`, `moment`.
     - Upgrade `ical-generator` to v11+, adapt calendar creation functions.

@@ -1,7 +1,12 @@
 import "dotenv/config";
-import { getLeagues, getAllPages } from "../lib/pandascore.js";
+import { getAllPages, getLeagues } from "../lib/pandascore";
+import type { PandaScoreLeague } from "../lib/types";
 
-export function renderSingleLogo(league, width = 24, height = 24) {
+export function renderSingleLogo(
+    league: PandaScoreLeague,
+    width = 24,
+    height = 24,
+): string {
     if (!league.image_url) {
         return "-";
     }
@@ -9,7 +14,7 @@ export function renderSingleLogo(league, width = 24, height = 24) {
     return `<img src="${league.image_url}" alt="${league.name} Logo" width="${width}" height="${height}" />`;
 }
 
-export function renderLeagueTable(leagues) {
+export function renderLeagueTable(leagues: PandaScoreLeague[]): string {
     return leagues
         .map(
             (league) =>
@@ -22,7 +27,7 @@ export function renderLeagueTable(leagues) {
         .join("\n");
 }
 
-export function renderSingleLeague(league) {
+export function renderSingleLeague(league: PandaScoreLeague): string | null {
     if (!league.image_url) {
         return null;
     }
@@ -34,11 +39,14 @@ export function renderSingleLeague(league) {
     )}</a>`;
 }
 
-export function renderLeagues(leagues) {
-    return leagues.map(renderSingleLeague).filter(Boolean).join("\n");
+export function renderLeagues(leagues: PandaScoreLeague[]): string {
+    return leagues
+        .map(renderSingleLeague)
+        .filter((l): l is string => Boolean(l))
+        .join("\n");
 }
 
-export function renderSingleLeagueForWeb(league) {
+export function renderSingleLeagueForWeb(league: PandaScoreLeague): string {
     const icalUrl = `https://zlypher.github.io/lol-events/cal/${league.slug}.ical`;
     return `
 <label
@@ -58,12 +66,13 @@ export function renderSingleLeagueForWeb(league) {
     `;
 }
 
-export function renderLeaguesForWeb(leagues) {
+export function renderLeaguesForWeb(leagues: PandaScoreLeague[]): string {
     return leagues.map(renderSingleLeagueForWeb).join("\n");
 }
 
-async function main() {
+async function main(): Promise<void> {
     const leagues = (await getAllPages(getLeagues)).map((l) => ({
+        id: l.id,
         name: l.name,
         slug: l.slug,
         image_url: l.image_url,
@@ -77,6 +86,9 @@ async function main() {
     console.log(renderLeagues(leagues));
 }
 
-if (import.meta.url === `file:///${process.argv[1].replace(/\\/g, "/")}`) {
+if (
+    process.argv[1] &&
+    import.meta.url === `file:///${process.argv[1].replace(/\\/g, "/")}`
+) {
     main();
 }

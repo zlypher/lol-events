@@ -1,8 +1,12 @@
-import { toIcal } from "../lib/ical-utils.js";
-import { mapPandaScoreResult } from "../lib/pandascore-utils.js";
-import { updateCalendarEvents } from "../_scripts/create-ical.js";
-import matchesFixture from "./fixtures/pandascore-matches.json" with { type: "json" };
-import calJsonFixture from "./fixtures/sample-league-cal.json" with { type: "json" };
+import { updateCalendarEvents } from "../_scripts/create-ical";
+import { toIcal } from "../lib/ical-utils";
+import { mapPandaScoreResult } from "../lib/pandascore-utils";
+import type { CalendarJSON, PandaScoreMatch } from "../lib/types";
+import rawMatchesFixture from "./fixtures/pandascore-matches.json" with { type: "json" };
+import rawCalJsonFixture from "./fixtures/sample-league-cal.json" with { type: "json" };
+
+const matchesFixture = rawMatchesFixture as unknown as PandaScoreMatch[];
+const calJsonFixture = rawCalJsonFixture as unknown as CalendarJSON;
 
 describe("sequence update logic", () => {
     it("should increment sequence when summary changes (e.g. from TBD to actual teams)", () => {
@@ -17,7 +21,7 @@ describe("sequence update logic", () => {
             .events()
             .find((e) => String(e.id()) === "1661676");
         expect(updatedEvent).toBeDefined();
-        expect(updatedEvent.sequence()).toBe(2);
+        expect(updatedEvent?.sequence()).toBe(2);
     });
 
     it("should preserve existing sequence when summary did not change", () => {
@@ -32,11 +36,11 @@ describe("sequence update logic", () => {
             .events()
             .find((e) => String(e.id()) === "1661677");
         expect(unchangedEvent).toBeDefined();
-        expect(unchangedEvent.sequence()).toBe(1);
+        expect(unchangedEvent?.sequence()).toBe(1);
     });
 
     it("should default sequence to 1 for brand new events not present in previous JSON", () => {
-        const newMatch = {
+        const newMatch: PandaScoreMatch = {
             id: 9999999,
             name: "New Match",
             begin_at: "2026-10-01T12:00:00Z",
@@ -49,6 +53,6 @@ describe("sequence update logic", () => {
         updateCalendarEvents(cal, calJsonFixture);
 
         const newEvent = cal.events()[0];
-        expect(newEvent.sequence()).toBe(1);
+        expect(newEvent?.sequence()).toBe(1);
     });
 });

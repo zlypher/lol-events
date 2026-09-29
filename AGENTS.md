@@ -16,6 +16,9 @@ Feeds are published to GitHub Pages out of `docs/cal/` (serving URLs like `https
 Run these verification gates before and after code modifications:
 
 ```bash
+# Type check with TypeScript compiler
+npm run typecheck
+
 # Run unit & regression test suite (offline, fast, ~200ms)
 npm test
 
@@ -35,7 +38,7 @@ npm run format:check
 npm run format
 ```
 
-All edits MUST pass `npm test`, `npm run lint`, and `npm run format:check` before being considered complete.
+All edits MUST pass `npm run typecheck`, `npm test`, `npm run lint`, and `npm run format:check` before being considered complete.
 
 ---
 
@@ -45,19 +48,21 @@ All edits MUST pass `npm test`, `npm run lint`, and `npm run format:check` befor
 lol-events/
 ├── AGENTS.md                  # This file: agent operational instructions
 ├── ROADMAP.md                 # Modernization roadmap and technical debt audit
+├── tsconfig.json              # TypeScript compiler configuration
 ├── lib/
-│   ├── pandascore.js          # PandaScore API HTTP client & pagination
-│   ├── pandascore-utils.js    # Data mapping (raw API -> normalized match objects)
-│   └── ical-utils.js          # iCal generation (ical-generator wrapper)
+│   ├── types.ts               # Shared TypeScript interfaces (PandaScore & calendars)
+│   ├── pandascore.ts          # PandaScore API HTTP client & pagination
+│   ├── pandascore-utils.ts    # Data mapping (raw API -> normalized match objects)
+│   └── ical-utils.ts          # iCal generation (ical-generator wrapper)
 ├── _scripts/
-│   ├── create-ical.js         # Production script: generates docs/cal/*.ical & *.json
-│   ├── create-readme.js       # Production script: generates README.md league table
-│   └── list-*.js / get-*.js   # Ad-hoc inspection and debugging scripts
+│   ├── create-ical.ts         # Production script: generates docs/cal/*.ical & *.json
+│   ├── create-readme.ts       # Production script: generates README.md league table
+│   └── list-*.ts / get-*.ts   # Ad-hoc inspection and debugging scripts
 ├── test/
 │   ├── fixtures/              # Offline mock fixtures (leagues, matches, calendars)
-│   ├── ical-utils.test.js     # Tests for calendar generation
-│   ├── pandascore-utils.test.js # Tests for match normalization
-│   └── sequence.test.js       # Tests for RFC 5545 sequence increment logic
+│   ├── ical-utils.test.ts     # Tests for calendar generation
+│   ├── pandascore-utils.test.ts # Tests for match normalization
+│   └── sequence.test.ts       # Tests for RFC 5545 sequence increment logic
 ├── docs/
 │   └── cal/                   # Production calendar outputs (134+ leagues, .ical + .json)
 └── .github/workflows/         # Daily GitHub Actions cron automation

@@ -1,12 +1,13 @@
 import "dotenv/config";
 import fs from "node:fs";
-import { getLeagues, getAllPages } from "../lib/pandascore.js";
+import { getAllPages, getLeagues } from "../lib/pandascore";
+import type { PandaScoreLeague } from "../lib/types";
 
 export const README_TEMPLATE = (
-    calendarString,
-    leagueString,
-    lastUpdate,
-) => `# League of Legends - Event Calendar
+    calendarString: string,
+    leagueString: string,
+    lastUpdate: string,
+): string => `# League of Legends - Event Calendar
 
 ![Update iCal](https://github.com/zlypher/lol-events/workflows/Update%20iCal/badge.svg)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
@@ -60,7 +61,11 @@ ${leagueString}
 [MIT License](LICENSE)
 `;
 
-export function renderSingleLogo(league, width = 24, height = 24) {
+export function renderSingleLogo(
+    league: PandaScoreLeague,
+    width = 24,
+    height = 24,
+): string {
     if (!league.image_url) {
         return "-";
     }
@@ -68,7 +73,7 @@ export function renderSingleLogo(league, width = 24, height = 24) {
     return `<img src="${league.image_url}" alt="${league.name} Logo" width="${width}" height="${height}" />`;
 }
 
-export function renderLeagueTable(leagues) {
+export function renderLeagueTable(leagues: PandaScoreLeague[]): string {
     return leagues
         .map(
             (league) =>
@@ -81,7 +86,7 @@ export function renderLeagueTable(leagues) {
         .join("\n");
 }
 
-export function renderSingleLeague(league) {
+export function renderSingleLeague(league: PandaScoreLeague): string | null {
     if (!league.image_url) {
         return null;
     }
@@ -93,12 +98,16 @@ export function renderSingleLeague(league) {
     )}</a>`;
 }
 
-export function renderLeagues(leagues) {
-    return leagues.map(renderSingleLeague).filter(Boolean).join("\n");
+export function renderLeagues(leagues: PandaScoreLeague[]): string {
+    return leagues
+        .map(renderSingleLeague)
+        .filter((l): l is string => Boolean(l))
+        .join("\n");
 }
 
-async function main() {
+async function main(): Promise<void> {
     const leagues = (await getAllPages(getLeagues)).map((l) => ({
+        id: l.id,
         name: l.name,
         slug: l.slug,
         image_url: l.image_url,
@@ -122,6 +131,9 @@ async function main() {
     fs.writeFileSync("./README.md", readmeContent);
 }
 
-if (import.meta.url === `file:///${process.argv[1].replace(/\\/g, "/")}`) {
+if (
+    process.argv[1] &&
+    import.meta.url === `file:///${process.argv[1].replace(/\\/g, "/")}`
+) {
     main();
 }

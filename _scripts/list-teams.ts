@@ -1,7 +1,7 @@
 import "dotenv/config";
-import { getTeams } from "../lib/pandascore.js";
+import { getTeams } from "../lib/pandascore";
 
-async function main() {
+async function main(): Promise<void> {
     const options = {
         page: 1,
         per_page: 100,
@@ -13,6 +13,9 @@ async function main() {
     console.log(teams);
 }
 
-if (import.meta.url === `file:///${process.argv[1].replace(/\\/g, "/")}`) {
+if (
+    process.argv[1] &&
+    import.meta.url === `file:///${process.argv[1].replace(/\\/g, "/")}`
+) {
     main();
 }
