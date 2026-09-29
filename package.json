@@ -4,6 +4,12 @@
     "description": "League of Legends calendar in iCal for all major leagues",
     "main": "index.js",
     "scripts": {
+        "test": "vitest run",
+        "test:watch": "vitest",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "format": "prettier --write .",
+        "format:check": "prettier --check .",
         "scripts:leagues": "node _scripts/get-leagues.js",
         "scripts:ical": "node _scripts/create-ical.js",
         "scripts:readme": "node _scripts/create-readme.js"
@@ -25,7 +31,11 @@
         "qs": "^6.10.3"
     },
     "devDependencies": {
+        "@eslint/js": "10.0.1",
         "dotenv": "^8.2.0",
-        "rimraf": "^3.0.2"
+        "eslint": "10.11.0",
+        "prettier": "3.9.9",
+        "rimraf": "^3.0.2",
+        "vitest": "5.0.2"
     }
 }

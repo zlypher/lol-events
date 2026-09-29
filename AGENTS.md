@@ -1,0 +1,90 @@
+# AGENTS.md
+
+Instructions, conventions, and operational guide for autonomous agents working in `lol-events`.
+
+---
+
+## 1. What This Project Does
+
+`lol-events` generates iCalendar (`.ical`) subscription feeds and JSON summaries for League of Legends esports leagues using the [PandaScore REST API](https://pandascore.co/).
+Feeds are published to GitHub Pages out of `docs/cal/` (serving URLs like `https://zlypher.github.io/lol-events/cal/<league-slug>.ical`), cataloged in `README.md`, and refreshed daily via GitHub Actions.
+
+---
+
+## 2. Verification Commands
+
+Run these verification gates before and after code modifications:
+
+```bash
+# Run unit & regression test suite (offline, fast, ~200ms)
+npm test
+
+# Run tests in watch mode
+npm run test:watch
+
+# Check ESLint rules
+npm run lint
+
+# Automatically fix lint issues
+npm run lint:fix
+
+# Check Prettier formatting
+npm run format:check
+
+# Format files with Prettier
+npm run format
+```
+
+All edits MUST pass `npm test`, `npm run lint`, and `npm run format:check` before being considered complete.
+
+---
+
+## 3. Architecture & File Structure
+
+```
+lol-events/
+├── AGENTS.md                  # This file: agent operational instructions
+├── ROADMAP.md                 # Modernization roadmap and technical debt audit
+├── lib/
+│   ├── pandascore.js          # PandaScore API HTTP client & pagination
+│   ├── pandascore-utils.js    # Data mapping (raw API -> normalized match objects)
+│   └── ical-utils.js          # iCal generation (ical-generator wrapper)
+├── _scripts/
+│   ├── create-ical.js         # Production script: generates docs/cal/*.ical & *.json
+│   ├── create-readme.js       # Production script: generates README.md league table
+│   └── list-*.js / get-*.js   # Ad-hoc inspection and debugging scripts
+├── test/
+│   ├── fixtures/              # Offline mock fixtures (leagues, matches, calendars)
+│   ├── ical-utils.test.js     # Tests for calendar generation
+│   ├── pandascore-utils.test.js # Tests for match normalization
+│   └── sequence.test.js       # Tests for RFC 5545 sequence increment logic
+├── docs/
+│   └── cal/                   # Production calendar outputs (134+ leagues, .ical + .json)
+└── .github/workflows/         # Daily GitHub Actions cron automation
+```
+
+---
+
+## 4. Key Invariants & Rules
+
+1. **Test Offline with Fixtures**:
+    - Do NOT run `node _scripts/create-ical.js` to test code changes. Doing so fires 300+ requests against the live PandaScore API and generates git churn across 270 files.
+    - Use `npm test` against `test/fixtures/` for verifying transformations and logic.
+2. **RFC 5545 Sequence Preservation**:
+    - Calendar clients (Google Calendar, Apple Calendar, Outlook) only recognize match updates (such as rescheduled times or replaced teams) if the event's `sequence` number is incremented.
+    - Any modifications to calendar generation must preserve or improve sequence tracking against existing `docs/cal/*.json` state.
+3. **PandaScore Concurrency & Rate Limits**:
+    - The PandaScore API enforces rate limits. Any code calling PandaScore must throttle concurrent requests (see Phase 3 in `ROADMAP.md`).
+4. **Environment Variables**:
+    - `ACCESSTOKEN`: PandaScore API Bearer token. Stored in `.env` locally and in GitHub Secrets for CI/CD.
+
+---
+
+## 5. Modernization Roadmap Pointer
+
+Refer to [ROADMAP.md](ROADMAP.md) for the phased modernization plan:
+
+- **Phase 1 (Complete)**: Agent foundation, Vitest test harness with offline fixtures, ESLint & Prettier configs, `AGENTS.md`.
+- **Phase 2**: Dependency updates (`ical-generator` v11, native `fetch`, native `fs.rm`, ESM migration).
+- **Phase 3**: Request throttling (`p-limit`), resilient error handling, CLI execution flags (`--league`, `--dry-run`).
+- **Phase 4**: GitHub Actions modernization (Node 22, consolidated workflow) and dynamic web frontend.

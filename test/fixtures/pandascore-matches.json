@@ -1,0 +1,55 @@
+[
+    {
+        "id": 1661676,
+        "name": "Grand final: G2 vs KC",
+        "begin_at": "2026-09-20T15:00:00Z",
+        "scheduled_at": "2026-09-20T15:00:00Z",
+        "number_of_games": 5,
+        "status": "finished",
+        "opponents": [
+            {
+                "opponent": {
+                    "id": 88,
+                    "name": "G2 Esports"
+                }
+            },
+            {
+                "opponent": {
+                    "id": 134078,
+                    "name": "Karmine Corp"
+                }
+            }
+        ]
+    },
+    {
+        "id": 1661677,
+        "name": "Lower bracket final: KC vs MKOI",
+        "begin_at": "2026-09-19T15:09:22Z",
+        "scheduled_at": "2026-09-19T15:00:00Z",
+        "number_of_games": 5,
+        "status": "finished",
+        "opponents": [
+            {
+                "opponent": {
+                    "id": 134078,
+                    "name": "Karmine Corp"
+                }
+            },
+            {
+                "opponent": {
+                    "id": 126536,
+                    "name": "Movistar KOI"
+                }
+            }
+        ]
+    },
+    {
+        "id": 1661678,
+        "name": "Upper bracket final: TBD vs TBD",
+        "begin_at": null,
+        "scheduled_at": "2026-09-25T15:00:00Z",
+        "number_of_games": 3,
+        "status": "not_started",
+        "opponents": []
+    }
+]

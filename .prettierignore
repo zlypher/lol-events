@@ -1,0 +1,7 @@
+node_modules
+docs
+web
+package-lock.json
+README.md
+.cache
+test/fixtures
