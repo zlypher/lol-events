@@ -1,28 +1,73 @@
 import "dotenv/config";
-import type { ICalCalendar } from "ical-generator";
+import type { ICalCalendar, ICalEvent } from "ical-generator";
 import fs from "node:fs";
 import pLimit from "p-limit";
 import IcalUtils from "../lib/ical-utils";
 import PandaScore from "../lib/pandascore";
 import PandaScoreUtils from "../lib/pandascore-utils";
-import type { CalendarJSON, PandaScoreLeague } from "../lib/types";
+import type {
+    CalendarEventJSON,
+    CalendarJSON,
+    PandaScoreLeague,
+} from "../lib/types";
 
 export const DEFAULT_CONCURRENCY = 4;
+
+export function hasEventChanged(
+    currentEvent: ICalEvent,
+    prevEvent: CalendarEventJSON,
+): boolean {
+    // 1. Check summary changes (teams replaced, match title changed)
+    if (currentEvent.summary() !== prevEvent.summary) {
+        return true;
+    }
+
+    // 2. Check start time changes (match rescheduled or delayed)
+    const currentStart = currentEvent.start()
+        ? new Date(currentEvent.start() as string | Date).getTime()
+        : null;
+    const prevStart = prevEvent.start
+        ? new Date(prevEvent.start).getTime()
+        : null;
+    if (currentStart !== prevStart) {
+        return true;
+    }
+
+    // 3. Check end time changes
+    const currentEnd = currentEvent.end()
+        ? new Date(currentEvent.end() as string | Date).getTime()
+        : null;
+    const prevEnd = prevEvent.end ? new Date(prevEvent.end).getTime() : null;
+    if (currentEnd !== prevEnd) {
+        return true;
+    }
+
+    return false;
+}
 
 export function updateCalendarEvents(
     icalData: ICalCalendar,
     jsonData: CalendarJSON,
 ): void {
+    if (!jsonData?.events || !Array.isArray(jsonData.events)) {
+        return;
+    }
+
     for (const event of icalData.events()) {
         const prevEvent = jsonData.events.find(
             (e) =>
-                (String(e.uid) === String(event.uid()) ||
-                    String(e.id) === String(event.id())) &&
-                e.summary !== event.summary(),
+                String(e.uid) === String(event.uid()) ||
+                String(e.id) === String(event.id()),
         );
 
         if (prevEvent) {
-            event.sequence(prevEvent.sequence + 1);
+            const prevSeq =
+                typeof prevEvent.sequence === "number" ? prevEvent.sequence : 1;
+            if (hasEventChanged(event, prevEvent)) {
+                event.sequence(prevSeq + 1);
+            } else {
+                event.sequence(prevSeq);
+            }
         }
     }
 }
