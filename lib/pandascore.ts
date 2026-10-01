@@ -8,6 +8,7 @@ import type {
 } from "./types";
 
 const baseUrl = "https://api.pandascore.co";
+export const DEFAULT_CONCURRENCY = 2;
 
 export const getDefaultOptions = (): PandaScoreOptions => {
     return {

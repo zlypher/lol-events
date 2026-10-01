@@ -8,9 +8,4 @@ async function main(): Promise<void> {
     console.log(leagues);
 }
 
-if (
-    process.argv[1] &&
-    import.meta.url === `file:///${process.argv[1].replace(/\\/g, "/")}`
-) {
-    main();
-}
+main();

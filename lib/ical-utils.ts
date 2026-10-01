@@ -1,5 +1,72 @@
-import ical, { type ICalCalendar, type ICalEventData } from "ical-generator";
-import type { NormalizedMatch } from "./types";
+import ical, {
+    type ICalCalendar,
+    type ICalEvent,
+    type ICalEventData,
+} from "ical-generator";
+import type { CalendarEventJSON, CalendarJSON, NormalizedMatch } from "./types";
+
+export function hasEventChanged(
+    currentEvent: ICalEvent,
+    prevEvent: CalendarEventJSON,
+): boolean {
+    // 1. Check summary changes (teams replaced, match title changed)
+    if (currentEvent.summary() !== prevEvent.summary) {
+        return true;
+    }
+
+    // 2. Check start time changes (match rescheduled or delayed)
+    const currentStart = currentEvent.start()
+        ? new Date(currentEvent.start() as string | Date).getTime()
+        : null;
+    const prevStart = prevEvent.start
+        ? new Date(prevEvent.start).getTime()
+        : null;
+    if (currentStart !== prevStart) {
+        return true;
+    }
+
+    // 3. Check end time changes
+    const currentEnd = currentEvent.end()
+        ? new Date(currentEvent.end() as string | Date).getTime()
+        : null;
+    const prevEnd = prevEvent.end ? new Date(prevEvent.end).getTime() : null;
+    if (currentEnd !== prevEnd) {
+        return true;
+    }
+
+    return false;
+}
+
+export function updateCalendarEvents(
+    icalData: ICalCalendar,
+    jsonData: CalendarJSON,
+): void {
+    if (!jsonData?.events || !Array.isArray(jsonData.events)) {
+        return;
+    }
+
+    for (const event of icalData.events()) {
+        const eventUid = String(event.uid() || event.id());
+        const prevEvent = jsonData.events.find((e) => {
+            const prevUid = String(e.uid ?? e.id);
+            return (
+                prevUid === eventUid ||
+                `${prevUid}@zlypher.github.io` === eventUid ||
+                prevUid === `${eventUid}@zlypher.github.io`
+            );
+        });
+
+        if (prevEvent) {
+            const prevSeq =
+                typeof prevEvent.sequence === "number" ? prevEvent.sequence : 1;
+            if (hasEventChanged(event, prevEvent)) {
+                event.sequence(prevSeq + 1);
+            } else {
+                event.sequence(prevSeq);
+            }
+        }
+    }
+}
 
 export function toIcalEvents(match: NormalizedMatch): ICalEventData | null {
     if (!match.beginAt) {
@@ -46,6 +113,8 @@ export function toIcal(name: string, matches: NormalizedMatch[]): ICalCalendar {
 }
 
 export default {
+    hasEventChanged,
     toIcal,
     toIcalEvents,
+    updateCalendarEvents,
 };

@@ -1,5 +1,8 @@
-import { hasEventChanged, updateCalendarEvents } from "../_scripts/create-ical";
-import { toIcal } from "../lib/ical-utils";
+import {
+    hasEventChanged,
+    toIcal,
+    updateCalendarEvents,
+} from "../lib/ical-utils";
 import { mapPandaScoreResult } from "../lib/pandascore-utils";
 import type { CalendarJSON, PandaScoreMatch } from "../lib/types";
 import rawMatchesFixture from "./fixtures/pandascore-matches.json" with { type: "json" };
