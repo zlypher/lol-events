@@ -19,7 +19,7 @@ describe("sequence update logic", () => {
 
         const updatedEvent = cal
             .events()
-            .find((e) => String(e.id()) === "1661676");
+            .find((e) => String(e.id()) === "1661676@zlypher.github.io");
         expect(updatedEvent).toBeDefined();
         expect(updatedEvent?.sequence()).toBe(2);
     });
@@ -34,7 +34,7 @@ describe("sequence update logic", () => {
 
         const unchangedEvent = cal
             .events()
-            .find((e) => String(e.id()) === "1661677");
+            .find((e) => String(e.id()) === "1661677@zlypher.github.io");
         expect(unchangedEvent).toBeDefined();
         // Should preserve sequence 2 from the previous state, NOT reset to 1
         expect(unchangedEvent?.sequence()).toBe(2);

@@ -34,6 +34,7 @@ describe("ical-utils", () => {
 
             expect(events).toHaveLength(1);
             const event = events[0];
+            expect(event.id()).toBe("1661676@zlypher.github.io");
             expect(event.summary()).toBe("Grand final: G2 vs KC");
             expect(event.sequence()).toBe(1);
         });

@@ -54,11 +54,15 @@ export function updateCalendarEvents(
     }
 
     for (const event of icalData.events()) {
-        const prevEvent = jsonData.events.find(
-            (e) =>
-                String(e.uid) === String(event.uid()) ||
-                String(e.id) === String(event.id()),
-        );
+        const eventUid = String(event.uid() || event.id());
+        const prevEvent = jsonData.events.find((e) => {
+            const prevUid = String(e.uid ?? e.id);
+            return (
+                prevUid === eventUid ||
+                `${prevUid}@zlypher.github.io` === eventUid ||
+                prevUid === `${eventUid}@zlypher.github.io`
+            );
+        });
 
         if (prevEvent) {
             const prevSeq =

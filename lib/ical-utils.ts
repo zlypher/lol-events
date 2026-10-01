@@ -18,7 +18,7 @@ export function toIcalEvents(match: NormalizedMatch): ICalEventData | null {
     const end = new Date(start.getTime() + durationHours * 60 * 60 * 1000);
 
     return {
-        id: match.id,
+        id: `${match.id}@zlypher.github.io`,
         start,
         end,
         stamp: start,
