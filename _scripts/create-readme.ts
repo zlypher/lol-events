@@ -1,14 +1,13 @@
-require("dotenv").config();
-const fs = require("fs");
-const { getLeagues, getAllPages } = require("../lib/pandascore");
+import "dotenv/config";
+import fs from "node:fs";
+import { getAllPages, getLeagues } from "../lib/pandascore";
+import type { PandaScoreLeague } from "../lib/types";
 
-main();
-
-const README_TEMPLATE = (
-    calendarString,
-    leagueString,
-    lastUpdate,
-) => `# League of Legends - Event Calendar
+export const README_TEMPLATE = (
+    calendarString: string,
+    leagueString: string,
+    lastUpdate: string,
+): string => `# League of Legends - Event Calendar
 
 ![Update iCal](https://github.com/zlypher/lol-events/workflows/Update%20iCal/badge.svg)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
@@ -62,8 +61,53 @@ ${leagueString}
 [MIT License](LICENSE)
 `;
 
-async function main() {
+export function renderSingleLogo(
+    league: PandaScoreLeague,
+    width = 24,
+    height = 24,
+): string {
+    if (!league.image_url) {
+        return "-";
+    }
+
+    return `<img src="${league.image_url}" alt="${league.name} Logo" width="${width}" height="${height}" />`;
+}
+
+export function renderLeagueTable(leagues: PandaScoreLeague[]): string {
+    return leagues
+        .map(
+            (league) =>
+                `| ${renderSingleLogo(league, 24, 24)} | ${
+                    league.name
+                } | https://zlypher.github.io/lol-events/cal/${
+                    league.slug
+                }.ical`,
+        )
+        .join("\n");
+}
+
+export function renderSingleLeague(league: PandaScoreLeague): string | null {
+    if (!league.image_url) {
+        return null;
+    }
+
+    return `<a href="${league.url}" target="_blank">${renderSingleLogo(
+        league,
+        50,
+        50,
+    )}</a>`;
+}
+
+export function renderLeagues(leagues: PandaScoreLeague[]): string {
+    return leagues
+        .map(renderSingleLeague)
+        .filter((l): l is string => Boolean(l))
+        .join("\n");
+}
+
+async function main(): Promise<void> {
     const leagues = (await getAllPages(getLeagues)).map((l) => ({
+        id: l.id,
         name: l.name,
         slug: l.slug,
         image_url: l.image_url,
@@ -87,42 +131,9 @@ async function main() {
     fs.writeFileSync("./README.md", readmeContent);
 }
 
-function renderLeagueTable(leagues) {
-    return leagues
-        .map(
-            (league) =>
-                `| ${renderSingleLogo(league, 24, 24)} | ${
-                    league.name
-                } | https://zlypher.github.io/lol-events/cal/${
-                    league.slug
-                }.ical`,
-        )
-        .join("\n");
-}
-
-function renderLeagues(leagues) {
-    return leagues
-        .map(renderSingleLeague)
-        .filter((l) => !!l)
-        .join("\n");
-}
-
-function renderSingleLeague(league) {
-    if (!league.image_url) {
-        return null;
-    }
-
-    return `<a href="${league.url}" target="_blank">${renderSingleLogo(
-        league,
-        50,
-        50,
-    )}</a>`;
-}
-
-function renderSingleLogo(league, width = 24, height = 24) {
-    if (!league.image_url) {
-        return "-";
-    }
-
-    return `<img src="${league.image_url}" alt="${league.name} Logo" width="50" height="50" />`;
+if (
+    process.argv[1] &&
+    import.meta.url === `file:///${process.argv[1].replace(/\\/g, "/")}`
+) {
+    main();
 }

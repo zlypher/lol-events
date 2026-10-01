@@ -2,11 +2,22 @@
     "name": "lol-events",
     "version": "1.0.0",
     "description": "League of Legends calendar in iCal for all major leagues",
+    "type": "module",
+    "engines": {
+        "node": ">=24.0.0"
+    },
     "main": "index.js",
     "scripts": {
-        "scripts:leagues": "node _scripts/get-leagues.js",
-        "scripts:ical": "node _scripts/create-ical.js",
-        "scripts:readme": "node _scripts/create-readme.js"
+        "test": "vitest run",
+        "test:watch": "vitest",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "format": "prettier --write .",
+        "format:check": "prettier --check .",
+        "typecheck": "tsc --noEmit",
+        "scripts:leagues": "tsx _scripts/get-leagues.ts",
+        "scripts:ical": "tsx _scripts/create-ical.ts",
+        "scripts:readme": "tsx _scripts/create-readme.ts"
     },
     "repository": {
         "type": "git",
@@ -19,13 +30,20 @@
     },
     "homepage": "https://github.com/zlypher/lol-events#readme",
     "dependencies": {
-        "ical-generator": "^1.9.2",
-        "moment": "^2.29.4",
-        "node-fetch": "^2.6.7",
-        "qs": "^6.10.3"
+        "ical-generator": "11.1.2",
+        "p-limit": "7.3.3",
+        "qs": "6.16.0"
     },
     "devDependencies": {
-        "dotenv": "^8.2.0",
-        "rimraf": "^3.0.2"
+        "@eslint/js": "10.0.1",
+        "@types/node": "26.6.3",
+        "@types/qs": "6.15.1",
+        "dotenv": "18.0.4",
+        "eslint": "10.11.0",
+        "prettier": "3.9.9",
+        "tsx": "4.23.15",
+        "typescript": "6.0.3",
+        "typescript-eslint": "8.71.0",
+        "vitest": "5.0.2"
     }
 }

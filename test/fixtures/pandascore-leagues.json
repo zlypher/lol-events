@@ -1,0 +1,23 @@
+[
+    {
+        "id": 4197,
+        "name": "LEC",
+        "slug": "league-of-legends-lec",
+        "image_url": "https://cdn-api.pandascore.co/images/league/image/4197/lec_2023-png",
+        "url": "https://lolesports.com"
+    },
+    {
+        "id": 4198,
+        "name": "LCS",
+        "slug": "league-of-legends-lcs",
+        "image_url": "https://cdn-api.pandascore.co/images/league/image/4198/LCS-Full-Color.png",
+        "url": "https://lolesports.com"
+    },
+    {
+        "id": 4302,
+        "name": "Prime League 1st Division",
+        "slug": "league-of-legends-prime-league-pro-division",
+        "image_url": "https://cdn.pandascore.co/images/league/image/4302/220px-Prime_Leaguelogo_square.png",
+        "url": "https://www.primeleague.gg"
+    }
+]

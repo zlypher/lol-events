@@ -1,9 +1,7 @@
-require("dotenv").config();
-const { getUpcomingMatches } = require("../lib/pandascore");
+import "dotenv/config";
+import { getUpcomingMatches } from "../lib/pandascore";
 
-main();
-
-async function main() {
+async function main(): Promise<void> {
     const options = {
         filter: {
             opponent_id: 387,
@@ -19,4 +17,11 @@ async function main() {
         };
     });
     console.log(matches);
+}
+
+if (
+    process.argv[1] &&
+    import.meta.url === `file:///${process.argv[1].replace(/\\/g, "/")}`
+) {
+    main();
 }

@@ -1,0 +1,30 @@
+{
+    "domain": "zlypher.github.io",
+    "prodId": "//Zlypher//LOL Events//EN",
+    "name": "LEC",
+    "timezone": "UTC",
+    "events": [
+        {
+            "id": 1661676,
+            "uid": 1661676,
+            "sequence": 1,
+            "start": "2026-09-20T15:00:00.000Z",
+            "end": "2026-09-20T20:00:00.000Z",
+            "timezone": "UTC",
+            "stamp": "2026-09-20T15:00:00.000Z",
+            "timestamp": "2026-09-20T15:00:00.000Z",
+            "summary": "Grand final: TBD vs TBD"
+        },
+        {
+            "id": 1661677,
+            "uid": 1661677,
+            "sequence": 2,
+            "start": "2026-09-19T15:09:22.000Z",
+            "end": "2026-09-19T20:09:22.000Z",
+            "timezone": "UTC",
+            "stamp": "2026-09-19T15:09:22.000Z",
+            "timestamp": "2026-09-19T15:09:22.000Z",
+            "summary": "Lower bracket final: KC vs MKOI"
+        }
+    ]
+}
