@@ -1,6 +1,5 @@
 import pLimit from "p-limit";
-import { DEFAULT_CONCURRENCY } from "../_scripts/create-ical";
-import { request } from "../lib/pandascore";
+import { DEFAULT_CONCURRENCY, request } from "../lib/pandascore";
 import { RateLimiter } from "../lib/rate-limiter";
 
 describe("concurrency & rate limiting", () => {

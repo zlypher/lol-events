@@ -19,9 +19,4 @@ async function main(): Promise<void> {
     console.log(matches);
 }
 
-if (
-    process.argv[1] &&
-    import.meta.url === `file:///${process.argv[1].replace(/\\/g, "/")}`
-) {
-    main();
-}
+main();
