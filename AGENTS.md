@@ -53,7 +53,9 @@ lol-events/
 │   ├── types.ts               # Shared TypeScript interfaces (PandaScore & calendars)
 │   ├── pandascore.ts          # PandaScore API HTTP client & pagination
 │   ├── pandascore-utils.ts    # Data mapping (raw API -> normalized match objects)
-│   └── ical-utils.ts          # iCal generation (ical-generator wrapper)
+│   ├── ical-utils.ts          # iCal generation (ical-generator wrapper)
+│   ├── league-activity.ts     # League activity classification and partitioning
+│   └── rate-limiter.ts        # Request rate limiter for PandaScore API
 ├── _scripts/
 │   ├── create-ical.ts         # Production script: generates docs/cal/*.ical & *.json
 │   ├── create-readme.ts       # Production script: generates README.md league table
@@ -62,6 +64,8 @@ lol-events/
 │   ├── fixtures/              # Offline mock fixtures (leagues, matches, calendars)
 │   ├── ical-utils.test.ts     # Tests for calendar generation
 │   ├── pandascore-utils.test.ts # Tests for match normalization
+│   ├── league-activity.test.ts # Tests for league activity classification
+│   ├── concurrency.test.ts    # Tests for API rate limiting and retries
 │   └── sequence.test.ts       # Tests for RFC 5545 sequence increment logic
 ├── docs/
 │   └── cal/                   # Production calendar outputs (134+ leagues, .ical + .json)

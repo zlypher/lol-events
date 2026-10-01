@@ -4,20 +4,143 @@
         "name": "LEC",
         "slug": "league-of-legends-lec",
         "image_url": "https://cdn-api.pandascore.co/images/league/image/4197/lec_2023-png",
-        "url": "https://lolesports.com"
+        "url": "https://lolesports.com",
+        "series": [
+            {
+                "id": 8101,
+                "league_id": 4197,
+                "name": "Winter",
+                "slug": "league-of-legends-lec-winter-2026",
+                "season": "Winter",
+                "year": 2026,
+                "begin_at": "2026-01-10T16:00:00Z",
+                "end_at": "2026-02-28T21:00:00Z",
+                "modified_at": "2026-03-01T00:00:00Z",
+                "full_name": "Winter 2026",
+                "winner_id": 126061,
+                "winner_type": "Team"
+            },
+            {
+                "id": 8102,
+                "league_id": 4197,
+                "name": "Summer",
+                "slug": "league-of-legends-lec-summer-2026",
+                "season": "Summer",
+                "year": 2026,
+                "begin_at": "2026-06-15T15:00:00Z",
+                "end_at": "2026-08-30T21:00:00Z",
+                "modified_at": "2026-06-01T10:00:00Z",
+                "full_name": "Summer 2026",
+                "winner_id": null,
+                "winner_type": null
+            }
+        ]
     },
     {
         "id": 4198,
         "name": "LCS",
         "slug": "league-of-legends-lcs",
         "image_url": "https://cdn-api.pandascore.co/images/league/image/4198/LCS-Full-Color.png",
-        "url": "https://lolesports.com"
+        "url": "https://lolesports.com",
+        "series": [
+            {
+                "id": 8103,
+                "league_id": 4198,
+                "name": "Spring",
+                "slug": "league-of-legends-lcs-spring-2026",
+                "season": "Spring",
+                "year": 2026,
+                "begin_at": "2026-03-01T20:00:00Z",
+                "end_at": "2026-05-10T23:00:00Z",
+                "modified_at": "2026-05-11T00:00:00Z",
+                "full_name": "Spring 2026",
+                "winner_id": 126062,
+                "winner_type": "Team"
+            }
+        ]
     },
     {
         "id": 4302,
         "name": "Prime League 1st Division",
         "slug": "league-of-legends-prime-league-pro-division",
         "image_url": "https://cdn.pandascore.co/images/league/image/4302/220px-Prime_Leaguelogo_square.png",
-        "url": "https://www.primeleague.gg"
+        "url": "https://www.primeleague.gg",
+        "series": [
+            {
+                "id": 7101,
+                "league_id": 4302,
+                "name": "Summer",
+                "slug": "league-of-legends-prime-league-summer-2025",
+                "season": "Summer",
+                "year": 2025,
+                "begin_at": "2025-06-01T16:00:00Z",
+                "end_at": "2025-08-01T21:00:00Z",
+                "modified_at": "2025-08-02T00:00:00Z",
+                "full_name": "Summer 2025",
+                "winner_id": 126063,
+                "winner_type": "Team"
+            }
+        ]
+    },
+    {
+        "id": 4244,
+        "name": "OPL",
+        "slug": "league-of-legends-opl",
+        "image_url": "https://cdn.pandascore.co/images/league/image/4244/opl.png",
+        "url": null,
+        "series": [
+            {
+                "id": 3001,
+                "league_id": 4244,
+                "name": "Split 2",
+                "slug": "league-of-legends-opl-split-2-2020",
+                "season": "Split 2",
+                "year": 2020,
+                "begin_at": "2020-06-05T06:00:00Z",
+                "end_at": "2020-08-28T10:00:00Z",
+                "modified_at": "2020-08-28T12:00:00Z",
+                "full_name": "Split 2 2020",
+                "winner_id": 126064,
+                "winner_type": "Team"
+            }
+        ]
+    },
+    {
+        "id": 9991,
+        "name": "Empty Series League",
+        "slug": "empty-series-league",
+        "image_url": null,
+        "url": null,
+        "series": []
+    },
+    {
+        "id": 9992,
+        "name": "Null Dates Series League",
+        "slug": "null-dates-series-league",
+        "image_url": null,
+        "url": null,
+        "series": [
+            {
+                "id": 9901,
+                "league_id": 9992,
+                "name": "Unscheduled Series",
+                "slug": "unscheduled-series",
+                "season": null,
+                "year": null,
+                "begin_at": null,
+                "end_at": null,
+                "modified_at": "2026-01-01T00:00:00Z",
+                "full_name": "Unscheduled Series",
+                "winner_id": null,
+                "winner_type": null
+            }
+        ]
+    },
+    {
+        "id": 9993,
+        "name": "Missing Series League",
+        "slug": "missing-series-league",
+        "image_url": null,
+        "url": null
     }
 ]
