@@ -1,10 +1,9 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//Zlypher//LOL Events//EN
+URL:https://zlypher.github.io/lol-events/
 NAME:Superdome
 X-WR-CALNAME:Superdome
-TIMEZONE-ID:UTC
-X-WR-TIMEZONE:UTC
 BEGIN:VEVENT
 UID:881409@zlypher.github.io
 SEQUENCE:1

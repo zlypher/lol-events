@@ -1,10 +1,9 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//Zlypher//LOL Events//EN
+URL:https://zlypher.github.io/lol-events/
 NAME:Rift Rivals: LCK vs LPL vs LMS/VCS
 X-WR-CALNAME:Rift Rivals: LCK vs LPL vs LMS/VCS
-TIMEZONE-ID:UTC
-X-WR-TIMEZONE:UTC
 BEGIN:VEVENT
 UID:546673@zlypher.github.io
 SEQUENCE:1
