@@ -93,3 +93,19 @@ Refer to [ROADMAP.md](ROADMAP.md) for the phased modernization plan:
 - **Phase 2 (Complete)**: Target Node 24, ESM migration, dependency updates (`ical-generator` v11, native `fetch`, native `fs`, moment removed).
 - **Phase 3**: Request throttling (`p-limit`), resilient error handling, CLI execution flags (`--league`, `--dry-run`).
 - **Phase 4**: GitHub Actions modernization (Node 22, consolidated workflow) and dynamic web frontend.
+
+---
+
+## Agent skills
+
+### Issue tracker
+
+Tracked in GitHub Issues using the `gh` CLI. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Canonical triage roles mapped to matching labels (`needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`). See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context layout (`CONTEXT.md` and `docs/adr/` at repo root). See `docs/agents/domain.md`.
