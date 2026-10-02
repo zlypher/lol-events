@@ -53,7 +53,11 @@ lol-events/
 │   ├── types.ts               # Shared TypeScript interfaces (PandaScore & calendars)
 │   ├── pandascore.ts          # PandaScore API HTTP client & pagination
 │   ├── pandascore-utils.ts    # Data mapping (raw API -> normalized match objects)
-│   └── ical-utils.ts          # iCal generation (ical-generator wrapper)
+│   ├── ical-utils.ts          # iCal generation (ical-generator wrapper)
+│   ├── league-activity.ts     # League activity classification and partitioning
+│   ├── calendar-generator.ts  # Calendar generation pipeline & orchestration
+│   ├── readme-generator.ts    # README markdown documentation generation
+│   └── rate-limiter.ts        # Request rate limiter for PandaScore API
 ├── _scripts/
 │   ├── create-ical.ts         # Production script: generates docs/cal/*.ical & *.json
 │   ├── create-readme.ts       # Production script: generates README.md league table
@@ -62,6 +66,10 @@ lol-events/
 │   ├── fixtures/              # Offline mock fixtures (leagues, matches, calendars)
 │   ├── ical-utils.test.ts     # Tests for calendar generation
 │   ├── pandascore-utils.test.ts # Tests for match normalization
+│   ├── league-activity.test.ts # Tests for league activity classification
+│   ├── calendar-generator.test.ts # Tests for calendar pipeline and active/inactive skipping
+│   ├── readme-generator.test.ts # Tests for README documentation generation
+│   ├── concurrency.test.ts    # Tests for API rate limiting and retries
 │   └── sequence.test.ts       # Tests for RFC 5545 sequence increment logic
 ├── docs/
 │   └── cal/                   # Production calendar outputs (134+ leagues, .ical + .json)
@@ -93,3 +101,19 @@ Refer to [ROADMAP.md](ROADMAP.md) for the phased modernization plan:
 - **Phase 2 (Complete)**: Target Node 24, ESM migration, dependency updates (`ical-generator` v11, native `fetch`, native `fs`, moment removed).
 - **Phase 3**: Request throttling (`p-limit`), resilient error handling, CLI execution flags (`--league`, `--dry-run`).
 - **Phase 4**: GitHub Actions modernization (Node 22, consolidated workflow) and dynamic web frontend.
+
+---
+
+## Agent skills
+
+### Issue tracker
+
+Tracked in GitHub Issues using the `gh` CLI. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Canonical triage roles mapped to matching labels (`needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`). See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context layout (`CONTEXT.md` and `docs/adr/` at repo root). See `docs/agents/domain.md`.

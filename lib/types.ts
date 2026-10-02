@@ -1,3 +1,18 @@
+export interface PandaScoreSerie {
+    id: number;
+    league_id: number;
+    name: string | null;
+    slug: string;
+    season: string | null;
+    year: number | null;
+    begin_at: string | null;
+    end_at: string | null;
+    modified_at: string;
+    full_name: string;
+    winner_id?: number | null;
+    winner_type?: "Player" | "Team" | string | null;
+}
+
 export interface PandaScoreLeague {
     id: number;
     name: string;
@@ -5,6 +20,12 @@ export interface PandaScoreLeague {
     image_url: string | null;
     url: string | null;
     modified_at?: string;
+    series?: PandaScoreSerie[];
+}
+
+export interface PartitionedLeagues {
+    active: PandaScoreLeague[];
+    inactive: PandaScoreLeague[];
 }
 
 export interface PandaScoreOpponentDetails {
