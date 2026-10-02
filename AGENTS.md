@@ -56,6 +56,7 @@ lol-events/
 │   ├── ical-utils.ts          # iCal generation (ical-generator wrapper)
 │   ├── league-activity.ts     # League activity classification and partitioning
 │   ├── calendar-generator.ts  # Calendar generation pipeline & orchestration
+│   ├── readme-generator.ts    # README markdown documentation generation
 │   └── rate-limiter.ts        # Request rate limiter for PandaScore API
 ├── _scripts/
 │   ├── create-ical.ts         # Production script: generates docs/cal/*.ical & *.json
@@ -67,6 +68,7 @@ lol-events/
 │   ├── pandascore-utils.test.ts # Tests for match normalization
 │   ├── league-activity.test.ts # Tests for league activity classification
 │   ├── calendar-generator.test.ts # Tests for calendar pipeline and active/inactive skipping
+│   ├── readme-generator.test.ts # Tests for README documentation generation
 │   ├── concurrency.test.ts    # Tests for API rate limiting and retries
 │   └── sequence.test.ts       # Tests for RFC 5545 sequence increment logic
 ├── docs/
