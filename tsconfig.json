@@ -12,7 +12,8 @@
         "forceConsistentCasingInFileNames": true,
         "resolveJsonModule": true,
         "isolatedModules": true,
+        "allowJs": true,
         "noEmit": true
     },
-    "include": ["lib/**/*", "_scripts/**/*", "test/**/*"]
+    "include": ["lib/**/*", "_scripts/**/*", "test/**/*", "docs/**/*.js"]
 }
