@@ -73,7 +73,7 @@ lol-events/
 │   └── sequence.test.ts       # Tests for RFC 5545 sequence increment logic
 ├── docs/
 │   └── cal/                   # Production calendar outputs (134+ leagues, .ical + .json)
-└── .github/workflows/         # Daily GitHub Actions cron automation
+└── .github/workflows/         # GitHub Actions workflows (CI checks & daily cron automation)
 ```
 
 ---
