@@ -21,6 +21,7 @@ export const mapPandaScoreResult = (
             id: game.id,
             name: game.name,
             beginAt: game.begin_at,
+            scheduledAt: game.scheduled_at ?? null,
             numberOfGames: game.number_of_games,
             teams: game.opponents.map(mapPandaScoreOpponent),
         };

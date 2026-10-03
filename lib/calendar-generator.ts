@@ -2,17 +2,26 @@ import type { ICalCalendar } from "ical-generator";
 import fs from "node:fs";
 import path from "node:path";
 import pLimit from "p-limit";
-import { toIcal, updateCalendarEvents } from "./ical-utils";
+import { toIcal } from "./ical-utils";
 import { isLeagueActive, partitionLeagues } from "./league-activity";
 import PandaScore, { DEFAULT_CONCURRENCY } from "./pandascore";
 import PandaScoreUtils from "./pandascore-utils";
-import type { CalendarJSON, PandaScoreLeague, PandaScoreMatch } from "./types";
+import {
+    applyMatchStore,
+    DEFAULT_MATCH_STORE_PATH,
+    loadMatchStore,
+    saveMatchStore,
+    updateMatchStore,
+} from "./match-store";
+import type { MatchStore, PandaScoreLeague, PandaScoreMatch } from "./types";
 
 export interface CalendarGenerationOptions {
     concurrency?: number;
     referenceDate?: Date;
     outputDir?: string;
     matches?: PandaScoreMatch[];
+    matchStore?: MatchStore;
+    matchStorePath?: string;
 }
 
 export function outputCalendar(
@@ -33,8 +42,12 @@ export function outputCalendar(
 export function createCalendar(
     league: PandaScoreLeague,
     matches: PandaScoreMatch[] = [],
+    matchStore?: MatchStore,
 ): ICalCalendar {
     const mappedMatches = PandaScoreUtils.mapPandaScoreResult(matches);
+    if (matchStore) {
+        applyMatchStore(matchStore, mappedMatches);
+    }
     return toIcal(league.name, mappedMatches);
 }
 
@@ -42,7 +55,13 @@ export async function generateIcalCalendar(
     league: PandaScoreLeague,
     options: CalendarGenerationOptions = {},
 ): Promise<void> {
-    const { referenceDate, outputDir = "./docs/cal", matches } = options;
+    const {
+        referenceDate,
+        outputDir = "./docs/cal",
+        matches,
+        matchStore: providedStore,
+        matchStorePath = DEFAULT_MATCH_STORE_PATH,
+    } = options;
 
     if (!isLeagueActive(league, referenceDate)) {
         console.log(`[${league.name}] (inactive) no matches fetched`);
@@ -52,14 +71,8 @@ export async function generateIcalCalendar(
     try {
         console.log("Creating ical for", league.name);
 
-        const icalData = await createCalendar(league, matches);
-        const jsonPath = path.join(outputDir, `${league.slug}.json`);
-        if (fs.existsSync(jsonPath)) {
-            const jsonData = JSON.parse(
-                fs.readFileSync(jsonPath).toString(),
-            ) as CalendarJSON;
-            updateCalendarEvents(icalData, jsonData);
-        }
+        const matchStore = providedStore ?? loadMatchStore(matchStorePath);
+        const icalData = await createCalendar(league, matches, matchStore);
 
         outputCalendar(league.slug, icalData, outputDir);
     } catch (e) {
@@ -75,6 +88,8 @@ export async function generateAllCalendars(
         concurrency = Number(process.env.CONCURRENCY) || DEFAULT_CONCURRENCY,
         referenceDate = new Date(),
         outputDir = "./docs/cal",
+        matchStore: providedStore,
+        matchStorePath = DEFAULT_MATCH_STORE_PATH,
     } = options;
 
     const { active, inactive } = partitionLeagues(leagues, referenceDate);
@@ -92,6 +107,10 @@ export async function generateAllCalendars(
     const allMatches = await PandaScore.getGlobalMatches({ referenceDate });
     const groupedMatches = PandaScoreUtils.groupMatchesByLeague(allMatches);
 
+    const matchStore = providedStore ?? loadMatchStore(matchStorePath);
+    updateMatchStore(matchStore, allMatches);
+    saveMatchStore(matchStore, matchStorePath);
+
     const limit = pLimit(concurrency);
     let completed = 0;
     console.log(
@@ -106,6 +125,7 @@ export async function generateAllCalendars(
                     referenceDate,
                     outputDir,
                     matches: leagueMatches,
+                    matchStore,
                 });
                 completed++;
                 if (completed % 10 === 0 || completed === active.length) {
