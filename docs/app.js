@@ -98,35 +98,21 @@ function getInitials(name) {
  * @returns {string}
  */
 export function renderLeagueCard(league) {
-    const webcal = toWebcalUrl(league.calendarUrl || "");
-    const activeBadgeClass = league.active
-        ? "badge badge--active"
-        : "badge badge--inactive";
-    const activeText = league.active ? "Active" : "Inactive";
-
     const logoHtml = league.logoUrl
         ? `<img class="league-logo" src="${escapeHtml(league.logoUrl)}" alt="${escapeHtml(league.name)} Logo" loading="lazy" />`
         : `<div class="logo-placeholder" aria-hidden="true">${escapeHtml(getInitials(league.name))}</div>`;
 
-    const websiteLink = league.url
-        ? `<a href="${escapeHtml(league.url)}" target="_blank" rel="noopener noreferrer" class="link-website" title="Official Website">Official Site</a>`
-        : "";
-
     return `<article class="league-card" data-slug="${escapeHtml(league.slug || "")}">
-    <div class="card-header">
-        <div class="logo-wrapper">
-            ${logoHtml}
-        </div>
-        <div class="card-meta">
-            <span class="${activeBadgeClass}">${activeText}</span>
-            ${websiteLink}
-        </div>
+    <div class="logo-wrapper">
+        ${logoHtml}
     </div>
-    <h2 class="league-title">${escapeHtml(league.name || "")}</h2>
-    <div class="card-actions">
-        <button type="button" class="btn btn--copy" data-copy="${escapeHtml(league.calendarUrl || "")}">Copy iCal</button>
-        <a href="${escapeHtml(webcal)}" class="btn btn--subscribe">Subscribe</a>
+    <div class="card-content">
+        <h2 class="league-title" title="${escapeHtml(league.name || "")}">${escapeHtml(league.name || "")}</h2>
     </div>
+    <button type="button" class="btn btn--copy" data-copy="${escapeHtml(league.calendarUrl || "")}" aria-label="Copy iCal for ${escapeHtml(league.name || "")}" title="Copy iCal">
+        <svg class="icon-copy" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+        <svg class="icon-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    </button>
 </article>`;
 }
 
@@ -345,26 +331,28 @@ export function initApp() {
 
     if (grid) {
         grid.addEventListener("click", async (e) => {
-            const target = e.target;
-            if (
-                target &&
-                target.classList &&
-                target.classList.contains("btn--copy")
-            ) {
-                if (target.classList.contains("btn--copied")) {
-                    return;
-                }
-                const url = target.getAttribute("data-copy");
-                if (url) {
-                    const ok = await copyToClipboard(url);
-                    if (ok) {
-                        target.textContent = "Copied!";
-                        target.classList.add("btn--copied");
-                        setTimeout(() => {
-                            target.textContent = "Copy iCal";
-                            target.classList.remove("btn--copied");
-                        }, 2000);
-                    }
+            const target =
+                e.target instanceof Element
+                    ? e.target.closest(".btn--copy")
+                    : null;
+            if (!target) {
+                return;
+            }
+            if (target.classList.contains("btn--copied")) {
+                return;
+            }
+            const url = target.getAttribute("data-copy");
+            if (url) {
+                const ok = await copyToClipboard(url);
+                if (ok) {
+                    target.classList.add("btn--copied");
+                    target.setAttribute("title", "Copied!");
+                    target.setAttribute("aria-label", "Copied!");
+                    setTimeout(() => {
+                        target.classList.remove("btn--copied");
+                        target.setAttribute("title", "Copy iCal");
+                        target.setAttribute("aria-label", "Copy iCal");
+                    }, 1000);
                 }
             }
         });

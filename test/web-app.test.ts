@@ -117,37 +117,35 @@ describe("web-app", () => {
         const activeLeague = mockLeagues[0];
         const inactiveLeague = mockLeagues[2];
 
-        it("renders an active league card with logo, status badge, copy button, and webcal link", () => {
+        it("renders an active league card with logo, title, and copy button with clipboard icon", () => {
             const html = renderLeagueCard(activeLeague);
 
             expect(html).toContain('class="league-card"');
             expect(html).toContain("LEC");
             expect(html).toContain('src="https://example.com/lec.png"');
             expect(html).toContain('alt="LEC Logo"');
-            expect(html).toContain('badge badge--active">Active<');
             expect(html).toContain(
                 'data-copy="https://zlypher.github.io/lol-events/cal/league-of-legends-lec.ical"',
             );
-            expect(html).toContain(
-                'href="webcal://zlypher.github.io/lol-events/cal/league-of-legends-lec.ical"',
-            );
-            expect(html).toContain('href="https://lolesports.com"');
+            expect(html).toContain('class="icon-copy"');
+            expect(html).not.toContain("badge");
+            expect(html).not.toContain("btn--subscribe");
+            expect(html).not.toContain("https://lolesports.com");
         });
 
-        it("renders an inactive league card with placeholder logo and inactive status badge", () => {
+        it("renders an inactive league card with placeholder logo, title, and copy button with clipboard icon", () => {
             const html = renderLeagueCard(inactiveLeague);
 
             expect(html).toContain('class="league-card"');
             expect(html).toContain("OPL");
             // Null logo should render a placeholder or initials block, not broken img
             expect(html).toContain('class="logo-placeholder"');
-            expect(html).toContain('badge badge--inactive">Inactive<');
             expect(html).toContain(
                 'data-copy="https://zlypher.github.io/lol-events/cal/league-of-legends-opl.ical"',
             );
-            expect(html).toContain(
-                'href="webcal://zlypher.github.io/lol-events/cal/league-of-legends-opl.ical"',
-            );
+            expect(html).toContain('class="icon-copy"');
+            expect(html).not.toContain("badge");
+            expect(html).not.toContain("btn--subscribe");
         });
     });
 

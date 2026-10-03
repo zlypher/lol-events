@@ -37,19 +37,19 @@
         <main class="main-content">
             <div class="container">
                 <section class="toolbar" aria-label="League search and filters">
-                    <div class="search-wrapper">
-                        <span class="search-icon" aria-hidden="true">🔍</span>
-                        <input
-                            type="search"
-                            id="search-input"
-                            class="search-input"
-                            placeholder="Search leagues by name or slug (e.g. LEC, Worlds, LCS)..."
-                            aria-label="Search leagues by name or slug"
-                            autocomplete="off"
-                        />
-                    </div>
+                    <div class="toolbar-controls">
+                        <div class="search-wrapper">
+                            <span class="search-icon" aria-hidden="true">🔍</span>
+                            <input
+                                type="search"
+                                id="search-input"
+                                class="search-input"
+                                placeholder="Search leagues by name or slug (e.g. LEC, Worlds, LCS)..."
+                                aria-label="Search leagues by name or slug"
+                                autocomplete="off"
+                            />
+                        </div>
 
-                    <div class="filter-bar">
                         <div
                             class="category-filters"
                             id="category-filters"
@@ -78,13 +78,13 @@
                                 Inactive <span class="count"></span>
                             </button>
                         </div>
-
-                        <div
-                            class="summary-count"
-                            id="summary-count"
-                            aria-live="polite"
-                        ></div>
                     </div>
+
+                    <div
+                        class="summary-count"
+                        id="summary-count"
+                        aria-live="polite"
+                    ></div>
                 </section>
 
                 <div
