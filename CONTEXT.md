@@ -48,4 +48,3 @@ A Match moved to an as-yet-unknown time. Shown as canceled until a new Scheduled
 **Match Store**:
 The canonical dataset of normalized Matches and their RFC 5545 sequence counters, acting as the single source of truth for all generated Calendars.
 _Avoid_: Cache, database
-
