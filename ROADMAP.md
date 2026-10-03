@@ -181,5 +181,5 @@ flowchart TD
     - Add CLI arguments (`--league`, `--dry-run`, `--limit`, `--json`).
 - [ ] **Phase 4: CI/CD & Dynamic Frontend**
     - Consolidate GitHub Actions to a single modern workflow with Node 22 and `workflow_dispatch`.
-    - Generate `docs/leagues.json` manifest.
-    - Replace broken Parcel web bundle with a clean, dynamic zero-build HTML/JS interface with search & filter.
+    - [x] Generate `docs/leagues.json` manifest.
+    - [x] Replace broken Parcel web bundle with a clean, dynamic zero-build HTML/JS interface with search & filter.

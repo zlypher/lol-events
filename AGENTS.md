@@ -57,9 +57,11 @@ lol-events/
 │   ├── league-activity.ts     # League activity classification and partitioning
 │   ├── calendar-generator.ts  # Calendar generation pipeline & orchestration
 │   ├── readme-generator.ts    # README markdown documentation generation
+│   ├── manifest-generator.ts  # Manifest generation & serialization
 │   └── rate-limiter.ts        # Request rate limiter for PandaScore API
 ├── _scripts/
 │   ├── create-ical.ts         # Production script: generates docs/cal/*.ical & *.json
+│   ├── create-manifest.ts     # Production script: generates docs/leagues.json
 │   ├── create-readme.ts       # Production script: generates README.md league table
 │   └── list-*.ts / get-*.ts   # Ad-hoc inspection and debugging scripts
 ├── test/
@@ -69,10 +71,12 @@ lol-events/
 │   ├── league-activity.test.ts # Tests for league activity classification
 │   ├── calendar-generator.test.ts # Tests for calendar pipeline and active/inactive skipping
 │   ├── readme-generator.test.ts # Tests for README documentation generation
+│   ├── manifest-generator.test.ts # Tests for manifest generation and activity status
 │   ├── concurrency.test.ts    # Tests for API rate limiting and retries
 │   └── sequence.test.ts       # Tests for RFC 5545 sequence increment logic
 ├── docs/
-│   └── cal/                   # Production calendar outputs (134+ leagues, .ical + .json)
+│   ├── cal/                   # Production calendar outputs (134+ leagues, .ical + .json)
+│   └── leagues.json           # Machine-readable catalog manifest
 └── .github/workflows/         # GitHub Actions workflows (CI checks & daily cron automation)
 ```
 

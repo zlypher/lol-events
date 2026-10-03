@@ -17,6 +17,7 @@
         "typecheck": "tsc --noEmit",
         "scripts:leagues": "tsx _scripts/get-leagues.ts",
         "scripts:ical": "tsx _scripts/create-ical.ts",
+        "scripts:manifest": "tsx _scripts/create-manifest.ts",
         "scripts:readme": "tsx _scripts/create-readme.ts"
     },
     "repository": {

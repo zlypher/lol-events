@@ -16,12 +16,6 @@ export default tseslint.config(
         },
     },
     {
-        ignores: [
-            "docs/**",
-            "node_modules/**",
-            "web/**",
-            ".cache/**",
-            "package-lock.json",
-        ],
+        ignores: ["docs/**", "node_modules/**", "package-lock.json"],
     },
 );

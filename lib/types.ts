@@ -118,3 +118,19 @@ export interface CalendarJSON {
     events: CalendarEventJSON[];
     [key: string]: unknown;
 }
+
+export interface LeagueManifestItem {
+    id: number;
+    name: string;
+    slug: string;
+    logoUrl: string | null;
+    url: string | null;
+    calendarUrl: string;
+    jsonUrl: string;
+    active: boolean;
+}
+
+export interface LeaguesManifest {
+    generatedAt: string;
+    leagues: LeagueManifestItem[];
+}
