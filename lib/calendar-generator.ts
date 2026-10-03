@@ -13,7 +13,6 @@ export interface CalendarGenerationOptions {
     referenceDate?: Date;
     outputDir?: string;
     matches?: PandaScoreMatch[];
-    matchesByLeague?: Map<number, PandaScoreMatch[]>;
 }
 
 export function outputCalendar(
@@ -31,30 +30,11 @@ export function outputCalendar(
     );
 }
 
-export async function createCalendar(
+export function createCalendar(
     league: PandaScoreLeague,
-    matches?: PandaScoreMatch[],
-): Promise<ICalCalendar> {
-    let relevantMatches: PandaScoreMatch[];
-
-    if (matches !== undefined) {
-        relevantMatches = matches;
-    } else {
-        const pastMatches = await PandaScore.getPastMatches(league.id, {
-            page: 1,
-            per_page: 20,
-        });
-        const runningMatches = await PandaScore.getRunningMatches(league.id);
-        const upcomingMatches = await PandaScore.getUpcomingMatches(league.id);
-
-        relevantMatches = [
-            ...pastMatches,
-            ...runningMatches,
-            ...upcomingMatches,
-        ];
-    }
-
-    const mappedMatches = PandaScoreUtils.mapPandaScoreResult(relevantMatches);
+    matches: PandaScoreMatch[] = [],
+): ICalCalendar {
+    const mappedMatches = PandaScoreUtils.mapPandaScoreResult(matches);
     return toIcal(league.name, mappedMatches);
 }
 
@@ -95,7 +75,6 @@ export async function generateAllCalendars(
         concurrency = Number(process.env.CONCURRENCY) || DEFAULT_CONCURRENCY,
         referenceDate = new Date(),
         outputDir = "./docs/cal",
-        matchesByLeague,
     } = options;
 
     const { active, inactive } = partitionLeagues(leagues, referenceDate);
@@ -109,13 +88,9 @@ export async function generateAllCalendars(
         return;
     }
 
-    // Ingest matches globally if matchesByLeague was not directly provided
-    let groupedMatches = matchesByLeague;
-    if (!groupedMatches) {
-        console.log("Ingesting global matches from PandaScore...");
-        const allMatches = await PandaScore.getGlobalMatches({ referenceDate });
-        groupedMatches = PandaScoreUtils.groupMatchesByLeague(allMatches);
-    }
+    console.log("Ingesting global matches from PandaScore...");
+    const allMatches = await PandaScore.getGlobalMatches({ referenceDate });
+    const groupedMatches = PandaScoreUtils.groupMatchesByLeague(allMatches);
 
     const limit = pLimit(concurrency);
     let completed = 0;
