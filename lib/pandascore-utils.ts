@@ -27,7 +27,30 @@ export const mapPandaScoreResult = (
     });
 };
 
+export const groupMatchesByLeague = (
+    matches: PandaScoreMatch[],
+): Map<number, PandaScoreMatch[]> => {
+    const grouped = new Map<number, PandaScoreMatch[]>();
+
+    for (const match of matches) {
+        if (!match.league || typeof match.league.id !== "number") {
+            continue;
+        }
+
+        const leagueId = match.league.id;
+        const leagueMatches = grouped.get(leagueId);
+        if (leagueMatches) {
+            leagueMatches.push(match);
+        } else {
+            grouped.set(leagueId, [match]);
+        }
+    }
+
+    return grouped;
+};
+
 export default {
+    groupMatchesByLeague,
     mapPandaScoreOpponent,
     mapPandaScoreResult,
 };
