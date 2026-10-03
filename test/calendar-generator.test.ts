@@ -275,5 +275,16 @@ describe("calendar-generator", () => {
             expect(lcsJson.events).toHaveLength(1);
             expect(lcsJson.events[0].summary).toBe("LCS Game: C9 vs TL");
         });
+
+        it("does not query global matches when there are zero active leagues", async () => {
+            const inactiveLeagues = [inactiveLeague];
+
+            await generateAllCalendars(inactiveLeagues, {
+                referenceDate,
+                outputDir: testOutputDir,
+            });
+
+            expect(PandaScore.getGlobalMatches).not.toHaveBeenCalled();
+        });
     });
 });

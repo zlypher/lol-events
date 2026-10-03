@@ -104,6 +104,11 @@ export async function generateAllCalendars(
         console.log(`[${league.name}] (inactive) no matches fetched`);
     }
 
+    if (active.length === 0) {
+        console.log("No active leagues to generate calendars for.");
+        return;
+    }
+
     // Ingest matches globally if matchesByLeague was not directly provided
     let groupedMatches = matchesByLeague;
     if (!groupedMatches) {
