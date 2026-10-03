@@ -1,0 +1,1365 @@
+{
+  "generatedAt": "2026-10-03T09:31:15.803Z",
+  "leagues": [
+    {
+      "id": 296,
+      "name": "All-Star",
+      "slug": "league-of-legends-all-star",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/296/all-star_2020_logo-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-all-star.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-all-star.json",
+      "active": false
+    },
+    {
+      "id": 5292,
+      "name": "Americas Challengers",
+      "slug": "league-of-legends-americas-challengers",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/5292/americas_challengers-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-americas-challengers.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-americas-challengers.json",
+      "active": false
+    },
+    {
+      "id": 5504,
+      "name": "Americas Cup",
+      "slug": "league-of-legends-americas-cup",
+      "logoUrl": null,
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-americas-cup.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-americas-cup.json",
+      "active": false
+    },
+    {
+      "id": 4962,
+      "name": "Arabian League",
+      "slug": "league-of-legends-arabian-league",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4962/arabian_league-png",
+      "url": "https://iac.leagueoflegends.com/en",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-arabian-league.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-arabian-league.json",
+      "active": true
+    },
+    {
+      "id": 5439,
+      "name": "Asia Invitational",
+      "slug": "league-of-legends-asia-invitational",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/5439/900px-asia_invitational_lightmode-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-asia-invitational.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-asia-invitational.json",
+      "active": false
+    },
+    {
+      "id": 5375,
+      "name": "Asia Masters",
+      "slug": "league-of-legends-asia-masters",
+      "logoUrl": null,
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-asia-masters.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-asia-masters.json",
+      "active": false
+    },
+    {
+      "id": 4864,
+      "name": "Asia Star Challengers Invitational",
+      "slug": "league-of-legends-asia-star-challengers-invitational",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4864/asci_2022_logo-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-asia-star-challengers-invitational.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-asia-star-challengers-invitational.json",
+      "active": false
+    },
+    {
+      "id": 5012,
+      "name": "Asian Games",
+      "slug": "league-of-legends-asian-games",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/5012/asian_game_2022_logo-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-asian-games.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-asian-games.json",
+      "active": true
+    },
+    {
+      "id": 4450,
+      "name": "Baltic Masters",
+      "slug": "league-of-legends-baltic-masters",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4450/220px-Baltic_Masters.png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-baltic-masters.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-baltic-masters.json",
+      "active": false
+    },
+    {
+      "id": 4401,
+      "name": "Belgian League",
+      "slug": "league-of-legends-belgian-league",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4401/220px-Belgian_League.png",
+      "url": "https://belgianleague.lol/",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-belgian-league.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-belgian-league.json",
+      "active": false
+    },
+    {
+      "id": 302,
+      "name": "CBLOL",
+      "slug": "league-of-legends-cblol-brazil",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/302/CBLOL_2021_Logo.png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-cblol-brazil.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-cblol-brazil.json",
+      "active": true
+    },
+    {
+      "id": 4533,
+      "name": "CBLOL Academy",
+      "slug": "league-of-legends-cblol-academy",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4533/CBLOL_Academy_2021.png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-cblol-academy.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-cblol-academy.json",
+      "active": false
+    },
+    {
+      "id": 1077,
+      "name": "CDLN",
+      "slug": "league-of-legends-cdln",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/1077/cdln-ayrs62ti.png",
+      "url": "https://lan.leagueoflegends.com/es/tag/circuito-de-leyendas",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-cdln.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-cdln.json",
+      "active": false
+    },
+    {
+      "id": 527,
+      "name": "CDLS",
+      "slug": "league-of-legends-circuito-de-leyendas",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/527/Circuito_De_Leyendas.png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-circuito-de-leyendas.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-circuito-de-leyendas.json",
+      "active": false
+    },
+    {
+      "id": 666,
+      "name": "Challenge France",
+      "slug": "league-of-legends-challenge-france",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/666/RGlozl2.png",
+      "url": "https://www.breakflip.com/fr/league-of-legends/actualites/lol-challenge-france-2017-programmes-et-resultats-2062",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-challenge-france.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-challenge-france.json",
+      "active": false
+    },
+    {
+      "id": 4142,
+      "name": "Challenger Korea",
+      "slug": "league-of-legends-challenger-korea",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4142/_.png",
+      "url": "https://lol.gamepedia.com/Challengers_Korea/2018_Season/Summer_Season#Schedule",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-challenger-korea.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-challenger-korea.json",
+      "active": false
+    },
+    {
+      "id": 4928,
+      "name": "Choque de Reinos",
+      "slug": "league-of-legends-choque-de-reinos",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4928/choque_de_reinos-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-choque-de-reinos.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-choque-de-reinos.json",
+      "active": false
+    },
+    {
+      "id": 5377,
+      "name": "Circuito Desafiante",
+      "slug": "league-of-legends-circuito-desafiante",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/5377/circuito_desafiante_logo-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-circuito-desafiante.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-circuito-desafiante.json",
+      "active": true
+    },
+    {
+      "id": 5489,
+      "name": "Comedy Central Winter Snowdown",
+      "slug": "league-of-legends-comedy-central-winter-snowdown",
+      "logoUrl": null,
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-comedy-central-winter-snowdown.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-comedy-central-winter-snowdown.json",
+      "active": false
+    },
+    {
+      "id": 305,
+      "name": "Copa Latinoamérica Norte",
+      "slug": "league-of-legends-copa-latinoamerica-norte",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/305/wKco39w.png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-copa-latinoamerica-norte.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-copa-latinoamerica-norte.json",
+      "active": false
+    },
+    {
+      "id": 298,
+      "name": "Copa Latinoamérica Sur",
+      "slug": "league-of-legends-copa-latinoamerica-sur",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/298/r1SeujF8gSklSe_iFUg.png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-copa-latinoamerica-sur.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-copa-latinoamerica-sur.json",
+      "active": false
+    },
+    {
+      "id": 4888,
+      "name": "Coupe de France",
+      "slug": "league-of-legends-coupe-de-france",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4888/coupe_de_france_2022-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-coupe-de-france.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-coupe-de-france.json",
+      "active": false
+    },
+    {
+      "id": 5540,
+      "name": "Cross Regional",
+      "slug": "league-of-legends-cross-regional",
+      "logoUrl": null,
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-cross-regional.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-cross-regional.json",
+      "active": false
+    },
+    {
+      "id": 4785,
+      "name": "DDH",
+      "slug": "league-of-legends-division-of-honor",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4785/ddh_2020_mexico-png",
+      "url": "https://ddh.lvp.global/mx/",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-division-of-honor.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-division-of-honor.json",
+      "active": false
+    },
+    {
+      "id": 4140,
+      "name": "Demacia Cup",
+      "slug": "league-of-legends-demacia-cup",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4140/ezgif-3-8054d3b460-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-demacia-cup.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-demacia-cup.json",
+      "active": false
+    },
+    {
+      "id": 5561,
+      "name": "Demacia Cup Global Invitational",
+      "slug": "league-of-legends-demacia-cup-global-invitational",
+      "logoUrl": null,
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-demacia-cup-global-invitational.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-demacia-cup-global-invitational.json",
+      "active": true
+    },
+    {
+      "id": 4402,
+      "name": "Dutch League",
+      "slug": "league-of-legends-dutch-league",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4402/220px-Dutch_League.png",
+      "url": "https://dutchleague.lol/",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-dutch-league.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-dutch-league.json",
+      "active": false
+    },
+    {
+      "id": 4426,
+      "name": "EBL",
+      "slug": "league-of-legends-ebl",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4426/ebl_2021-png",
+      "url": "http://lol.balkanesports.com/en",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-ebl.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-ebl.json",
+      "active": true
+    },
+    {
+      "id": 4795,
+      "name": "Elements League",
+      "slug": "league-of-legends-elements-league",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4795/elements_league-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-elements-league.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-elements-league.json",
+      "active": false
+    },
+    {
+      "id": 4722,
+      "name": "Elite Series",
+      "slug": "league-of-legends-elite-series",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4722/Elite_Series_logo.png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-elite-series.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-elite-series.json",
+      "active": false
+    },
+    {
+      "id": 5147,
+      "name": "Elite Series Benelux Masters",
+      "slug": "league-of-legends-elite-series-benelux-masters",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/5147/800px-elite_series_benelux_masters_lightmode-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-elite-series-benelux-masters.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-elite-series-benelux-masters.json",
+      "active": false
+    },
+    {
+      "id": 4996,
+      "name": "EMEA Masters",
+      "slug": "league-of-legends-emea-masters",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4996/emea_masters_2023-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-emea-masters.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-emea-masters.json",
+      "active": true
+    },
+    {
+      "id": 5152,
+      "name": "Equal eSports Cup",
+      "slug": "league-of-legends-equal-esports-cup",
+      "logoUrl": null,
+      "url": "https://liquipedia.net/commons/images/thumb/3/33/Equal_Esports_Cup_allmode.png/799px-Equal_Esports_Cup_allmode.png",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-equal-esports-cup.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-equal-esports-cup.json",
+      "active": true
+    },
+    {
+      "id": 4264,
+      "name": "ESL Meisterschaft",
+      "slug": "league-of-legends-esl-meisterschaft",
+      "logoUrl": null,
+      "url": "https://pro.eslgaming.com/deutschland/lol/",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-esl-meisterschaft.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-esl-meisterschaft.json",
+      "active": false
+    },
+    {
+      "id": 5452,
+      "name": "Esports Championships Asia",
+      "slug": "league-of-legends-esports-championships-asia",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/5452/2025_eca_logo-webp",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-esports-championships-asia.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-esports-championships-asia.json",
+      "active": false
+    },
+    {
+      "id": 5182,
+      "name": "Esports Shanghai Masters",
+      "slug": "league-of-legends-esports-shanghai-masters",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/5182/esports_shanghai_masters_logo_allmode-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-esports-shanghai-masters.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-esports-shanghai-masters.json",
+      "active": false
+    },
+    {
+      "id": 5262,
+      "name": "Esports World Cup",
+      "slug": "league-of-legends-esports-world-cup",
+      "logoUrl": null,
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-esports-world-cup.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-esports-world-cup.json",
+      "active": true
+    },
+    {
+      "id": 292,
+      "name": "EU Challenger Series",
+      "slug": "league-of-legends-eu-challenger-series",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/292/EU_CS_logo.png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-eu-challenger-series.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-eu-challenger-series.json",
+      "active": false
+    },
+    {
+      "id": 290,
+      "name": "EU LCS",
+      "slug": "league-of-legends-eu-lcs",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/290/eu-lcs-b29u5nim.png",
+      "url": "https://www.lolesports.com/en_US/eu-lcs/eu_2018_summer/about",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-eu-lcs.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-eu-lcs.json",
+      "active": false
+    },
+    {
+      "id": 4139,
+      "name": "European Masters",
+      "slug": "league-of-legends-european-masters",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4139/220px-EM_2020_Logo.png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-european-masters.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-european-masters.json",
+      "active": false
+    },
+    {
+      "id": 5013,
+      "name": "European Pro League",
+      "slug": "league-of-legends-european-pro-league",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/5013/european_pro_league-png",
+      "url": "https://eplesports.com/",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-european-pro-league.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-european-pro-league.json",
+      "active": false
+    },
+    {
+      "id": 5369,
+      "name": "First Stand",
+      "slug": "league-of-legends-first-stand",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/5369/first_stand_logo-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-first-stand.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-first-stand.json",
+      "active": false
+    },
+    {
+      "id": 5553,
+      "name": "FLASH",
+      "slug": "league-of-legends-flash",
+      "logoUrl": null,
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-flash.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-flash.json",
+      "active": true
+    },
+    {
+      "id": 5461,
+      "name": "GAMEON Revival",
+      "slug": "league-of-legends-gameon-revival",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/5461/gameon_logo-webp",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-gameon-revival.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-gameon-revival.json",
+      "active": false
+    },
+    {
+      "id": 4723,
+      "name": "GLL",
+      "slug": "league-of-legends-gll",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4723/gll_2024_logo-png",
+      "url": "https://www.greeklegends.gr/",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-gll.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-gll.json",
+      "active": false
+    },
+    {
+      "id": 4180,
+      "name": "GPL",
+      "slug": "league-of-legends-gpl",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4180/GPL2017SpringLogo.png",
+      "url": "http://gpl.garena.com/",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-gpl.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-gpl.json",
+      "active": false
+    },
+    {
+      "id": 4433,
+      "name": "Hitpoint Masters",
+      "slug": "league-of-legends-hitpoint-masters",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4433/800px-hitpoint_masters_lightmode-png",
+      "url": "https://hitpoint.cz/",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-hitpoint-masters.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-hitpoint-masters.json",
+      "active": true
+    },
+    {
+      "id": 5301,
+      "name": "Hitpoint Winter",
+      "slug": "league-of-legends-hitopint-winter",
+      "logoUrl": null,
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-hitopint-winter.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-hitopint-winter.json",
+      "active": false
+    },
+    {
+      "id": 5355,
+      "name": "HLL",
+      "slug": "league-of-legends-hll",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/5355/hellenic_legends_league_logo-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-hll.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-hll.json",
+      "active": true
+    },
+    {
+      "id": 4483,
+      "name": "Iberian Cup",
+      "slug": "league-of-legends-iberian-cup",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4483/Iberiancup2020.png",
+      "url": "https://iberiancup.lvp.global/",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-iberian-cup.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-iberian-cup.json",
+      "active": false
+    },
+    {
+      "id": 5007,
+      "name": "Ignis Cup",
+      "slug": "league-of-legends-ignis-cup",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/5007/735px-ignis_cup_lightmode-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-ignis-cup.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-ignis-cup.json",
+      "active": false
+    },
+    {
+      "id": 4788,
+      "name": "Intel Arabian Cup",
+      "slug": "league-of-legends-intel-arabian-cup",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4788/intel_arabian_cup-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-intel-arabian-cup.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-intel-arabian-cup.json",
+      "active": false
+    },
+    {
+      "id": 878,
+      "name": "Intel Extreme Masters",
+      "slug": "league-of-legends-intel-extreme-masters",
+      "logoUrl": null,
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-intel-extreme-masters.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-intel-extreme-masters.json",
+      "active": false
+    },
+    {
+      "id": 299,
+      "name": "International Wildcard",
+      "slug": "league-of-legends-international-wildcard",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/299/CwXOhtN.png",
+      "url": "http://www.lolesports.com/en_US/iwc/",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-international-wildcard.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-international-wildcard.json",
+      "active": false
+    },
+    {
+      "id": 4706,
+      "name": "Karmine Corp vs Ibai Showmatch",
+      "slug": "league-of-legends-karmine-corp",
+      "logoUrl": null,
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-karmine-corp.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-karmine-corp.json",
+      "active": false
+    },
+    {
+      "id": 5210,
+      "name": "KCX3: Karmine Corp vs The World",
+      "slug": "league-of-legends-kcx3-karmine-corp-vs-the-world",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/5210/kcx_3_allmode-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-kcx3-karmine-corp-vs-the-world.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-kcx3-karmine-corp-vs-the-world.json",
+      "active": false
+    },
+    {
+      "id": 2711,
+      "name": "KeSPA Cup",
+      "slug": "league-of-legends-kespa-cup",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/2711/220px-2019_KeSPA_Cup.png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-kespa-cup.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-kespa-cup.json",
+      "active": true
+    },
+    {
+      "id": 4916,
+      "name": "LA Comic Con Invitational",
+      "slug": "league-of-legends-la-comic-con-invitational",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4916/la_comic_con_allmode-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-la-comic-con-invitational.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-la-comic-con-invitational.json",
+      "active": false
+    },
+    {
+      "id": 293,
+      "name": "LCK",
+      "slug": "league-of-legends-lck-champions-korea",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/293/lck_2021_logo-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lck-champions-korea.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lck-champions-korea.json",
+      "active": true
+    },
+    {
+      "id": 4786,
+      "name": "LCK Academy",
+      "slug": "league-of-legends-lck-academy-series",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4786/lck_academy_series_2021_lightmode-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lck-academy-series.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lck-academy-series.json",
+      "active": false
+    },
+    {
+      "id": 4553,
+      "name": "LCK Challengers League",
+      "slug": "league-of-legends-lck-challengers-league",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4553/LCK_CL_logo.png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lck-challengers-league.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lck-challengers-league.json",
+      "active": true
+    },
+    {
+      "id": 4004,
+      "name": "LCL",
+      "slug": "league-of-legends-lcl",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4004/220px-LCL2020_logo.png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lcl.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lcl.json",
+      "active": false
+    },
+    {
+      "id": 4539,
+      "name": "LCO",
+      "slug": "league-of-legends-lco",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4539/800px-lco_lightmode-png",
+      "url": "https://lco.gg/",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lco.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lco.json",
+      "active": false
+    },
+    {
+      "id": 5351,
+      "name": "LCP",
+      "slug": "league-of-legends-lcp",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/5351/lcp_logo-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lcp.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lcp.json",
+      "active": true
+    },
+    {
+      "id": 4198,
+      "name": "LCS",
+      "slug": "league-of-legends-lcs",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4198/ezgif-7-4a96621112-png",
+      "url": "https://nexus.leagueoflegends.com/en-us/esports/",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lcs.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lcs.json",
+      "active": true
+    },
+    {
+      "id": 4228,
+      "name": "LCS Academy",
+      "slug": "league-of-legends-lcs-academy",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4228/600px-LCS_Academy_League_2021.png",
+      "url": "https://nexus.leagueoflegends.com/en-us/esports/",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lcs-academy.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lcs-academy.json",
+      "active": false
+    },
+    {
+      "id": 4556,
+      "name": "LCS Proving Grounds",
+      "slug": "league-of-legends-lcs-proving-grounds",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4556/600px-LCS_Academy_League_2021.png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lcs-proving-grounds.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lcs-proving-grounds.json",
+      "active": false
+    },
+    {
+      "id": 4226,
+      "name": "LDL",
+      "slug": "league-of-legends-ldl",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4226/800px-ldl_2022_allmode_full-png",
+      "url": "https://liquipedia.net/leagueoflegends/LDL/2019/Spring",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-ldl.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-ldl.json",
+      "active": false
+    },
+    {
+      "id": 2063,
+      "name": "League of Origin",
+      "slug": "league-of-legends-league-of-legends-league-of-origin",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/2063/league-of-legends-league-of-origin-9s87nnza.png",
+      "url": "https://oce.lolesports.com/",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-league-of-legends-league-of-origin.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-league-of-legends-league-of-origin.json",
+      "active": false
+    },
+    {
+      "id": 4197,
+      "name": "LEC",
+      "slug": "league-of-legends-lec",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4197/lec_2023-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lec.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lec.json",
+      "active": true
+    },
+    {
+      "id": 5248,
+      "name": "Legends Cup",
+      "slug": "league-of-legends-legends-cup",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/5248/legend_cup-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-legends-cup.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-legends-cup.json",
+      "active": false
+    },
+    {
+      "id": 5496,
+      "name": "LES",
+      "slug": "league-of-legends-les",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/5496/1200px-les_full_allmode-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-les.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-les.json",
+      "active": true
+    },
+    {
+      "id": 4292,
+      "name": "LFL",
+      "slug": "league-of-legends-lfl",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4292/1200px-LFL_Logo_2020.png",
+      "url": "http://www.lollfl.com/",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lfl.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lfl.json",
+      "active": true
+    },
+    {
+      "id": 4743,
+      "name": "LFL Division 2",
+      "slug": "league-of-legends-lfl-division-2",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4743/LFL_Division_2.png",
+      "url": "https://division2lol.fr",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lfl-division-2.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lfl-division-2.json",
+      "active": false
+    },
+    {
+      "id": 5433,
+      "name": "LGC Rising",
+      "slug": "league-of-legends-lgc-rising",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/5433/900px-league_of_legends_game_changers_rising_lightmode-png(2)",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lgc-rising.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lgc-rising.json",
+      "active": false
+    },
+    {
+      "id": 4789,
+      "name": "LHE",
+      "slug": "league-of-legends-entel-honor-league",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4789/liga_honor_entel-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-entel-honor-league.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-entel-honor-league.json",
+      "active": false
+    },
+    {
+      "id": 1002,
+      "name": "Liga Latinoamerica Norte",
+      "slug": "league-of-legends-liga-latinoamerica-norte",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/1002/liga-latinoam_C3_A9rica-norte-f994mkpu.png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-liga-latinoamerica-norte.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-liga-latinoamerica-norte.json",
+      "active": false
+    },
+    {
+      "id": 5211,
+      "name": "LIT",
+      "slug": "league-of-legends-lit",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/5211/lit_2024_logo-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lit.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lit.json",
+      "active": true
+    },
+    {
+      "id": 2092,
+      "name": "LJL",
+      "slug": "league-of-legends-ljl-japan",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/2092/409px-ljl_2020_icon_allmode-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-ljl-japan.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-ljl-japan.json",
+      "active": true
+    },
+    {
+      "id": 4199,
+      "name": "LLA",
+      "slug": "league-of-legends-lla",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4199/liga_latinoamerica_2020_icon_allmode-png",
+      "url": "http://la.lolesports.com/",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lla.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lla.json",
+      "active": false
+    },
+    {
+      "id": 4787,
+      "name": "LMF",
+      "slug": "league-of-legends-lmf",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4787/Liga_Master_Flow_2020.png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lmf.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lmf.json",
+      "active": false
+    },
+    {
+      "id": 295,
+      "name": "LMS",
+      "slug": "league-of-legends-lms-taiwan",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/295/b030bfca-cac7-11e7-92d4-0e6c723feec8.png",
+      "url": "http://www.lolesports.com/en_US/lms/",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lms-taiwan.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lms-taiwan.json",
+      "active": false
+    },
+    {
+      "id": 294,
+      "name": "LPL",
+      "slug": "league-of-legends-lpl-china",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/294/lpl_2020-png",
+      "url": "http://www.lolesports.com/en_US/lpl-china",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lpl-china.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lpl-china.json",
+      "active": true
+    },
+    {
+      "id": 4407,
+      "name": "LPLOL",
+      "slug": "league-of-legends-lplol",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4407/696px-lplol-full-logo2021-png",
+      "url": "https://lplol.pt/",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lplol.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lplol.json",
+      "active": true
+    },
+    {
+      "id": 5048,
+      "name": "LRN",
+      "slug": "league-of-legends-lrn",
+      "logoUrl": null,
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lrn.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lrn.json",
+      "active": true
+    },
+    {
+      "id": 5049,
+      "name": "LRS",
+      "slug": "league-of-legends-lrs",
+      "logoUrl": null,
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lrs.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lrs.json",
+      "active": true
+    },
+    {
+      "id": 5347,
+      "name": "LTA",
+      "slug": "league-of-legends-lta",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/5347/lta_logo-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lta.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lta.json",
+      "active": false
+    },
+    {
+      "id": 5345,
+      "name": "LTA North",
+      "slug": "league-of-legends-lta-north",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/5345/lta_north_logo-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lta-north.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lta-north.json",
+      "active": false
+    },
+    {
+      "id": 5346,
+      "name": "LTA South",
+      "slug": "league-of-legends-lta-south",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/5346/lta_south_logo-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lta-south.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lta-south.json",
+      "active": false
+    },
+    {
+      "id": 4213,
+      "name": "LVP SL",
+      "slug": "league-of-legends-lvp-slo",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4213/lvp_superliga_logo-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lvp-slo.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lvp-slo.json",
+      "active": false
+    },
+    {
+      "id": 4969,
+      "name": "LVP SL 2nd Division",
+      "slug": "league-of-legends-lvp-sl-2nd-division",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4969/ezgif-5-9177431f45-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lvp-sl-2nd-division.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-lvp-sl-2nd-division.json",
+      "active": false
+    },
+    {
+      "id": 5158,
+      "name": "MEG",
+      "slug": "league-of-legends-meg",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/5158/multiplatform_esports_games_lightmode-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-meg.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-meg.json",
+      "active": false
+    },
+    {
+      "id": 4394,
+      "name": "Mid-Season Cup",
+      "slug": "league-of-legends-mid-season-cup",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4394/220px-MidSeason.png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-mid-season-cup.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-mid-season-cup.json",
+      "active": false
+    },
+    {
+      "id": 300,
+      "name": "Mid-Season Invitational",
+      "slug": "league-of-legends-mid-invitational",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/300/900px-msi_2021_lightmode-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-mid-invitational.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-mid-invitational.json",
+      "active": true
+    },
+    {
+      "id": 4104,
+      "name": "NA Academy",
+      "slug": "league-of-legends-na-academy",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4104/na-academy-4xtnenn7.png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-na-academy.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-na-academy.json",
+      "active": false
+    },
+    {
+      "id": 291,
+      "name": "NA Challenger Series",
+      "slug": "league-of-legends-na-challenger-series",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/291/CS_NA_logo_re-up.png",
+      "url": "http://www.lolesports.com/en_US/na-cs",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-na-challenger-series.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-na-challenger-series.json",
+      "active": false
+    },
+    {
+      "id": 289,
+      "name": "NA LCS",
+      "slug": "league-of-legends-na-lcs",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/289/na-lcs-g63ljv52.png",
+      "url": "http://www.lolesports.com/en_US/na-lcs/",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-na-lcs.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-na-lcs.json",
+      "active": false
+    },
+    {
+      "id": 4096,
+      "name": "NA Scouting Grounds",
+      "slug": "league-of-legends-na-scouting-grounds",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4096/na-scouting-grounds-486lp5q8.png",
+      "url": "http://www.lolesports.com/en_US/na-scouting-grounds/",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-na-scouting-grounds.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-na-scouting-grounds.json",
+      "active": false
+    },
+    {
+      "id": 4225,
+      "name": "NEST",
+      "slug": "league-of-legends-nest",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4225/nest_2020-png",
+      "url": "https://www.cga.cn/nest2019",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-nest.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-nest.json",
+      "active": false
+    },
+    {
+      "id": 5529,
+      "name": "Nexus League",
+      "slug": "league-of-legends-nexus-league",
+      "logoUrl": null,
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-nexus-league.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-nexus-league.json",
+      "active": true
+    },
+    {
+      "id": 4411,
+      "name": "NLC",
+      "slug": "league-of-legends-nlc",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4411/nlc_2022_logo-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-nlc.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-nlc.json",
+      "active": true
+    },
+    {
+      "id": 5418,
+      "name": "NNO Cup",
+      "slug": "league-of-legends-nno-cup",
+      "logoUrl": null,
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-nno-cup.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-nno-cup.json",
+      "active": false
+    },
+    {
+      "id": 4961,
+      "name": "North American Challengers League",
+      "slug": "league-of-legends-north-american-challengers-league",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4961/nacl_full_logo-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-north-american-challengers-league.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-north-american-challengers-league.json",
+      "active": true
+    },
+    {
+      "id": 5455,
+      "name": "Nova Series",
+      "slug": "league-of-legends-nova-series",
+      "logoUrl": null,
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-nova-series.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-nova-series.json",
+      "active": false
+    },
+    {
+      "id": 301,
+      "name": "OPL",
+      "slug": "league-of-legends-opl",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/301/OPL_2018_Logo_Color.png",
+      "url": "https://oce.lolesports.com/",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-opl.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-opl.json",
+      "active": false
+    },
+    {
+      "id": 4288,
+      "name": "PCS",
+      "slug": "league-of-legends-pcs",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4288/PCS_logo_full.png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-pcs.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-pcs.json",
+      "active": false
+    },
+    {
+      "id": 4405,
+      "name": "PG Nationals",
+      "slug": "league-of-legends-pg-nationals",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4405/494px-pg_nationals_2021_icon_allmode-png",
+      "url": "http://nationals.pge.gg/",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-pg-nationals.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-pg-nationals.json",
+      "active": false
+    },
+    {
+      "id": 4263,
+      "name": "Polska Liga Esportowa",
+      "slug": "league-of-legends-polska-liga-esportowa",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4263/800px-FE_PLE_Logo.png",
+      "url": "http://lol.polskaligaesportowa.pl/",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-polska-liga-esportowa.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-polska-liga-esportowa.json",
+      "active": false
+    },
+    {
+      "id": 4302,
+      "name": "Prime League 1st Division",
+      "slug": "league-of-legends-prime-league-pro-division",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4302/440px-prime_league_lightmode-png",
+      "url": "https://www.primeleague.gg/de/start",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-prime-league-pro-division.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-prime-league-pro-division.json",
+      "active": true
+    },
+    {
+      "id": 4899,
+      "name": "Prime League Super Cup",
+      "slug": "league-of-legends-prime-league-super-cup",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4899/strauss_prime_leaguelogo_square-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-prime-league-super-cup.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-prime-league-super-cup.json",
+      "active": false
+    },
+    {
+      "id": 5141,
+      "name": "Prime Pokal",
+      "slug": "league-of-legends-prime-pokal",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/5141/440px-prime_league_lightmode-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-prime-pokal.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-prime-pokal.json",
+      "active": false
+    },
+    {
+      "id": 4392,
+      "name": "Pulsefire Cup",
+      "slug": "league-of-legends-pulsefire-cup",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4392/Pulsefire_Cup_2020.png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-pulsefire-cup.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-pulsefire-cup.json",
+      "active": false
+    },
+    {
+      "id": 5184,
+      "name": "Red Bull League of Its Own",
+      "slug": "league-of-legends-red-bull-league-of-its-own",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/5184/red_bull_league_of_its_own_allmode-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-red-bull-league-of-its-own.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-red-bull-league-of-its-own.json",
+      "active": false
+    },
+    {
+      "id": 5358,
+      "name": "Rift Legends",
+      "slug": "league-of-legends-rift-legends",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/5358/rift_legends_icon_allmode-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-rift-legends.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-rift-legends.json",
+      "active": true
+    },
+    {
+      "id": 2133,
+      "name": "Rift Rivals: CB vs. CLS vs. LLN",
+      "slug": "league-of-legends-rift-rivals-cblol-vs-cls-vs-lln",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/2133/213px-YellowRift2018.png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-rift-rivals-cblol-vs-cls-vs-lln.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-rift-rivals-cblol-vs-cls-vs-lln.json",
+      "active": false
+    },
+    {
+      "id": 2108,
+      "name": "Rift Rivals: GPL vs. LJL vs. OPL",
+      "slug": "league-of-legends-rift-rivals-gpl-vs-ljl-vs-opl",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/2108/213px-PurpleRift2018.png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-rift-rivals-gpl-vs-ljl-vs-opl.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-rift-rivals-gpl-vs-ljl-vs-opl.json",
+      "active": false
+    },
+    {
+      "id": 4230,
+      "name": "Rift Rivals: LCK vs LPL vs LMS/VCS",
+      "slug": "league-of-legends-rift-rivals-lck-vs-lpl-vs-lms-vcs",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4230/Rift_Rivals_Red_2019.png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-rift-rivals-lck-vs-lpl-vs-lms-vcs.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-rift-rivals-lck-vs-lpl-vs-lms-vcs.json",
+      "active": false
+    },
+    {
+      "id": 4097,
+      "name": "Rift Rivals: LCK vs. LPL vs. LMS",
+      "slug": "league-of-legends-rift-rivals-lck-vs-lppl-vs-lms",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4097/142px-RedRift2018.png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-rift-rivals-lck-vs-lppl-vs-lms.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-rift-rivals-lck-vs-lppl-vs-lms.json",
+      "active": false
+    },
+    {
+      "id": 2132,
+      "name": "Rift Rivals: LCL vs. TCL",
+      "slug": "league-of-legends-rift-rivals-tr-vs-cis",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/2132/Rift_Rivals_LCL-TCL.png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-rift-rivals-tr-vs-cis.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-rift-rivals-tr-vs-cis.json",
+      "active": false
+    },
+    {
+      "id": 4143,
+      "name": "Rift Rivals: LCL vs. TCL vs. VCS",
+      "slug": "league-of-legends-rift-rivals-lcl-vs-tcl-vs-vcs",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4143/143px-GreenRift2018.png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-rift-rivals-lcl-vs-tcl-vs-vcs.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-rift-rivals-lcl-vs-tcl-vs-vcs.json",
+      "active": false
+    },
+    {
+      "id": 2107,
+      "name": "Rift Rivals: NA vs. EU",
+      "slug": "league-of-legends-rift-rivals",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/2107/213px-BlueRift2018.png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-rift-rivals.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-rift-rivals.json",
+      "active": false
+    },
+    {
+      "id": 5366,
+      "name": "Road Of Legends",
+      "slug": "league-of-legends-road-of-legends",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/5366/transip_road_of_legends_logo-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-road-of-legends.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-road-of-legends.json",
+      "active": true
+    },
+    {
+      "id": 4783,
+      "name": "SEA Games",
+      "slug": "league-of-legends-sea-games",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4783/Sea_Games_31.png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-sea-games.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-sea-games.json",
+      "active": false
+    },
+    {
+      "id": 4953,
+      "name": "Season Kickoff",
+      "slug": "league-of-legends-season-kickoff",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4953/ezgif-3-0d13af5176-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-season-kickoff.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-season-kickoff.json",
+      "active": false
+    },
+    {
+      "id": 5146,
+      "name": "Sigma Cup",
+      "slug": "league-of-legends-sigma-cup",
+      "logoUrl": null,
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-sigma-cup.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-sigma-cup.json",
+      "active": false
+    },
+    {
+      "id": 5183,
+      "name": "Superdome",
+      "slug": "league-of-legends-superdome",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/5183/800px-superdome_2023_cairo_allmode-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-superdome.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-superdome.json",
+      "active": false
+    },
+    {
+      "id": 5312,
+      "name": "T-esports Championship",
+      "slug": "league-of-legends-t-esports-championship",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/5312/t-esports_championship_logo-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-t-esports-championship.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-t-esports-championship.json",
+      "active": false
+    },
+    {
+      "id": 1003,
+      "name": "TCL",
+      "slug": "league-of-legends-turkey-championship-league",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/1003/600px-tcl_2023_logo-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-turkey-championship-league.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-turkey-championship-league.json",
+      "active": true
+    },
+    {
+      "id": 5051,
+      "name": "TCL Division 2",
+      "slug": "league-of-legends-tcl-division-2",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/5051/ezgif-5-3a8f4231b5-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-tcl-division-2.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-tcl-division-2.json",
+      "active": false
+    },
+    {
+      "id": 4100,
+      "name": "Torneo de Pre-Copa",
+      "slug": "league-of-legends-torneo-de-pre-copa",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4100/249px-LAS_Preseason.png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-torneo-de-pre-copa.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-torneo-de-pre-copa.json",
+      "active": false
+    },
+    {
+      "id": 1089,
+      "name": "Turkey Challenger Series",
+      "slug": "league-of-legends-turkey-challenger-series",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/1089/turkey-challenger-series-h3fkut0m.png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-turkey-challenger-series.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-turkey-challenger-series.json",
+      "active": false
+    },
+    {
+      "id": 4300,
+      "name": "Ultraliga",
+      "slug": "league-of-legends-ultraliga",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4300/ultraliga-png",
+      "url": "https://www.ultraliga.pl/",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-ultraliga.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-ultraliga.json",
+      "active": false
+    },
+    {
+      "id": 4141,
+      "name": "VCS",
+      "slug": "league-of-legends-vcs",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4141/800px-vietnam_championship_series_2023_lightmode-png-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-vcs.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-vcs.json",
+      "active": true
+    },
+    {
+      "id": 4943,
+      "name": "Weibo Cup",
+      "slug": "league-of-legends-weibo-cup",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/4943/weibo_cup_2022-png",
+      "url": "https://weibo.com/u/7463091283",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-weibo-cup.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-weibo-cup.json",
+      "active": false
+    },
+    {
+      "id": 5558,
+      "name": "World Star Challengers Invitational",
+      "slug": "league-of-legends-world-star-challengers-invitational",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/5558/ezgif-7ec1465c1faa44c5-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-world-star-challengers-invitational.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-world-star-challengers-invitational.json",
+      "active": true
+    },
+    {
+      "id": 297,
+      "name": "Worlds",
+      "slug": "league-of-legends-world-championship",
+      "logoUrl": "https://cdn-api.pandascore.co/images/league/image/297/worlds-png",
+      "url": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-world-championship.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-world-championship.json",
+      "active": true
+    }
+  ]
+}
