@@ -2,6 +2,7 @@ import ical, {
     type ICalCalendar,
     type ICalEvent,
     type ICalEventData,
+    ICalEventStatus,
 } from "ical-generator";
 import type { CalendarEventJSON, CalendarJSON, NormalizedMatch } from "./types";
 
@@ -69,11 +70,12 @@ export function updateCalendarEvents(
 }
 
 export function toIcalEvents(match: NormalizedMatch): ICalEventData | null {
-    if (!match.beginAt) {
+    const rawStart = match.scheduledAt || match.beginAt;
+    if (!rawStart) {
         return null;
     }
 
-    const start = new Date(match.beginAt);
+    const start = new Date(rawStart);
     if (isNaN(start.getTime())) {
         return null;
     }
@@ -84,14 +86,23 @@ export function toIcalEvents(match: NormalizedMatch): ICalEventData | null {
             : 2;
     const end = new Date(start.getTime() + durationHours * 60 * 60 * 1000);
 
-    return {
+    const eventData: ICalEventData = {
         id: `${match.id}@zlypher.github.io`,
         start,
         end,
         stamp: start,
         summary: match.name,
-        sequence: 1,
+        sequence: typeof match.sequence === "number" ? match.sequence : 1,
     };
+
+    if (match.status) {
+        const normalized = match.status.toUpperCase();
+        if (normalized === "CANCELLED" || normalized === "CANCELED") {
+            eventData.status = ICalEventStatus.CANCELLED;
+        }
+    }
+
+    return eventData;
 }
 
 export function toIcal(name: string, matches: NormalizedMatch[]): ICalCalendar {
