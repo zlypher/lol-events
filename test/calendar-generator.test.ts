@@ -20,9 +20,6 @@ describe("calendar-generator", () => {
         testOutputDir = fs.mkdtempSync(
             path.join(os.tmpdir(), "lol-events-test-"),
         );
-        vi.spyOn(PandaScore, "getPastMatches").mockResolvedValue([]);
-        vi.spyOn(PandaScore, "getRunningMatches").mockResolvedValue([]);
-        vi.spyOn(PandaScore, "getUpcomingMatches").mockResolvedValue([]);
         vi.spyOn(PandaScore, "getGlobalMatches").mockResolvedValue([]);
     });
 
@@ -32,7 +29,7 @@ describe("calendar-generator", () => {
     });
 
     describe("generateIcalCalendar", () => {
-        it("skips match queries, logs inactive notice, and does not write files for an inactive league", async () => {
+        it("logs inactive notice and does not write files for an inactive league", async () => {
             const consoleSpy = vi
                 .spyOn(console, "log")
                 .mockImplementation(() => {});
@@ -42,9 +39,6 @@ describe("calendar-generator", () => {
                 outputDir: testOutputDir,
             });
 
-            expect(PandaScore.getPastMatches).not.toHaveBeenCalled();
-            expect(PandaScore.getRunningMatches).not.toHaveBeenCalled();
-            expect(PandaScore.getUpcomingMatches).not.toHaveBeenCalled();
             expect(consoleSpy).toHaveBeenCalledWith(
                 `[${inactiveLeague.name}] (inactive) no matches fetched`,
             );
@@ -82,24 +76,28 @@ describe("calendar-generator", () => {
             );
         });
 
-        it("fetches matches and generates calendar files for an active league", async () => {
+        it("generates calendar files for an active league with provided matches", async () => {
             const activeLeague = leagues.find((l) => l.name === "LEC")!;
+            const mockMatches: PandaScoreMatch[] = [
+                {
+                    id: 1661676,
+                    name: "Grand final: G2 vs KC",
+                    begin_at: "2026-09-20T15:00:00Z",
+                    scheduled_at: "2026-09-20T15:00:00Z",
+                    number_of_games: 5,
+                    status: "finished",
+                    opponents: [
+                        { opponent: { id: 88, name: "G2 Esports" } },
+                        { opponent: { id: 134078, name: "Karmine Corp" } },
+                    ],
+                },
+            ];
 
             await generateIcalCalendar(activeLeague, {
                 referenceDate,
                 outputDir: testOutputDir,
+                matches: mockMatches,
             });
-
-            expect(PandaScore.getPastMatches).toHaveBeenCalledWith(
-                activeLeague.id,
-                { page: 1, per_page: 20 },
-            );
-            expect(PandaScore.getRunningMatches).toHaveBeenCalledWith(
-                activeLeague.id,
-            );
-            expect(PandaScore.getUpcomingMatches).toHaveBeenCalledWith(
-                activeLeague.id,
-            );
 
             const icalPath = path.join(
                 testOutputDir,
@@ -112,6 +110,9 @@ describe("calendar-generator", () => {
 
             expect(fs.existsSync(icalPath)).toBe(true);
             expect(fs.existsSync(jsonPath)).toBe(true);
+            const json = JSON.parse(fs.readFileSync(jsonPath, "utf-8"));
+            expect(json.events).toHaveLength(1);
+            expect(json.events[0].summary).toBe("Grand final: G2 vs KC");
         });
     });
 
@@ -154,11 +155,6 @@ describe("calendar-generator", () => {
             expect(PandaScore.getGlobalMatches).toHaveBeenCalledWith({
                 referenceDate,
             });
-
-            // Verify individual league match endpoints are NO LONGER called during generateAllCalendars
-            expect(PandaScore.getPastMatches).not.toHaveBeenCalled();
-            expect(PandaScore.getRunningMatches).not.toHaveBeenCalled();
-            expect(PandaScore.getUpcomingMatches).not.toHaveBeenCalled();
 
             // Verify inactive notices were logged
             for (const name of inactiveLeagueNames) {

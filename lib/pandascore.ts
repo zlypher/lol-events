@@ -204,15 +204,14 @@ export const getGlobalUpcomingMatches = async (
 
 export interface GlobalMatchesOptions {
     referenceDate?: Date;
-    pastDays?: number;
 }
 
 export const getGlobalMatches = async (
     options: GlobalMatchesOptions = {},
 ): Promise<PandaScoreMatch[]> => {
-    const { referenceDate = new Date(), pastDays = 30 } = options;
+    const { referenceDate = new Date() } = options;
     const fromDate = new Date(
-        referenceDate.getTime() - pastDays * 24 * 60 * 60 * 1000,
+        referenceDate.getTime() - 30 * 24 * 60 * 60 * 1000,
     );
 
     const pastRangeOptions: PandaScoreOptions = {
