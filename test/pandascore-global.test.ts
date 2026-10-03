@@ -107,8 +107,83 @@ describe("pandascore global match ingestion", () => {
 
             // Deduplication: 3 unique matches in total
             expect(allMatches).toHaveLength(3);
-            const ids = allMatches.map((m) => m.id);
-            expect(ids).toEqual([1661676, 1661677, 1661678]);
+            const ids = new Set(allMatches.map((m) => m.id));
+            expect(ids).toEqual(new Set([1661676, 1661677, 1661678]));
+        });
+
+        it("should prioritize running match details when a match is present in both past and running", async () => {
+            const runningMatch: PandaScoreMatch = {
+                ...matchesFixture[0],
+                status: "running",
+                name: "Grand final: G2 vs KC (LIVE)",
+            };
+            const pastMatch: PandaScoreMatch = {
+                ...matchesFixture[0],
+                status: "finished",
+                name: "Grand final: G2 vs KC (PAST)",
+            };
+
+            vi.spyOn(PandaScore, "getAllPages").mockImplementation(
+                async (callback, initialOptions) => {
+                    const dummyOpts = initialOptions ?? {
+                        page: 1,
+                        per_page: 100,
+                    };
+                    return callback(dummyOpts);
+                },
+            );
+
+            vi.spyOn(PandaScore, "getGlobalPastMatches").mockResolvedValue([
+                pastMatch,
+            ]);
+            vi.spyOn(PandaScore, "getGlobalRunningMatches").mockResolvedValue([
+                runningMatch,
+            ]);
+            vi.spyOn(PandaScore, "getGlobalUpcomingMatches").mockResolvedValue(
+                [],
+            );
+
+            const allMatches = await getGlobalMatches();
+            expect(allMatches).toHaveLength(1);
+            expect(allMatches[0].status).toBe("running");
+            expect(allMatches[0].name).toBe("Grand final: G2 vs KC (LIVE)");
+        });
+
+        it("should traverse multiple pages when a page returns 100 matches", async () => {
+            const page1: PandaScoreMatch[] = Array.from(
+                { length: 100 },
+                (_, i) => ({
+                    ...matchesFixture[0],
+                    id: 1000 + i,
+                }),
+            );
+            const page2: PandaScoreMatch[] = [
+                {
+                    ...matchesFixture[1],
+                    id: 2000,
+                },
+            ];
+
+            let callCount = 0;
+            vi.spyOn(PandaScore, "getGlobalUpcomingMatches").mockImplementation(
+                async (opts) => {
+                    callCount++;
+                    if (opts?.page === 1) {
+                        return page1;
+                    }
+                    return page2;
+                },
+            );
+            vi.spyOn(PandaScore, "getGlobalPastMatches").mockResolvedValue([]);
+            vi.spyOn(PandaScore, "getGlobalRunningMatches").mockResolvedValue(
+                [],
+            );
+
+            const allMatches = await getGlobalMatches();
+
+            expect(callCount).toBe(2);
+            expect(allMatches).toHaveLength(101);
+            expect(allMatches.some((m) => m.id === 2000)).toBe(true);
         });
     });
 });

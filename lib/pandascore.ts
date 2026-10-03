@@ -230,7 +230,8 @@ export const getGlobalMatches = async (
         getAllPages((opts) => PandaScore.getGlobalUpcomingMatches(opts)),
     ]);
 
-    const allMatches = [...pastMatches, ...runningMatches, ...upcomingMatches];
+    // Prioritize running matches over past/upcoming matches if a match appears across multiple endpoints
+    const allMatches = [...runningMatches, ...upcomingMatches, ...pastMatches];
     const uniqueMatchesMap = new Map<number, PandaScoreMatch>();
 
     for (const match of allMatches) {
