@@ -19,57 +19,35 @@ describe("pandascore global match ingestion", () => {
         vi.restoreAllMocks();
     });
 
-    describe("getGlobalPastMatches", () => {
-        it("should query /lol/matches/past with default pagination options", async () => {
+    describe.each([
+        {
+            name: "getGlobalPastMatches",
+            fn: getGlobalPastMatches,
+            endpoint: "/lol/matches/past",
+        },
+        {
+            name: "getGlobalRunningMatches",
+            fn: getGlobalRunningMatches,
+            endpoint: "/lol/matches/running",
+        },
+        {
+            name: "getGlobalUpcomingMatches",
+            fn: getGlobalUpcomingMatches,
+            endpoint: "/lol/matches/upcoming",
+        },
+    ])("$name", ({ fn, endpoint }) => {
+        it(`should query ${endpoint} with default pagination options`, async () => {
             const requestSpy = vi
                 .spyOn(PandaScore, "request")
                 .mockResolvedValue(
                     new Response(JSON.stringify(matchesFixture)),
                 );
 
-            const res = await getGlobalPastMatches();
+            const res = await fn();
 
             expect(requestSpy).toHaveBeenCalledTimes(1);
             const callUrl = requestSpy.mock.calls[0][0];
-            expect(callUrl).toContain("/lol/matches/past");
-            expect(callUrl).toContain("page=1");
-            expect(callUrl).toContain("per_page=100");
-            expect(res).toHaveLength(matchesFixture.length);
-        });
-    });
-
-    describe("getGlobalRunningMatches", () => {
-        it("should query /lol/matches/running with default pagination options", async () => {
-            const requestSpy = vi
-                .spyOn(PandaScore, "request")
-                .mockResolvedValue(
-                    new Response(JSON.stringify(matchesFixture)),
-                );
-
-            const res = await getGlobalRunningMatches();
-
-            expect(requestSpy).toHaveBeenCalledTimes(1);
-            const callUrl = requestSpy.mock.calls[0][0];
-            expect(callUrl).toContain("/lol/matches/running");
-            expect(callUrl).toContain("page=1");
-            expect(callUrl).toContain("per_page=100");
-            expect(res).toHaveLength(matchesFixture.length);
-        });
-    });
-
-    describe("getGlobalUpcomingMatches", () => {
-        it("should query /lol/matches/upcoming with default pagination options", async () => {
-            const requestSpy = vi
-                .spyOn(PandaScore, "request")
-                .mockResolvedValue(
-                    new Response(JSON.stringify(matchesFixture)),
-                );
-
-            const res = await getGlobalUpcomingMatches();
-
-            expect(requestSpy).toHaveBeenCalledTimes(1);
-            const callUrl = requestSpy.mock.calls[0][0];
-            expect(callUrl).toContain("/lol/matches/upcoming");
+            expect(callUrl).toContain(endpoint);
             expect(callUrl).toContain("page=1");
             expect(callUrl).toContain("per_page=100");
             expect(res).toHaveLength(matchesFixture.length);

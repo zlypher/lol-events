@@ -12,6 +12,8 @@ export interface CalendarGenerationOptions {
     concurrency?: number;
     referenceDate?: Date;
     outputDir?: string;
+    matches?: PandaScoreMatch[];
+    matchesByLeague?: Map<number, PandaScoreMatch[]>;
 }
 
 export function outputCalendar(
@@ -59,9 +61,8 @@ export async function createCalendar(
 export async function generateIcalCalendar(
     league: PandaScoreLeague,
     options: CalendarGenerationOptions = {},
-    matches?: PandaScoreMatch[],
 ): Promise<void> {
-    const { referenceDate, outputDir = "./docs/cal" } = options;
+    const { referenceDate, outputDir = "./docs/cal", matches } = options;
 
     if (!isLeagueActive(league, referenceDate)) {
         console.log(`[${league.name}] (inactive) no matches fetched`);
@@ -89,12 +90,12 @@ export async function generateIcalCalendar(
 export async function generateAllCalendars(
     leagues: PandaScoreLeague[],
     options: CalendarGenerationOptions = {},
-    matchesByLeague?: Map<number, PandaScoreMatch[]>,
 ): Promise<void> {
     const {
         concurrency = Number(process.env.CONCURRENCY) || DEFAULT_CONCURRENCY,
         referenceDate = new Date(),
         outputDir = "./docs/cal",
+        matchesByLeague,
     } = options;
 
     const { active, inactive } = partitionLeagues(leagues, referenceDate);
@@ -121,14 +122,11 @@ export async function generateAllCalendars(
         active.map((league) =>
             limit(async () => {
                 const leagueMatches = groupedMatches?.get(league.id) ?? [];
-                await generateIcalCalendar(
-                    league,
-                    {
-                        referenceDate,
-                        outputDir,
-                    },
-                    leagueMatches,
-                );
+                await generateIcalCalendar(league, {
+                    referenceDate,
+                    outputDir,
+                    matches: leagueMatches,
+                });
                 completed++;
                 if (completed % 10 === 0 || completed === active.length) {
                     const pct =
