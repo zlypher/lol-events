@@ -152,8 +152,12 @@ export const getTeams = async (
 
 export const getAllPages = async <T>(
     callback: (options: PandaScoreOptions) => Promise<T[]>,
+    initialOptions?: PandaScoreOptions,
 ): Promise<T[]> => {
-    const options = getDefaultOptions();
+    const options: PandaScoreOptions = {
+        ...getDefaultOptions(),
+        ...initialOptions,
+    };
     let results: T[] = [];
 
     let response = await callback(options);
@@ -168,12 +172,86 @@ export const getAllPages = async <T>(
     return results;
 };
 
+export const getGlobalPastMatches = async (
+    options: PandaScoreOptions = getDefaultOptions(),
+): Promise<PandaScoreMatch[]> => {
+    const query = qs.stringify(options);
+    const response = await PandaScore.request(
+        `${baseUrl}/lol/matches/past?${query}`,
+    );
+    return await handleResponse<PandaScoreMatch[]>(response);
+};
+
+export const getGlobalRunningMatches = async (
+    options: PandaScoreOptions = getDefaultOptions(),
+): Promise<PandaScoreMatch[]> => {
+    const query = qs.stringify(options);
+    const response = await PandaScore.request(
+        `${baseUrl}/lol/matches/running?${query}`,
+    );
+    return await handleResponse<PandaScoreMatch[]>(response);
+};
+
+export const getGlobalUpcomingMatches = async (
+    options: PandaScoreOptions = getDefaultOptions(),
+): Promise<PandaScoreMatch[]> => {
+    const query = qs.stringify(options);
+    const response = await PandaScore.request(
+        `${baseUrl}/lol/matches/upcoming?${query}`,
+    );
+    return await handleResponse<PandaScoreMatch[]>(response);
+};
+
+export interface GlobalMatchesOptions {
+    referenceDate?: Date;
+}
+
+export const getGlobalMatches = async (
+    options: GlobalMatchesOptions = {},
+): Promise<PandaScoreMatch[]> => {
+    const { referenceDate = new Date() } = options;
+    const fromDate = new Date(
+        referenceDate.getTime() - 30 * 24 * 60 * 60 * 1000,
+    );
+
+    const pastRangeOptions: PandaScoreOptions = {
+        range: {
+            begin_at: `${fromDate.toISOString()},${referenceDate.toISOString()}`,
+        },
+    };
+
+    const [pastMatches, runningMatches, upcomingMatches] = await Promise.all([
+        getAllPages(
+            (opts) => PandaScore.getGlobalPastMatches(opts),
+            pastRangeOptions,
+        ),
+        getAllPages((opts) => PandaScore.getGlobalRunningMatches(opts)),
+        getAllPages((opts) => PandaScore.getGlobalUpcomingMatches(opts)),
+    ]);
+
+    // Prioritize running matches over past/upcoming matches if a match appears across multiple endpoints
+    const allMatches = [...runningMatches, ...upcomingMatches, ...pastMatches];
+    const uniqueMatchesMap = new Map<number, PandaScoreMatch>();
+
+    for (const match of allMatches) {
+        if (!uniqueMatchesMap.has(match.id)) {
+            uniqueMatchesMap.set(match.id, match);
+        }
+    }
+
+    return Array.from(uniqueMatchesMap.values());
+};
+
 export { defaultRateLimiter, RateLimiter };
 
-export default {
+const PandaScore = {
     getPastMatches,
     getRunningMatches,
     getUpcomingMatches,
+    getGlobalPastMatches,
+    getGlobalRunningMatches,
+    getGlobalUpcomingMatches,
+    getGlobalMatches,
     getLeagues,
     getTeams,
     getAllPages,
@@ -182,3 +260,5 @@ export default {
     RateLimiter,
     defaultRateLimiter,
 };
+
+export default PandaScore;
