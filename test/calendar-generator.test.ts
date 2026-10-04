@@ -118,27 +118,22 @@ describe("calendar-generator", () => {
             );
         });
 
-        it("generates calendar files for an active league with provided matches and updates match store", async () => {
+        it("generates calendar files for an active league from the match store", async () => {
             const activeLeague = leagues.find((l) => l.name === "LEC")!;
-            const mockMatches: PandaScoreMatch[] = [
-                {
-                    id: 1661676,
-                    name: "Grand final: G2 vs KC",
-                    begin_at: "2026-09-20T15:00:00Z",
-                    scheduled_at: "2026-09-20T15:00:00Z",
-                    number_of_games: 5,
-                    status: "finished",
-                    opponents: [
-                        { opponent: { id: 88, name: "G2 Esports" } },
-                        { opponent: { id: 134078, name: "Karmine Corp" } },
-                    ],
-                },
-            ];
+            testMatchStore.matches[1661676] = {
+                id: 1661676,
+                uid: "1661676@zlypher.github.io",
+                sequence: 1,
+                start: "2026-09-20T15:00:00.000Z",
+                end: "2026-09-20T20:00:00.000Z",
+                summary: "Grand final: G2 vs KC",
+                status: null,
+                leagueId: activeLeague.id,
+            };
 
             await generateIcalCalendar(activeLeague, {
                 referenceDate,
                 outputDir: testOutputDir,
-                matches: mockMatches,
                 matchStore: testMatchStore,
             });
 
@@ -156,10 +151,6 @@ describe("calendar-generator", () => {
             const json = JSON.parse(fs.readFileSync(jsonPath, "utf-8"));
             expect(json.events).toHaveLength(1);
             expect(json.events[0].summary).toBe("Grand final: G2 vs KC");
-            expect(testMatchStore.matches[1661676]).toBeDefined();
-            expect(testMatchStore.matches[1661676].leagueId).toBe(
-                activeLeague.id,
-            );
         });
     });
 
