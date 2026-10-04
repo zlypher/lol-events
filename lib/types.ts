@@ -89,7 +89,7 @@ export interface NormalizedOpponent {
     name: string;
 }
 
-export type EventStatus = "CANCELLED" | "CONFIRMED" | "TENTATIVE";
+export type EventStatus = "CANCELLED";
 
 export interface NormalizedMatch {
     id: number;
@@ -149,6 +149,7 @@ export interface MatchStoreEntry {
     end: string | null;
     summary: string;
     status: EventStatus | null;
+    leagueId?: number;
 }
 
 export interface MatchStore {

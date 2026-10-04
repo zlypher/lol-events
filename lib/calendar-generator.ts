@@ -5,15 +5,18 @@ import pLimit from "p-limit";
 import { toIcal } from "./ical-utils";
 import { isLeagueActive, partitionLeagues } from "./league-activity";
 import PandaScore, { DEFAULT_CONCURRENCY } from "./pandascore";
-import PandaScoreUtils from "./pandascore-utils";
 import {
-    applyMatchStore,
-    DEFAULT_MATCH_STORE_PATH,
+    getMatchesForLeague,
     loadMatchStore,
     saveMatchStore,
     updateMatchStore,
 } from "./match-store";
-import type { MatchStore, PandaScoreLeague, PandaScoreMatch } from "./types";
+import type {
+    MatchStore,
+    MatchStoreEntry,
+    PandaScoreLeague,
+    PandaScoreMatch,
+} from "./types";
 
 export interface CalendarGenerationOptions {
     concurrency?: number;
@@ -21,7 +24,6 @@ export interface CalendarGenerationOptions {
     outputDir?: string;
     matches?: PandaScoreMatch[];
     matchStore?: MatchStore;
-    matchStorePath?: string;
 }
 
 export function outputCalendar(
@@ -41,14 +43,12 @@ export function outputCalendar(
 
 export function createCalendar(
     league: PandaScoreLeague,
-    matches: PandaScoreMatch[] = [],
-    matchStore?: MatchStore,
+    matchStore: MatchStore | MatchStoreEntry[],
 ): ICalCalendar {
-    const mappedMatches = PandaScoreUtils.mapPandaScoreResult(matches);
-    if (matchStore) {
-        applyMatchStore(matchStore, mappedMatches);
-    }
-    return toIcal(league.name, mappedMatches);
+    const matches = Array.isArray(matchStore)
+        ? matchStore
+        : getMatchesForLeague(matchStore, league.id);
+    return toIcal(league.name, matches);
 }
 
 export async function generateIcalCalendar(
@@ -59,8 +59,7 @@ export async function generateIcalCalendar(
         referenceDate,
         outputDir = "./docs/cal",
         matches,
-        matchStore: providedStore,
-        matchStorePath = DEFAULT_MATCH_STORE_PATH,
+        matchStore,
     } = options;
 
     if (!isLeagueActive(league, referenceDate)) {
@@ -71,9 +70,15 @@ export async function generateIcalCalendar(
     try {
         console.log("Creating ical for", league.name);
 
-        const matchStore = providedStore ?? loadMatchStore(matchStorePath);
-        const icalData = await createCalendar(league, matches, matchStore);
+        const store = matchStore ?? loadMatchStore();
+        if (matches && matches.length > 0) {
+            updateMatchStore(store, matches, league.id);
+            if (!matchStore) {
+                saveMatchStore(store);
+            }
+        }
 
+        const icalData = createCalendar(league, store);
         outputCalendar(league.slug, icalData, outputDir);
     } catch (e) {
         console.error("Error creating ical for", league.name, e);
@@ -88,8 +93,7 @@ export async function generateAllCalendars(
         concurrency = Number(process.env.CONCURRENCY) || DEFAULT_CONCURRENCY,
         referenceDate = new Date(),
         outputDir = "./docs/cal",
-        matchStore: providedStore,
-        matchStorePath = DEFAULT_MATCH_STORE_PATH,
+        matchStore,
     } = options;
 
     const { active, inactive } = partitionLeagues(leagues, referenceDate);
@@ -105,11 +109,12 @@ export async function generateAllCalendars(
 
     console.log("Ingesting global matches from PandaScore...");
     const allMatches = await PandaScore.getGlobalMatches({ referenceDate });
-    const groupedMatches = PandaScoreUtils.groupMatchesByLeague(allMatches);
 
-    const matchStore = providedStore ?? loadMatchStore(matchStorePath);
-    updateMatchStore(matchStore, allMatches);
-    saveMatchStore(matchStore, matchStorePath);
+    const store = matchStore ?? loadMatchStore();
+    updateMatchStore(store, allMatches);
+    if (!matchStore) {
+        saveMatchStore(store);
+    }
 
     const limit = pLimit(concurrency);
     let completed = 0;
@@ -120,12 +125,10 @@ export async function generateAllCalendars(
     await Promise.all(
         active.map((league) =>
             limit(async () => {
-                const leagueMatches = groupedMatches?.get(league.id) ?? [];
                 await generateIcalCalendar(league, {
                     referenceDate,
                     outputDir,
-                    matches: leagueMatches,
-                    matchStore,
+                    matchStore: store,
                 });
                 completed++;
                 if (completed % 10 === 0 || completed === active.length) {
