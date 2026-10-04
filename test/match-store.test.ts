@@ -330,11 +330,11 @@ describe("match-store seeding", () => {
 
             const lecMatches = getMatchesForLeague(store, 4197);
             expect(lecMatches).toHaveLength(1);
-            expect(lecMatches[0].summary).toBe("LEC Match");
+            expect(lecMatches[0].name).toBe("LEC Match");
 
             const lcsMatches = getMatchesForLeague(store, 4198);
             expect(lcsMatches).toHaveLength(1);
-            expect(lcsMatches[0].summary).toBe("LCS Match");
+            expect(lcsMatches[0].name).toBe("LCS Match");
 
             const unknownMatches = getMatchesForLeague(store, 9999);
             expect(unknownMatches).toHaveLength(0);

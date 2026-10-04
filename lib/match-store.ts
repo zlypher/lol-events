@@ -6,6 +6,7 @@ import type {
     LeaguesManifest,
     MatchStore,
     MatchStoreEntry,
+    NormalizedMatch,
     PandaScoreMatch,
 } from "./types";
 
@@ -250,8 +251,31 @@ export function updateMatchStore(
 export function getMatchesForLeague(
     store: MatchStore,
     leagueId: number,
-): MatchStoreEntry[] {
-    return Object.values(store.matches).filter(
-        (entry) => entry.leagueId === leagueId,
-    );
+): NormalizedMatch[] {
+    return Object.values(store.matches)
+        .filter((entry) => entry.leagueId === leagueId)
+        .map((entry) => {
+            let numberOfGames = 2;
+            if (entry.start && entry.end) {
+                const diffHours = Math.round(
+                    (new Date(entry.end).getTime() -
+                        new Date(entry.start).getTime()) /
+                        (60 * 60 * 1000),
+                );
+                if (diffHours > 0) {
+                    numberOfGames = diffHours;
+                }
+            }
+
+            return {
+                id: entry.id,
+                name: entry.summary,
+                beginAt: entry.start,
+                scheduledAt: entry.start,
+                numberOfGames,
+                teams: [],
+                sequence: entry.sequence,
+                status: entry.status,
+            };
+        });
 }
