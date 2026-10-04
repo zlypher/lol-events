@@ -3,7 +3,10 @@ import path from "node:path";
 import { describe, expect, it } from "vitest";
 import {
     createEmptyMatchStore,
+    extractActiveTeamsFromMatchStore,
     getMatchesForLeague,
+    getMatchesForTeam,
+    getWindowStartTime,
     loadMatchStore,
     saveMatchStore,
     seedMatchStoreFromCalendars,
@@ -144,6 +147,11 @@ describe("match-store seeding", () => {
                 summary: "G2 vs FNC",
                 status: null,
                 leagueId: 4198,
+                leagueName: "LEC",
+                opponents: [
+                    { id: 1, name: "G2" },
+                    { id: 2, name: "FNC" },
+                ],
             });
         });
 
@@ -302,6 +310,71 @@ describe("match-store seeding", () => {
             expect(store.matches[100].status).toBe("CANCELLED");
             expect(store.matches[100].start).toBe(originalStart);
         });
+
+        it("increments sequence when opponents change", () => {
+            const store = createEmptyMatchStore();
+            const match: PandaScoreMatch = {
+                id: 100,
+                name: "TBD vs TBD",
+                begin_at: null,
+                scheduled_at: "2026-10-10T15:00:00Z",
+                number_of_games: 3,
+                status: "not_started",
+                opponents: [
+                    { opponent: { id: 1, name: "Team 1" } },
+                    { opponent: { id: 2, name: "Team 2" } },
+                ],
+            };
+
+            updateMatchStore(store, [match]);
+            expect(store.matches[100].sequence).toBe(1);
+
+            const changedOpponents: PandaScoreMatch = {
+                ...match,
+                opponents: [
+                    { opponent: { id: 1, name: "Team 1" } },
+                    { opponent: { id: 3, name: "Team 3" } },
+                ],
+            };
+
+            updateMatchStore(store, [changedOpponents]);
+            expect(store.matches[100].sequence).toBe(2);
+            expect(store.matches[100].opponents).toEqual([
+                { id: 1, name: "Team 1" },
+                { id: 3, name: "Team 3" },
+            ]);
+        });
+
+        it("does not increment sequence when opponents are identical", () => {
+            const store = createEmptyMatchStore();
+            const match: PandaScoreMatch = {
+                id: 100,
+                name: "G2 vs FNC",
+                begin_at: null,
+                scheduled_at: "2026-10-10T15:00:00Z",
+                number_of_games: 3,
+                status: "not_started",
+                opponents: [
+                    { opponent: { id: 1, name: "G2" } },
+                    { opponent: { id: 2, name: "FNC" } },
+                ],
+            };
+
+            updateMatchStore(store, [match]);
+            expect(store.matches[100].sequence).toBe(1);
+
+            // Re-run with same opponents in different order
+            const sameOpponents: PandaScoreMatch = {
+                ...match,
+                opponents: [
+                    { opponent: { id: 2, name: "FNC" } },
+                    { opponent: { id: 1, name: "G2" } },
+                ],
+            };
+
+            updateMatchStore(store, [sameOpponents]);
+            expect(store.matches[100].sequence).toBe(1);
+        });
     });
 
     describe("getMatchesForLeague", () => {
@@ -338,6 +411,192 @@ describe("match-store seeding", () => {
 
             const unknownMatches = getMatchesForLeague(store, 9999);
             expect(unknownMatches).toHaveLength(0);
+        });
+    });
+
+    describe("getWindowStartTime", () => {
+        it("calculates window start time correctly for specified referenceDate and windowDays", () => {
+            const refDate = new Date("2026-06-30T12:00:00.000Z");
+            const windowStart = getWindowStartTime(refDate, 30);
+            expect(windowStart.toISOString()).toBe("2026-05-31T12:00:00.000Z");
+        });
+    });
+
+    describe("getMatchesForTeam", () => {
+        it("filters matches where the team participated and prefixes league tag to summary", () => {
+            const store = createEmptyMatchStore();
+            store.matches[1] = {
+                id: 1,
+                uid: "1@zlypher.github.io",
+                sequence: 1,
+                start: "2026-06-15T15:00:00Z",
+                end: "2026-06-15T18:00:00Z",
+                summary: "T1 vs GEN",
+                status: null,
+                leagueId: 4198,
+                leagueName: "LCK",
+                opponents: [
+                    { id: 10, name: "T1" },
+                    { id: 20, name: "GEN" },
+                ],
+            };
+            store.matches[2] = {
+                id: 2,
+                uid: "2@zlypher.github.io",
+                sequence: 1,
+                start: "2026-06-16T15:00:00Z",
+                end: "2026-06-16T18:00:00Z",
+                summary: "G2 vs FNC",
+                status: null,
+                leagueId: 4197,
+                leagueName: "LEC",
+                opponents: [
+                    { id: 30, name: "G2" },
+                    { id: 40, name: "FNC" },
+                ],
+            };
+
+            const t1Matches = getMatchesForTeam(store, 10);
+            expect(t1Matches).toHaveLength(1);
+            expect(t1Matches[0].id).toBe(1);
+            expect(t1Matches[0].name).toBe("[LCK] T1 vs GEN");
+
+            const genMatches = getMatchesForTeam(store, 20);
+            expect(genMatches).toHaveLength(1);
+            expect(genMatches[0].name).toBe("[LCK] T1 vs GEN");
+
+            const unrelated = getMatchesForTeam(store, 999);
+            expect(unrelated).toHaveLength(0);
+        });
+
+        it("does not double-prefix if summary already has league tag", () => {
+            const store = createEmptyMatchStore();
+            store.matches[1] = {
+                id: 1,
+                uid: "1@zlypher.github.io",
+                sequence: 1,
+                start: "2026-06-15T15:00:00Z",
+                end: "2026-06-15T18:00:00Z",
+                summary: "[LCK] T1 vs GEN",
+                status: null,
+                leagueName: "LCK",
+                opponents: [{ id: 10, name: "T1" }],
+            };
+
+            const matches = getMatchesForTeam(store, 10);
+            expect(matches[0].name).toBe("[LCK] T1 vs GEN");
+        });
+
+        it("filters out matches older than windowDays when window is specified", () => {
+            const store = createEmptyMatchStore();
+            const refDate = new Date("2026-06-30T12:00:00.000Z");
+
+            // Match within 30 days (June 15)
+            store.matches[1] = {
+                id: 1,
+                uid: "1@zlypher.github.io",
+                sequence: 1,
+                start: "2026-06-15T15:00:00Z",
+                end: "2026-06-15T18:00:00Z",
+                summary: "T1 vs GEN",
+                status: null,
+                leagueName: "LCK",
+                opponents: [{ id: 10, name: "T1" }],
+            };
+            // Match older than 30 days (May 1)
+            store.matches[2] = {
+                id: 2,
+                uid: "2@zlypher.github.io",
+                sequence: 1,
+                start: "2026-05-01T15:00:00Z",
+                end: "2026-05-01T18:00:00Z",
+                summary: "T1 vs KT",
+                status: null,
+                leagueName: "LCK",
+                opponents: [{ id: 10, name: "T1" }],
+            };
+
+            const matchesInWindow = getMatchesForTeam(store, 10, {
+                referenceDate: refDate,
+                windowDays: 30,
+            });
+            expect(matchesInWindow).toHaveLength(1);
+            expect(matchesInWindow[0].id).toBe(1);
+
+            const allMatches = getMatchesForTeam(store, 10);
+            expect(allMatches).toHaveLength(2);
+        });
+    });
+
+    describe("extractActiveTeamsFromMatchStore", () => {
+        it("extracts active teams with matches in 30-day window and sorts them alphabetically", () => {
+            const store = createEmptyMatchStore();
+            const refDate = new Date("2026-06-30T12:00:00.000Z");
+
+            // Active match (June 10)
+            store.matches[1] = {
+                id: 1,
+                uid: "1@zlypher.github.io",
+                sequence: 1,
+                start: "2026-06-10T15:00:00Z",
+                end: "2026-06-10T18:00:00Z",
+                summary: "T1 vs Gen.G",
+                status: null,
+                opponents: [
+                    {
+                        id: 10,
+                        name: "T1",
+                        slug: "t1",
+                        acronym: "T1",
+                        imageUrl: "https://example.com/t1.png",
+                    },
+                    {
+                        id: 20,
+                        name: "Gen.G",
+                        slug: "gen-g",
+                        acronym: "GEN",
+                        imageUrl: "https://example.com/gen.png",
+                    },
+                ],
+            };
+
+            // Inactive match outside 30 days (April 10)
+            store.matches[2] = {
+                id: 2,
+                uid: "2@zlypher.github.io",
+                sequence: 1,
+                start: "2026-04-10T15:00:00Z",
+                end: "2026-04-10T18:00:00Z",
+                summary: "Old Team A vs Old Team B",
+                status: null,
+                opponents: [
+                    { id: 99, name: "Old Team A" },
+                    { id: 98, name: "Old Team B" },
+                ],
+            };
+
+            const activeTeams = extractActiveTeamsFromMatchStore(
+                store,
+                refDate,
+                30,
+            );
+
+            expect(activeTeams).toHaveLength(2);
+            // Alphabetical: Gen.G before T1
+            expect(activeTeams[0]).toEqual({
+                id: 20,
+                name: "Gen.G",
+                slug: "gen-g",
+                acronym: "GEN",
+                imageUrl: "https://example.com/gen.png",
+            });
+            expect(activeTeams[1]).toEqual({
+                id: 10,
+                name: "T1",
+                slug: "t1",
+                acronym: "T1",
+                imageUrl: "https://example.com/t1.png",
+            });
         });
     });
 });

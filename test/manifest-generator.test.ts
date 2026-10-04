@@ -1,10 +1,13 @@
 import { describe, expect, it } from "vitest";
 import {
     createLeagueManifestItem,
+    createTeamManifestItem,
     generateLeaguesManifest,
+    generateTeamsManifest,
     serializeLeaguesManifest,
+    serializeTeamsManifest,
 } from "../lib/manifest-generator";
-import type { PandaScoreLeague } from "../lib/types";
+import type { PandaScoreLeague, TeamInfo } from "../lib/types";
 
 describe("manifest-generator", () => {
     describe("generateLeaguesManifest - mapping and sorting", () => {
@@ -284,6 +287,88 @@ describe("manifest-generator", () => {
 
             expect(inactiveManifest.leagues).toHaveLength(5);
             expect(inactiveManifest.leagues.every((l) => !l.active)).toBe(true);
+        });
+    });
+
+    describe("createTeamManifestItem", () => {
+        it("creates manifest item with canonical team URLs and numeric ID", () => {
+            const team: TeamInfo = {
+                id: 1533,
+                name: "T1",
+                slug: "t1",
+                acronym: "T1",
+                imageUrl: "https://example.com/t1.png",
+            };
+
+            const item = createTeamManifestItem(team);
+
+            expect(item).toEqual({
+                id: 1533,
+                name: "T1",
+                slug: "t1",
+                acronym: "T1",
+                logoUrl: "https://example.com/t1.png",
+                calendarUrl:
+                    "https://zlypher.github.io/lol-events/cal/team/1533.ical",
+                jsonUrl:
+                    "https://zlypher.github.io/lol-events/cal/team/1533.json",
+            });
+        });
+
+        it("normalizes empty or undefined optional fields to null", () => {
+            const team: TeamInfo = {
+                id: 10,
+                name: "Unknown Team",
+                acronym: "   ",
+                imageUrl: "",
+            };
+
+            const item = createTeamManifestItem(team);
+            expect(item.acronym).toBeNull();
+            expect(item.logoUrl).toBeNull();
+            expect(item.slug).toBe("");
+        });
+
+        it("supports custom baseUrl", () => {
+            const team: TeamInfo = {
+                id: 123,
+                name: "Custom Team",
+            };
+
+            const item = createTeamManifestItem(team, {
+                baseUrl: "https://custom.org/events",
+            });
+            expect(item.calendarUrl).toBe(
+                "https://custom.org/events/team/123.ical",
+            );
+            expect(item.jsonUrl).toBe(
+                "https://custom.org/events/team/123.json",
+            );
+        });
+    });
+
+    describe("generateTeamsManifest and serializeTeamsManifest", () => {
+        it("sorts teams alphabetically by name and serializes properly", () => {
+            const teams: TeamInfo[] = [
+                { id: 2, name: "Gen.G", slug: "gen-g" },
+                { id: 1, name: "Cloud9", slug: "c9" },
+                { id: 3, name: "T1", slug: "t1" },
+            ];
+
+            const refDate = new Date("2026-06-15T10:00:00.000Z");
+            const manifest = generateTeamsManifest(teams, {
+                referenceDate: refDate,
+            });
+
+            expect(manifest.generatedAt).toBe("2026-06-15T10:00:00.000Z");
+            expect(manifest.teams).toHaveLength(3);
+            expect(manifest.teams[0].name).toBe("Cloud9");
+            expect(manifest.teams[1].name).toBe("Gen.G");
+            expect(manifest.teams[2].name).toBe("T1");
+
+            const serialized = serializeTeamsManifest(manifest);
+            const parsed = JSON.parse(serialized);
+            expect(parsed).toEqual(manifest);
         });
     });
 });
