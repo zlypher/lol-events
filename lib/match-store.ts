@@ -41,7 +41,7 @@ export function saveMatchStore(
     if (!fs.existsSync(dir)) {
         fs.mkdirSync(dir, { recursive: true });
     }
-    fs.writeFileSync(storePath, JSON.stringify(store, null, 2), "utf-8");
+    fs.writeFileSync(storePath, `${JSON.stringify(store, null, 4)}\n`, "utf-8");
 }
 
 export function seedMatchStoreFromCalendars(calDir: string): MatchStore {
