@@ -141,6 +141,37 @@ export interface LeaguesManifest {
     leagues: LeagueManifestItem[];
 }
 
+export interface TeamManifestItem {
+    id: number;
+    name: string;
+    slug: string;
+    acronym?: string | null;
+    logoUrl: string | null;
+    calendarUrl: string;
+    jsonUrl: string;
+}
+
+export interface TeamsManifest {
+    generatedAt: string;
+    teams: TeamManifestItem[];
+}
+
+export interface TeamInfo {
+    id: number;
+    name: string;
+    slug?: string;
+    acronym?: string | null;
+    imageUrl?: string | null;
+}
+
+export interface MatchStoreOpponent {
+    id: number;
+    name: string;
+    slug?: string;
+    acronym?: string | null;
+    imageUrl?: string | null;
+}
+
 export interface MatchStoreEntry {
     id: number;
     uid: string;
@@ -150,6 +181,8 @@ export interface MatchStoreEntry {
     summary: string;
     status: EventStatus | null;
     leagueId?: number;
+    leagueName?: string;
+    opponents?: MatchStoreOpponent[];
 }
 
 export interface MatchStore {

@@ -6,11 +6,18 @@ import type {
     LeaguesManifest,
     MatchStore,
     MatchStoreEntry,
+    MatchStoreOpponent,
     NormalizedMatch,
     PandaScoreMatch,
+    TeamInfo,
 } from "./types";
 
 const MATCH_STORE_PATH = "./data/matches.json";
+
+export interface TeamMatchesOptions {
+    referenceDate?: Date;
+    windowDays?: number;
+}
 
 export function createEmptyMatchStore(): MatchStore {
     return {
@@ -56,14 +63,20 @@ export function seedMatchStoreFromCalendars(
     }
 
     const slugToLeagueId = new Map<string, number>();
+    const slugToLeagueName = new Map<string, string>();
     if (fs.existsSync(leaguesPath)) {
         try {
             const leaguesContent = fs.readFileSync(leaguesPath, "utf-8");
             const data = JSON.parse(leaguesContent) as LeaguesManifest;
             if (Array.isArray(data.leagues)) {
                 for (const l of data.leagues) {
-                    if (l.slug && typeof l.id === "number") {
-                        slugToLeagueId.set(l.slug, l.id);
+                    if (l.slug) {
+                        if (typeof l.id === "number") {
+                            slugToLeagueId.set(l.slug, l.id);
+                        }
+                        if (l.name) {
+                            slugToLeagueName.set(l.slug, l.name);
+                        }
                     }
                 }
             }
@@ -78,6 +91,7 @@ export function seedMatchStoreFromCalendars(
         const filePath = path.join(calDir, file);
         const slug = file.replace(/\.json$/, "");
         const leagueId = slugToLeagueId.get(slug);
+        const leagueName = slugToLeagueName.get(slug);
 
         try {
             const content = fs.readFileSync(filePath, "utf-8");
@@ -125,6 +139,12 @@ export function seedMatchStoreFromCalendars(
                     ) {
                         existing.leagueId = leagueId;
                     }
+                    if (
+                        leagueName !== undefined &&
+                        existing.leagueName === undefined
+                    ) {
+                        existing.leagueName = leagueName;
+                    }
                 } else {
                     const entry: MatchStoreEntry = {
                         id: matchId,
@@ -135,6 +155,7 @@ export function seedMatchStoreFromCalendars(
                         summary,
                         status,
                         ...(leagueId !== undefined ? { leagueId } : {}),
+                        ...(leagueName !== undefined ? { leagueName } : {}),
                     };
                     store.matches[matchId] = entry;
                 }
@@ -190,6 +211,46 @@ function determineMatchStatus(match: PandaScoreMatch): EventStatus | null {
     return null;
 }
 
+function extractOpponents(match: PandaScoreMatch): MatchStoreOpponent[] {
+    if (!Array.isArray(match.opponents)) {
+        return [];
+    }
+    return match.opponents
+        .filter(
+            (item) =>
+                item &&
+                item.opponent &&
+                typeof item.opponent.id === "number" &&
+                item.opponent.name,
+        )
+        .map((item) => {
+            const opp = item.opponent;
+            return {
+                id: opp.id,
+                name: opp.name,
+                ...(opp.slug ? { slug: opp.slug } : {}),
+                ...(opp.acronym !== undefined ? { acronym: opp.acronym } : {}),
+                ...(opp.image_url !== undefined
+                    ? { imageUrl: opp.image_url }
+                    : {}),
+            };
+        });
+}
+
+function areOpponentsEqual(
+    a?: MatchStoreOpponent[],
+    b?: MatchStoreOpponent[],
+): boolean {
+    const listA = a || [];
+    const listB = b || [];
+    if (listA.length !== listB.length) {
+        return false;
+    }
+    const idsA = listA.map((o) => o.id).sort((x, y) => x - y);
+    const idsB = listB.map((o) => o.id).sort((x, y) => x - y);
+    return idsA.every((id, idx) => id === idsB[idx]);
+}
+
 export function updateMatchStore(
     store: MatchStore,
     matches: PandaScoreMatch[],
@@ -208,9 +269,11 @@ export function updateMatchStore(
             computeMatchTimes(match);
         const summary = match.name || "";
         const status = determineMatchStatus(match);
+        const newOpponents = extractOpponents(match);
         const existing = store.matches[matchId];
         const leagueId =
             match.league?.id ?? defaultLeagueId ?? existing?.leagueId;
+        const leagueName = match.league?.name ?? existing?.leagueName;
 
         // If a match is postponed/canceled with no new time, preserve existing start/end if available
         const start = computedStart ?? existing?.start ?? null;
@@ -225,27 +288,79 @@ export function updateMatchStore(
                 end,
                 summary,
                 status,
+                opponents: newOpponents,
                 ...(leagueId !== undefined ? { leagueId } : {}),
+                ...(leagueName !== undefined ? { leagueName } : {}),
             };
         } else {
-            // Sequence increments if start, duration (end), summary, or status changes
+            // Sequence increments if start, duration (end), summary, status, or opponents change
             const timeChanged =
                 start !== existing.start || end !== existing.end;
             const summaryChanged = summary !== existing.summary;
             const statusChanged = status !== existing.status;
+            const opponentsChanged =
+                existing.opponents !== undefined &&
+                Array.isArray(match.opponents) &&
+                !areOpponentsEqual(existing.opponents, newOpponents);
 
-            if (timeChanged || summaryChanged || statusChanged) {
+            if (
+                timeChanged ||
+                summaryChanged ||
+                statusChanged ||
+                opponentsChanged
+            ) {
                 existing.sequence += 1;
                 existing.start = start;
                 existing.end = end;
                 existing.summary = summary;
                 existing.status = status;
             }
+
+            if (newOpponents.length > 0 || existing.opponents === undefined) {
+                existing.opponents = newOpponents;
+            }
             if (leagueId !== undefined) {
                 existing.leagueId = leagueId;
             }
+            if (leagueName !== undefined) {
+                existing.leagueName = leagueName;
+            }
         }
     }
+}
+
+export function getWindowStartTime(
+    referenceDate: Date = new Date(),
+    windowDays: number = 30,
+): Date {
+    return new Date(referenceDate.getTime() - windowDays * 24 * 60 * 60 * 1000);
+}
+
+function normalizeMatchStoreEntry(
+    entry: MatchStoreEntry,
+    summaryOverride?: string,
+): NormalizedMatch {
+    let numberOfGames = 2;
+    if (entry.start && entry.end) {
+        const diffHours = Math.round(
+            (new Date(entry.end).getTime() - new Date(entry.start).getTime()) /
+                (60 * 60 * 1000),
+        );
+        if (diffHours > 0) {
+            numberOfGames = diffHours;
+        }
+    }
+
+    return {
+        id: entry.id,
+        name: summaryOverride ?? entry.summary,
+        beginAt: entry.start,
+        scheduledAt: entry.start,
+        numberOfGames,
+        teams: (entry.opponents || []).map((opp) => ({ name: opp.name })),
+        sequence: entry.sequence,
+        status: entry.status,
+    };
 }
 
 export function getMatchesForLeague(
@@ -254,28 +369,99 @@ export function getMatchesForLeague(
 ): NormalizedMatch[] {
     return Object.values(store.matches)
         .filter((entry) => entry.leagueId === leagueId)
-        .map((entry) => {
-            let numberOfGames = 2;
-            if (entry.start && entry.end) {
-                const diffHours = Math.round(
-                    (new Date(entry.end).getTime() -
-                        new Date(entry.start).getTime()) /
-                        (60 * 60 * 1000),
-                );
-                if (diffHours > 0) {
-                    numberOfGames = diffHours;
+        .map((entry) => normalizeMatchStoreEntry(entry));
+}
+
+export function getMatchesForTeam(
+    store: MatchStore,
+    teamId: number,
+    options: TeamMatchesOptions = {},
+): NormalizedMatch[] {
+    const cutoff =
+        options.windowDays !== undefined
+            ? getWindowStartTime(options.referenceDate, options.windowDays)
+            : null;
+
+    return Object.values(store.matches)
+        .filter((entry) => {
+            const hasTeam = Boolean(
+                entry.opponents?.some((opp) => opp.id === teamId),
+            );
+            if (!hasTeam) {
+                return false;
+            }
+            if (cutoff !== null) {
+                const matchTimeStr = entry.end || entry.start;
+                if (!matchTimeStr) {
+                    return false;
+                }
+                const matchTime = new Date(matchTimeStr).getTime();
+                if (isNaN(matchTime) || matchTime < cutoff.getTime()) {
+                    return false;
                 }
             }
-
-            return {
-                id: entry.id,
-                name: entry.summary,
-                beginAt: entry.start,
-                scheduledAt: entry.start,
-                numberOfGames,
-                teams: [],
-                sequence: entry.sequence,
-                status: entry.status,
-            };
+            return true;
+        })
+        .map((entry) => {
+            let summary = entry.summary;
+            if (entry.leagueName) {
+                const prefix = `[${entry.leagueName}]`;
+                if (!summary.startsWith(prefix)) {
+                    summary = `[${entry.leagueName}] ${summary}`;
+                }
+            }
+            return normalizeMatchStoreEntry(entry, summary);
         });
+}
+
+export function extractActiveTeamsFromMatchStore(
+    store: MatchStore,
+    referenceDate?: Date,
+    windowDays: number = 30,
+): TeamInfo[] {
+    const cutoff = getWindowStartTime(referenceDate, windowDays);
+    const teamsMap = new Map<number, TeamInfo>();
+
+    for (const entry of Object.values(store.matches)) {
+        const matchTimeStr = entry.end || entry.start;
+        if (!matchTimeStr) {
+            continue;
+        }
+        const matchTime = new Date(matchTimeStr).getTime();
+        if (isNaN(matchTime) || matchTime < cutoff.getTime()) {
+            continue;
+        }
+
+        if (entry.opponents && Array.isArray(entry.opponents)) {
+            for (const opp of entry.opponents) {
+                if (typeof opp.id === "number" && opp.name) {
+                    const existing = teamsMap.get(opp.id);
+                    if (!existing) {
+                        teamsMap.set(opp.id, {
+                            id: opp.id,
+                            name: opp.name,
+                            ...(opp.slug ? { slug: opp.slug } : {}),
+                            ...(opp.acronym !== undefined
+                                ? { acronym: opp.acronym }
+                                : {}),
+                            ...(opp.imageUrl !== undefined
+                                ? { imageUrl: opp.imageUrl }
+                                : {}),
+                        });
+                    } else {
+                        if (!existing.slug && opp.slug)
+                            existing.slug = opp.slug;
+                        if (!existing.acronym && opp.acronym)
+                            existing.acronym = opp.acronym;
+                        if (!existing.imageUrl && opp.imageUrl)
+                            existing.imageUrl = opp.imageUrl;
+                    }
+                }
+            }
+        }
+    }
+
+    return Array.from(teamsMap.values()).sort((a, b) =>
+        a.name.localeCompare(b.name),
+    );
 }
