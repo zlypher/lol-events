@@ -17,6 +17,7 @@ describe("pandascore-utils", () => {
                 id: 1661676,
                 name: "Grand final: G2 vs KC",
                 beginAt: "2026-09-20T15:00:00Z",
+                scheduledAt: "2026-09-20T15:00:00Z",
                 numberOfGames: 5,
                 teams: [{ name: "G2 Esports" }, { name: "Karmine Corp" }],
             });

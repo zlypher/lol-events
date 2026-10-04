@@ -18,7 +18,8 @@
         "scripts:leagues": "tsx _scripts/get-leagues.ts",
         "scripts:ical": "tsx _scripts/create-ical.ts",
         "scripts:manifest": "tsx _scripts/create-manifest.ts",
-        "scripts:readme": "tsx _scripts/create-readme.ts"
+        "scripts:readme": "tsx _scripts/create-readme.ts",
+        "scripts:seed-matches": "tsx _scripts/seed-match-store.ts"
     },
     "repository": {
         "type": "git",

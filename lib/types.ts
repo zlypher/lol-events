@@ -89,12 +89,17 @@ export interface NormalizedOpponent {
     name: string;
 }
 
+export type EventStatus = "CANCELLED";
+
 export interface NormalizedMatch {
     id: number;
     name: string;
     beginAt: string | null;
+    scheduledAt?: string | null;
     numberOfGames: number;
     teams: NormalizedOpponent[];
+    sequence?: number;
+    status?: EventStatus | null;
 }
 
 export interface CalendarEventJSON {
@@ -107,6 +112,7 @@ export interface CalendarEventJSON {
     stamp?: string;
     timestamp?: string;
     summary: string;
+    status?: EventStatus | null;
     [key: string]: unknown;
 }
 
@@ -133,4 +139,21 @@ export interface LeagueManifestItem {
 export interface LeaguesManifest {
     generatedAt: string;
     leagues: LeagueManifestItem[];
+}
+
+export interface MatchStoreEntry {
+    id: number;
+    uid: string;
+    sequence: number;
+    start: string | null;
+    end: string | null;
+    summary: string;
+    status: EventStatus | null;
+    leagueId?: number;
+}
+
+export interface MatchStore {
+    version: number;
+    generatedAt: string;
+    matches: Record<number, MatchStoreEntry>;
 }
