@@ -3,11 +3,17 @@ import os from "node:os";
 import path from "node:path";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import {
+    createCalendar,
     generateAllCalendars,
     generateIcalCalendar,
 } from "../lib/calendar-generator";
+import { createEmptyMatchStore } from "../lib/match-store";
 import PandaScore from "../lib/pandascore";
-import type { PandaScoreLeague, PandaScoreMatch } from "../lib/types";
+import type {
+    MatchStore,
+    PandaScoreLeague,
+    PandaScoreMatch,
+} from "../lib/types";
 import rawLeaguesFixture from "./fixtures/pandascore-leagues.json" with { type: "json" };
 
 describe("calendar-generator", () => {
@@ -15,17 +21,51 @@ describe("calendar-generator", () => {
     const leagues = rawLeaguesFixture as PandaScoreLeague[];
     const inactiveLeague = leagues.find((l) => l.name === "OPL")!;
     let testOutputDir: string;
+    let testMatchStore: MatchStore;
 
     beforeEach(() => {
         testOutputDir = fs.mkdtempSync(
             path.join(os.tmpdir(), "lol-events-test-"),
         );
+        testMatchStore = createEmptyMatchStore();
         vi.spyOn(PandaScore, "getGlobalMatches").mockResolvedValue([]);
     });
 
     afterEach(() => {
         vi.restoreAllMocks();
         fs.rmSync(testOutputDir, { recursive: true, force: true });
+    });
+
+    describe("createCalendar", () => {
+        it("generates iCal from MatchStore entries matching league id", () => {
+            const activeLeague = leagues.find((l) => l.name === "LEC")!;
+            const store = createEmptyMatchStore();
+            store.matches[123] = {
+                id: 123,
+                uid: "123@zlypher.github.io",
+                sequence: 2,
+                start: "2026-06-02T16:00:00.000Z",
+                end: "2026-06-02T18:00:00.000Z",
+                summary: "G2 vs FNC",
+                status: null,
+                leagueId: activeLeague.id,
+            };
+            store.matches[456] = {
+                id: 456,
+                uid: "456@zlypher.github.io",
+                sequence: 1,
+                start: "2026-06-02T20:00:00.000Z",
+                end: "2026-06-02T22:00:00.000Z",
+                summary: "Other League Match",
+                status: null,
+                leagueId: 99999,
+            };
+
+            const cal = createCalendar(activeLeague, store);
+            expect(cal.events()).toHaveLength(1);
+            expect(cal.events()[0].summary()).toBe("G2 vs FNC");
+            expect(cal.events()[0].sequence()).toBe(2);
+        });
     });
 
     describe("generateIcalCalendar", () => {
@@ -37,6 +77,7 @@ describe("calendar-generator", () => {
             await generateIcalCalendar(inactiveLeague, {
                 referenceDate,
                 outputDir: testOutputDir,
+                matchStore: testMatchStore,
             });
 
             expect(consoleSpy).toHaveBeenCalledWith(
@@ -66,6 +107,7 @@ describe("calendar-generator", () => {
             await generateIcalCalendar(inactiveLeague, {
                 referenceDate,
                 outputDir: testOutputDir,
+                matchStore: testMatchStore,
             });
 
             expect(fs.readFileSync(icalPath, "utf-8")).toBe(
@@ -76,7 +118,7 @@ describe("calendar-generator", () => {
             );
         });
 
-        it("generates calendar files for an active league with provided matches", async () => {
+        it("generates calendar files for an active league with provided matches and updates match store", async () => {
             const activeLeague = leagues.find((l) => l.name === "LEC")!;
             const mockMatches: PandaScoreMatch[] = [
                 {
@@ -97,6 +139,7 @@ describe("calendar-generator", () => {
                 referenceDate,
                 outputDir: testOutputDir,
                 matches: mockMatches,
+                matchStore: testMatchStore,
             });
 
             const icalPath = path.join(
@@ -113,6 +156,10 @@ describe("calendar-generator", () => {
             const json = JSON.parse(fs.readFileSync(jsonPath, "utf-8"));
             expect(json.events).toHaveLength(1);
             expect(json.events[0].summary).toBe("Grand final: G2 vs KC");
+            expect(testMatchStore.matches[1661676]).toBeDefined();
+            expect(testMatchStore.matches[1661676].leagueId).toBe(
+                activeLeague.id,
+            );
         });
     });
 
@@ -139,6 +186,7 @@ describe("calendar-generator", () => {
                 referenceDate,
                 outputDir: testOutputDir,
                 concurrency: 2,
+                matchStore: testMatchStore,
             });
 
             // Inactive leagues
@@ -204,7 +252,7 @@ describe("calendar-generator", () => {
             ).toBe(false);
         });
 
-        it("correctly routes grouped global matches into individual league calendars", async () => {
+        it("correctly routes grouped global matches into individual league calendars via match store", async () => {
             const mockMatches: PandaScoreMatch[] = [
                 {
                     id: 101,
@@ -251,6 +299,7 @@ describe("calendar-generator", () => {
             await generateAllCalendars(leagues, {
                 referenceDate,
                 outputDir: testOutputDir,
+                matchStore: testMatchStore,
             });
 
             const lecJson = JSON.parse(
@@ -270,6 +319,10 @@ describe("calendar-generator", () => {
             expect(lecJson.events[0].summary).toBe("LEC Game: G2 vs FNC");
             expect(lcsJson.events).toHaveLength(1);
             expect(lcsJson.events[0].summary).toBe("LCS Game: C9 vs TL");
+
+            // Verify matches are in the store
+            expect(testMatchStore.matches[101]).toBeDefined();
+            expect(testMatchStore.matches[102]).toBeDefined();
         });
 
         it("does not query global matches when there are zero active leagues", async () => {
@@ -278,6 +331,7 @@ describe("calendar-generator", () => {
             await generateAllCalendars(inactiveLeagues, {
                 referenceDate,
                 outputDir: testOutputDir,
+                matchStore: testMatchStore,
             });
 
             expect(PandaScore.getGlobalMatches).not.toHaveBeenCalled();

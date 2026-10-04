@@ -3,6 +3,7 @@ import path from "node:path";
 import { describe, expect, it } from "vitest";
 import {
     createEmptyMatchStore,
+    getMatchesForLeague,
     loadMatchStore,
     saveMatchStore,
     seedMatchStoreFromCalendars,
@@ -142,6 +143,7 @@ describe("match-store seeding", () => {
                 end: new Date("2026-10-10T18:00:00Z").toISOString(),
                 summary: "G2 vs FNC",
                 status: null,
+                leagueId: 4198,
             });
         });
 
@@ -299,6 +301,43 @@ describe("match-store seeding", () => {
             expect(store.matches[100].sequence).toBe(2);
             expect(store.matches[100].status).toBe("CANCELLED");
             expect(store.matches[100].start).toBe(originalStart);
+        });
+    });
+
+    describe("getMatchesForLeague", () => {
+        it("returns only matches matching the specified leagueId", () => {
+            const store = createEmptyMatchStore();
+            store.matches[1] = {
+                id: 1,
+                uid: "1@zlypher.github.io",
+                sequence: 1,
+                start: "2026-10-10T15:00:00Z",
+                end: "2026-10-10T18:00:00Z",
+                summary: "LEC Match",
+                status: null,
+                leagueId: 4197,
+            };
+            store.matches[2] = {
+                id: 2,
+                uid: "2@zlypher.github.io",
+                sequence: 1,
+                start: "2026-10-10T19:00:00Z",
+                end: "2026-10-10T22:00:00Z",
+                summary: "LCS Match",
+                status: null,
+                leagueId: 4198,
+            };
+
+            const lecMatches = getMatchesForLeague(store, 4197);
+            expect(lecMatches).toHaveLength(1);
+            expect(lecMatches[0].summary).toBe("LEC Match");
+
+            const lcsMatches = getMatchesForLeague(store, 4198);
+            expect(lcsMatches).toHaveLength(1);
+            expect(lcsMatches[0].summary).toBe("LCS Match");
+
+            const unknownMatches = getMatchesForLeague(store, 9999);
+            expect(unknownMatches).toHaveLength(0);
         });
     });
 });

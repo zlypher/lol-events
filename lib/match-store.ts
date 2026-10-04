@@ -3,13 +3,13 @@ import path from "node:path";
 import type {
     CalendarJSON,
     EventStatus,
+    LeaguesManifest,
     MatchStore,
     MatchStoreEntry,
-    NormalizedMatch,
     PandaScoreMatch,
 } from "./types";
 
-export const DEFAULT_MATCH_STORE_PATH = "./data/matches.json";
+const MATCH_STORE_PATH = "./data/matches.json";
 
 export function createEmptyMatchStore(): MatchStore {
     return {
@@ -20,7 +20,7 @@ export function createEmptyMatchStore(): MatchStore {
 }
 
 export function loadMatchStore(
-    storePath: string = DEFAULT_MATCH_STORE_PATH,
+    storePath: string = MATCH_STORE_PATH,
 ): MatchStore {
     if (!fs.existsSync(storePath)) {
         return createEmptyMatchStore();
@@ -35,7 +35,7 @@ export function loadMatchStore(
 
 export function saveMatchStore(
     store: MatchStore,
-    storePath: string = DEFAULT_MATCH_STORE_PATH,
+    storePath: string = MATCH_STORE_PATH,
 ): void {
     const dir = path.dirname(storePath);
     if (!fs.existsSync(dir)) {
@@ -44,17 +44,40 @@ export function saveMatchStore(
     fs.writeFileSync(storePath, `${JSON.stringify(store, null, 4)}\n`, "utf-8");
 }
 
-export function seedMatchStoreFromCalendars(calDir: string): MatchStore {
+export function seedMatchStoreFromCalendars(
+    calDir: string,
+    leaguesPath = "./docs/leagues.json",
+): MatchStore {
     const store = createEmptyMatchStore();
 
     if (!fs.existsSync(calDir)) {
         return store;
     }
 
+    const slugToLeagueId = new Map<string, number>();
+    if (fs.existsSync(leaguesPath)) {
+        try {
+            const leaguesContent = fs.readFileSync(leaguesPath, "utf-8");
+            const data = JSON.parse(leaguesContent) as LeaguesManifest;
+            if (Array.isArray(data.leagues)) {
+                for (const l of data.leagues) {
+                    if (l.slug && typeof l.id === "number") {
+                        slugToLeagueId.set(l.slug, l.id);
+                    }
+                }
+            }
+        } catch {
+            // Ignore malformed leagues.json
+        }
+    }
+
     const files = fs.readdirSync(calDir).filter((f) => f.endsWith(".json"));
 
     for (const file of files) {
         const filePath = path.join(calDir, file);
+        const slug = file.replace(/\.json$/, "");
+        const leagueId = slugToLeagueId.get(slug);
+
         try {
             const content = fs.readFileSync(filePath, "utf-8");
             const calData = JSON.parse(content) as CalendarJSON;
@@ -82,10 +105,8 @@ export function seedMatchStoreFromCalendars(calDir: string): MatchStore {
                         ? event.status.toUpperCase()
                         : null;
                 const status: EventStatus | null =
-                    rawStatus === "CANCELLED" ||
-                    rawStatus === "CONFIRMED" ||
-                    rawStatus === "TENTATIVE"
-                        ? rawStatus
+                    rawStatus === "CANCELLED" || rawStatus === "CANCELED"
+                        ? "CANCELLED"
                         : null;
 
                 const existing = store.matches[matchId];
@@ -97,6 +118,12 @@ export function seedMatchStoreFromCalendars(calDir: string): MatchStore {
                         existing.summary = summary;
                         existing.status = status;
                     }
+                    if (
+                        leagueId !== undefined &&
+                        existing.leagueId === undefined
+                    ) {
+                        existing.leagueId = leagueId;
+                    }
                 } else {
                     const entry: MatchStoreEntry = {
                         id: matchId,
@@ -106,6 +133,7 @@ export function seedMatchStoreFromCalendars(calDir: string): MatchStore {
                         end,
                         summary,
                         status,
+                        ...(leagueId !== undefined ? { leagueId } : {}),
                     };
                     store.matches[matchId] = entry;
                 }
@@ -118,7 +146,7 @@ export function seedMatchStoreFromCalendars(calDir: string): MatchStore {
     return store;
 }
 
-export function computeMatchTimes(match: PandaScoreMatch): {
+function computeMatchTimes(match: PandaScoreMatch): {
     start: string | null;
     end: string | null;
 } {
@@ -146,9 +174,7 @@ export function computeMatchTimes(match: PandaScoreMatch): {
     };
 }
 
-export function determineMatchStatus(
-    match: PandaScoreMatch,
-): EventStatus | null {
+function determineMatchStatus(match: PandaScoreMatch): EventStatus | null {
     const normalizedStatus = (match.status || "").toLowerCase();
     if (normalizedStatus === "canceled") {
         return "CANCELLED";
@@ -166,6 +192,7 @@ export function determineMatchStatus(
 export function updateMatchStore(
     store: MatchStore,
     matches: PandaScoreMatch[],
+    defaultLeagueId?: number,
 ): void {
     store.generatedAt = new Date().toISOString();
 
@@ -180,8 +207,9 @@ export function updateMatchStore(
             computeMatchTimes(match);
         const summary = match.name || "";
         const status = determineMatchStatus(match);
-
         const existing = store.matches[matchId];
+        const leagueId =
+            match.league?.id ?? defaultLeagueId ?? existing?.leagueId;
 
         // If a match is postponed/canceled with no new time, preserve existing start/end if available
         const start = computedStart ?? existing?.start ?? null;
@@ -196,6 +224,7 @@ export function updateMatchStore(
                 end,
                 summary,
                 status,
+                ...(leagueId !== undefined ? { leagueId } : {}),
             };
         } else {
             // Sequence increments if start, duration (end), summary, or status changes
@@ -211,24 +240,18 @@ export function updateMatchStore(
                 existing.summary = summary;
                 existing.status = status;
             }
+            if (leagueId !== undefined) {
+                existing.leagueId = leagueId;
+            }
         }
     }
 }
 
-export function applyMatchStore(
+export function getMatchesForLeague(
     store: MatchStore,
-    matches: NormalizedMatch[],
-): void {
-    for (const match of matches) {
-        const entry = store.matches[match.id];
-        if (entry) {
-            match.sequence = entry.sequence;
-            if (entry.status) {
-                match.status = entry.status;
-            }
-            if (entry.start) {
-                match.scheduledAt = entry.start;
-            }
-        }
-    }
+    leagueId: number,
+): MatchStoreEntry[] {
+    return Object.values(store.matches).filter(
+        (entry) => entry.leagueId === leagueId,
+    );
 }
