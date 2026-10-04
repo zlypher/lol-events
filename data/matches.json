@@ -1,6 +1,6 @@
 {
     "version": 1,
-    "generatedAt": "2026-10-03T22:13:51.466Z",
+    "generatedAt": "2026-10-04T15:38:01.375Z",
     "matches": {
         "101": {
             "id": 101,
@@ -9,9 +9,7 @@
             "start": "2026-06-02T16:00:00.000Z",
             "end": "2026-06-02T17:00:00.000Z",
             "summary": "LEC Game: G2 vs FNC",
-            "status": null,
-            "leagueId": 4197,
-            "teamIds": [1, 2]
+            "status": null
         },
         "102": {
             "id": 102,
@@ -20,9 +18,7 @@
             "start": "2026-06-02T20:00:00.000Z",
             "end": "2026-06-02T21:00:00.000Z",
             "summary": "LCS Game: C9 vs TL",
-            "status": null,
-            "leagueId": 4198,
-            "teamIds": [3, 4]
+            "status": null
         },
         "3175": {
             "id": 3175,
