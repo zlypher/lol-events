@@ -43,6 +43,18 @@ export interface PandaScoreOpponent {
     opponent: PandaScoreOpponentDetails;
 }
 
+export interface PandaScoreTournament {
+    id: number;
+    name: string;
+    slug?: string;
+    begin_at?: string | null;
+    end_at?: string | null;
+    has_bracket?: boolean;
+    league_id?: number;
+    serie_id?: number;
+    [key: string]: unknown;
+}
+
 export interface PandaScoreMatch {
     id: number;
     name: string;
@@ -61,6 +73,7 @@ export interface PandaScoreMatch {
     opponents: PandaScoreOpponent[];
     league?: PandaScoreLeague;
     tournament_id?: number;
+    tournament?: PandaScoreTournament;
     winner_id?: number | null;
     rescheduled?: boolean;
     slug?: string;
