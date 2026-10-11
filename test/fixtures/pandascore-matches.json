@@ -6,6 +6,10 @@
         "scheduled_at": "2026-09-20T15:00:00Z",
         "number_of_games": 5,
         "status": "finished",
+        "tournament": {
+            "id": 21813,
+            "name": "Playoffs"
+        },
         "opponents": [
             {
                 "opponent": {
@@ -28,6 +32,10 @@
         "scheduled_at": "2026-09-19T15:00:00Z",
         "number_of_games": 5,
         "status": "finished",
+        "tournament": {
+            "id": 21812,
+            "name": "Regular Season"
+        },
         "opponents": [
             {
                 "opponent": {

@@ -35,7 +35,7 @@ describe("ical-utils", () => {
             expect(events).toHaveLength(1);
             const event = events[0];
             expect(event.id()).toBe("1661676@zlypher.github.io");
-            expect(event.summary()).toBe("Grand final: G2 vs KC");
+            expect(event.summary()).toBe("(Playoffs) Grand final: G2 vs KC");
             expect(event.sequence()).toBe(1);
         });
 
@@ -48,7 +48,9 @@ describe("ical-utils", () => {
             expect(icalString).toContain("VERSION:2.0");
             expect(icalString).toContain("PRODID:-//Zlypher//LOL Events//EN");
             expect(icalString).toContain("BEGIN:VEVENT");
-            expect(icalString).toContain("SUMMARY:Grand final: G2 vs KC");
+            expect(icalString).toContain(
+                "SUMMARY:(Playoffs) Grand final: G2 vs KC",
+            );
             expect(icalString).toContain("DTSTART:20260920T150000Z");
             expect(icalString).toContain("END:VEVENT");
             expect(icalString).toContain("END:VCALENDAR");
@@ -61,7 +63,9 @@ describe("ical-utils", () => {
 
             expect(json.name).toBe("LEC");
             expect(json.events).toHaveLength(1);
-            expect(json.events[0].summary).toBe("Grand final: G2 vs KC");
+            expect(json.events[0].summary).toBe(
+                "(Playoffs) Grand final: G2 vs KC",
+            );
         });
     });
 });
