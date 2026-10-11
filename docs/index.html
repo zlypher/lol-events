@@ -18,7 +18,7 @@
                     <h1>League of Legends Calendars</h1>
                     <p class="header-subtitle">
                         Subscribe to official match schedules for your favourite
-                        leagues in <code>.ical</code> format
+                        leagues and teams in <code>.ical</code> format
                     </p>
                 </div>
                 <div class="header-links">
@@ -36,7 +36,34 @@
 
         <main class="main-content">
             <div class="container">
-                <section class="toolbar" aria-label="League search and filters">
+                <div
+                    class="view-tabs"
+                    role="tablist"
+                    aria-label="Select catalog view"
+                >
+                    <button
+                        type="button"
+                        role="tab"
+                        id="tab-leagues"
+                        class="tab-btn active"
+                        data-tab="leagues"
+                        aria-selected="true"
+                    >
+                        Leagues <span class="tab-count" id="tab-count-leagues"></span>
+                    </button>
+                    <button
+                        type="button"
+                        role="tab"
+                        id="tab-teams"
+                        class="tab-btn"
+                        data-tab="teams"
+                        aria-selected="false"
+                    >
+                        Teams <span class="tab-count" id="tab-count-teams"></span>
+                    </button>
+                </div>
+
+                <section class="toolbar" aria-label="Catalog search and filters">
                     <div class="toolbar-controls">
                         <div class="search-wrapper">
                             <span class="search-icon" aria-hidden="true">🔍</span>
