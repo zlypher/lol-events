@@ -13,7 +13,7 @@ The `.ical` files for all leagues are updated daily. The last update date can be
 
 ## Calendars by League
 
-Last update: 12.10.2026, 07:11
+Last update: 13.10.2026, 07:35
 
 |                                                                                                                                                                                  | League                             |                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -44,7 +44,6 @@ Last update: 12.10.2026, 07:11
 | <img src="https://cdn-api.pandascore.co/images/league/image/4407/696px-lplol-full-logo2021-png" alt="LPLOL Logo" width="24" height="24" /> | LPLOL | https://zlypher.github.io/lol-events/cal/league-of-legends-lplol.ical
 | - | LRN | https://zlypher.github.io/lol-events/cal/league-of-legends-lrn.ical
 | - | LRS | https://zlypher.github.io/lol-events/cal/league-of-legends-lrs.ical
-| <img src="https://cdn-api.pandascore.co/images/league/image/300/900px-msi_2021_lightmode-png" alt="Mid-Season Invitational Logo" width="24" height="24" /> | Mid-Season Invitational | https://zlypher.github.io/lol-events/cal/league-of-legends-mid-invitational.ical
 | - | Nexus League | https://zlypher.github.io/lol-events/cal/league-of-legends-nexus-league.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/4411/nlc_2022_logo-png" alt="NLC Logo" width="24" height="24" /> | NLC | https://zlypher.github.io/lol-events/cal/league-of-legends-nlc.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/4961/nacl_full_logo-png" alt="North American Challengers League Logo" width="24" height="24" /> | North American Challengers League | https://zlypher.github.io/lol-events/cal/league-of-legends-north-american-challengers-league.ical
@@ -57,7 +56,7 @@ Last update: 12.10.2026, 07:11
 | <img src="https://cdn-api.pandascore.co/images/league/image/297/worlds-png" alt="Worlds Logo" width="24" height="24" /> | Worlds | https://zlypher.github.io/lol-events/cal/league-of-legends-world-championship.ical
 
 <details>
-<summary>Inactive Leagues (98)</summary>
+<summary>Inactive Leagues (99)</summary>
 
 |                                                                                                                                                                                  | League                             |                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -127,6 +126,7 @@ Last update: 12.10.2026, 07:11
 | <img src="https://cdn-api.pandascore.co/images/league/image/4969/ezgif-5-9177431f45-png" alt="LVP SL 2nd Division Logo" width="24" height="24" /> | LVP SL 2nd Division | https://zlypher.github.io/lol-events/cal/league-of-legends-lvp-sl-2nd-division.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/5158/multiplatform_esports_games_lightmode-png" alt="MEG Logo" width="24" height="24" /> | MEG | https://zlypher.github.io/lol-events/cal/league-of-legends-meg.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/4394/220px-MidSeason.png" alt="Mid-Season Cup Logo" width="24" height="24" /> | Mid-Season Cup | https://zlypher.github.io/lol-events/cal/league-of-legends-mid-season-cup.ical
+| <img src="https://cdn-api.pandascore.co/images/league/image/300/900px-msi_2021_lightmode-png" alt="Mid-Season Invitational Logo" width="24" height="24" /> | Mid-Season Invitational | https://zlypher.github.io/lol-events/cal/league-of-legends-mid-invitational.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/4104/na-academy-4xtnenn7.png" alt="NA Academy Logo" width="24" height="24" /> | NA Academy | https://zlypher.github.io/lol-events/cal/league-of-legends-na-academy.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/291/CS_NA_logo_re-up.png" alt="NA Challenger Series Logo" width="24" height="24" /> | NA Challenger Series | https://zlypher.github.io/lol-events/cal/league-of-legends-na-challenger-series.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/289/na-lcs-g63ljv52.png" alt="NA LCS Logo" width="24" height="24" /> | NA LCS | https://zlypher.github.io/lol-events/cal/league-of-legends-na-lcs.ical
@@ -176,7 +176,7 @@ See official steps here: [Sync your calendar with computer programs](https://sup
 
 ## Supported Leagues
 
-Last update: 12.10.2026, 07:11
+Last update: 13.10.2026, 07:35
 
 <a href="null" target="_blank"><img src="https://cdn-api.pandascore.co/images/league/image/296/all-star_2020_logo-png" alt="All-Star Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn-api.pandascore.co/images/league/image/5292/americas_challengers-png" alt="Americas Challengers Logo" width="50" height="50" /></a>
