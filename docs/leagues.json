@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T07:11:49.177Z",
+  "generatedAt": "2026-10-13T06:41:11.027Z",
   "leagues": [
     {
       "id": 296,
@@ -939,7 +939,7 @@
       "url": null,
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-mid-invitational.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-mid-invitational.json",
-      "active": true
+      "active": false
     },
     {
       "id": 4104,
