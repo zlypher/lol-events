@@ -13,7 +13,7 @@ The `.ical` files for all leagues are updated daily. The last update date can be
 
 ## Calendars by League
 
-Last update: 19.10.2026, 05:57
+Last update: 20.10.2026, 05:50
 
 |                                                                                                                                                                                  | League                             |                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -25,7 +25,6 @@ Last update: 19.10.2026, 05:57
 | <img src="https://cdn-api.pandascore.co/images/league/image/4426/ebl_2021-png" alt="EBL Logo" width="24" height="24" /> | EBL | https://zlypher.github.io/lol-events/cal/league-of-legends-ebl.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/4996/emea_masters_2023-png" alt="EMEA Masters Logo" width="24" height="24" /> | EMEA Masters | https://zlypher.github.io/lol-events/cal/league-of-legends-emea-masters.ical
 | - | Equal eSports Cup | https://zlypher.github.io/lol-events/cal/league-of-legends-equal-esports-cup.ical
-| - | Esports World Cup | https://zlypher.github.io/lol-events/cal/league-of-legends-esports-world-cup.ical
 | - | FLASH | https://zlypher.github.io/lol-events/cal/league-of-legends-flash.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/4433/800px-hitpoint_masters_lightmode-png" alt="Hitpoint Masters Logo" width="24" height="24" /> | Hitpoint Masters | https://zlypher.github.io/lol-events/cal/league-of-legends-hitpoint-masters.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/5355/hellenic_legends_league_logo-png" alt="HLL Logo" width="24" height="24" /> | HLL | https://zlypher.github.io/lol-events/cal/league-of-legends-hll.ical
@@ -56,7 +55,7 @@ Last update: 19.10.2026, 05:57
 | <img src="https://cdn-api.pandascore.co/images/league/image/297/worlds-png" alt="Worlds Logo" width="24" height="24" /> | Worlds | https://zlypher.github.io/lol-events/cal/league-of-legends-world-championship.ical
 
 <details>
-<summary>Inactive Leagues (99)</summary>
+<summary>Inactive Leagues (100)</summary>
 
 |                                                                                                                                                                                  | League                             |                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -88,6 +87,7 @@ Last update: 19.10.2026, 05:57
 | - | ESL Meisterschaft | https://zlypher.github.io/lol-events/cal/league-of-legends-esl-meisterschaft.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/5452/2025_eca_logo-webp" alt="Esports Championships Asia Logo" width="24" height="24" /> | Esports Championships Asia | https://zlypher.github.io/lol-events/cal/league-of-legends-esports-championships-asia.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/5182/esports_shanghai_masters_logo_allmode-png" alt="Esports Shanghai Masters Logo" width="24" height="24" /> | Esports Shanghai Masters | https://zlypher.github.io/lol-events/cal/league-of-legends-esports-shanghai-masters.ical
+| - | Esports World Cup | https://zlypher.github.io/lol-events/cal/league-of-legends-esports-world-cup.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/292/EU_CS_logo.png" alt="EU Challenger Series Logo" width="24" height="24" /> | EU Challenger Series | https://zlypher.github.io/lol-events/cal/league-of-legends-eu-challenger-series.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/290/eu-lcs-b29u5nim.png" alt="EU LCS Logo" width="24" height="24" /> | EU LCS | https://zlypher.github.io/lol-events/cal/league-of-legends-eu-lcs.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/4139/220px-EM_2020_Logo.png" alt="European Masters Logo" width="24" height="24" /> | European Masters | https://zlypher.github.io/lol-events/cal/league-of-legends-european-masters.ical
@@ -176,7 +176,7 @@ See official steps here: [Sync your calendar with computer programs](https://sup
 
 ## Supported Leagues
 
-Last update: 19.10.2026, 05:57
+Last update: 20.10.2026, 05:50
 
 <a href="null" target="_blank"><img src="https://cdn-api.pandascore.co/images/league/image/296/all-star_2020_logo-png" alt="All-Star Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn-api.pandascore.co/images/league/image/5292/americas_challengers-png" alt="Americas Challengers Logo" width="50" height="50" /></a>
