@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T05:57:19.459Z",
+  "generatedAt": "2026-10-20T04:38:19.169Z",
   "leagues": [
     {
       "id": 296,
@@ -369,7 +369,7 @@
       "url": null,
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-esports-world-cup.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-esports-world-cup.json",
-      "active": true
+      "active": false
     },
     {
       "id": 292,
