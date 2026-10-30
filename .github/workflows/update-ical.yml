@@ -23,7 +23,7 @@ jobs:
         env:
           ACCESSTOKEN: ${{ secrets.ACCESSTOKEN }}
         run: npm run scripts:ical
-      - name: Generate leagues manifest
+      - name: Generate manifests
         env:
           ACCESSTOKEN: ${{ secrets.ACCESSTOKEN }}
         run: npm run scripts:manifest
@@ -34,7 +34,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add docs/cal/* docs/leagues.json
-          git diff --staged --quiet || git commit -m "Update ical files and leagues manifest"
+          git add docs/cal docs/leagues.json docs/teams.json data/matches.json
+          git diff --staged --quiet || git commit -m "Update ical files and manifests"
       - name: Push changes
         run: git push origin main

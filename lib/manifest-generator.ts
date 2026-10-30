@@ -3,10 +3,15 @@ import type {
     LeagueManifestItem,
     LeaguesManifest,
     PandaScoreLeague,
+    TeamInfo,
+    TeamManifestItem,
+    TeamsManifest,
 } from "./types";
 
 export const DEFAULT_CALENDAR_BASE_URL =
     "https://zlypher.github.io/lol-events/cal";
+export const DEFAULT_TEAM_CALENDAR_BASE_URL =
+    "https://zlypher.github.io/lol-events/cal/team";
 
 export type ManifestFilter = "all" | "active" | "inactive";
 
@@ -88,9 +93,59 @@ export function serializeLeaguesManifest(
     return JSON.stringify(manifest, null, space);
 }
 
+export function createTeamManifestItem(
+    team: TeamInfo,
+    options: ManifestOptions = {},
+): TeamManifestItem {
+    const base = options.baseUrl ?? DEFAULT_CALENDAR_BASE_URL;
+    const teamBaseUrl = base.endsWith("/team") ? base : `${base}/team`;
+
+    return {
+        id: team.id,
+        name: team.name,
+        slug: team.slug ?? "",
+        acronym: normalizeNullableString(team.acronym),
+        logoUrl: normalizeNullableString(team.imageUrl),
+        calendarUrl: `${teamBaseUrl}/${team.id}.ical`,
+        jsonUrl: `${teamBaseUrl}/${team.id}.json`,
+    };
+}
+
+export function generateTeamsManifest(
+    teams: TeamInfo[],
+    options: ManifestOptions = {},
+): TeamsManifest {
+    const refDate = parseReferenceDate(options.referenceDate);
+
+    const sortedTeams = [...teams].sort((a, b) => a.name.localeCompare(b.name));
+
+    const items = sortedTeams.map((team) =>
+        createTeamManifestItem(team, {
+            ...options,
+            referenceDate: refDate,
+        }),
+    );
+
+    return {
+        generatedAt: refDate.toISOString(),
+        teams: items,
+    };
+}
+
+export function serializeTeamsManifest(
+    manifest: TeamsManifest,
+    space: number = 2,
+): string {
+    return JSON.stringify(manifest, null, space);
+}
+
 export default {
     DEFAULT_CALENDAR_BASE_URL,
+    DEFAULT_TEAM_CALENDAR_BASE_URL,
     createLeagueManifestItem,
     generateLeaguesManifest,
     serializeLeaguesManifest,
+    createTeamManifestItem,
+    generateTeamsManifest,
+    serializeTeamsManifest,
 };
