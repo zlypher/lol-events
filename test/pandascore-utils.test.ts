@@ -192,6 +192,7 @@ describe("pandascore-utils", () => {
                 id: 1661677,
                 name: "Lower bracket final: KC vs MKOI",
                 beginAt: "2026-09-19T15:09:22Z",
+                scheduledAt: "2026-09-19T15:00:00Z",
                 numberOfGames: 5,
                 teams: [{ name: "Karmine Corp" }, { name: "Movistar KOI" }],
             });

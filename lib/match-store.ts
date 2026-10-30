@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { formatMatchTitle } from "./pandascore-utils";
 import type {
     CalendarJSON,
     EventStatus,
@@ -206,7 +207,7 @@ export function updateMatchStore(
         const uid = `${matchId}@zlypher.github.io`;
         const { start: computedStart, end: computedEnd } =
             computeMatchTimes(match);
-        const summary = match.name || "";
+        const summary = formatMatchTitle(match) || "";
         const status = determineMatchStatus(match);
         const existing = store.matches[matchId];
         const leagueId =
