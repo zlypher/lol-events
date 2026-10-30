@@ -6,7 +6,7 @@ import { toIcal, updateCalendarEvents } from "./ical-utils";
 import { isLeagueActive, partitionLeagues } from "./league-activity";
 import PandaScore, { DEFAULT_CONCURRENCY } from "./pandascore";
 import PandaScoreUtils from "./pandascore-utils";
-import type { CalendarJSON, PandaScoreLeague } from "./types";
+import type { CalendarJSON, PandaScoreLeague, PandaScoreMatch } from "./types";
 
 export interface CalendarGenerationOptions {
     concurrency?: number;
@@ -31,19 +31,26 @@ export function outputCalendar(
 
 export async function createCalendar(
     league: PandaScoreLeague,
+    matches?: PandaScoreMatch[],
 ): Promise<ICalCalendar> {
-    const pastMatches = await PandaScore.getPastMatches(league.id, {
-        page: 1,
-        per_page: 20,
-    });
-    const runningMatches = await PandaScore.getRunningMatches(league.id);
-    const upcomingMatches = await PandaScore.getUpcomingMatches(league.id);
+    let relevantMatches: PandaScoreMatch[];
 
-    const relevantMatches = [
-        ...pastMatches,
-        ...runningMatches,
-        ...upcomingMatches,
-    ];
+    if (matches !== undefined) {
+        relevantMatches = matches;
+    } else {
+        const pastMatches = await PandaScore.getPastMatches(league.id, {
+            page: 1,
+            per_page: 20,
+        });
+        const runningMatches = await PandaScore.getRunningMatches(league.id);
+        const upcomingMatches = await PandaScore.getUpcomingMatches(league.id);
+
+        relevantMatches = [
+            ...pastMatches,
+            ...runningMatches,
+            ...upcomingMatches,
+        ];
+    }
 
     const mappedMatches = PandaScoreUtils.mapPandaScoreResult(relevantMatches);
     return toIcal(league.name, mappedMatches);
@@ -52,6 +59,7 @@ export async function createCalendar(
 export async function generateIcalCalendar(
     league: PandaScoreLeague,
     options: CalendarGenerationOptions = {},
+    matches?: PandaScoreMatch[],
 ): Promise<void> {
     const { referenceDate, outputDir = "./docs/cal" } = options;
 
@@ -63,7 +71,7 @@ export async function generateIcalCalendar(
     try {
         console.log("Creating ical for", league.name);
 
-        const icalData = await createCalendar(league);
+        const icalData = await createCalendar(league, matches);
         const jsonPath = path.join(outputDir, `${league.slug}.json`);
         if (fs.existsSync(jsonPath)) {
             const jsonData = JSON.parse(
@@ -81,6 +89,7 @@ export async function generateIcalCalendar(
 export async function generateAllCalendars(
     leagues: PandaScoreLeague[],
     options: CalendarGenerationOptions = {},
+    matchesByLeague?: Map<number, PandaScoreMatch[]>,
 ): Promise<void> {
     const {
         concurrency = Number(process.env.CONCURRENCY) || DEFAULT_CONCURRENCY,
@@ -94,19 +103,32 @@ export async function generateAllCalendars(
         console.log(`[${league.name}] (inactive) no matches fetched`);
     }
 
+    // Ingest matches globally if matchesByLeague was not directly provided
+    let groupedMatches = matchesByLeague;
+    if (!groupedMatches) {
+        console.log("Ingesting global matches from PandaScore...");
+        const allMatches = await PandaScore.getGlobalMatches({ referenceDate });
+        groupedMatches = PandaScoreUtils.groupMatchesByLeague(allMatches);
+    }
+
     const limit = pLimit(concurrency);
     let completed = 0;
     console.log(
-        `Generating calendars for ${active.length} active leagues (${inactive.length} inactive skipped, concurrency: ${concurrency}, burst limit: 60 req/min)...`,
+        `Generating calendars for ${active.length} active leagues (${inactive.length} inactive skipped, concurrency: ${concurrency})...`,
     );
 
     await Promise.all(
         active.map((league) =>
             limit(async () => {
-                await generateIcalCalendar(league, {
-                    referenceDate,
-                    outputDir,
-                });
+                const leagueMatches = groupedMatches?.get(league.id) ?? [];
+                await generateIcalCalendar(
+                    league,
+                    {
+                        referenceDate,
+                        outputDir,
+                    },
+                    leagueMatches,
+                );
                 completed++;
                 if (completed % 10 === 0 || completed === active.length) {
                     const pct =
