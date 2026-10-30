@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Zlypher//LOL Events//EN
+URL:https://zlypher.github.io/lol-events/
+NAME:Good Chi Sakura
+X-WR-CALNAME:Good Chi Sakura
+BEGIN:VEVENT
+UID:1743336@zlypher.github.io
+SEQUENCE:1
+DTSTAMP:20261011T174600Z
+DTSTART:20261011T174600Z
+DTEND:20261011T204600Z
+SUMMARY:[LGC Rising] (Playoffs) Quarterfinal 1: RB vs Good Chi Sakura
+END:VEVENT
+X-WR-CALDESC:Good Chi Sakura
+END:VCALENDAR

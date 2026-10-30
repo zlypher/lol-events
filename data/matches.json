@@ -1,6 +1,6 @@
 {
     "version": 1,
-    "generatedAt": "2026-10-04T16:12:54.782Z",
+    "generatedAt": "2026-10-30T20:57:49.896Z",
     "matches": {
         "3175": {
             "id": 3175,
@@ -19995,12 +19995,29 @@
         "1615369": {
             "id": 1615369,
             "uid": "1615369@zlypher.github.io",
-            "sequence": 2,
-            "start": "2026-10-11T09:00:00.000Z",
-            "end": "2026-10-11T14:00:00.000Z",
-            "summary": "Grand final: SGW vs MVKA",
+            "sequence": 3,
+            "start": "2026-10-11T10:20:00.000Z",
+            "end": "2026-10-11T15:20:00.000Z",
+            "summary": "(Playoffs) Grand final: SGW vs MVKA",
             "status": null,
-            "leagueId": 4141
+            "leagueId": 4141,
+            "opponents": [
+                {
+                    "id": 138127,
+                    "name": "Saigon Warriors",
+                    "slug": "saigon-warriors",
+                    "acronym": "SGW",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/138127/ezgif_5e268d1a7560187d.png"
+                },
+                {
+                    "id": 138126,
+                    "name": "MVK Academy",
+                    "slug": "mvk-academy",
+                    "acronym": "MVKA",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/138126/mvk_esportslogo_profile.png"
+                }
+            ],
+            "leagueName": "VCS"
         },
         "1618182": {
             "id": 1618182,
@@ -21965,22 +21982,56 @@
         "1662353": {
             "id": 1662353,
             "uid": "1662353@zlypher.github.io",
-            "sequence": 2,
+            "sequence": 3,
             "start": "2026-10-03T16:00:00.000Z",
             "end": "2026-10-03T21:00:00.000Z",
-            "summary": "Lower Bracket Final : LLL vs FUR",
+            "summary": "(Playoffs) Lower Bracket Final : LLL vs FUR",
             "status": null,
-            "leagueId": 302
+            "leagueId": 302,
+            "opponents": [
+                {
+                    "id": 128313,
+                    "name": "LOUD",
+                    "slug": "loud",
+                    "acronym": "LLL",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/128313/lou_dlogo_square.png"
+                },
+                {
+                    "id": 126688,
+                    "name": "FURIA Esports",
+                    "slug": "furia-uppercut",
+                    "acronym": "FUR",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/126688/220px_furia_uppercutlogo_square.png"
+                }
+            ],
+            "leagueName": "CBLOL"
         },
         "1662354": {
             "id": 1662354,
             "uid": "1662354@zlypher.github.io",
-            "sequence": 2,
-            "start": "2026-10-10T16:00:00.000Z",
-            "end": "2026-10-10T21:00:00.000Z",
-            "summary": "Grand final: LOS vs TBD",
+            "sequence": 3,
+            "start": "2026-10-10T17:00:00.000Z",
+            "end": "2026-10-10T22:00:00.000Z",
+            "summary": "(Playoffs) Grand final: LOS vs FUR",
             "status": null,
-            "leagueId": 302
+            "leagueId": 302,
+            "opponents": [
+                {
+                    "id": 133796,
+                    "name": "LOS",
+                    "slug": "los",
+                    "acronym": "LOS",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/133796/1199px_los_full_allmode.png"
+                },
+                {
+                    "id": 126688,
+                    "name": "FURIA Esports",
+                    "slug": "furia-uppercut",
+                    "acronym": "FUR",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/126688/220px_furia_uppercutlogo_square.png"
+                }
+            ],
+            "leagueName": "CBLOL"
         },
         "1662454": {
             "id": 1662454,
@@ -22065,22 +22116,56 @@
         "1662463": {
             "id": 1662463,
             "uid": "1662463@zlypher.github.io",
-            "sequence": 2,
+            "sequence": 3,
             "start": "2026-10-03T20:00:00.000Z",
             "end": "2026-10-04T01:00:00.000Z",
-            "summary": "Lower bracket final: C9 vs LY",
+            "summary": "(Playoffs) Lower bracket final: C9 vs LY",
             "status": null,
-            "leagueId": 4198
+            "leagueId": 4198,
+            "opponents": [
+                {
+                    "id": 1097,
+                    "name": "Cloud9",
+                    "slug": "cloud9",
+                    "acronym": "C9",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/1097/cloud9-gnd9b0gn.png"
+                },
+                {
+                    "id": 136066,
+                    "name": "LYON",
+                    "slug": "lyon",
+                    "acronym": "LY",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/136066/lyon__25282024_american_team_2529logo_square.png"
+                }
+            ],
+            "leagueName": "LCS"
         },
         "1662466": {
             "id": 1662466,
             "uid": "1662466@zlypher.github.io",
-            "sequence": 2,
-            "start": "2026-10-04T20:00:00.000Z",
-            "end": "2026-10-05T01:00:00.000Z",
-            "summary": "Grand final: TL vs TBD",
+            "sequence": 3,
+            "start": "2026-10-04T20:15:00.000Z",
+            "end": "2026-10-05T01:15:00.000Z",
+            "summary": "(Playoffs) Grand final: TL vs LY",
             "status": null,
-            "leagueId": 4198
+            "leagueId": 4198,
+            "opponents": [
+                {
+                    "id": 390,
+                    "name": "Team Liquid",
+                    "slug": "liquid",
+                    "acronym": "TL",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/390/ezgif_1497965c786bdb14.png"
+                },
+                {
+                    "id": 136066,
+                    "name": "LYON",
+                    "slug": "lyon",
+                    "acronym": "LY",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/136066/lyon__25282024_american_team_2529logo_square.png"
+                }
+            ],
+            "leagueName": "LCS"
         },
         "1662548": {
             "id": 1662548,
@@ -22365,392 +22450,1055 @@
         "1691679": {
             "id": 1691679,
             "uid": "1691679@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-09-30T21:01:19.000Z",
-            "end": "2026-10-01T02:01:19.000Z",
-            "summary": "Upper Bracket Semifinal 2: LOS vs KBM",
+            "sequence": 2,
+            "start": "2026-09-30T21:00:00.000Z",
+            "end": "2026-10-01T02:00:00.000Z",
+            "summary": "(Playoffs) Upper Bracket Semifinal 2: LOS vs KBM",
             "status": null,
-            "leagueId": 302
+            "leagueId": 302,
+            "opponents": [
+                {
+                    "id": 133796,
+                    "name": "LOS",
+                    "slug": "los",
+                    "acronym": "LOS",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/133796/1199px_los_full_allmode.png"
+                },
+                {
+                    "id": 136646,
+                    "name": "KaBuM! Ilha das Lendas",
+                    "slug": "kabum-ilha-das-lendas",
+                    "acronym": "KBM",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/136646/800px_ka_bu_m__esports_2022_12_allmode.png"
+                }
+            ],
+            "leagueName": "CBLOL"
         },
         "1691680": {
             "id": 1691680,
             "uid": "1691680@zlypher.github.io",
-            "sequence": 2,
-            "start": "2026-10-01T21:04:14.000Z",
-            "end": "2026-10-02T02:04:14.000Z",
-            "summary": "Upper Bracket Final: EST vs LOS",
+            "sequence": 3,
+            "start": "2026-10-01T21:00:00.000Z",
+            "end": "2026-10-02T02:00:00.000Z",
+            "summary": "(Playoffs) Upper Bracket Final: EST vs LOS",
             "status": null,
-            "leagueId": 302
+            "leagueId": 302,
+            "opponents": [
+                {
+                    "id": 128363,
+                    "name": "Estral Esports",
+                    "slug": "estral-esports-league-of-legends",
+                    "acronym": "EST",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/128363/estral_esportslogo_square.png"
+                },
+                {
+                    "id": 133796,
+                    "name": "LOS",
+                    "slug": "los",
+                    "acronym": "LOS",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/133796/1199px_los_full_allmode.png"
+                }
+            ],
+            "leagueName": "CBLOL"
         },
         "1691681": {
             "id": 1691681,
             "uid": "1691681@zlypher.github.io",
-            "sequence": 2,
+            "sequence": 3,
             "start": "2026-10-05T21:00:00.000Z",
             "end": "2026-10-06T02:00:00.000Z",
-            "summary": "Lower Bracket Semifinal: KBM vs 9ZG",
+            "summary": "(Playoffs) Lower Bracket Semifinal: KBM vs 9ZG",
             "status": null,
-            "leagueId": 302
+            "leagueId": 302,
+            "opponents": [
+                {
+                    "id": 136646,
+                    "name": "KaBuM! Ilha das Lendas",
+                    "slug": "kabum-ilha-das-lendas",
+                    "acronym": "KBM",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/136646/800px_ka_bu_m__esports_2022_12_allmode.png"
+                },
+                {
+                    "id": 138170,
+                    "name": "9z Globant",
+                    "slug": "9z-globant-league-of-legends",
+                    "acronym": "9ZG",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/138170/ezgif_8d063d0a78978452.png"
+                }
+            ],
+            "leagueName": "CBLOL"
         },
         "1691682": {
             "id": 1691682,
             "uid": "1691682@zlypher.github.io",
-            "sequence": 2,
+            "sequence": 3,
             "start": "2026-10-06T21:00:00.000Z",
             "end": "2026-10-07T02:00:00.000Z",
-            "summary": "Lower Bracket Final: EST vs TBD",
+            "summary": "(Playoffs) Lower Bracket Final: EST vs KBM",
             "status": null,
-            "leagueId": 302
+            "leagueId": 302,
+            "opponents": [
+                {
+                    "id": 128363,
+                    "name": "Estral Esports",
+                    "slug": "estral-esports-league-of-legends",
+                    "acronym": "EST",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/128363/estral_esportslogo_square.png"
+                },
+                {
+                    "id": 136646,
+                    "name": "KaBuM! Ilha das Lendas",
+                    "slug": "kabum-ilha-das-lendas",
+                    "acronym": "KBM",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/136646/800px_ka_bu_m__esports_2022_12_allmode.png"
+                }
+            ],
+            "leagueName": "CBLOL"
         },
         "1691683": {
             "id": 1691683,
             "uid": "1691683@zlypher.github.io",
-            "sequence": 2,
+            "sequence": 3,
             "start": "2026-10-12T21:00:00.000Z",
             "end": "2026-10-13T02:00:00.000Z",
-            "summary": "Grand Final: LOS vs TBD",
+            "summary": "(Playoffs) Grand Final: LOS vs KBM",
             "status": null,
-            "leagueId": 302
+            "leagueId": 302,
+            "opponents": [
+                {
+                    "id": 133796,
+                    "name": "LOS",
+                    "slug": "los",
+                    "acronym": "LOS",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/133796/1199px_los_full_allmode.png"
+                },
+                {
+                    "id": 136646,
+                    "name": "KaBuM! Ilha das Lendas",
+                    "slug": "kabum-ilha-das-lendas",
+                    "acronym": "KBM",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/136646/800px_ka_bu_m__esports_2022_12_allmode.png"
+                }
+            ],
+            "leagueName": "CBLOL"
         },
         "1691708": {
             "id": 1691708,
             "uid": "1691708@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-07T20:00:00.000Z",
-            "end": "2026-10-08T01:00:00.000Z",
-            "summary": "Upper bracket semifinal 2: DSG vs TBD",
+            "sequence": 2,
+            "start": "2026-10-07T21:00:00.000Z",
+            "end": "2026-10-08T02:00:00.000Z",
+            "summary": "(Playoffs) Upper bracket semifinal 2: DSG vs MVU",
             "status": null,
-            "leagueId": 4198
+            "leagueId": 4198,
+            "opponents": [
+                {
+                    "id": 133267,
+                    "name": "Disguised",
+                    "slug": "disguised-league-of-legends",
+                    "acronym": "DSG",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/133267/disguisedlogo_square.png"
+                },
+                {
+                    "id": 130635,
+                    "name": "Maryville University",
+                    "slug": "maryville-university",
+                    "acronym": "MVU",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/130635/maryville_universitylogo_square.png"
+                }
+            ],
+            "leagueName": "LCS"
         },
         "1691709": {
             "id": 1691709,
             "uid": "1691709@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-05T20:00:00.000Z",
-            "end": "2026-10-06T01:00:00.000Z",
-            "summary": "Upper bracket round 1: MVU vs Z5",
+            "sequence": 2,
+            "start": "2026-10-05T21:00:00.000Z",
+            "end": "2026-10-06T02:00:00.000Z",
+            "summary": "(Playoffs) Upper bracket round 1: MVU vs Z5",
             "status": null,
-            "leagueId": 4198
+            "leagueId": 4198,
+            "opponents": [
+                {
+                    "id": 130635,
+                    "name": "Maryville University",
+                    "slug": "maryville-university",
+                    "acronym": "MVU",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/130635/maryville_universitylogo_square.png"
+                },
+                {
+                    "id": 136730,
+                    "name": "Zeu5 Esports",
+                    "slug": "zeu5-esports",
+                    "acronym": "Z5",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/136730/zeu5_esportslogo_square.png"
+                }
+            ],
+            "leagueName": "LCS"
         },
         "1691710": {
             "id": 1691710,
             "uid": "1691710@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-06T20:00:00.000Z",
-            "end": "2026-10-07T01:00:00.000Z",
-            "summary": "Upper Bracket Semifinal 1: CPD vs FUE",
+            "sequence": 2,
+            "start": "2026-10-06T21:00:00.000Z",
+            "end": "2026-10-07T02:00:00.000Z",
+            "summary": "(Playoffs) Upper Bracket Semifinal 1: CPD vs FUE",
             "status": null,
-            "leagueId": 4198
+            "leagueId": 4198,
+            "opponents": [
+                {
+                    "id": 138937,
+                    "name": "Cupid Esports",
+                    "slug": "cupid-esports",
+                    "acronym": "CPD",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/138937/698px_cupid_e_sports_allmode.png"
+                },
+                {
+                    "id": 1636,
+                    "name": "Fuego",
+                    "slug": "fuego",
+                    "acronym": "FUE",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/1636/fuego-ada0g8rs.png"
+                }
+            ],
+            "leagueName": "LCS"
         },
         "1691711": {
             "id": 1691711,
             "uid": "1691711@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-08T20:00:00.000Z",
-            "end": "2026-10-09T01:00:00.000Z",
-            "summary": "Upper bracket final: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-08T21:00:00.000Z",
+            "end": "2026-10-09T02:00:00.000Z",
+            "summary": "(Playoffs) Upper bracket final: MVU vs CPD",
             "status": null,
-            "leagueId": 4198
+            "leagueId": 4198,
+            "opponents": [
+                {
+                    "id": 130635,
+                    "name": "Maryville University",
+                    "slug": "maryville-university",
+                    "acronym": "MVU",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/130635/maryville_universitylogo_square.png"
+                },
+                {
+                    "id": 138937,
+                    "name": "Cupid Esports",
+                    "slug": "cupid-esports",
+                    "acronym": "CPD",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/138937/698px_cupid_e_sports_allmode.png"
+                }
+            ],
+            "leagueName": "LCS"
         },
         "1691728": {
             "id": 1691728,
             "uid": "1691728@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-12T20:00:00.000Z",
-            "end": "2026-10-13T01:00:00.000Z",
-            "summary": "Grand final: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-12T23:00:00.000Z",
+            "end": "2026-10-13T04:00:00.000Z",
+            "summary": "(Playoffs) Grand final: MVU vs DSG",
             "status": null,
-            "leagueId": 4198
+            "leagueId": 4198,
+            "opponents": [
+                {
+                    "id": 130635,
+                    "name": "Maryville University",
+                    "slug": "maryville-university",
+                    "acronym": "MVU",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/130635/maryville_universitylogo_square.png"
+                },
+                {
+                    "id": 133267,
+                    "name": "Disguised",
+                    "slug": "disguised-league-of-legends",
+                    "acronym": "DSG",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/133267/disguisedlogo_square.png"
+                }
+            ],
+            "leagueName": "LCS"
         },
         "1691731": {
             "id": 1691731,
             "uid": "1691731@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-10T20:00:00.000Z",
-            "end": "2026-10-11T01:00:00.000Z",
-            "summary": "Lower bracket final: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-10T21:00:00.000Z",
+            "end": "2026-10-11T02:00:00.000Z",
+            "summary": "(Playoffs) Lower bracket final: CPD vs DSG",
             "status": null,
-            "leagueId": 4198
+            "leagueId": 4198,
+            "opponents": [
+                {
+                    "id": 138937,
+                    "name": "Cupid Esports",
+                    "slug": "cupid-esports",
+                    "acronym": "CPD",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/138937/698px_cupid_e_sports_allmode.png"
+                },
+                {
+                    "id": 133267,
+                    "name": "Disguised",
+                    "slug": "disguised-league-of-legends",
+                    "acronym": "DSG",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/133267/disguisedlogo_square.png"
+                }
+            ],
+            "leagueName": "LCS"
         },
         "1691732": {
             "id": 1691732,
             "uid": "1691732@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-09T20:00:00.000Z",
-            "end": "2026-10-10T01:00:00.000Z",
-            "summary": "Lower bracket semifinal: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-09T23:00:00.000Z",
+            "end": "2026-10-10T04:00:00.000Z",
+            "summary": "(Playoffs) Lower bracket semifinal: DSG vs FUE",
             "status": null,
-            "leagueId": 4198
+            "leagueId": 4198,
+            "opponents": [
+                {
+                    "id": 133267,
+                    "name": "Disguised",
+                    "slug": "disguised-league-of-legends",
+                    "acronym": "DSG",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/133267/disguisedlogo_square.png"
+                },
+                {
+                    "id": 1636,
+                    "name": "Fuego",
+                    "slug": "fuego",
+                    "acronym": "FUE",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/1636/fuego-ada0g8rs.png"
+                }
+            ],
+            "leagueName": "LCS"
         },
         "1694349": {
             "id": 1694349,
             "uid": "1694349@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-10-03T10:00:00.000Z",
             "end": "2026-10-03T11:00:00.000Z",
-            "summary": "Round 1: SR vs KT",
+            "summary": "(Group Stage) Round 1: SR vs KT",
             "status": null,
-            "leagueId": 5561
+            "leagueId": 5561,
+            "opponents": [
+                {
+                    "id": 134001,
+                    "name": "Shopify Rebellion",
+                    "slug": "shopify-rebellion-league-of-legends",
+                    "acronym": "SR",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/134001/600px_shopify_rebellion.png"
+                },
+                {
+                    "id": 63,
+                    "name": "KT Rolster",
+                    "slug": "kt-rolster",
+                    "acronym": "KT",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/63/kt_rolsterlogo_profile.png"
+                }
+            ],
+            "leagueName": "Demacia Cup Global Invitational"
         },
         "1694350": {
             "id": 1694350,
             "uid": "1694350@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-03T13:00:00.000Z",
-            "end": "2026-10-03T14:00:00.000Z",
-            "summary": "Round 1: BRO vs JDG",
+            "sequence": 2,
+            "start": "2026-10-03T12:30:00.000Z",
+            "end": "2026-10-03T13:30:00.000Z",
+            "summary": "(Group Stage) Round 1: BRO vs JDG",
             "status": null,
-            "leagueId": 5561
+            "leagueId": 5561,
+            "opponents": [
+                {
+                    "id": 128218,
+                    "name": "HANJIN BRION",
+                    "slug": "fredit-brion",
+                    "acronym": "BRO",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/128218/628px_brion_2023_lightmode.png"
+                },
+                {
+                    "id": 318,
+                    "name": "JD Gaming",
+                    "slug": "qg-reapers",
+                    "acronym": "JDG",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/318/746px_jd_gaming_2021_full_allmode.png"
+                }
+            ],
+            "leagueName": "Demacia Cup Global Invitational"
         },
         "1694351": {
             "id": 1694351,
             "uid": "1694351@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-10-03T11:00:00.000Z",
             "end": "2026-10-03T12:00:00.000Z",
-            "summary": "Round 1: VIT vs BFX",
+            "summary": "(Group Stage) Round 1: VIT vs BFX",
             "status": null,
-            "leagueId": 5561
+            "leagueId": 5561,
+            "opponents": [
+                {
+                    "id": 115,
+                    "name": "Team Vitality",
+                    "slug": "vitality",
+                    "acronym": "VIT",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/115/team_vitalitylogo_square.png"
+                },
+                {
+                    "id": 134115,
+                    "name": "BNK FEARX",
+                    "slug": "fearx",
+                    "acronym": "BFX",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/134115/663px_fear_x_icon_lightmode.png"
+                }
+            ],
+            "leagueName": "Demacia Cup Global Invitational"
         },
         "1694352": {
             "id": 1694352,
             "uid": "1694352@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-10-03T09:00:00.000Z",
             "end": "2026-10-03T10:00:00.000Z",
-            "summary": "Round 1: LGD vs FLY",
+            "summary": "(Group Stage) Round 1: LGD vs FLY",
             "status": null,
-            "leagueId": 5561
+            "leagueId": 5561,
+            "opponents": [
+                {
+                    "id": 408,
+                    "name": "LGD Gaming",
+                    "slug": "lgd-gaming",
+                    "acronym": "LGD",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/408/lgd_gaminglogo_square.png"
+                },
+                {
+                    "id": 311,
+                    "name": "FlyQuest",
+                    "slug": "flyquest",
+                    "acronym": "FLY",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/311/fly_questlogo_square.png"
+                }
+            ],
+            "leagueName": "Demacia Cup Global Invitational"
         },
         "1694353": {
             "id": 1694353,
             "uid": "1694353@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-03T12:00:00.000Z",
-            "end": "2026-10-03T13:00:00.000Z",
-            "summary": "Round 1: GAM vs WE",
+            "sequence": 2,
+            "start": "2026-10-03T11:30:00.000Z",
+            "end": "2026-10-03T12:30:00.000Z",
+            "summary": "(Group Stage) Round 1: GAM vs WE",
             "status": null,
-            "leagueId": 5561
+            "leagueId": 5561,
+            "opponents": [
+                {
+                    "id": 124414,
+                    "name": "GAM Esports",
+                    "slug": "gam-esports",
+                    "acronym": "GAM",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/124414/Adonis_Marineslogo_square.png"
+                },
+                {
+                    "id": 2574,
+                    "name": "Team WE",
+                    "slug": "we",
+                    "acronym": "WE",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/2574/300px-Team_WElogo_square.png"
+                }
+            ],
+            "leagueName": "Demacia Cup Global Invitational"
         },
         "1694354": {
             "id": 1694354,
             "uid": "1694354@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-10-03T08:00:00.000Z",
             "end": "2026-10-03T09:00:00.000Z",
-            "summary": "Round 1: RED vs Navi",
+            "summary": "(Group Stage) Round 1: RED vs Navi",
             "status": null,
-            "leagueId": 5561
+            "leagueId": 5561,
+            "opponents": [
+                {
+                    "id": 161,
+                    "name": "RED Canids",
+                    "slug": "red-canids",
+                    "acronym": "RED",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/161/red-canids-3ci94wz2.png"
+                },
+                {
+                    "id": 137057,
+                    "name": "Natus Vincere",
+                    "slug": "natus-vincere-league-of-legends",
+                    "acronym": "Navi",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/137057/natus_vincerelogo_square.png"
+                }
+            ],
+            "leagueName": "Demacia Cup Global Invitational"
         },
         "1694355": {
             "id": 1694355,
             "uid": "1694355@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-04T07:00:00.000Z",
-            "end": "2026-10-04T10:00:00.000Z",
-            "summary": "Round 2: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-04T09:30:00.000Z",
+            "end": "2026-10-04T12:30:00.000Z",
+            "summary": "(Group Stage) Round 2: RED vs KT",
             "status": null,
-            "leagueId": 5561
+            "leagueId": 5561,
+            "opponents": [
+                {
+                    "id": 161,
+                    "name": "RED Canids",
+                    "slug": "red-canids",
+                    "acronym": "RED",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/161/red-canids-3ci94wz2.png"
+                },
+                {
+                    "id": 63,
+                    "name": "KT Rolster",
+                    "slug": "kt-rolster",
+                    "acronym": "KT",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/63/kt_rolsterlogo_profile.png"
+                }
+            ],
+            "leagueName": "Demacia Cup Global Invitational"
         },
         "1694356": {
             "id": 1694356,
             "uid": "1694356@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-04T09:00:00.000Z",
-            "end": "2026-10-04T12:00:00.000Z",
-            "summary": "Round 2: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-04T11:10:00.000Z",
+            "end": "2026-10-04T14:10:00.000Z",
+            "summary": "(Group Stage) Round 2: WE vs BRO",
             "status": null,
-            "leagueId": 5561
+            "leagueId": 5561,
+            "opponents": [
+                {
+                    "id": 2574,
+                    "name": "Team WE",
+                    "slug": "we",
+                    "acronym": "WE",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/2574/300px-Team_WElogo_square.png"
+                },
+                {
+                    "id": 128218,
+                    "name": "HANJIN BRION",
+                    "slug": "fredit-brion",
+                    "acronym": "BRO",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/128218/628px_brion_2023_lightmode.png"
+                }
+            ],
+            "leagueName": "Demacia Cup Global Invitational"
         },
         "1694357": {
             "id": 1694357,
             "uid": "1694357@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-04T11:00:00.000Z",
-            "end": "2026-10-04T14:00:00.000Z",
-            "summary": "Round 2: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-04T07:00:00.000Z",
+            "end": "2026-10-04T10:00:00.000Z",
+            "summary": "(Group Stage) Round 2: LGD vs BFX",
             "status": null,
-            "leagueId": 5561
+            "leagueId": 5561,
+            "opponents": [
+                {
+                    "id": 408,
+                    "name": "LGD Gaming",
+                    "slug": "lgd-gaming",
+                    "acronym": "LGD",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/408/lgd_gaminglogo_square.png"
+                },
+                {
+                    "id": 134115,
+                    "name": "BNK FEARX",
+                    "slug": "fearx",
+                    "acronym": "BFX",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/134115/663px_fear_x_icon_lightmode.png"
+                }
+            ],
+            "leagueName": "Demacia Cup Global Invitational"
         },
         "1694358": {
             "id": 1694358,
             "uid": "1694358@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-05T07:00:00.000Z",
-            "end": "2026-10-05T10:00:00.000Z",
-            "summary": "Round 2: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-05T09:00:00.000Z",
+            "end": "2026-10-05T12:00:00.000Z",
+            "summary": "(Group Stage) Round 2: Navi vs FLY",
             "status": null,
-            "leagueId": 5561
+            "leagueId": 5561,
+            "opponents": [
+                {
+                    "id": 137057,
+                    "name": "Natus Vincere",
+                    "slug": "natus-vincere-league-of-legends",
+                    "acronym": "Navi",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/137057/natus_vincerelogo_square.png"
+                },
+                {
+                    "id": 311,
+                    "name": "FlyQuest",
+                    "slug": "flyquest",
+                    "acronym": "FLY",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/311/fly_questlogo_square.png"
+                }
+            ],
+            "leagueName": "Demacia Cup Global Invitational"
         },
         "1694359": {
             "id": 1694359,
             "uid": "1694359@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-05T09:00:00.000Z",
-            "end": "2026-10-05T12:00:00.000Z",
-            "summary": "Round 2: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-05T07:00:00.000Z",
+            "end": "2026-10-05T10:00:00.000Z",
+            "summary": "(Group Stage) Round 2: GAM vs VIT",
             "status": null,
-            "leagueId": 5561
+            "leagueId": 5561,
+            "opponents": [
+                {
+                    "id": 124414,
+                    "name": "GAM Esports",
+                    "slug": "gam-esports",
+                    "acronym": "GAM",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/124414/Adonis_Marineslogo_square.png"
+                },
+                {
+                    "id": 115,
+                    "name": "Team Vitality",
+                    "slug": "vitality",
+                    "acronym": "VIT",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/115/team_vitalitylogo_square.png"
+                }
+            ],
+            "leagueName": "Demacia Cup Global Invitational"
         },
         "1694360": {
             "id": 1694360,
             "uid": "1694360@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-05T11:00:00.000Z",
-            "end": "2026-10-05T14:00:00.000Z",
-            "summary": "Round 2: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-05T10:40:00.000Z",
+            "end": "2026-10-05T13:40:00.000Z",
+            "summary": "(Group Stage) Round 2: SR vs JDG",
             "status": null,
-            "leagueId": 5561
+            "leagueId": 5561,
+            "opponents": [
+                {
+                    "id": 134001,
+                    "name": "Shopify Rebellion",
+                    "slug": "shopify-rebellion-league-of-legends",
+                    "acronym": "SR",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/134001/600px_shopify_rebellion.png"
+                },
+                {
+                    "id": 318,
+                    "name": "JD Gaming",
+                    "slug": "qg-reapers",
+                    "acronym": "JDG",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/318/746px_jd_gaming_2021_full_allmode.png"
+                }
+            ],
+            "leagueName": "Demacia Cup Global Invitational"
         },
         "1694361": {
             "id": 1694361,
             "uid": "1694361@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-10-06T07:00:00.000Z",
             "end": "2026-10-06T10:00:00.000Z",
-            "summary": "Round 3: TBD vs TBD",
+            "summary": "(Group Stage) Round 3: BRO vs Navi",
             "status": null,
-            "leagueId": 5561
+            "leagueId": 5561,
+            "opponents": [
+                {
+                    "id": 128218,
+                    "name": "HANJIN BRION",
+                    "slug": "fredit-brion",
+                    "acronym": "BRO",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/128218/628px_brion_2023_lightmode.png"
+                },
+                {
+                    "id": 137057,
+                    "name": "Natus Vincere",
+                    "slug": "natus-vincere-league-of-legends",
+                    "acronym": "Navi",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/137057/natus_vincerelogo_square.png"
+                }
+            ],
+            "leagueName": "Demacia Cup Global Invitational"
         },
         "1694362": {
             "id": 1694362,
             "uid": "1694362@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-06T09:00:00.000Z",
-            "end": "2026-10-06T12:00:00.000Z",
-            "summary": "Round 3: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-06T11:15:00.000Z",
+            "end": "2026-10-06T14:15:00.000Z",
+            "summary": "(Group Stage) Round 3: JDG vs LGD",
             "status": null,
-            "leagueId": 5561
+            "leagueId": 5561,
+            "opponents": [
+                {
+                    "id": 318,
+                    "name": "JD Gaming",
+                    "slug": "qg-reapers",
+                    "acronym": "JDG",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/318/746px_jd_gaming_2021_full_allmode.png"
+                },
+                {
+                    "id": 408,
+                    "name": "LGD Gaming",
+                    "slug": "lgd-gaming",
+                    "acronym": "LGD",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/408/lgd_gaminglogo_square.png"
+                }
+            ],
+            "leagueName": "Demacia Cup Global Invitational"
         },
         "1694363": {
             "id": 1694363,
             "uid": "1694363@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-06T11:00:00.000Z",
-            "end": "2026-10-06T14:00:00.000Z",
-            "summary": "Round 3: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-06T09:40:00.000Z",
+            "end": "2026-10-06T12:40:00.000Z",
+            "summary": "(Group Stage) Round 3: VIT vs RED",
             "status": null,
-            "leagueId": 5561
+            "leagueId": 5561,
+            "opponents": [
+                {
+                    "id": 115,
+                    "name": "Team Vitality",
+                    "slug": "vitality",
+                    "acronym": "VIT",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/115/team_vitalitylogo_square.png"
+                },
+                {
+                    "id": 161,
+                    "name": "RED Canids",
+                    "slug": "red-canids",
+                    "acronym": "RED",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/161/red-canids-3ci94wz2.png"
+                }
+            ],
+            "leagueName": "Demacia Cup Global Invitational"
         },
         "1694364": {
             "id": 1694364,
             "uid": "1694364@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-10-07T07:00:00.000Z",
             "end": "2026-10-07T10:00:00.000Z",
-            "summary": "Round 3: TBD vs TBD",
+            "summary": "(Group Stage) Round 3: GAM vs FLY",
             "status": null,
-            "leagueId": 5561
+            "leagueId": 5561,
+            "opponents": [
+                {
+                    "id": 124414,
+                    "name": "GAM Esports",
+                    "slug": "gam-esports",
+                    "acronym": "GAM",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/124414/Adonis_Marineslogo_square.png"
+                },
+                {
+                    "id": 311,
+                    "name": "FlyQuest",
+                    "slug": "flyquest",
+                    "acronym": "FLY",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/311/fly_questlogo_square.png"
+                }
+            ],
+            "leagueName": "Demacia Cup Global Invitational"
         },
         "1694365": {
             "id": 1694365,
             "uid": "1694365@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-07T09:00:00.000Z",
-            "end": "2026-10-07T12:00:00.000Z",
-            "summary": "Round 3: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-07T08:30:00.000Z",
+            "end": "2026-10-07T11:30:00.000Z",
+            "summary": "(Group Stage) Round 3: GAM vs SR",
             "status": null,
-            "leagueId": 5561
+            "leagueId": 5561,
+            "opponents": [
+                {
+                    "id": 124414,
+                    "name": "GAM Esports",
+                    "slug": "gam-esports",
+                    "acronym": "GAM",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/124414/Adonis_Marineslogo_square.png"
+                },
+                {
+                    "id": 134001,
+                    "name": "Shopify Rebellion",
+                    "slug": "shopify-rebellion-league-of-legends",
+                    "acronym": "SR",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/134001/600px_shopify_rebellion.png"
+                }
+            ],
+            "leagueName": "Demacia Cup Global Invitational"
         },
         "1694366": {
             "id": 1694366,
             "uid": "1694366@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-07T11:00:00.000Z",
-            "end": "2026-10-07T14:00:00.000Z",
-            "summary": "Round 3: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-07T10:15:00.000Z",
+            "end": "2026-10-07T13:15:00.000Z",
+            "summary": "(Group Stage) Round 3: FLY vs SR",
             "status": null,
-            "leagueId": 5561
+            "leagueId": 5561,
+            "opponents": [
+                {
+                    "id": 311,
+                    "name": "FlyQuest",
+                    "slug": "flyquest",
+                    "acronym": "FLY",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/311/fly_questlogo_square.png"
+                },
+                {
+                    "id": 134001,
+                    "name": "Shopify Rebellion",
+                    "slug": "shopify-rebellion-league-of-legends",
+                    "acronym": "SR",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/134001/600px_shopify_rebellion.png"
+                }
+            ],
+            "leagueName": "Demacia Cup Global Invitational"
         },
         "1694367": {
             "id": 1694367,
             "uid": "1694367@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-08T09:00:00.000Z",
-            "end": "2026-10-08T12:00:00.000Z",
-            "summary": "Round 4: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-08T11:00:00.000Z",
+            "end": "2026-10-08T14:00:00.000Z",
+            "summary": "(Group Stage) Round 4: Navi vs JDG",
             "status": null,
-            "leagueId": 5561
+            "leagueId": 5561,
+            "opponents": [
+                {
+                    "id": 137057,
+                    "name": "Natus Vincere",
+                    "slug": "natus-vincere-league-of-legends",
+                    "acronym": "Navi",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/137057/natus_vincerelogo_square.png"
+                },
+                {
+                    "id": 318,
+                    "name": "JD Gaming",
+                    "slug": "qg-reapers",
+                    "acronym": "JDG",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/318/746px_jd_gaming_2021_full_allmode.png"
+                }
+            ],
+            "leagueName": "Demacia Cup Global Invitational"
         },
         "1694368": {
             "id": 1694368,
             "uid": "1694368@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-08T07:00:00.000Z",
-            "end": "2026-10-08T10:00:00.000Z",
-            "summary": "Round 4: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-08T09:00:00.000Z",
+            "end": "2026-10-08T12:00:00.000Z",
+            "summary": "(Group Stage) Round 4: FLY vs RED",
             "status": null,
-            "leagueId": 5561
+            "leagueId": 5561,
+            "opponents": [
+                {
+                    "id": 311,
+                    "name": "FlyQuest",
+                    "slug": "flyquest",
+                    "acronym": "FLY",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/311/fly_questlogo_square.png"
+                },
+                {
+                    "id": 161,
+                    "name": "RED Canids",
+                    "slug": "red-canids",
+                    "acronym": "RED",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/161/red-canids-3ci94wz2.png"
+                }
+            ],
+            "leagueName": "Demacia Cup Global Invitational"
         },
         "1694369": {
             "id": 1694369,
             "uid": "1694369@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-12T06:00:00.000Z",
-            "end": "2026-10-12T11:00:00.000Z",
-            "summary": "Quarterfinal 1: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-12T10:30:00.000Z",
+            "end": "2026-10-12T15:30:00.000Z",
+            "summary": "(Playoffs) Quarterfinal 1: BFX vs JDG",
             "status": null,
-            "leagueId": 5561
+            "leagueId": 5561,
+            "opponents": [
+                {
+                    "id": 134115,
+                    "name": "BNK FEARX",
+                    "slug": "fearx",
+                    "acronym": "BFX",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/134115/663px_fear_x_icon_lightmode.png"
+                },
+                {
+                    "id": 318,
+                    "name": "JD Gaming",
+                    "slug": "qg-reapers",
+                    "acronym": "JDG",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/318/746px_jd_gaming_2021_full_allmode.png"
+                }
+            ],
+            "leagueName": "Demacia Cup Global Invitational"
         },
         "1694370": {
             "id": 1694370,
             "uid": "1694370@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-12T09:00:00.000Z",
-            "end": "2026-10-12T14:00:00.000Z",
-            "summary": "Quarterfinal 2: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-12T06:00:00.000Z",
+            "end": "2026-10-12T11:00:00.000Z",
+            "summary": "(Playoffs) Quarterfinal 2: KT vs VIT",
             "status": null,
-            "leagueId": 5561
+            "leagueId": 5561,
+            "opponents": [
+                {
+                    "id": 63,
+                    "name": "KT Rolster",
+                    "slug": "kt-rolster",
+                    "acronym": "KT",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/63/kt_rolsterlogo_profile.png"
+                },
+                {
+                    "id": 115,
+                    "name": "Team Vitality",
+                    "slug": "vitality",
+                    "acronym": "VIT",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/115/team_vitalitylogo_square.png"
+                }
+            ],
+            "leagueName": "Demacia Cup Global Invitational"
         },
         "1694371": {
             "id": 1694371,
             "uid": "1694371@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-10-13T06:00:00.000Z",
             "end": "2026-10-13T11:00:00.000Z",
-            "summary": "Quarterfinal 3: TBD vs TBD",
+            "summary": "(Playoffs) Quarterfinal 3: WE vs FLY",
             "status": null,
-            "leagueId": 5561
+            "leagueId": 5561,
+            "opponents": [
+                {
+                    "id": 2574,
+                    "name": "Team WE",
+                    "slug": "we",
+                    "acronym": "WE",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/2574/300px-Team_WElogo_square.png"
+                },
+                {
+                    "id": 311,
+                    "name": "FlyQuest",
+                    "slug": "flyquest",
+                    "acronym": "FLY",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/311/fly_questlogo_square.png"
+                }
+            ],
+            "leagueName": "Demacia Cup Global Invitational"
         },
         "1694372": {
             "id": 1694372,
             "uid": "1694372@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-13T09:00:00.000Z",
-            "end": "2026-10-13T14:00:00.000Z",
-            "summary": "Quarterfinal 4: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-13T10:50:00.000Z",
+            "end": "2026-10-13T15:50:00.000Z",
+            "summary": "(Playoffs) Quarterfinal 4: BRO vs LGD",
             "status": null,
-            "leagueId": 5561
+            "leagueId": 5561,
+            "opponents": [
+                {
+                    "id": 128218,
+                    "name": "HANJIN BRION",
+                    "slug": "fredit-brion",
+                    "acronym": "BRO",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/128218/628px_brion_2023_lightmode.png"
+                },
+                {
+                    "id": 408,
+                    "name": "LGD Gaming",
+                    "slug": "lgd-gaming",
+                    "acronym": "LGD",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/408/lgd_gaminglogo_square.png"
+                }
+            ],
+            "leagueName": "Demacia Cup Global Invitational"
         },
         "1694373": {
             "id": 1694373,
             "uid": "1694373@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-10-14T09:00:00.000Z",
             "end": "2026-10-14T14:00:00.000Z",
-            "summary": "Semifinal 1: TBD vs TBD",
+            "summary": "(Playoffs) Semifinal 1: BFX vs KT",
             "status": null,
-            "leagueId": 5561
+            "leagueId": 5561,
+            "opponents": [
+                {
+                    "id": 134115,
+                    "name": "BNK FEARX",
+                    "slug": "fearx",
+                    "acronym": "BFX",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/134115/663px_fear_x_icon_lightmode.png"
+                },
+                {
+                    "id": 63,
+                    "name": "KT Rolster",
+                    "slug": "kt-rolster",
+                    "acronym": "KT",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/63/kt_rolsterlogo_profile.png"
+                }
+            ],
+            "leagueName": "Demacia Cup Global Invitational"
         },
         "1694374": {
             "id": 1694374,
             "uid": "1694374@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-10-15T09:00:00.000Z",
             "end": "2026-10-15T14:00:00.000Z",
-            "summary": "Semifinal 2: TBD vs TBD",
+            "summary": "(Playoffs) Semifinal 2: WE vs BRO",
             "status": null,
-            "leagueId": 5561
+            "leagueId": 5561,
+            "opponents": [
+                {
+                    "id": 2574,
+                    "name": "Team WE",
+                    "slug": "we",
+                    "acronym": "WE",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/2574/300px-Team_WElogo_square.png"
+                },
+                {
+                    "id": 128218,
+                    "name": "HANJIN BRION",
+                    "slug": "fredit-brion",
+                    "acronym": "BRO",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/128218/628px_brion_2023_lightmode.png"
+                }
+            ],
+            "leagueName": "Demacia Cup Global Invitational"
         },
         "1694375": {
             "id": 1694375,
             "uid": "1694375@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-10-17T09:00:00.000Z",
             "end": "2026-10-17T14:00:00.000Z",
-            "summary": "Grand Final: TBD vs TBD",
+            "summary": "(Playoffs) Grand Final: BFX vs WE",
             "status": null,
-            "leagueId": 5561
+            "leagueId": 5561,
+            "opponents": [
+                {
+                    "id": 134115,
+                    "name": "BNK FEARX",
+                    "slug": "fearx",
+                    "acronym": "BFX",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/134115/663px_fear_x_icon_lightmode.png"
+                },
+                {
+                    "id": 2574,
+                    "name": "Team WE",
+                    "slug": "we",
+                    "acronym": "WE",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/2574/300px-Team_WElogo_square.png"
+                }
+            ],
+            "leagueName": "Demacia Cup Global Invitational"
         },
         "1697637": {
             "id": 1697637,
@@ -22925,192 +23673,515 @@
         "1697663": {
             "id": 1697663,
             "uid": "1697663@zlypher.github.io",
-            "sequence": 2,
-            "start": "2026-10-02T08:57:00.000Z",
-            "end": "2026-10-02T13:57:00.000Z",
-            "summary": "Grand final: SLY vs T1.A",
+            "sequence": 3,
+            "start": "2026-10-02T09:00:00.000Z",
+            "end": "2026-10-02T14:00:00.000Z",
+            "summary": "(Playoffs) Grand final: SLY vs T1.A",
             "status": null,
-            "leagueId": 5558
+            "leagueId": 5558,
+            "opponents": [
+                {
+                    "id": 1449,
+                    "name": "Solary",
+                    "slug": "solary",
+                    "acronym": "SLY",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/1449/123px_solarylogo_square.png"
+                },
+                {
+                    "id": 131040,
+                    "name": "T1 Academy",
+                    "slug": "t1-academy",
+                    "acronym": "T1.A",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/131040/t1logo_profile.png"
+                }
+            ],
+            "leagueName": "World Star Challengers Invitational"
         },
         "1698591": {
             "id": 1698591,
             "uid": "1698591@zlypher.github.io",
-            "sequence": 2,
+            "sequence": 3,
             "start": "2026-10-04T16:00:00.000Z",
             "end": "2026-10-04T21:00:00.000Z",
-            "summary": "GAL vs TSC",
+            "summary": "(Knockout Stage) GAL vs TSC",
             "status": null,
-            "leagueId": 4996
+            "leagueId": 4996,
+            "opponents": [
+                {
+                    "id": 136019,
+                    "name": "Galions",
+                    "slug": "galions",
+                    "acronym": "GAL",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/136019/galionslogo_square.png"
+                },
+                {
+                    "id": 136547,
+                    "name": "The Secret Club",
+                    "slug": "the-secret-club-esport",
+                    "acronym": "TSC",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/136547/the_secret_club_esportlogo_square.png"
+                }
+            ],
+            "leagueName": "EMEA Masters"
         },
         "1698592": {
             "id": 1698592,
             "uid": "1698592@zlypher.github.io",
-            "sequence": 2,
+            "sequence": 3,
             "start": "2026-10-04T16:00:00.000Z",
             "end": "2026-10-04T21:00:00.000Z",
-            "summary": "SLY vs BAR",
+            "summary": "(Knockout Stage) SLY vs BAR",
             "status": null,
-            "leagueId": 4996
+            "leagueId": 4996,
+            "opponents": [
+                {
+                    "id": 1449,
+                    "name": "Solary",
+                    "slug": "solary",
+                    "acronym": "SLY",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/1449/123px_solarylogo_square.png"
+                },
+                {
+                    "id": 130103,
+                    "name": "Barça eSports",
+                    "slug": "barca-esports",
+                    "acronym": "BAR",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/130103/bar_253_fa_e_sportslogo_square.png"
+                }
+            ],
+            "leagueName": "EMEA Masters"
         },
         "1698593": {
             "id": 1698593,
             "uid": "1698593@zlypher.github.io",
-            "sequence": 2,
+            "sequence": 3,
             "start": "2026-10-04T16:00:00.000Z",
             "end": "2026-10-04T21:00:00.000Z",
-            "summary": "MKF vs UCAM",
+            "summary": "(Knockout Stage) MKF vs UCAM",
             "status": null,
-            "leagueId": 4996
+            "leagueId": 4996,
+            "opponents": [
+                {
+                    "id": 363,
+                    "name": "⁠Movistar KOI Fénix",
+                    "slug": "movistar-riders",
+                    "acronym": "MKF",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/363/movistar_ko_ilogo_square.png"
+                },
+                {
+                    "id": 126737,
+                    "name": "UCAM Esports Club",
+                    "slug": "ucam-esports-club",
+                    "acronym": "UCAM",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/126737/577px_ucam_esports_club_allmode.png"
+                }
+            ],
+            "leagueName": "EMEA Masters"
         },
         "1698595": {
             "id": 1698595,
             "uid": "1698595@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-10-06T16:00:00.000Z",
             "end": "2026-10-06T21:00:00.000Z",
-            "summary": "Round of 16 Match 1: TBD vs TBD",
+            "summary": "(Playoffs) Round of 16 Match 1: SLY vs VLR",
             "status": null,
-            "leagueId": 4996
+            "leagueId": 4996,
+            "opponents": [
+                {
+                    "id": 1449,
+                    "name": "Solary",
+                    "slug": "solary",
+                    "acronym": "SLY",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/1449/123px_solarylogo_square.png"
+                },
+                {
+                    "id": 138853,
+                    "name": "Valerion",
+                    "slug": "valerion",
+                    "acronym": "VLR",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/138853/ezgif_868bc1cd08695395.png"
+                }
+            ],
+            "leagueName": "EMEA Masters"
         },
         "1698596": {
             "id": 1698596,
             "uid": "1698596@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-10-06T16:00:00.000Z",
             "end": "2026-10-06T21:00:00.000Z",
-            "summary": "Round of 16 Match 2: TBD vs TBD",
+            "summary": "(Playoffs) Round of 16 Match 5: MKF vs FEC",
             "status": null,
-            "leagueId": 4996
+            "leagueId": 4996,
+            "opponents": [
+                {
+                    "id": 363,
+                    "name": "⁠Movistar KOI Fénix",
+                    "slug": "movistar-riders",
+                    "acronym": "MKF",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/363/movistar_ko_ilogo_square.png"
+                },
+                {
+                    "id": 137833,
+                    "name": "Frites Esports Club",
+                    "slug": "frites-esports-club",
+                    "acronym": "FEC",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/137833/frites_esports_club_lightmode.png"
+                }
+            ],
+            "leagueName": "EMEA Masters"
         },
         "1698597": {
             "id": 1698597,
             "uid": "1698597@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-10-06T16:00:00.000Z",
             "end": "2026-10-06T21:00:00.000Z",
-            "summary": "Round of 16 Match 3: TBD vs TBD",
+            "summary": "(Playoffs) Round of 16 Match 6: TLNP vs BW",
             "status": null,
-            "leagueId": 4996
+            "leagueId": 4996,
+            "opponents": [
+                {
+                    "id": 137898,
+                    "name": "TLN Pirates",
+                    "slug": "tln-pirates",
+                    "acronym": "TLNP",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/137898/tln_pirates_2026_allmode.png"
+                },
+                {
+                    "id": 136070,
+                    "name": "Bushido Wildcats",
+                    "slug": "bushido-wildcats",
+                    "acronym": "BW",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/136070/ezgif_52ad93b2c5a076a2.png"
+                }
+            ],
+            "leagueName": "EMEA Masters"
         },
         "1698598": {
             "id": 1698598,
             "uid": "1698598@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-10-06T16:00:00.000Z",
             "end": "2026-10-06T21:00:00.000Z",
-            "summary": "Round of 16 Match 4: TBD vs TBD",
+            "summary": "(Playoffs) Round of 16 Match 7: GAL vs BIG",
             "status": null,
-            "leagueId": 4996
+            "leagueId": 4996,
+            "opponents": [
+                {
+                    "id": 136019,
+                    "name": "Galions",
+                    "slug": "galions",
+                    "acronym": "GAL",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/136019/galionslogo_square.png"
+                },
+                {
+                    "id": 125905,
+                    "name": "BIG",
+                    "slug": "big-league-of-legends",
+                    "acronym": "BIG",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/125905/berlin_international_gaminglogo_square.png"
+                }
+            ],
+            "leagueName": "EMEA Masters"
         },
         "1698599": {
             "id": 1698599,
             "uid": "1698599@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-10-07T16:00:00.000Z",
             "end": "2026-10-07T21:00:00.000Z",
-            "summary": "Round of 16 Match 5: TBD vs TBD",
+            "summary": "(Playoffs) Round of 16 Match 2: HRTS vs G2N",
             "status": null,
-            "leagueId": 4996
+            "leagueId": 4996,
+            "opponents": [
+                {
+                    "id": 132212,
+                    "name": "Team Heretics Academy",
+                    "slug": "team-heretics-academy",
+                    "acronym": "HRTS",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/132212/team_hereticslogo_square.png"
+                },
+                {
+                    "id": 137945,
+                    "name": "G2 NORD",
+                    "slug": "g2-nord",
+                    "acronym": "G2N",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/137945/ezgif_82457a6b2740471e.png"
+                }
+            ],
+            "leagueName": "EMEA Masters"
         },
         "1698600": {
             "id": 1698600,
             "uid": "1698600@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-10-07T16:00:00.000Z",
             "end": "2026-10-07T21:00:00.000Z",
-            "summary": "Round of 16 Match 6: TBD vs TBD",
+            "summary": "(Playoffs) Round of 16 Match 3: KCB vs SC",
             "status": null,
-            "leagueId": 4996
+            "leagueId": 4996,
+            "opponents": [
+                {
+                    "id": 128268,
+                    "name": "Karmine Corp Blue",
+                    "slug": "karmine-corp",
+                    "acronym": "KCB",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/128268/600px_karmine_corp_allmode.png"
+                },
+                {
+                    "id": 134158,
+                    "name": "Skillcamp Esport",
+                    "slug": "skillcamp-esport",
+                    "acronym": "SC",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/134158/skillcamplogo_square.png"
+                }
+            ],
+            "leagueName": "EMEA Masters"
         },
         "1698601": {
             "id": 1698601,
             "uid": "1698601@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-10-07T16:00:00.000Z",
             "end": "2026-10-07T21:00:00.000Z",
-            "summary": "Round of 16 Match 7: TBD vs TBD",
+            "summary": "(Playoffs) Round of 16 Match 4: ANB vs RUD",
             "status": null,
-            "leagueId": 4996
+            "leagueId": 4996,
+            "opponents": [
+                {
+                    "id": 131053,
+                    "name": "Anubis Gaming",
+                    "slug": "anubis-gaming-league-of-legends",
+                    "acronym": "ANB",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/131053/anubis_gaminglogo_profile.png"
+                },
+                {
+                    "id": 136177,
+                    "name": "Ruddy Corporation",
+                    "slug": "the-ruddy-sack",
+                    "acronym": "RUD",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/136177/1157px_ruddy_esports_2026_allmode.png"
+                }
+            ],
+            "leagueName": "EMEA Masters"
         },
         "1698602": {
             "id": 1698602,
             "uid": "1698602@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-10-07T16:00:00.000Z",
             "end": "2026-10-07T21:00:00.000Z",
-            "summary": "Round of 16 Match 8: TBD vs TBD",
+            "summary": "(Playoffs) Round of 16 Match 8: KHK vs USE",
             "status": null,
-            "leagueId": 4996
+            "leagueId": 4996,
+            "opponents": [
+                {
+                    "id": 132014,
+                    "name": "Kaufland Hangry Knights",
+                    "slug": "kaufland-hangry-knights",
+                    "acronym": "KHK",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/132014/ezgif_5e43e49cb8f1f5a8.png"
+                },
+                {
+                    "id": 126832,
+                    "name": "Unicorns Of Love Sexy Edition",
+                    "slug": "unicorns-of-love-sexy-edition",
+                    "acronym": "USE",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/126832/ezgif_5c9b92b2ec54b782.png"
+                }
+            ],
+            "leagueName": "EMEA Masters"
         },
         "1698603": {
             "id": 1698603,
             "uid": "1698603@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-09T16:00:00.000Z",
-            "end": "2026-10-09T21:00:00.000Z",
-            "summary": "Quarterfinal 1: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-10T16:00:00.000Z",
+            "end": "2026-10-10T21:00:00.000Z",
+            "summary": "(Playoffs) Quarterfinal 1: SLY vs G2N",
             "status": null,
-            "leagueId": 4996
+            "leagueId": 4996,
+            "opponents": [
+                {
+                    "id": 1449,
+                    "name": "Solary",
+                    "slug": "solary",
+                    "acronym": "SLY",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/1449/123px_solarylogo_square.png"
+                },
+                {
+                    "id": 137945,
+                    "name": "G2 NORD",
+                    "slug": "g2-nord",
+                    "acronym": "G2N",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/137945/ezgif_82457a6b2740471e.png"
+                }
+            ],
+            "leagueName": "EMEA Masters"
         },
         "1698604": {
             "id": 1698604,
             "uid": "1698604@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-09T16:00:00.000Z",
-            "end": "2026-10-09T21:00:00.000Z",
-            "summary": "Quarterfinal 2: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-10T16:00:00.000Z",
+            "end": "2026-10-10T21:00:00.000Z",
+            "summary": "(Playoffs) Quarterfinal 2: KCB vs ANB",
             "status": null,
-            "leagueId": 4996
+            "leagueId": 4996,
+            "opponents": [
+                {
+                    "id": 128268,
+                    "name": "Karmine Corp Blue",
+                    "slug": "karmine-corp",
+                    "acronym": "KCB",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/128268/600px_karmine_corp_allmode.png"
+                },
+                {
+                    "id": 131053,
+                    "name": "Anubis Gaming",
+                    "slug": "anubis-gaming-league-of-legends",
+                    "acronym": "ANB",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/131053/anubis_gaminglogo_profile.png"
+                }
+            ],
+            "leagueName": "EMEA Masters"
         },
         "1698605": {
             "id": 1698605,
             "uid": "1698605@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-10T16:00:00.000Z",
-            "end": "2026-10-10T21:00:00.000Z",
-            "summary": "Quarterfinal 3: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-09T16:45:00.000Z",
+            "end": "2026-10-09T21:45:00.000Z",
+            "summary": "(Playoffs) Quarterfinal 3: MKF vs TLNP",
             "status": null,
-            "leagueId": 4996
+            "leagueId": 4996,
+            "opponents": [
+                {
+                    "id": 363,
+                    "name": "⁠Movistar KOI Fénix",
+                    "slug": "movistar-riders",
+                    "acronym": "MKF",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/363/movistar_ko_ilogo_square.png"
+                },
+                {
+                    "id": 137898,
+                    "name": "TLN Pirates",
+                    "slug": "tln-pirates",
+                    "acronym": "TLNP",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/137898/tln_pirates_2026_allmode.png"
+                }
+            ],
+            "leagueName": "EMEA Masters"
         },
         "1698606": {
             "id": 1698606,
             "uid": "1698606@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-10T16:00:00.000Z",
-            "end": "2026-10-10T21:00:00.000Z",
-            "summary": "Quarterfinal 4: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-09T16:00:00.000Z",
+            "end": "2026-10-09T21:00:00.000Z",
+            "summary": "(Playoffs) Quarterfinal 4: GAL vs KHK",
             "status": null,
-            "leagueId": 4996
+            "leagueId": 4996,
+            "opponents": [
+                {
+                    "id": 136019,
+                    "name": "Galions",
+                    "slug": "galions",
+                    "acronym": "GAL",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/136019/galionslogo_square.png"
+                },
+                {
+                    "id": 132014,
+                    "name": "Kaufland Hangry Knights",
+                    "slug": "kaufland-hangry-knights",
+                    "acronym": "KHK",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/132014/ezgif_5e43e49cb8f1f5a8.png"
+                }
+            ],
+            "leagueName": "EMEA Masters"
         },
         "1698607": {
             "id": 1698607,
             "uid": "1698607@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-13T16:00:00.000Z",
-            "end": "2026-10-13T21:00:00.000Z",
-            "summary": "Semifinal 1: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-14T16:00:00.000Z",
+            "end": "2026-10-14T21:00:00.000Z",
+            "summary": "(Playoffs) Semifinal 1: ANB vs SLY",
             "status": null,
-            "leagueId": 4996
+            "leagueId": 4996,
+            "opponents": [
+                {
+                    "id": 131053,
+                    "name": "Anubis Gaming",
+                    "slug": "anubis-gaming-league-of-legends",
+                    "acronym": "ANB",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/131053/anubis_gaminglogo_profile.png"
+                },
+                {
+                    "id": 1449,
+                    "name": "Solary",
+                    "slug": "solary",
+                    "acronym": "SLY",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/1449/123px_solarylogo_square.png"
+                }
+            ],
+            "leagueName": "EMEA Masters"
         },
         "1698608": {
             "id": 1698608,
             "uid": "1698608@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-14T16:00:00.000Z",
-            "end": "2026-10-14T21:00:00.000Z",
-            "summary": "Semifinal 2: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-13T16:00:00.000Z",
+            "end": "2026-10-13T21:00:00.000Z",
+            "summary": "(Playoffs) Semifinal 2: MKF vs GAL",
             "status": null,
-            "leagueId": 4996
+            "leagueId": 4996,
+            "opponents": [
+                {
+                    "id": 363,
+                    "name": "⁠Movistar KOI Fénix",
+                    "slug": "movistar-riders",
+                    "acronym": "MKF",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/363/movistar_ko_ilogo_square.png"
+                },
+                {
+                    "id": 136019,
+                    "name": "Galions",
+                    "slug": "galions",
+                    "acronym": "GAL",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/136019/galionslogo_square.png"
+                }
+            ],
+            "leagueName": "EMEA Masters"
         },
         "1698609": {
             "id": 1698609,
             "uid": "1698609@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-23T16:00:00.000Z",
-            "end": "2026-10-23T21:00:00.000Z",
-            "summary": "Grand Final: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-22T12:20:00.000Z",
+            "end": "2026-10-22T17:20:00.000Z",
+            "summary": "(Playoffs) Grand Final: GAL vs SLY",
             "status": null,
-            "leagueId": 4996
+            "leagueId": 4996,
+            "opponents": [
+                {
+                    "id": 136019,
+                    "name": "Galions",
+                    "slug": "galions",
+                    "acronym": "GAL",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/136019/galionslogo_square.png"
+                },
+                {
+                    "id": 1449,
+                    "name": "Solary",
+                    "slug": "solary",
+                    "acronym": "SLY",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/1449/123px_solarylogo_square.png"
+                }
+            ],
+            "leagueName": "EMEA Masters"
         },
         "1699479": {
             "id": 1699479,
@@ -23235,32 +24306,83 @@
         "1699496": {
             "id": 1699496,
             "uid": "1699496@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-09-30T23:58:23.000Z",
-            "end": "2026-10-01T02:58:23.000Z",
-            "summary": "Semifinal 1: VIE vs TPE",
+            "sequence": 2,
+            "start": "2026-10-01T00:00:00.000Z",
+            "end": "2026-10-01T03:00:00.000Z",
+            "summary": "(Playoffs) Semifinal 1: VIE vs TPE",
             "status": null,
-            "leagueId": 5012
+            "leagueId": 5012,
+            "opponents": [
+                {
+                    "id": 131007,
+                    "name": "Vietnam",
+                    "slug": "vietnam-league-of-legends",
+                    "acronym": "VIE",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/131007/vietnam_flag.png"
+                },
+                {
+                    "id": 133295,
+                    "name": "Chinese Taipei",
+                    "slug": "chinese-taipei",
+                    "acronym": "TPE",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/133295/team_chinese_taipeilogo_square.png"
+                }
+            ],
+            "leagueName": "Asian Games"
         },
         "1699497": {
             "id": 1699497,
             "uid": "1699497@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-01T04:27:08.000Z",
-            "end": "2026-10-01T07:27:08.000Z",
-            "summary": "Semifinal 2: KOR vs KSA",
+            "sequence": 2,
+            "start": "2026-10-01T04:30:00.000Z",
+            "end": "2026-10-01T07:30:00.000Z",
+            "summary": "(Playoffs) Semifinal 2: KOR vs KSA",
             "status": null,
-            "leagueId": 5012
+            "leagueId": 5012,
+            "opponents": [
+                {
+                    "id": 133694,
+                    "name": "South Korea",
+                    "slug": "south-korea-league-of-legends",
+                    "acronym": "KOR",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/133694/south_korea__28_national_team_29logo_square.png"
+                },
+                {
+                    "id": 133303,
+                    "name": "Saudi Arabia",
+                    "slug": "saudi-arabia-league-of-legends",
+                    "acronym": "KSA",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/133303/saudi_arabia__2528_national_team_2529logo_square.png"
+                }
+            ],
+            "leagueName": "Asian Games"
         },
         "1699498": {
             "id": 1699498,
             "uid": "1699498@zlypher.github.io",
-            "sequence": 2,
-            "start": "2026-10-02T03:51:19.000Z",
-            "end": "2026-10-02T08:51:19.000Z",
-            "summary": "Grand Final: TPE vs KOR",
+            "sequence": 3,
+            "start": "2026-10-02T03:50:00.000Z",
+            "end": "2026-10-02T08:50:00.000Z",
+            "summary": "(Playoffs) Grand Final: TPE vs KOR",
             "status": null,
-            "leagueId": 5012
+            "leagueId": 5012,
+            "opponents": [
+                {
+                    "id": 133295,
+                    "name": "Chinese Taipei",
+                    "slug": "chinese-taipei",
+                    "acronym": "TPE",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/133295/team_chinese_taipeilogo_square.png"
+                },
+                {
+                    "id": 133694,
+                    "name": "South Korea",
+                    "slug": "south-korea-league-of-legends",
+                    "acronym": "KOR",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/133694/south_korea__28_national_team_29logo_square.png"
+                }
+            ],
+            "leagueName": "Asian Games"
         },
         "1702807": {
             "id": 1702807,
@@ -23295,152 +24417,407 @@
         "1702814": {
             "id": 1702814,
             "uid": "1702814@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-01T15:01:17.000Z",
-            "end": "2026-10-01T18:01:17.000Z",
-            "summary": "Round 6: BOOM vs SC",
+            "sequence": 2,
+            "start": "2026-10-01T15:00:00.000Z",
+            "end": "2026-10-01T18:00:00.000Z",
+            "summary": "(Swiss Stage) Round 6: BOOM vs SC",
             "status": null,
-            "leagueId": 4996
+            "leagueId": 4996,
+            "opponents": [
+                {
+                    "id": 138056,
+                    "name": "BOMBA Team",
+                    "slug": "bomba-team",
+                    "acronym": "BOOM",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/138056/bomba_teamlogo_square.png"
+                },
+                {
+                    "id": 134158,
+                    "name": "Skillcamp Esport",
+                    "slug": "skillcamp-esport",
+                    "acronym": "SC",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/134158/skillcamplogo_square.png"
+                }
+            ],
+            "leagueName": "EMEA Masters"
         },
         "1702815": {
             "id": 1702815,
             "uid": "1702815@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-01T15:01:38.000Z",
-            "end": "2026-10-01T18:01:38.000Z",
-            "summary": "Round 6: CG vs USE",
+            "sequence": 2,
+            "start": "2026-10-01T15:00:00.000Z",
+            "end": "2026-10-01T18:00:00.000Z",
+            "summary": "(Swiss Stage) Round 6: CG vs USE",
             "status": null,
-            "leagueId": 4996
+            "leagueId": 4996,
+            "opponents": [
+                {
+                    "id": 136722,
+                    "name": "Colossal Gaming",
+                    "slug": "colossal-gaming",
+                    "acronym": "CG",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/136722/colossal_gaminglogo_square.png"
+                },
+                {
+                    "id": 126832,
+                    "name": "Unicorns Of Love Sexy Edition",
+                    "slug": "unicorns-of-love-sexy-edition",
+                    "acronym": "USE",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/126832/ezgif_5c9b92b2ec54b782.png"
+                }
+            ],
+            "leagueName": "EMEA Masters"
         },
         "1702816": {
             "id": 1702816,
             "uid": "1702816@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-01T15:01:30.000Z",
-            "end": "2026-10-01T18:01:30.000Z",
-            "summary": "Round 6: MGZ vs TOS",
+            "sequence": 2,
+            "start": "2026-10-01T15:00:00.000Z",
+            "end": "2026-10-01T18:00:00.000Z",
+            "summary": "(Swiss Stage) Round 6: MGZ vs TOS",
             "status": null,
-            "leagueId": 4996
+            "leagueId": 4996,
+            "opponents": [
+                {
+                    "id": 132626,
+                    "name": "MAGAZA",
+                    "slug": "magaza",
+                    "acronym": "MGZ",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/132626/magaz_alogo_square.png"
+                },
+                {
+                    "id": 137229,
+                    "name": "The Otter Side",
+                    "slug": "the-otter-side",
+                    "acronym": "TOS",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/137229/ezgif_78720f1ede9ea2de.png"
+                }
+            ],
+            "leagueName": "EMEA Masters"
         },
         "1702817": {
             "id": 1702817,
             "uid": "1702817@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-01T15:01:00.000Z",
-            "end": "2026-10-01T18:01:00.000Z",
-            "summary": "Round 6: BW vs FEC",
+            "sequence": 2,
+            "start": "2026-10-01T15:00:00.000Z",
+            "end": "2026-10-01T18:00:00.000Z",
+            "summary": "(Swiss Stage) Round 6: BW vs FEC",
             "status": null,
-            "leagueId": 4996
+            "leagueId": 4996,
+            "opponents": [
+                {
+                    "id": 136070,
+                    "name": "Bushido Wildcats",
+                    "slug": "bushido-wildcats",
+                    "acronym": "BW",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/136070/ezgif_52ad93b2c5a076a2.png"
+                },
+                {
+                    "id": 137833,
+                    "name": "Frites Esports Club",
+                    "slug": "frites-esports-club",
+                    "acronym": "FEC",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/137833/frites_esports_club_lightmode.png"
+                }
+            ],
+            "leagueName": "EMEA Masters"
         },
         "1702818": {
             "id": 1702818,
             "uid": "1702818@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-01T15:01:34.000Z",
-            "end": "2026-10-01T18:01:34.000Z",
-            "summary": "Round 6: VLR vs RUD",
+            "sequence": 2,
+            "start": "2026-10-01T15:00:00.000Z",
+            "end": "2026-10-01T18:00:00.000Z",
+            "summary": "(Swiss Stage) Round 6: VLR vs RUD",
             "status": null,
-            "leagueId": 4996
+            "leagueId": 4996,
+            "opponents": [
+                {
+                    "id": 138853,
+                    "name": "Valerion",
+                    "slug": "valerion",
+                    "acronym": "VLR",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/138853/ezgif_868bc1cd08695395.png"
+                },
+                {
+                    "id": 136177,
+                    "name": "Ruddy Corporation",
+                    "slug": "the-ruddy-sack",
+                    "acronym": "RUD",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/136177/1157px_ruddy_esports_2026_allmode.png"
+                }
+            ],
+            "leagueName": "EMEA Masters"
         },
         "1702819": {
             "id": 1702819,
             "uid": "1702819@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-01T17:43:41.000Z",
-            "end": "2026-10-01T20:43:41.000Z",
-            "summary": "Round 6: TP vs TSC",
+            "sequence": 2,
+            "start": "2026-10-01T17:45:00.000Z",
+            "end": "2026-10-01T20:45:00.000Z",
+            "summary": "(Swiss Stage) Round 6: TP vs TSC",
             "status": null,
-            "leagueId": 4996
+            "leagueId": 4996,
+            "opponents": [
+                {
+                    "id": 129409,
+                    "name": "Team Phantasma",
+                    "slug": "team-phantasma",
+                    "acronym": "TP",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/129409/190px_team_phantasma_teamcard.png"
+                },
+                {
+                    "id": 136547,
+                    "name": "The Secret Club",
+                    "slug": "the-secret-club-esport",
+                    "acronym": "TSC",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/136547/the_secret_club_esportlogo_square.png"
+                }
+            ],
+            "leagueName": "EMEA Masters"
         },
         "1702820": {
             "id": 1702820,
             "uid": "1702820@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-01T17:35:56.000Z",
-            "end": "2026-10-01T20:35:56.000Z",
-            "summary": "Round 6: PCIFIC  vs LDS",
+            "sequence": 2,
+            "start": "2026-10-01T17:35:00.000Z",
+            "end": "2026-10-01T20:35:00.000Z",
+            "summary": "(Swiss Stage) Round 6: PCIFIC  vs LDS",
             "status": null,
-            "leagueId": 4996
+            "leagueId": 4996,
+            "opponents": [
+                {
+                    "id": 137929,
+                    "name": "PCIFIC ",
+                    "slug": "pcific-league-of-legends",
+                    "acronym": "PCIFIC ",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/137929/800px_pcific_esports_allmode.png"
+                },
+                {
+                    "id": 132497,
+                    "name": "Lodis",
+                    "slug": "lodis-by-illuminar-league-of-legends",
+                    "acronym": "LDS",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/132497/lodis_by_illuminarlogo_square.png"
+                }
+            ],
+            "leagueName": "EMEA Masters"
         },
         "1702821": {
             "id": 1702821,
             "uid": "1702821@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-01T17:06:31.000Z",
-            "end": "2026-10-01T20:06:31.000Z",
-            "summary": "Round 6: SEC vs BAR",
+            "sequence": 2,
+            "start": "2026-10-01T17:00:00.000Z",
+            "end": "2026-10-01T20:00:00.000Z",
+            "summary": "(Swiss Stage) Round 6: SEC vs BAR",
             "status": null,
-            "leagueId": 4996
+            "leagueId": 4996,
+            "opponents": [
+                {
+                    "id": 132064,
+                    "name": "Senshi Esports",
+                    "slug": "senshi-esports-club",
+                    "acronym": "SEC",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/132064/senshi_e_sports__2528_benelux_team_2529logo_square.png"
+                },
+                {
+                    "id": 130103,
+                    "name": "Barça eSports",
+                    "slug": "barca-esports",
+                    "acronym": "BAR",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/130103/bar_253_fa_e_sportslogo_square.png"
+                }
+            ],
+            "leagueName": "EMEA Masters"
         },
         "1702822": {
             "id": 1702822,
             "uid": "1702822@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-01T16:46:49.000Z",
-            "end": "2026-10-01T19:46:49.000Z",
-            "summary": "Round 6: BIG vs NBS",
+            "sequence": 2,
+            "start": "2026-10-01T16:45:00.000Z",
+            "end": "2026-10-01T19:45:00.000Z",
+            "summary": "(Swiss Stage) Round 6: BIG vs NBS",
             "status": null,
-            "leagueId": 4996
+            "leagueId": 4996,
+            "opponents": [
+                {
+                    "id": 125905,
+                    "name": "BIG",
+                    "slug": "big-league-of-legends",
+                    "acronym": "BIG",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/125905/berlin_international_gaminglogo_square.png"
+                },
+                {
+                    "id": 136087,
+                    "name": "NightBirds",
+                    "slug": "nightbirds",
+                    "acronym": "NBS",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/136087/nightbirdslogo_square.png"
+                }
+            ],
+            "leagueName": "EMEA Masters"
         },
         "1702823": {
             "id": 1702823,
             "uid": "1702823@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-01T17:47:47.000Z",
-            "end": "2026-10-01T20:47:47.000Z",
-            "summary": "Round 6: JSK vs UCAM",
+            "sequence": 2,
+            "start": "2026-10-01T17:50:00.000Z",
+            "end": "2026-10-01T20:50:00.000Z",
+            "summary": "(Swiss Stage) Round 6: JSK vs UCAM",
             "status": null,
-            "leagueId": 4996
+            "leagueId": 4996,
+            "opponents": [
+                {
+                    "id": 138473,
+                    "name": "JSK Esports",
+                    "slug": "jsk-esports",
+                    "acronym": "JSK",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/138473/jsk_esportslogo_profile.png"
+                },
+                {
+                    "id": 126737,
+                    "name": "UCAM Esports Club",
+                    "slug": "ucam-esports-club",
+                    "acronym": "UCAM",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/126737/577px_ucam_esports_club_allmode.png"
+                }
+            ],
+            "leagueName": "EMEA Masters"
         },
         "1702824": {
             "id": 1702824,
             "uid": "1702824@zlypher.github.io",
-            "sequence": 2,
-            "start": "2026-10-02T15:05:11.000Z",
-            "end": "2026-10-02T18:05:11.000Z",
-            "summary": "Round 7: PCIFIC  vs FEC",
+            "sequence": 3,
+            "start": "2026-10-02T15:00:00.000Z",
+            "end": "2026-10-02T18:00:00.000Z",
+            "summary": "(Swiss Stage) Round 7: PCIFIC  vs FEC",
             "status": null,
-            "leagueId": 4996
+            "leagueId": 4996,
+            "opponents": [
+                {
+                    "id": 137929,
+                    "name": "PCIFIC ",
+                    "slug": "pcific-league-of-legends",
+                    "acronym": "PCIFIC ",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/137929/800px_pcific_esports_allmode.png"
+                },
+                {
+                    "id": 137833,
+                    "name": "Frites Esports Club",
+                    "slug": "frites-esports-club",
+                    "acronym": "FEC",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/137833/frites_esports_club_lightmode.png"
+                }
+            ],
+            "leagueName": "EMEA Masters"
         },
         "1702825": {
             "id": 1702825,
             "uid": "1702825@zlypher.github.io",
-            "sequence": 2,
-            "start": "2026-10-02T15:01:16.000Z",
-            "end": "2026-10-02T18:01:16.000Z",
-            "summary": "Round 7: CG vs TSC",
+            "sequence": 3,
+            "start": "2026-10-02T15:00:00.000Z",
+            "end": "2026-10-02T18:00:00.000Z",
+            "summary": "(Swiss Stage) Round 7: CG vs TSC",
             "status": null,
-            "leagueId": 4996
+            "leagueId": 4996,
+            "opponents": [
+                {
+                    "id": 136722,
+                    "name": "Colossal Gaming",
+                    "slug": "colossal-gaming",
+                    "acronym": "CG",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/136722/colossal_gaminglogo_square.png"
+                },
+                {
+                    "id": 136547,
+                    "name": "The Secret Club",
+                    "slug": "the-secret-club-esport",
+                    "acronym": "TSC",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/136547/the_secret_club_esportlogo_square.png"
+                }
+            ],
+            "leagueName": "EMEA Masters"
         },
         "1702826": {
             "id": 1702826,
             "uid": "1702826@zlypher.github.io",
-            "sequence": 2,
-            "start": "2026-10-02T15:00:48.000Z",
-            "end": "2026-10-02T18:00:48.000Z",
-            "summary": "Round 7: NBS vs UCAM",
+            "sequence": 3,
+            "start": "2026-10-02T15:00:00.000Z",
+            "end": "2026-10-02T18:00:00.000Z",
+            "summary": "(Swiss Stage) Round 7: NBS vs UCAM",
             "status": null,
-            "leagueId": 4996
+            "leagueId": 4996,
+            "opponents": [
+                {
+                    "id": 136087,
+                    "name": "NightBirds",
+                    "slug": "nightbirds",
+                    "acronym": "NBS",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/136087/nightbirdslogo_square.png"
+                },
+                {
+                    "id": 126737,
+                    "name": "UCAM Esports Club",
+                    "slug": "ucam-esports-club",
+                    "acronym": "UCAM",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/126737/577px_ucam_esports_club_allmode.png"
+                }
+            ],
+            "leagueName": "EMEA Masters"
         },
         "1702828": {
             "id": 1702828,
             "uid": "1702828@zlypher.github.io",
-            "sequence": 2,
-            "start": "2026-10-02T17:38:08.000Z",
-            "end": "2026-10-02T20:38:08.000Z",
-            "summary": "Round 7: VLR vs MGZ",
+            "sequence": 3,
+            "start": "2026-10-02T17:35:00.000Z",
+            "end": "2026-10-02T20:35:00.000Z",
+            "summary": "(Swiss Stage) Round 7: VLR vs MGZ",
             "status": null,
-            "leagueId": 4996
+            "leagueId": 4996,
+            "opponents": [
+                {
+                    "id": 138853,
+                    "name": "Valerion",
+                    "slug": "valerion",
+                    "acronym": "VLR",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/138853/ezgif_868bc1cd08695395.png"
+                },
+                {
+                    "id": 132626,
+                    "name": "MAGAZA",
+                    "slug": "magaza",
+                    "acronym": "MGZ",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/132626/magaz_alogo_square.png"
+                }
+            ],
+            "leagueName": "EMEA Masters"
         },
         "1702829": {
             "id": 1702829,
             "uid": "1702829@zlypher.github.io",
-            "sequence": 2,
-            "start": "2026-10-02T16:42:01.000Z",
-            "end": "2026-10-02T19:42:01.000Z",
-            "summary": "Round 7: BOOM vs BAR",
+            "sequence": 3,
+            "start": "2026-10-02T16:45:00.000Z",
+            "end": "2026-10-02T19:45:00.000Z",
+            "summary": "(Swiss Stage) Round 7: BOOM vs BAR",
             "status": null,
-            "leagueId": 4996
+            "leagueId": 4996,
+            "opponents": [
+                {
+                    "id": 138056,
+                    "name": "BOMBA Team",
+                    "slug": "bomba-team",
+                    "acronym": "BOOM",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/138056/bomba_teamlogo_square.png"
+                },
+                {
+                    "id": 130103,
+                    "name": "Barça eSports",
+                    "slug": "barca-esports",
+                    "acronym": "BAR",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/130103/bar_253_fa_e_sportslogo_square.png"
+                }
+            ],
+            "leagueName": "EMEA Masters"
         },
         "1704766": {
             "id": 1704766,
@@ -23475,462 +24852,1558 @@
         "1710926": {
             "id": 1710926,
             "uid": "1710926@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-15T18:00:00.000Z",
-            "end": "2026-10-15T23:00:00.000Z",
-            "summary": "Upper Bracket Semifinal 1: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-15T23:00:00.000Z",
+            "end": "2026-10-16T04:00:00.000Z",
+            "summary": "(Play-In) Upper Bracket Semifinal 1: FUR vs MVK",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 126688,
+                    "name": "FURIA Esports",
+                    "slug": "furia-uppercut",
+                    "acronym": "FUR",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/126688/220px_furia_uppercutlogo_square.png"
+                },
+                {
+                    "id": 137803,
+                    "name": "MVK Esports",
+                    "slug": "mvk-esports",
+                    "acronym": "MVK",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/137803/mvk_esportslogo_profile.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1710927": {
             "id": 1710927,
             "uid": "1710927@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-15T23:00:00.000Z",
-            "end": "2026-10-16T04:00:00.000Z",
-            "summary": "Upper Bracket Semifinal 2: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-15T18:00:00.000Z",
+            "end": "2026-10-15T23:00:00.000Z",
+            "summary": "(Play-In) Upper Bracket Semifinal 2: C9 vs KC",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 1097,
+                    "name": "Cloud9",
+                    "slug": "cloud9",
+                    "acronym": "C9",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/1097/cloud9-gnd9b0gn.png"
+                },
+                {
+                    "id": 134078,
+                    "name": "Karmine Corp",
+                    "slug": "karmine-corp-academy",
+                    "acronym": "KC",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/134078/karmine_corplogo_square.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1710928": {
             "id": 1710928,
             "uid": "1710928@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-16T23:00:00.000Z",
-            "end": "2026-10-17T04:00:00.000Z",
-            "summary": "Lower Bracket Semifinal: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-16T20:50:00.000Z",
+            "end": "2026-10-17T01:50:00.000Z",
+            "summary": "(Play-In) Lower Bracket Semifinal: FUR vs C9",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 126688,
+                    "name": "FURIA Esports",
+                    "slug": "furia-uppercut",
+                    "acronym": "FUR",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/126688/220px_furia_uppercutlogo_square.png"
+                },
+                {
+                    "id": 1097,
+                    "name": "Cloud9",
+                    "slug": "cloud9",
+                    "acronym": "C9",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/1097/cloud9-gnd9b0gn.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1710929": {
             "id": 1710929,
             "uid": "1710929@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-10-17T18:00:00.000Z",
             "end": "2026-10-17T23:00:00.000Z",
-            "summary": "Lower Bracket Final: TBD vs TBD",
+            "summary": "(Play-In) Lower Bracket Final: MVK vs FUR",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 137803,
+                    "name": "MVK Esports",
+                    "slug": "mvk-esports",
+                    "acronym": "MVK",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/137803/mvk_esportslogo_profile.png"
+                },
+                {
+                    "id": 126688,
+                    "name": "FURIA Esports",
+                    "slug": "furia-uppercut",
+                    "acronym": "FUR",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/126688/220px_furia_uppercutlogo_square.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1710930": {
             "id": 1710930,
             "uid": "1710930@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-10-16T18:00:00.000Z",
             "end": "2026-10-16T23:00:00.000Z",
-            "summary": "Upper Bracket Final: TBD vs TBD",
+            "summary": "(Play-In) Upper Bracket Final: MVK vs KC",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 137803,
+                    "name": "MVK Esports",
+                    "slug": "mvk-esports",
+                    "acronym": "MVK",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/137803/mvk_esportslogo_profile.png"
+                },
+                {
+                    "id": 134078,
+                    "name": "Karmine Corp",
+                    "slug": "karmine-corp-academy",
+                    "acronym": "KC",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/134078/karmine_corplogo_square.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1710931": {
             "id": 1710931,
             "uid": "1710931@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-10-18T18:00:00.000Z",
             "end": "2026-10-18T23:00:00.000Z",
-            "summary": "Grand Final: TBD vs TBD",
+            "summary": "(Play-In) Grand Final: KC vs MVK",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 134078,
+                    "name": "Karmine Corp",
+                    "slug": "karmine-corp-academy",
+                    "acronym": "KC",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/134078/karmine_corplogo_square.png"
+                },
+                {
+                    "id": 137803,
+                    "name": "MVK Esports",
+                    "slug": "mvk-esports",
+                    "acronym": "MVK",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/137803/mvk_esportslogo_profile.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1710932": {
             "id": 1710932,
             "uid": "1710932@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-10-23T17:00:00.000Z",
             "end": "2026-10-23T18:00:00.000Z",
-            "summary": "Round 1: TBD vs TBD",
+            "summary": "(Group Stage) Round 1: GEN vs IG",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 2882,
+                    "name": "Gen.G",
+                    "slug": "geng",
+                    "acronym": "GEN",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/2882/699px_gen.g_esports_2026_allmode.png"
+                },
+                {
+                    "id": 411,
+                    "name": "Invictus Gaming",
+                    "slug": "invictus-gaming",
+                    "acronym": "IG",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/411/invictus_gaminglogo_square.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1710933": {
             "id": 1710933,
             "uid": "1710933@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-23T18:00:00.000Z",
-            "end": "2026-10-23T19:00:00.000Z",
-            "summary": "Round 1: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-23T22:10:00.000Z",
+            "end": "2026-10-23T23:10:00.000Z",
+            "summary": "(Group Stage) Round 1: TL vs CFO",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 390,
+                    "name": "Team Liquid",
+                    "slug": "liquid",
+                    "acronym": "TL",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/390/ezgif_1497965c786bdb14.png"
+                },
+                {
+                    "id": 130355,
+                    "name": "CTBC Flying Oyster",
+                    "slug": "ctbc-flying-oyster",
+                    "acronym": "CFO",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/130355/ctbc_flying_oysterlogo_square.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1710934": {
             "id": 1710934,
             "uid": "1710934@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-23T19:00:00.000Z",
-            "end": "2026-10-23T20:00:00.000Z",
-            "summary": "Round 1: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-23T20:15:00.000Z",
+            "end": "2026-10-23T21:15:00.000Z",
+            "summary": "(Group Stage) Round 1: AL vs KC",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 129971,
+                    "name": "Anyone's Legend",
+                    "slug": "anyone-s-legend",
+                    "acronym": "AL",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/129971/1083px_anyone_s_legend_full_lightmode.png"
+                },
+                {
+                    "id": 134078,
+                    "name": "Karmine Corp",
+                    "slug": "karmine-corp-academy",
+                    "acronym": "KC",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/134078/karmine_corplogo_square.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1710935": {
             "id": 1710935,
             "uid": "1710935@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-23T20:00:00.000Z",
-            "end": "2026-10-23T21:00:00.000Z",
-            "summary": "Round 1: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-23T21:10:00.000Z",
+            "end": "2026-10-23T22:10:00.000Z",
+            "summary": "(Group Stage) Round 1: G2 vs DK",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 88,
+                    "name": "G2 Esports",
+                    "slug": "g2-esports",
+                    "acronym": "G2",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/88/g2-esports.png"
+                },
+                {
+                    "id": 132531,
+                    "name": "Dplus KIA",
+                    "slug": "dplus-kia",
+                    "acronym": "DK",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/132531/800px_dplus_lightmode.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1710936": {
             "id": 1710936,
             "uid": "1710936@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-23T21:00:00.000Z",
-            "end": "2026-10-23T22:00:00.000Z",
-            "summary": "Round 1: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-23T18:15:00.000Z",
+            "end": "2026-10-23T19:15:00.000Z",
+            "summary": "(Group Stage) Round 1: HLE vs TES",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 2883,
+                    "name": "Hanwha Life Esports",
+                    "slug": "hanwha-life-esports",
+                    "acronym": "HLE",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/2883/hanwha-life-esports-1s04vbu0.png"
+                },
+                {
+                    "id": 126059,
+                    "name": "Top Esports",
+                    "slug": "top-esports",
+                    "acronym": "TES",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/126059/top_esportslogo_square.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1710937": {
             "id": 1710937,
             "uid": "1710937@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-23T22:00:00.000Z",
-            "end": "2026-10-23T23:00:00.000Z",
-            "summary": "Round 1: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-23T23:15:00.000Z",
+            "end": "2026-10-24T00:15:00.000Z",
+            "summary": "(Group Stage) Round 1: LOS vs T1",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 133796,
+                    "name": "LOS",
+                    "slug": "los",
+                    "acronym": "LOS",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/133796/1199px_los_full_allmode.png"
+                },
+                {
+                    "id": 126061,
+                    "name": "T1",
+                    "slug": "t1",
+                    "acronym": "T1",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/126061/t_oscq04.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1710938": {
             "id": 1710938,
             "uid": "1710938@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-23T23:00:00.000Z",
-            "end": "2026-10-24T00:00:00.000Z",
-            "summary": "Round 1: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-24T00:05:00.000Z",
+            "end": "2026-10-24T01:05:00.000Z",
+            "summary": "(Group Stage) Round 1: TSW vs LY",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 136073,
+                    "name": "Team Secret Whales",
+                    "slug": "team-secret-whales",
+                    "acronym": "TSW",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/136073/1200px_secret_whales_lightmode.png"
+                },
+                {
+                    "id": 136066,
+                    "name": "LYON",
+                    "slug": "lyon",
+                    "acronym": "LY",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/136066/lyon__25282024_american_team_2529logo_square.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1710939": {
             "id": 1710939,
             "uid": "1710939@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-24T00:00:00.000Z",
-            "end": "2026-10-24T01:00:00.000Z",
-            "summary": "Round 1: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-23T19:10:00.000Z",
+            "end": "2026-10-23T20:10:00.000Z",
+            "summary": "(Group Stage) Round 1: BLG vs MKOI",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 1566,
+                    "name": "Bilibili Gaming",
+                    "slug": "bilibili-gaming",
+                    "acronym": "BLG",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/1566/qw_yi_qu_j.png"
+                },
+                {
+                    "id": 126536,
+                    "name": "Movistar KOI",
+                    "slug": "mad-lions-league-of-legends",
+                    "acronym": "MKOI",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/126536/movistar_ko_ilogo_square.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1710940": {
             "id": 1710940,
             "uid": "1710940@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-24T17:00:00.000Z",
-            "end": "2026-10-24T18:00:00.000Z",
-            "summary": "Round 2: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-24T23:15:00.000Z",
+            "end": "2026-10-25T00:15:00.000Z",
+            "summary": "(Group Stage) Round 2: DK vs T1",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 132531,
+                    "name": "Dplus KIA",
+                    "slug": "dplus-kia",
+                    "acronym": "DK",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/132531/800px_dplus_lightmode.png"
+                },
+                {
+                    "id": 126061,
+                    "name": "T1",
+                    "slug": "t1",
+                    "acronym": "T1",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/126061/t_oscq04.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1710941": {
             "id": 1710941,
             "uid": "1710941@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-24T18:00:00.000Z",
-            "end": "2026-10-24T19:00:00.000Z",
-            "summary": "Round 2: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-24T18:05:00.000Z",
+            "end": "2026-10-24T19:05:00.000Z",
+            "summary": "(Group Stage) Round 2: CFO vs MKOI",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 130355,
+                    "name": "CTBC Flying Oyster",
+                    "slug": "ctbc-flying-oyster",
+                    "acronym": "CFO",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/130355/ctbc_flying_oysterlogo_square.png"
+                },
+                {
+                    "id": 126536,
+                    "name": "Movistar KOI",
+                    "slug": "mad-lions-league-of-legends",
+                    "acronym": "MKOI",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/126536/movistar_ko_ilogo_square.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1710942": {
             "id": 1710942,
             "uid": "1710942@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-24T19:00:00.000Z",
-            "end": "2026-10-24T20:00:00.000Z",
-            "summary": "Round 2: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-24T22:10:00.000Z",
+            "end": "2026-10-24T23:10:00.000Z",
+            "summary": "(Group Stage) Round 2: HLE vs GEN",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 2883,
+                    "name": "Hanwha Life Esports",
+                    "slug": "hanwha-life-esports",
+                    "acronym": "HLE",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/2883/hanwha-life-esports-1s04vbu0.png"
+                },
+                {
+                    "id": 2882,
+                    "name": "Gen.G",
+                    "slug": "geng",
+                    "acronym": "GEN",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/2882/699px_gen.g_esports_2026_allmode.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1710943": {
             "id": 1710943,
             "uid": "1710943@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-24T20:00:00.000Z",
-            "end": "2026-10-24T21:00:00.000Z",
-            "summary": "Round 2: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-24T20:05:00.000Z",
+            "end": "2026-10-24T21:05:00.000Z",
+            "summary": "(Group Stage) Round 2: LY vs KC",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 136066,
+                    "name": "LYON",
+                    "slug": "lyon",
+                    "acronym": "LY",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/136066/lyon__25282024_american_team_2529logo_square.png"
+                },
+                {
+                    "id": 134078,
+                    "name": "Karmine Corp",
+                    "slug": "karmine-corp-academy",
+                    "acronym": "KC",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/134078/karmine_corplogo_square.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1710944": {
             "id": 1710944,
             "uid": "1710944@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-24T21:00:00.000Z",
-            "end": "2026-10-24T22:00:00.000Z",
-            "summary": "Round 2: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-24T19:00:00.000Z",
+            "end": "2026-10-24T20:00:00.000Z",
+            "summary": "(Group Stage) Round 2: G2 vs LOS",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 88,
+                    "name": "G2 Esports",
+                    "slug": "g2-esports",
+                    "acronym": "G2",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/88/g2-esports.png"
+                },
+                {
+                    "id": 133796,
+                    "name": "LOS",
+                    "slug": "los",
+                    "acronym": "LOS",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/133796/1199px_los_full_allmode.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1710945": {
             "id": 1710945,
             "uid": "1710945@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-24T22:00:00.000Z",
-            "end": "2026-10-24T23:00:00.000Z",
-            "summary": "Round 2: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-24T21:00:00.000Z",
+            "end": "2026-10-24T22:00:00.000Z",
+            "summary": "(Group Stage) Round 2: IG vs TSW",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 411,
+                    "name": "Invictus Gaming",
+                    "slug": "invictus-gaming",
+                    "acronym": "IG",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/411/invictus_gaminglogo_square.png"
+                },
+                {
+                    "id": 136073,
+                    "name": "Team Secret Whales",
+                    "slug": "team-secret-whales",
+                    "acronym": "TSW",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/136073/1200px_secret_whales_lightmode.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1710946": {
             "id": 1710946,
             "uid": "1710946@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-24T23:00:00.000Z",
-            "end": "2026-10-25T00:00:00.000Z",
-            "summary": "Round 2: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-24T17:05:00.000Z",
+            "end": "2026-10-24T18:05:00.000Z",
+            "summary": "(Group Stage) Round 2: TES vs AL",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 126059,
+                    "name": "Top Esports",
+                    "slug": "top-esports",
+                    "acronym": "TES",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/126059/top_esportslogo_square.png"
+                },
+                {
+                    "id": 129971,
+                    "name": "Anyone's Legend",
+                    "slug": "anyone-s-legend",
+                    "acronym": "AL",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/129971/1083px_anyone_s_legend_full_lightmode.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1710947": {
             "id": 1710947,
             "uid": "1710947@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-25T00:00:00.000Z",
-            "end": "2026-10-25T01:00:00.000Z",
-            "summary": "Round 2: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-25T00:20:00.000Z",
+            "end": "2026-10-25T01:20:00.000Z",
+            "summary": "(Group Stage) Round 2: TL vs BLG",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 390,
+                    "name": "Team Liquid",
+                    "slug": "liquid",
+                    "acronym": "TL",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/390/ezgif_1497965c786bdb14.png"
+                },
+                {
+                    "id": 1566,
+                    "name": "Bilibili Gaming",
+                    "slug": "bilibili-gaming",
+                    "acronym": "BLG",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/1566/qw_yi_qu_j.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1710953": {
             "id": 1710953,
             "uid": "1710953@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-25T17:00:00.000Z",
-            "end": "2026-10-25T18:00:00.000Z",
-            "summary": "Round 3: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-25T18:10:00.000Z",
+            "end": "2026-10-25T19:10:00.000Z",
+            "summary": "(Group Stage) Round 3: TES vs G2",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 126059,
+                    "name": "Top Esports",
+                    "slug": "top-esports",
+                    "acronym": "TES",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/126059/top_esportslogo_square.png"
+                },
+                {
+                    "id": 88,
+                    "name": "G2 Esports",
+                    "slug": "g2-esports",
+                    "acronym": "G2",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/88/g2-esports.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1710954": {
             "id": 1710954,
             "uid": "1710954@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-25T18:00:00.000Z",
-            "end": "2026-10-25T19:00:00.000Z",
-            "summary": "Round 3: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-25T17:05:00.000Z",
+            "end": "2026-10-25T18:05:00.000Z",
+            "summary": "(Group Stage) Round 3: HLE vs IG",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 2883,
+                    "name": "Hanwha Life Esports",
+                    "slug": "hanwha-life-esports",
+                    "acronym": "HLE",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/2883/hanwha-life-esports-1s04vbu0.png"
+                },
+                {
+                    "id": 411,
+                    "name": "Invictus Gaming",
+                    "slug": "invictus-gaming",
+                    "acronym": "IG",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/411/invictus_gaminglogo_square.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1710955": {
             "id": 1710955,
             "uid": "1710955@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-25T19:00:00.000Z",
-            "end": "2026-10-25T22:00:00.000Z",
-            "summary": "Round 3: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-25T20:55:00.000Z",
+            "end": "2026-10-25T23:55:00.000Z",
+            "summary": "(Group Stage) Round 3: GEN vs LY",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 2882,
+                    "name": "Gen.G",
+                    "slug": "geng",
+                    "acronym": "GEN",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/2882/699px_gen.g_esports_2026_allmode.png"
+                },
+                {
+                    "id": 136066,
+                    "name": "LYON",
+                    "slug": "lyon",
+                    "acronym": "LY",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/136066/lyon__25282024_american_team_2529logo_square.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1710956": {
             "id": 1710956,
             "uid": "1710956@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-25T22:00:00.000Z",
-            "end": "2026-10-26T01:00:00.000Z",
-            "summary": "Round 3: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-25T19:10:00.000Z",
+            "end": "2026-10-25T22:10:00.000Z",
+            "summary": "(Group Stage) Round 3: DK vs MKOI",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 132531,
+                    "name": "Dplus KIA",
+                    "slug": "dplus-kia",
+                    "acronym": "DK",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/132531/800px_dplus_lightmode.png"
+                },
+                {
+                    "id": 126536,
+                    "name": "Movistar KOI",
+                    "slug": "mad-lions-league-of-legends",
+                    "acronym": "MKOI",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/126536/movistar_ko_ilogo_square.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1710997": {
             "id": 1710997,
             "uid": "1710997@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-26T17:00:00.000Z",
-            "end": "2026-10-26T18:00:00.000Z",
-            "summary": "Round 3: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-26T18:00:00.000Z",
+            "end": "2026-10-26T19:00:00.000Z",
+            "summary": "(Group Stage) Round 3: KC vs BLG",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 134078,
+                    "name": "Karmine Corp",
+                    "slug": "karmine-corp-academy",
+                    "acronym": "KC",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/134078/karmine_corplogo_square.png"
+                },
+                {
+                    "id": 1566,
+                    "name": "Bilibili Gaming",
+                    "slug": "bilibili-gaming",
+                    "acronym": "BLG",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/1566/qw_yi_qu_j.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1710998": {
             "id": 1710998,
             "uid": "1710998@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-26T18:00:00.000Z",
-            "end": "2026-10-26T19:00:00.000Z",
-            "summary": "Round 3: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-26T17:05:00.000Z",
+            "end": "2026-10-26T18:05:00.000Z",
+            "summary": "(Group Stage) Round 3: T1 vs CFO",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 126061,
+                    "name": "T1",
+                    "slug": "t1",
+                    "acronym": "T1",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/126061/t_oscq04.png"
+                },
+                {
+                    "id": 130355,
+                    "name": "CTBC Flying Oyster",
+                    "slug": "ctbc-flying-oyster",
+                    "acronym": "CFO",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/130355/ctbc_flying_oysterlogo_square.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1710999": {
             "id": 1710999,
             "uid": "1710999@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-10-26T19:00:00.000Z",
             "end": "2026-10-26T22:00:00.000Z",
-            "summary": "Round 3: TBD vs TBD",
+            "summary": "(Group Stage) Round 3: LOS vs TSW",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 133796,
+                    "name": "LOS",
+                    "slug": "los",
+                    "acronym": "LOS",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/133796/1199px_los_full_allmode.png"
+                },
+                {
+                    "id": 136073,
+                    "name": "Team Secret Whales",
+                    "slug": "team-secret-whales",
+                    "acronym": "TSW",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/136073/1200px_secret_whales_lightmode.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1711000": {
             "id": 1711000,
             "uid": "1711000@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-26T22:00:00.000Z",
-            "end": "2026-10-27T01:00:00.000Z",
-            "summary": "Round 3: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-26T21:00:00.000Z",
+            "end": "2026-10-27T00:00:00.000Z",
+            "summary": "(Group Stage) Round 3: TL vs AL",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 390,
+                    "name": "Team Liquid",
+                    "slug": "liquid",
+                    "acronym": "TL",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/390/ezgif_1497965c786bdb14.png"
+                },
+                {
+                    "id": 129971,
+                    "name": "Anyone's Legend",
+                    "slug": "anyone-s-legend",
+                    "acronym": "AL",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/129971/1083px_anyone_s_legend_full_lightmode.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1711001": {
             "id": 1711001,
             "uid": "1711001@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-28T20:00:00.000Z",
-            "end": "2026-10-28T23:00:00.000Z",
-            "summary": "Round 4: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-29T22:30:00.000Z",
+            "end": "2026-10-30T01:30:00.000Z",
+            "summary": "(Group Stage) Round 4: TES vs BLG",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 126059,
+                    "name": "Top Esports",
+                    "slug": "top-esports",
+                    "acronym": "TES",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/126059/top_esportslogo_square.png"
+                },
+                {
+                    "id": 1566,
+                    "name": "Bilibili Gaming",
+                    "slug": "bilibili-gaming",
+                    "acronym": "BLG",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/1566/qw_yi_qu_j.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1711002": {
             "id": 1711002,
             "uid": "1711002@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-28T23:00:00.000Z",
-            "end": "2026-10-29T02:00:00.000Z",
-            "summary": "Round 4: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-28T22:00:00.000Z",
+            "end": "2026-10-29T01:00:00.000Z",
+            "summary": "(Group Stage) Round 4: IG vs LY",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 411,
+                    "name": "Invictus Gaming",
+                    "slug": "invictus-gaming",
+                    "acronym": "IG",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/411/invictus_gaminglogo_square.png"
+                },
+                {
+                    "id": 136066,
+                    "name": "LYON",
+                    "slug": "lyon",
+                    "acronym": "LY",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/136066/lyon__25282024_american_team_2529logo_square.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1711003": {
             "id": 1711003,
             "uid": "1711003@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-29T20:00:00.000Z",
-            "end": "2026-10-29T23:00:00.000Z",
-            "summary": "Round 4: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-28T20:05:00.000Z",
+            "end": "2026-10-28T23:05:00.000Z",
+            "summary": "(Group Stage) Round 4: MKOI vs T1",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 126536,
+                    "name": "Movistar KOI",
+                    "slug": "mad-lions-league-of-legends",
+                    "acronym": "MKOI",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/126536/movistar_ko_ilogo_square.png"
+                },
+                {
+                    "id": 126061,
+                    "name": "T1",
+                    "slug": "t1",
+                    "acronym": "T1",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/126061/t_oscq04.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1711004": {
             "id": 1711004,
             "uid": "1711004@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-29T23:00:00.000Z",
-            "end": "2026-10-30T02:00:00.000Z",
-            "summary": "Round 4: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-29T20:05:00.000Z",
+            "end": "2026-10-29T23:05:00.000Z",
+            "summary": "(Group Stage) Round 4: KC vs CFO",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 134078,
+                    "name": "Karmine Corp",
+                    "slug": "karmine-corp-academy",
+                    "acronym": "KC",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/134078/karmine_corplogo_square.png"
+                },
+                {
+                    "id": 130355,
+                    "name": "CTBC Flying Oyster",
+                    "slug": "ctbc-flying-oyster",
+                    "acronym": "CFO",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/130355/ctbc_flying_oysterlogo_square.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1711005": {
             "id": 1711005,
             "uid": "1711005@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-10-30T20:00:00.000Z",
-            "end": "2026-10-30T23:00:00.000Z",
-            "summary": "Round 4: TBD vs TBD",
+            "sequence": 2,
+            "start": "2026-10-30T20:05:00.000Z",
+            "end": "2026-10-30T23:05:00.000Z",
+            "summary": "(Group Stage) Round 4: TL vs LOS",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 390,
+                    "name": "Team Liquid",
+                    "slug": "liquid",
+                    "acronym": "TL",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/390/ezgif_1497965c786bdb14.png"
+                },
+                {
+                    "id": 133796,
+                    "name": "LOS",
+                    "slug": "los",
+                    "acronym": "LOS",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/133796/1199px_los_full_allmode.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1711006": {
             "id": 1711006,
             "uid": "1711006@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-10-30T23:00:00.000Z",
             "end": "2026-10-31T02:00:00.000Z",
-            "summary": "Round 4: TBD vs TBD",
+            "summary": "(Group Stage) Round 4: HLE vs G2",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [
+                {
+                    "id": 2883,
+                    "name": "Hanwha Life Esports",
+                    "slug": "hanwha-life-esports",
+                    "acronym": "HLE",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/2883/hanwha-life-esports-1s04vbu0.png"
+                },
+                {
+                    "id": 88,
+                    "name": "G2 Esports",
+                    "slug": "g2-esports",
+                    "acronym": "G2",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/88/g2-esports.png"
+                }
+            ],
+            "leagueName": "Worlds"
         },
         "1711008": {
             "id": 1711008,
             "uid": "1711008@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-10-31T17:00:00.000Z",
             "end": "2026-10-31T20:00:00.000Z",
-            "summary": "Round 5: TBD vs TBD",
+            "summary": "(Group Stage) Round 5: TBD vs TBD",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [],
+            "leagueName": "Worlds"
         },
         "1711009": {
             "id": 1711009,
             "uid": "1711009@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-10-31T20:00:00.000Z",
             "end": "2026-10-31T23:00:00.000Z",
-            "summary": "Round 5: TBD vs TBD",
+            "summary": "(Group Stage) Round 5: TBD vs TBD",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [],
+            "leagueName": "Worlds"
         },
         "1711010": {
             "id": 1711010,
             "uid": "1711010@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-10-31T23:00:00.000Z",
             "end": "2026-11-01T02:00:00.000Z",
-            "summary": "Round 5: TBD vs TBD",
+            "summary": "(Group Stage) Round 5: TBD vs TBD",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [],
+            "leagueName": "Worlds"
         },
         "1711013": {
             "id": 1711013,
             "uid": "1711013@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-11-03T22:00:00.000Z",
             "end": "2026-11-04T03:00:00.000Z",
-            "summary": "Quarterfinal 1: TBD vs TBD",
+            "summary": "(Playoffs) Quarterfinal 1: TBD vs TBD",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [],
+            "leagueName": "Worlds"
         },
         "1711016": {
             "id": 1711016,
             "uid": "1711016@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-11-04T22:00:00.000Z",
             "end": "2026-11-05T03:00:00.000Z",
-            "summary": "Quarterfinal 2: TBD vs TBD",
+            "summary": "(Playoffs) Quarterfinal 2: TBD vs TBD",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [],
+            "leagueName": "Worlds"
         },
         "1711017": {
             "id": 1711017,
             "uid": "1711017@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-11-05T22:00:00.000Z",
             "end": "2026-11-06T03:00:00.000Z",
-            "summary": "Quarterfinal 3: TBD vs TBD",
+            "summary": "(Playoffs) Quarterfinal 3: TBD vs TBD",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [],
+            "leagueName": "Worlds"
         },
         "1711018": {
             "id": 1711018,
             "uid": "1711018@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-11-06T22:00:00.000Z",
             "end": "2026-11-07T03:00:00.000Z",
-            "summary": "Quarterfinal 4: TBD vs TBD",
+            "summary": "(Playoffs) Quarterfinal 4: TBD vs TBD",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [],
+            "leagueName": "Worlds"
         },
         "1711019": {
             "id": 1711019,
             "uid": "1711019@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-11-07T22:00:00.000Z",
             "end": "2026-11-08T03:00:00.000Z",
-            "summary": "Semifinal 1: TBD vs TBD",
+            "summary": "(Playoffs) Semifinal 1: TBD vs TBD",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [],
+            "leagueName": "Worlds"
         },
         "1711020": {
             "id": 1711020,
             "uid": "1711020@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-11-08T22:00:00.000Z",
             "end": "2026-11-09T03:00:00.000Z",
-            "summary": "Semifinal 2: TBD vs TBD",
+            "summary": "(Playoffs) Semifinal 2: TBD vs TBD",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [],
+            "leagueName": "Worlds"
         },
         "1711021": {
             "id": 1711021,
             "uid": "1711021@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-11-14T19:00:00.000Z",
             "end": "2026-11-15T00:00:00.000Z",
-            "summary": "Grand Final: TBD vs TBD",
+            "summary": "(Playoffs) Grand Final: TBD vs TBD",
             "status": null,
-            "leagueId": 297
+            "leagueId": 297,
+            "opponents": [],
+            "leagueName": "Worlds"
+        },
+        "1735944": {
+            "id": 1735944,
+            "uid": "1735944@zlypher.github.io",
+            "sequence": 1,
+            "start": "2026-10-10T08:25:00.000Z",
+            "end": "2026-10-10T13:25:00.000Z",
+            "summary": "(Playoffs) Upper Bracket Semifinal 1: PT vs WPE",
+            "status": null,
+            "opponents": [
+                {
+                    "id": 139361,
+                    "name": "PART TIMERS",
+                    "slug": "part-timers-league-of-legends",
+                    "acronym": "PT",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/139361/part_timers_allmode.png"
+                },
+                {
+                    "id": 129934,
+                    "name": "West Point Esports PH",
+                    "slug": "west-point-esports-ph",
+                    "acronym": "WPE",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/129934/west_point_esportslogo_square.png"
+                }
+            ],
+            "leagueId": 5351,
+            "leagueName": "LCP"
+        },
+        "1735945": {
+            "id": 1735945,
+            "uid": "1735945@zlypher.github.io",
+            "sequence": 1,
+            "start": "2026-10-10T12:45:00.000Z",
+            "end": "2026-10-10T17:45:00.000Z",
+            "summary": "(Playoffs) Upper Bracket Semifinal 2: ESSE vs NH",
+            "status": null,
+            "opponents": [
+                {
+                    "id": 139360,
+                    "name": "essences",
+                    "slug": "essences",
+                    "acronym": "ESSE",
+                    "imageUrl": null
+                },
+                {
+                    "id": 139359,
+                    "name": "Nothin'Here",
+                    "slug": "nothin-here",
+                    "acronym": "NH",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/139359/nothin_here_allmode.png"
+                }
+            ],
+            "leagueId": 5351,
+            "leagueName": "LCP"
+        },
+        "1735946": {
+            "id": 1735946,
+            "uid": "1735946@zlypher.github.io",
+            "sequence": 1,
+            "start": "2026-10-11T08:20:00.000Z",
+            "end": "2026-10-11T13:20:00.000Z",
+            "summary": "(Playoffs) Upper Bracket Final: WPE vs NH",
+            "status": null,
+            "opponents": [
+                {
+                    "id": 129934,
+                    "name": "West Point Esports PH",
+                    "slug": "west-point-esports-ph",
+                    "acronym": "WPE",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/129934/west_point_esportslogo_square.png"
+                },
+                {
+                    "id": 139359,
+                    "name": "Nothin'Here",
+                    "slug": "nothin-here",
+                    "acronym": "NH",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/139359/nothin_here_allmode.png"
+                }
+            ],
+            "leagueId": 5351,
+            "leagueName": "LCP"
+        },
+        "1735947": {
+            "id": 1735947,
+            "uid": "1735947@zlypher.github.io",
+            "sequence": 1,
+            "start": "2026-10-11T13:25:00.000Z",
+            "end": "2026-10-11T18:25:00.000Z",
+            "summary": "(Playoffs) Lower Bracket Semifinal: PT vs ESSE",
+            "status": null,
+            "opponents": [
+                {
+                    "id": 139361,
+                    "name": "PART TIMERS",
+                    "slug": "part-timers-league-of-legends",
+                    "acronym": "PT",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/139361/part_timers_allmode.png"
+                },
+                {
+                    "id": 139360,
+                    "name": "essences",
+                    "slug": "essences",
+                    "acronym": "ESSE",
+                    "imageUrl": null
+                }
+            ],
+            "leagueId": 5351,
+            "leagueName": "LCP"
+        },
+        "1735948": {
+            "id": 1735948,
+            "uid": "1735948@zlypher.github.io",
+            "sequence": 1,
+            "start": "2026-10-12T12:15:00.000Z",
+            "end": "2026-10-12T17:15:00.000Z",
+            "summary": "(Playoffs) Lower Bracket Final: WPE vs ESSE",
+            "status": null,
+            "opponents": [
+                {
+                    "id": 129934,
+                    "name": "West Point Esports PH",
+                    "slug": "west-point-esports-ph",
+                    "acronym": "WPE",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/129934/west_point_esportslogo_square.png"
+                },
+                {
+                    "id": 139360,
+                    "name": "essences",
+                    "slug": "essences",
+                    "acronym": "ESSE",
+                    "imageUrl": null
+                }
+            ],
+            "leagueId": 5351,
+            "leagueName": "LCP"
+        },
+        "1735949": {
+            "id": 1735949,
+            "uid": "1735949@zlypher.github.io",
+            "sequence": 1,
+            "start": "2026-10-13T12:00:00.000Z",
+            "end": "2026-10-13T17:00:00.000Z",
+            "summary": "(Playoffs) Grand Final: NH vs ESSE",
+            "status": null,
+            "opponents": [
+                {
+                    "id": 139359,
+                    "name": "Nothin'Here",
+                    "slug": "nothin-here",
+                    "acronym": "NH",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/139359/nothin_here_allmode.png"
+                },
+                {
+                    "id": 139360,
+                    "name": "essences",
+                    "slug": "essences",
+                    "acronym": "ESSE",
+                    "imageUrl": null
+                }
+            ],
+            "leagueId": 5351,
+            "leagueName": "LCP"
+        },
+        "1743336": {
+            "id": 1743336,
+            "uid": "1743336@zlypher.github.io",
+            "sequence": 1,
+            "start": "2026-10-11T17:46:00.000Z",
+            "end": "2026-10-11T20:46:00.000Z",
+            "summary": "(Playoffs) Quarterfinal 1: RB vs Good Chi Sakura",
+            "status": null,
+            "opponents": [
+                {
+                    "id": 137371,
+                    "name": "Vitality Rising Bees",
+                    "slug": "rising-bees",
+                    "acronym": "RB",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/137371/rising_bees_lightmode.png"
+                },
+                {
+                    "id": 139403,
+                    "name": "Good Chi Sakura",
+                    "slug": "good-chi-sakura",
+                    "acronym": null,
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/139403/75px_good_chi_allmode.png"
+                }
+            ],
+            "leagueId": 5433,
+            "leagueName": "LGC Rising"
+        },
+        "1743337": {
+            "id": 1743337,
+            "uid": "1743337@zlypher.github.io",
+            "sequence": 1,
+            "start": "2026-10-12T17:45:00.000Z",
+            "end": "2026-10-12T20:45:00.000Z",
+            "summary": "(Playoffs) Quarterfinal 2: G2H vs AZRE",
+            "status": null,
+            "opponents": [
+                {
+                    "id": 137372,
+                    "name": "G2 HEL",
+                    "slug": "g2-hel",
+                    "acronym": "G2H",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/137372/600px_g2_esports_2020_lightmode.png"
+                },
+                {
+                    "id": 139017,
+                    "name": "AZ Rising Eterna",
+                    "slug": "az-rising-eterna",
+                    "acronym": "AZRE",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/139017/ezgif_4609a8b13c09c0a2.png"
+                }
+            ],
+            "leagueId": 5433,
+            "leagueName": "LGC Rising"
+        },
+        "1743338": {
+            "id": 1743338,
+            "uid": "1743338@zlypher.github.io",
+            "sequence": 1,
+            "start": "2026-10-11T16:00:00.000Z",
+            "end": "2026-10-11T19:00:00.000Z",
+            "summary": "(Playoffs) Quarterfinal 3: MR vs BCEB",
+            "status": null,
+            "opponents": [
+                {
+                    "id": 137577,
+                    "name": "Mental Rush",
+                    "slug": "mental-rush",
+                    "acronym": "MR",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/137577/mental_rushlogo_square.png"
+                },
+                {
+                    "id": 138903,
+                    "name": "Barcząca Esports Babylon",
+                    "slug": "barczaca-esports-babylon",
+                    "acronym": "BCEB",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/138903/600px_barczaca_esports_allmode.png"
+                }
+            ],
+            "leagueId": 5433,
+            "leagueName": "LGC Rising"
+        },
+        "1743339": {
+            "id": 1743339,
+            "uid": "1743339@zlypher.github.io",
+            "sequence": 1,
+            "start": "2026-10-12T16:00:00.000Z",
+            "end": "2026-10-12T19:00:00.000Z",
+            "summary": "(Playoffs) Quarterfinal 4: SK.A vs BLU",
+            "status": null,
+            "opponents": [
+                {
+                    "id": 137170,
+                    "name": "SK Gaming Avarosa",
+                    "slug": "sk-gaming-avarosa",
+                    "acronym": "SK.A",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/137170/175px_sk_gaming_2003_lightmode.png"
+                },
+                {
+                    "id": 137381,
+                    "name": "Blue Otter Europe",
+                    "slug": "blue-otter-europe",
+                    "acronym": "BLU",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/137381/blue_otterlogo_square.png"
+                }
+            ],
+            "leagueId": 5433,
+            "leagueName": "LGC Rising"
+        },
+        "1743340": {
+            "id": 1743340,
+            "uid": "1743340@zlypher.github.io",
+            "sequence": 1,
+            "start": "2026-10-20T16:00:00.000Z",
+            "end": "2026-10-20T21:00:00.000Z",
+            "summary": "(Playoffs) Semifinal 1: RB vs G2H",
+            "status": null,
+            "opponents": [
+                {
+                    "id": 137371,
+                    "name": "Vitality Rising Bees",
+                    "slug": "rising-bees",
+                    "acronym": "RB",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/137371/rising_bees_lightmode.png"
+                },
+                {
+                    "id": 137372,
+                    "name": "G2 HEL",
+                    "slug": "g2-hel",
+                    "acronym": "G2H",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/137372/600px_g2_esports_2020_lightmode.png"
+                }
+            ],
+            "leagueId": 5433,
+            "leagueName": "LGC Rising"
+        },
+        "1743341": {
+            "id": 1743341,
+            "uid": "1743341@zlypher.github.io",
+            "sequence": 1,
+            "start": "2026-10-19T16:00:00.000Z",
+            "end": "2026-10-19T21:00:00.000Z",
+            "summary": "(Playoffs) Semifinal 2: MR vs SK.A",
+            "status": null,
+            "opponents": [
+                {
+                    "id": 137577,
+                    "name": "Mental Rush",
+                    "slug": "mental-rush",
+                    "acronym": "MR",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/137577/mental_rushlogo_square.png"
+                },
+                {
+                    "id": 137170,
+                    "name": "SK Gaming Avarosa",
+                    "slug": "sk-gaming-avarosa",
+                    "acronym": "SK.A",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/137170/175px_sk_gaming_2003_lightmode.png"
+                }
+            ],
+            "leagueId": 5433,
+            "leagueName": "LGC Rising"
+        },
+        "1743342": {
+            "id": 1743342,
+            "uid": "1743342@zlypher.github.io",
+            "sequence": 1,
+            "start": "2026-10-27T17:00:00.000Z",
+            "end": "2026-10-27T22:00:00.000Z",
+            "summary": "(Playoffs) Grand final: RB vs MR",
+            "status": null,
+            "opponents": [
+                {
+                    "id": 137371,
+                    "name": "Vitality Rising Bees",
+                    "slug": "rising-bees",
+                    "acronym": "RB",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/137371/rising_bees_lightmode.png"
+                },
+                {
+                    "id": 137577,
+                    "name": "Mental Rush",
+                    "slug": "mental-rush",
+                    "acronym": "MR",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/137577/mental_rushlogo_square.png"
+                }
+            ],
+            "leagueId": 5433,
+            "leagueName": "LGC Rising"
+        },
+        "1766738": {
+            "id": 1766738,
+            "uid": "1766738@zlypher.github.io",
+            "sequence": 1,
+            "start": "2026-11-11T09:00:00.000Z",
+            "end": "2026-11-11T14:00:00.000Z",
+            "summary": "(Playoffs) Regional Merit Match: GZ vs FNK",
+            "status": null,
+            "opponents": [
+                {
+                    "id": 132568,
+                    "name": "Ground Zero Gaming",
+                    "slug": "ground-zero-gaming-league-of-legends",
+                    "acronym": "GZ",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/132568/ground_zero_gaminglogo_square.png"
+                },
+                {
+                    "id": 130352,
+                    "name": "Frank Esports",
+                    "slug": "frank-esports",
+                    "acronym": "FNK",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/130352/600px_frank_esports_2022_lightmode_full.png"
+                }
+            ],
+            "leagueId": 5351,
+            "leagueName": "LCP"
+        },
+        "1766739": {
+            "id": 1766739,
+            "uid": "1766739@zlypher.github.io",
+            "sequence": 1,
+            "start": "2026-11-10T05:00:00.000Z",
+            "end": "2026-11-10T10:00:00.000Z",
+            "summary": "(Playoffs) Quarterfinal 1: FNL vs NH",
+            "status": null,
+            "opponents": [
+                {
+                    "id": 132655,
+                    "name": "FENNEL",
+                    "slug": "fennel-league-of-legends",
+                    "acronym": "FNL",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/132655/424px_fennel_2021_may_lightmode.png"
+                },
+                {
+                    "id": 139359,
+                    "name": "Nothin'Here",
+                    "slug": "nothin-here",
+                    "acronym": "NH",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/139359/nothin_here_allmode.png"
+                }
+            ],
+            "leagueId": 5351,
+            "leagueName": "LCP"
+        },
+        "1766740": {
+            "id": 1766740,
+            "uid": "1766740@zlypher.github.io",
+            "sequence": 1,
+            "start": "2026-11-10T09:00:00.000Z",
+            "end": "2026-11-10T14:00:00.000Z",
+            "summary": "(Playoffs) Quarterfinal 2: SGW vs Team Gromp",
+            "status": null,
+            "opponents": [
+                {
+                    "id": 138127,
+                    "name": "Saigon Warriors",
+                    "slug": "saigon-warriors",
+                    "acronym": "SGW",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/138127/ezgif_5e268d1a7560187d.png"
+                },
+                {
+                    "id": 139117,
+                    "name": "Team Gromp",
+                    "slug": "gromp-esports",
+                    "acronym": null,
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/139117/team_gromp_fls_2026_allmode.png"
+                }
+            ],
+            "leagueId": 5351,
+            "leagueName": "LCP"
+        },
+        "1766741": {
+            "id": 1766741,
+            "uid": "1766741@zlypher.github.io",
+            "sequence": 1,
+            "start": "2026-11-12T09:00:00.000Z",
+            "end": "2026-11-12T14:00:00.000Z",
+            "summary": "(Playoffs) Semifinal: TBD vs TBD",
+            "status": null,
+            "opponents": [],
+            "leagueId": 5351,
+            "leagueName": "LCP"
+        },
+        "1766742": {
+            "id": 1766742,
+            "uid": "1766742@zlypher.github.io",
+            "sequence": 1,
+            "start": "2026-11-13T09:00:00.000Z",
+            "end": "2026-11-13T14:00:00.000Z",
+            "summary": "(Playoffs) Grand final: DFM vs TBD",
+            "status": null,
+            "opponents": [
+                {
+                    "id": 89,
+                    "name": "DetonatioN FocusMe",
+                    "slug": "detonation-focusme",
+                    "acronym": "DFM",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/89/780px_detonatio_n_focus_me_2022_lightmode.png"
+                }
+            ],
+            "leagueId": 5351,
+            "leagueName": "LCP"
         }
     }
 }
