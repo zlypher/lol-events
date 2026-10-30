@@ -30,6 +30,9 @@ A League with at least one Serie that is upcoming, ongoing, or concluded within 
 **Team**:
 A competing organization's roster as identified by PandaScore. Identified by its PandaScore ID; its name and slug may change.
 
+**Active Team**:
+A Team with at least one Match in the Match Store that is upcoming, ongoing, or concluded within the last 30 days.
+
 **Match**:
 A single best-of-N contest between two Teams within a League. Calendars never reveal a Match's result.
 _Avoid_: Game (a Match consists of one or more games), event (that's the iCal representation)

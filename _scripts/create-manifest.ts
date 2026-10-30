@@ -1,37 +1,26 @@
 import "dotenv/config";
-import fs from "node:fs";
-import {
-    generateLeaguesManifest,
-    generateTeamsManifest,
-    serializeLeaguesManifest,
-    serializeTeamsManifest,
-} from "../lib/manifest-generator";
-import {
-    extractActiveTeamsFromMatchStore,
-    loadMatchStore,
-} from "../lib/match-store";
-import PandaScore from "../lib/pandascore";
+import { syncManifestsAndStore } from "../lib/manifest-generator";
 
 async function main(): Promise<void> {
     try {
-        const leagues = await PandaScore.getAllPages(PandaScore.getLeagues);
-        const leaguesManifest = generateLeaguesManifest(leagues);
-        fs.writeFileSync(
-            "./docs/leagues.json",
-            serializeLeaguesManifest(leaguesManifest),
-        );
-        console.log("Created leagues manifest under docs/leagues.json");
-
-        const store = loadMatchStore();
-        const activeTeams = extractActiveTeamsFromMatchStore(store);
-        const teamsManifest = generateTeamsManifest(activeTeams);
-        fs.writeFileSync(
-            "./docs/teams.json",
-            serializeTeamsManifest(teamsManifest),
-        );
         console.log(
-            `Created teams manifest under docs/teams.json (${activeTeams.length} active teams)`,
+            "Synchronizing manifests and match store from PandaScore...",
         );
+        const result = await syncManifestsAndStore();
+        console.log(
+            `Created leagues manifest under docs/leagues.json (${result.activeLeaguesCount} active leagues)`,
+        );
+        if (result.matchesFetched) {
+            console.log("Updated match store under data/matches.json");
+        } else {
+            console.log(
+                "Skipped fetching matches: zero active leagues present",
+            );
+        }
+        console.log(
+            `Created teams manifest under docs/teams.json (${result.activeTeamsCount} active teams)`,
+        );
+        process.exit(0);
     } catch (err) {
         console.error("Error creating manifests:", err);
         process.exit(1);

@@ -10,14 +10,10 @@ import {
     generateIcalCalendar,
     generateTeamCalendar,
 } from "../lib/calendar-generator";
+import { generateLeaguesManifest } from "../lib/manifest-generator";
 import { createEmptyMatchStore } from "../lib/match-store";
 import PandaScore from "../lib/pandascore";
-import type {
-    MatchStore,
-    PandaScoreLeague,
-    PandaScoreMatch,
-    TeamInfo,
-} from "../lib/types";
+import type { MatchStore, PandaScoreLeague, TeamInfo } from "../lib/types";
 import rawLeaguesFixture from "./fixtures/pandascore-leagues.json" with { type: "json" };
 
 describe("calendar-generator", () => {
@@ -32,7 +28,7 @@ describe("calendar-generator", () => {
             path.join(os.tmpdir(), "lol-events-test-"),
         );
         testMatchStore = createEmptyMatchStore();
-        vi.spyOn(PandaScore, "getGlobalMatches").mockResolvedValue([]);
+        vi.spyOn(PandaScore, "getGlobalMatches");
     });
 
     afterEach(() => {
@@ -159,7 +155,7 @@ describe("calendar-generator", () => {
     });
 
     describe("generateAllCalendars", () => {
-        it("partitions leagues and only fetches matches for active leagues while logging inactive leagues", async () => {
+        it("partitions leagues, generates calendars for active leagues offline from matchStore, and leaves inactive league files untouched", async () => {
             const consoleSpy = vi
                 .spyOn(console, "log")
                 .mockImplementation(() => {});
@@ -177,6 +173,38 @@ describe("calendar-generator", () => {
             fs.writeFileSync(preseededIcal, "PRESERVED_ICAL");
             fs.writeFileSync(preseededJson, "PRESERVED_JSON");
 
+            // Seed active league matches in store
+            testMatchStore.matches[101] = {
+                id: 101,
+                uid: "101@zlypher.github.io",
+                sequence: 1,
+                start: "2026-06-02T16:00:00Z",
+                end: "2026-06-02T18:00:00Z",
+                summary: "LEC Game: G2 vs FNC",
+                status: null,
+                leagueId: 4197,
+                leagueName: "LEC",
+                opponents: [
+                    { id: 1, name: "G2 Esports" },
+                    { id: 2, name: "Fnatic" },
+                ],
+            };
+            testMatchStore.matches[102] = {
+                id: 102,
+                uid: "102@zlypher.github.io",
+                sequence: 1,
+                start: "2026-06-02T20:00:00Z",
+                end: "2026-06-02T22:00:00Z",
+                summary: "LCS Game: C9 vs TL",
+                status: null,
+                leagueId: 4198,
+                leagueName: "LCS",
+                opponents: [
+                    { id: 3, name: "Cloud9" },
+                    { id: 4, name: "Team Liquid" },
+                ],
+            };
+
             await generateAllCalendars(leagues, {
                 referenceDate,
                 outputDir: testOutputDir,
@@ -184,7 +212,10 @@ describe("calendar-generator", () => {
                 matchStore: testMatchStore,
             });
 
-            // Inactive leagues
+            // Verify PandaScore was NEVER called (100% offline)
+            expect(PandaScore.getGlobalMatches).not.toHaveBeenCalled();
+
+            // Inactive leagues logged
             const inactiveLeagueNames = [
                 "Prime League 1st Division",
                 "OPL",
@@ -192,14 +223,6 @@ describe("calendar-generator", () => {
                 "Null Dates Series League",
                 "Missing Series League",
             ];
-
-            // Verify global match endpoint was called with referenceDate
-            expect(PandaScore.getGlobalMatches).toHaveBeenCalledTimes(1);
-            expect(PandaScore.getGlobalMatches).toHaveBeenCalledWith({
-                referenceDate,
-            });
-
-            // Verify inactive notices were logged
             for (const name of inactiveLeagueNames) {
                 expect(consoleSpy).toHaveBeenCalledWith(
                     `[${name}] (inactive) no matches fetched`,
@@ -245,51 +268,94 @@ describe("calendar-generator", () => {
                     ),
                 ),
             ).toBe(false);
+
+            // Verify team calendars generated
+            expect(
+                fs.existsSync(path.join(testOutputDir, "team", "1.ical")),
+            ).toBe(true);
         });
 
-        it("correctly routes grouped global matches into individual league calendars via match store", async () => {
-            const mockMatches: PandaScoreMatch[] = [
-                {
-                    id: 101,
-                    name: "LEC Game: G2 vs FNC",
-                    begin_at: "2026-06-02T16:00:00Z",
-                    number_of_games: 1,
-                    status: "not_started",
-                    opponents: [
-                        { opponent: { id: 1, name: "G2 Esports" } },
-                        { opponent: { id: 2, name: "Fnatic" } },
-                    ],
-                    league: {
-                        id: 4197,
-                        name: "LEC",
-                        slug: "league-of-legends-lec",
-                        image_url: null,
-                        url: null,
-                    },
-                },
-                {
-                    id: 102,
-                    name: "LCS Game: C9 vs TL",
-                    begin_at: "2026-06-02T20:00:00Z",
-                    number_of_games: 1,
-                    status: "not_started",
-                    opponents: [
-                        { opponent: { id: 3, name: "Cloud9" } },
-                        { opponent: { id: 4, name: "Team Liquid" } },
-                    ],
-                    league: {
-                        id: 4198,
-                        name: "LCS",
-                        slug: "league-of-legends-lcs",
-                        image_url: null,
-                        url: null,
-                    },
-                },
-            ];
+        it("accepts precomputed LeagueManifestItem inputs and generates active league calendars offline", async () => {
+            const manifest = generateLeaguesManifest(leagues, {
+                referenceDate,
+            });
 
-            vi.spyOn(PandaScore, "getGlobalMatches").mockResolvedValue(
-                mockMatches,
-            );
+            testMatchStore.matches[101] = {
+                id: 101,
+                uid: "101@zlypher.github.io",
+                sequence: 1,
+                start: "2026-06-02T16:00:00Z",
+                end: "2026-06-02T18:00:00Z",
+                summary: "LEC Game: G2 vs FNC",
+                status: null,
+                leagueId: 4197,
+                leagueName: "LEC",
+            };
+
+            await generateAllCalendars(manifest.leagues, {
+                referenceDate,
+                outputDir: testOutputDir,
+                matchStore: testMatchStore,
+            });
+
+            expect(PandaScore.getGlobalMatches).not.toHaveBeenCalled();
+            expect(
+                fs.existsSync(
+                    path.join(testOutputDir, "league-of-legends-lec.ical"),
+                ),
+            ).toBe(true);
+            expect(
+                fs.existsSync(
+                    path.join(testOutputDir, "league-of-legends-lec.json"),
+                ),
+            ).toBe(true);
+        });
+
+        it("accepts explicit activeTeams option to restrict generated team calendars", async () => {
+            testMatchStore.matches[101] = {
+                id: 101,
+                uid: "101@zlypher.github.io",
+                sequence: 1,
+                start: "2026-06-02T16:00:00Z",
+                end: "2026-06-02T18:00:00Z",
+                summary: "LEC Game: G2 vs FNC",
+                status: null,
+                leagueId: 4197,
+                opponents: [
+                    { id: 1, name: "G2 Esports" },
+                    { id: 2, name: "Fnatic" },
+                ],
+            };
+
+            const explicitTeams: TeamInfo[] = [{ id: 1, name: "G2 Esports" }];
+
+            await generateAllCalendars(leagues, {
+                referenceDate,
+                outputDir: testOutputDir,
+                matchStore: testMatchStore,
+                activeTeams: explicitTeams,
+            });
+
+            expect(
+                fs.existsSync(path.join(testOutputDir, "team", "1.ical")),
+            ).toBe(true);
+            expect(
+                fs.existsSync(path.join(testOutputDir, "team", "2.ical")),
+            ).toBe(false);
+        });
+
+        it("does not mutate matchStore during calendar generation", async () => {
+            testMatchStore.matches[101] = {
+                id: 101,
+                uid: "101@zlypher.github.io",
+                sequence: 1,
+                start: "2026-06-02T16:00:00Z",
+                end: "2026-06-02T18:00:00Z",
+                summary: "LEC Match",
+                status: null,
+                leagueId: 4197,
+            };
+            const storeSnapshot = JSON.stringify(testMatchStore);
 
             await generateAllCalendars(leagues, {
                 referenceDate,
@@ -297,42 +363,10 @@ describe("calendar-generator", () => {
                 matchStore: testMatchStore,
             });
 
-            const lecJson = JSON.parse(
-                fs.readFileSync(
-                    path.join(testOutputDir, "league-of-legends-lec.json"),
-                    "utf-8",
-                ),
-            );
-            const lcsJson = JSON.parse(
-                fs.readFileSync(
-                    path.join(testOutputDir, "league-of-legends-lcs.json"),
-                    "utf-8",
-                ),
-            );
-
-            expect(lecJson.events).toHaveLength(1);
-            expect(lecJson.events[0].summary).toBe("LEC Game: G2 vs FNC");
-            expect(lcsJson.events).toHaveLength(1);
-            expect(lcsJson.events[0].summary).toBe("LCS Game: C9 vs TL");
-
-            // Verify matches are in the store
-            expect(testMatchStore.matches[101]).toBeDefined();
-            expect(testMatchStore.matches[102]).toBeDefined();
-
-            // Verify team calendars were generated under team/ directory
-            const g2Ical = path.join(testOutputDir, "team", "1.ical");
-            const g2Json = path.join(testOutputDir, "team", "1.json");
-            expect(fs.existsSync(g2Ical)).toBe(true);
-            expect(fs.existsSync(g2Json)).toBe(true);
-
-            const g2JsonContent = JSON.parse(fs.readFileSync(g2Json, "utf-8"));
-            expect(g2JsonContent.events).toHaveLength(1);
-            expect(g2JsonContent.events[0].summary).toBe(
-                "[LEC] LEC Game: G2 vs FNC",
-            );
+            expect(JSON.stringify(testMatchStore)).toBe(storeSnapshot);
         });
 
-        it("does not query global matches when there are zero active leagues", async () => {
+        it("does not query PandaScore when there are zero active leagues", async () => {
             const inactiveLeagues = [inactiveLeague];
 
             await generateAllCalendars(inactiveLeagues, {

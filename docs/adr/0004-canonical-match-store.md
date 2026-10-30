@@ -6,3 +6,4 @@ We maintain a central repository file (`data/matches.json`) as the single source
 
 - Calendar generation no longer reads previous state from individual `docs/cal/*.json` files to detect changes.
 - If a match's scheduled time, status, or summary changes, its sequence increments exactly once in the Match Store, ensuring all calendar subscribers receive consistent update notifications regardless of which calendar they follow.
+- Data synchronization (`scripts:manifest`) is the sole step that queries the PandaScore API, updating `data/matches.json`, `docs/leagues.json`, and `docs/teams.json`; calendar (`scripts:ical`) and README (`scripts:readme`) generation run completely offline from those local files.

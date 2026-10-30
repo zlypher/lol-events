@@ -23,9 +23,9 @@ export interface PandaScoreLeague {
     series?: PandaScoreSerie[];
 }
 
-export interface PartitionedLeagues {
-    active: PandaScoreLeague[];
-    inactive: PandaScoreLeague[];
+export interface PartitionedLeagues<T = PandaScoreLeague> {
+    active: T[];
+    inactive: T[];
 }
 
 export interface PandaScoreOpponentDetails {

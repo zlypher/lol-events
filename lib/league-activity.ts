@@ -1,4 +1,5 @@
 import type {
+    LeagueManifestItem,
     PandaScoreLeague,
     PandaScoreSerie,
     PartitionedLeagues,
@@ -77,16 +78,23 @@ export function isSeriesActive(
 }
 
 /**
- * Determines whether a league is active based on its tournament series.
+ * Determines whether a league is active based on its tournament series
+ * or precomputed manifest active status.
  *
- * A league is active if and only if it contains a non-empty series array
- * and at least one series is active relative to the reference date.
+ * For raw PandaScore leagues, a league is active if and only if it contains a non-empty
+ * series array and at least one series is active relative to the reference date.
+ * For precomputed manifest league items, the boolean `active` field is respected directly.
  */
 export function isLeagueActive(
-    league: PandaScoreLeague,
+    league: PandaScoreLeague | LeagueManifestItem,
     referenceDate: Date = new Date(),
 ): boolean {
+    if ("active" in league && typeof league.active === "boolean") {
+        return league.active;
+    }
+
     if (
+        !("series" in league) ||
         !league.series ||
         !Array.isArray(league.series) ||
         league.series.length === 0
@@ -101,14 +109,14 @@ export function isLeagueActive(
 
 /**
  * Partitions a list of leagues into active and inactive collections
- * based on whether each league has any active series relative to the reference date.
+ * based on whether each league has any active series relative to the reference date
+ * or precomputed manifest active status.
  */
-export function partitionLeagues(
-    leagues: PandaScoreLeague[],
-    referenceDate: Date = new Date(),
-): PartitionedLeagues {
-    const active: PandaScoreLeague[] = [];
-    const inactive: PandaScoreLeague[] = [];
+export function partitionLeagues<
+    T extends PandaScoreLeague | LeagueManifestItem,
+>(leagues: T[], referenceDate: Date = new Date()): PartitionedLeagues<T> {
+    const active: T[] = [];
+    const inactive: T[] = [];
 
     for (const league of leagues) {
         if (isLeagueActive(league, referenceDate)) {

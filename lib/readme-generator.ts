@@ -1,5 +1,5 @@
 import { partitionLeagues } from "./league-activity";
-import type { PandaScoreLeague } from "./types";
+import type { LeagueManifestItem, PandaScoreLeague } from "./types";
 
 export const TABLE_HEADER = `|                                                                                                                                                                                  | League                             |                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |`;
@@ -69,18 +69,21 @@ ${leagueString}
 };
 
 export function renderSingleLogo(
-    league: PandaScoreLeague,
+    league: PandaScoreLeague | LeagueManifestItem,
     width = 24,
     height = 24,
 ): string {
-    if (!league.image_url) {
+    const imageUrl = "logoUrl" in league ? league.logoUrl : league.image_url;
+    if (!imageUrl) {
         return "-";
     }
 
-    return `<img src="${league.image_url}" alt="${league.name} Logo" width="${width}" height="${height}" />`;
+    return `<img src="${imageUrl}" alt="${league.name} Logo" width="${width}" height="${height}" />`;
 }
 
-export function renderLeagueTable(leagues: PandaScoreLeague[]): string {
+export function renderLeagueTable(
+    leagues: (PandaScoreLeague | LeagueManifestItem)[],
+): string {
     return leagues
         .map(
             (league) =>
@@ -94,7 +97,7 @@ export function renderLeagueTable(leagues: PandaScoreLeague[]): string {
 }
 
 export function renderInactiveSection(
-    inactiveLeagues: PandaScoreLeague[],
+    inactiveLeagues: (PandaScoreLeague | LeagueManifestItem)[],
 ): string {
     if (!inactiveLeagues || inactiveLeagues.length === 0) {
         return "";
@@ -110,8 +113,11 @@ ${rows}
 </details>`;
 }
 
-export function renderSingleLeague(league: PandaScoreLeague): string | null {
-    if (!league.image_url) {
+export function renderSingleLeague(
+    league: PandaScoreLeague | LeagueManifestItem,
+): string | null {
+    const imageUrl = "logoUrl" in league ? league.logoUrl : league.image_url;
+    if (!imageUrl) {
         return null;
     }
 
@@ -122,16 +128,18 @@ export function renderSingleLeague(league: PandaScoreLeague): string | null {
     )}</a>`;
 }
 
-export function renderLeagues(leagues: PandaScoreLeague[]): string {
+export function renderLeagues(
+    leagues: (PandaScoreLeague | LeagueManifestItem)[],
+): string {
     return leagues
         .map(renderSingleLeague)
         .filter((l): l is string => Boolean(l))
         .join("\n");
 }
 
-export function sortLeaguesByName(
-    leagues: PandaScoreLeague[],
-): PandaScoreLeague[] {
+export function sortLeaguesByName<
+    T extends PandaScoreLeague | LeagueManifestItem,
+>(leagues: T[]): T[] {
     return leagues.sort((a, b) => a.name.localeCompare(b.name));
 }
 
@@ -141,7 +149,7 @@ export interface ReadmeOptions {
 }
 
 export function generateReadme(
-    leagues: PandaScoreLeague[],
+    leagues: (PandaScoreLeague | LeagueManifestItem)[],
     options: ReadmeOptions = {},
 ): string {
     const { referenceDate = new Date(), lastUpdate } = options;

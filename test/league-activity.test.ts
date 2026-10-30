@@ -362,4 +362,61 @@ describe("league activity classification", () => {
             expect(isLeagueActive(missingSeries, referenceDate)).toBe(false);
         });
     });
+
+    describe("LeagueManifestItem support", () => {
+        it("isLeagueActive respects active boolean property from manifest item directly", () => {
+            const activeManifestItem = {
+                id: 1,
+                name: "Active Manifest League",
+                slug: "active-manifest",
+                logoUrl: null,
+                url: null,
+                calendarUrl: "https://example.com/cal/active-manifest.ical",
+                jsonUrl: "https://example.com/cal/active-manifest.json",
+                active: true,
+            };
+            const inactiveManifestItem = {
+                id: 2,
+                name: "Inactive Manifest League",
+                slug: "inactive-manifest",
+                logoUrl: null,
+                url: null,
+                calendarUrl: "https://example.com/cal/inactive-manifest.ical",
+                jsonUrl: "https://example.com/cal/inactive-manifest.json",
+                active: false,
+            };
+
+            expect(isLeagueActive(activeManifestItem)).toBe(true);
+            expect(isLeagueActive(inactiveManifestItem)).toBe(false);
+        });
+
+        it("partitionLeagues correctly partitions manifest league items", () => {
+            const items = [
+                {
+                    id: 1,
+                    name: "League A",
+                    slug: "league-a",
+                    logoUrl: null,
+                    url: null,
+                    calendarUrl: "https://example.com/cal/a.ical",
+                    jsonUrl: "https://example.com/cal/a.json",
+                    active: true,
+                },
+                {
+                    id: 2,
+                    name: "League B",
+                    slug: "league-b",
+                    logoUrl: null,
+                    url: null,
+                    calendarUrl: "https://example.com/cal/b.ical",
+                    jsonUrl: "https://example.com/cal/b.json",
+                    active: false,
+                },
+            ];
+
+            const result = partitionLeagues(items);
+            expect(result.active.map((l) => l.id)).toEqual([1]);
+            expect(result.inactive.map((l) => l.id)).toEqual([2]);
+        });
+    });
 });

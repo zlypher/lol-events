@@ -1,8 +1,19 @@
+import fs from "node:fs";
+import path from "node:path";
 import { isLeagueActive } from "./league-activity";
+import {
+    extractActiveTeamsFromMatchStore,
+    loadMatchStore,
+    saveMatchStore,
+    updateMatchStore,
+} from "./match-store";
+import PandaScore from "./pandascore";
 import type {
     LeagueManifestItem,
     LeaguesManifest,
+    MatchStore,
     PandaScoreLeague,
+    PandaScoreMatch,
     TeamInfo,
     TeamManifestItem,
     TeamsManifest,
@@ -139,6 +150,110 @@ export function serializeTeamsManifest(
     return JSON.stringify(manifest, null, space);
 }
 
+export interface SyncOptions {
+    referenceDate?: Date | string | number;
+    baseUrl?: string;
+    leagues?: PandaScoreLeague[];
+    fetchLeagues?: () => Promise<PandaScoreLeague[]>;
+    fetchGlobalMatches?: (options: {
+        referenceDate: Date;
+    }) => Promise<PandaScoreMatch[]>;
+    matchStore?: MatchStore;
+    matchStorePath?: string;
+    leaguesManifestPath?: string;
+    teamsManifestPath?: string;
+    writeFiles?: boolean;
+}
+
+export interface SyncResult {
+    leaguesManifest: LeaguesManifest;
+    teamsManifest: TeamsManifest;
+    matchStore: MatchStore;
+    activeLeaguesCount: number;
+    activeTeamsCount: number;
+    matchesFetched: boolean;
+}
+
+export async function syncManifestsAndStore(
+    options: SyncOptions = {},
+): Promise<SyncResult> {
+    const refDate = parseReferenceDate(options.referenceDate);
+    const writeFiles = options.writeFiles ?? true;
+
+    let leagues = options.leagues;
+    if (!leagues) {
+        if (options.fetchLeagues) {
+            leagues = await options.fetchLeagues();
+        } else {
+            leagues = await PandaScore.getAllPages(PandaScore.getLeagues);
+        }
+    }
+
+    const leaguesManifest = generateLeaguesManifest(leagues, {
+        referenceDate: refDate,
+        baseUrl: options.baseUrl,
+    });
+
+    const leaguesManifestPath =
+        options.leaguesManifestPath ?? "./docs/leagues.json";
+    if (writeFiles) {
+        const dir = path.dirname(leaguesManifestPath);
+        if (!fs.existsSync(dir)) {
+            fs.mkdirSync(dir, { recursive: true });
+        }
+        fs.writeFileSync(
+            leaguesManifestPath,
+            serializeLeaguesManifest(leaguesManifest),
+            "utf-8",
+        );
+    }
+
+    const activeLeagues = leaguesManifest.leagues.filter((l) => l.active);
+    const matchStorePath = options.matchStorePath ?? "./data/matches.json";
+    const store = options.matchStore ?? loadMatchStore(matchStorePath);
+    let matchesFetched = false;
+
+    if (activeLeagues.length > 0) {
+        const fetchFn =
+            options.fetchGlobalMatches ??
+            ((opts) => PandaScore.getGlobalMatches(opts));
+        const matches = await fetchFn({ referenceDate: refDate });
+        updateMatchStore(store, matches);
+        matchesFetched = true;
+        if (writeFiles) {
+            saveMatchStore(store, matchStorePath);
+        }
+    }
+
+    const activeTeams = extractActiveTeamsFromMatchStore(store, refDate);
+    const teamsManifest = generateTeamsManifest(activeTeams, {
+        referenceDate: refDate,
+        baseUrl: options.baseUrl,
+    });
+
+    const teamsManifestPath = options.teamsManifestPath ?? "./docs/teams.json";
+    if (writeFiles) {
+        const dir = path.dirname(teamsManifestPath);
+        if (!fs.existsSync(dir)) {
+            fs.mkdirSync(dir, { recursive: true });
+        }
+        fs.writeFileSync(
+            teamsManifestPath,
+            serializeTeamsManifest(teamsManifest),
+            "utf-8",
+        );
+    }
+
+    return {
+        leaguesManifest,
+        teamsManifest,
+        matchStore: store,
+        activeLeaguesCount: activeLeagues.length,
+        activeTeamsCount: activeTeams.length,
+        matchesFetched,
+    };
+}
+
 export default {
     DEFAULT_CALENDAR_BASE_URL,
     DEFAULT_TEAM_CALENDAR_BASE_URL,
@@ -148,4 +263,5 @@ export default {
     createTeamManifestItem,
     generateTeamsManifest,
     serializeTeamsManifest,
+    syncManifestsAndStore,
 };

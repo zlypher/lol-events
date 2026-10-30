@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { generateLeaguesManifest } from "../lib/manifest-generator";
 import {
     generateReadme,
     README_TEMPLATE,
@@ -156,6 +157,23 @@ describe("readme-generator", () => {
             expect(readme).toContain("<summary>Inactive Leagues (5)</summary>");
             expect(readme).toContain("| OPL |");
             expect(readme).not.toContain("| LEC |");
+        });
+
+        it("produces identical output when given precomputed manifest league items as when given raw league objects", () => {
+            const manifest = generateLeaguesManifest(leagues, {
+                referenceDate,
+            });
+
+            const readmeFromRaw = generateReadme(leagues, {
+                referenceDate,
+                lastUpdate: "01.06.2026, 12:00",
+            });
+            const readmeFromManifest = generateReadme(manifest.leagues, {
+                referenceDate,
+                lastUpdate: "01.06.2026, 12:00",
+            });
+
+            expect(readmeFromManifest).toBe(readmeFromRaw);
         });
     });
 

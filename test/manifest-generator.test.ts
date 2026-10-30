@@ -1,4 +1,7 @@
-import { describe, expect, it } from "vitest";
+import fs from "node:fs";
+import os from "node:os";
+import path from "node:path";
+import { describe, expect, it, vi } from "vitest";
 import {
     createLeagueManifestItem,
     createTeamManifestItem,
@@ -6,8 +9,11 @@ import {
     generateTeamsManifest,
     serializeLeaguesManifest,
     serializeTeamsManifest,
+    syncManifestsAndStore,
 } from "../lib/manifest-generator";
-import type { PandaScoreLeague, TeamInfo } from "../lib/types";
+import { createEmptyMatchStore } from "../lib/match-store";
+import PandaScore from "../lib/pandascore";
+import type { PandaScoreLeague, PandaScoreMatch, TeamInfo } from "../lib/types";
 
 describe("manifest-generator", () => {
     describe("generateLeaguesManifest - mapping and sorting", () => {
@@ -369,6 +375,192 @@ describe("manifest-generator", () => {
             const serialized = serializeTeamsManifest(manifest);
             const parsed = JSON.parse(serialized);
             expect(parsed).toEqual(manifest);
+        });
+    });
+
+    describe("syncManifestsAndStore", () => {
+        const referenceDate = new Date("2026-06-01T12:00:00Z");
+
+        const activeLeague: PandaScoreLeague = {
+            id: 4197,
+            name: "LEC",
+            slug: "league-of-legends-lec",
+            image_url: "https://example.com/lec.png",
+            url: "https://lolesports.com",
+            series: [
+                {
+                    id: 101,
+                    league_id: 4197,
+                    name: "Summer 2026",
+                    slug: "summer-2026",
+                    season: "Summer",
+                    year: 2026,
+                    begin_at: "2026-06-15T15:00:00Z",
+                    end_at: "2026-08-30T21:00:00Z",
+                    modified_at: "2026-06-01T10:00:00Z",
+                    full_name: "Summer 2026",
+                },
+            ],
+        };
+
+        const inactiveLeague: PandaScoreLeague = {
+            id: 4244,
+            name: "OPL",
+            slug: "league-of-legends-opl",
+            image_url: null,
+            url: null,
+            series: [],
+        };
+
+        const mockMatch: PandaScoreMatch = {
+            id: 999,
+            name: "G2 vs FNC",
+            begin_at: "2026-06-15T16:00:00Z",
+            number_of_games: 1,
+            status: "not_started",
+            opponents: [
+                {
+                    opponent: {
+                        id: 1,
+                        name: "G2 Esports",
+                        slug: "g2",
+                    },
+                },
+                {
+                    opponent: {
+                        id: 2,
+                        name: "Fnatic",
+                        slug: "fnc",
+                    },
+                },
+            ],
+            league: {
+                id: 4197,
+                name: "LEC",
+                slug: "league-of-legends-lec",
+                image_url: null,
+                url: null,
+            },
+        };
+
+        it("calls global match fetcher, updates store, and derives active teams when active leagues exist", async () => {
+            const store = createEmptyMatchStore();
+            const fetchMatchesMock = vi.fn().mockResolvedValue([mockMatch]);
+
+            const result = await syncManifestsAndStore({
+                referenceDate,
+                leagues: [activeLeague, inactiveLeague],
+                matchStore: store,
+                fetchGlobalMatches: fetchMatchesMock,
+                writeFiles: false,
+            });
+
+            expect(result.activeLeaguesCount).toBe(1);
+            expect(result.matchesFetched).toBe(true);
+            expect(fetchMatchesMock).toHaveBeenCalledTimes(1);
+            expect(fetchMatchesMock).toHaveBeenCalledWith({ referenceDate });
+
+            // Match store updated
+            expect(store.matches[999]).toBeDefined();
+            expect(store.matches[999].summary).toBe("G2 vs FNC");
+
+            // Teams manifest derived from updated store
+            expect(result.teamsManifest.teams).toHaveLength(2);
+            expect(result.teamsManifest.teams[0].name).toBe("Fnatic");
+            expect(result.teamsManifest.teams[1].name).toBe("G2 Esports");
+        });
+
+        it("skips calling global match fetcher when zero active leagues exist", async () => {
+            const store = createEmptyMatchStore();
+            const fetchMatchesMock = vi.fn().mockResolvedValue([]);
+
+            const result = await syncManifestsAndStore({
+                referenceDate,
+                leagues: [inactiveLeague],
+                matchStore: store,
+                fetchGlobalMatches: fetchMatchesMock,
+                writeFiles: false,
+            });
+
+            expect(result.activeLeaguesCount).toBe(0);
+            expect(result.matchesFetched).toBe(false);
+            expect(fetchMatchesMock).not.toHaveBeenCalled();
+            expect(Object.keys(store.matches)).toHaveLength(0);
+            expect(result.teamsManifest.teams).toHaveLength(0);
+        });
+
+        it("writes leagues manifest, teams manifest, and match store to disk", async () => {
+            const tmpDir = fs.mkdtempSync(
+                path.join(os.tmpdir(), "lol-events-sync-"),
+            );
+            const leaguesPath = path.join(tmpDir, "leagues.json");
+            const teamsPath = path.join(tmpDir, "teams.json");
+            const storePath = path.join(tmpDir, "matches.json");
+
+            const store = createEmptyMatchStore();
+            const fetchMatchesMock = vi.fn().mockResolvedValue([mockMatch]);
+
+            try {
+                const result = await syncManifestsAndStore({
+                    referenceDate,
+                    leagues: [activeLeague],
+                    matchStore: store,
+                    fetchGlobalMatches: fetchMatchesMock,
+                    leaguesManifestPath: leaguesPath,
+                    teamsManifestPath: teamsPath,
+                    matchStorePath: storePath,
+                    writeFiles: true,
+                });
+
+                expect(fs.existsSync(leaguesPath)).toBe(true);
+                expect(fs.existsSync(teamsPath)).toBe(true);
+                expect(fs.existsSync(storePath)).toBe(true);
+
+                const leaguesFile = JSON.parse(
+                    fs.readFileSync(leaguesPath, "utf-8"),
+                );
+                expect(leaguesFile.leagues).toHaveLength(1);
+                expect(leaguesFile.leagues[0].name).toBe("LEC");
+
+                const teamsFile = JSON.parse(
+                    fs.readFileSync(teamsPath, "utf-8"),
+                );
+                expect(teamsFile.teams).toHaveLength(2);
+
+                const storeFile = JSON.parse(
+                    fs.readFileSync(storePath, "utf-8"),
+                );
+                expect(storeFile.matches[999]).toBeDefined();
+
+                expect(result.activeLeaguesCount).toBe(1);
+                expect(result.activeTeamsCount).toBe(2);
+            } finally {
+                fs.rmSync(tmpDir, { recursive: true, force: true });
+            }
+        });
+
+        it("falls back to PandaScore.getAllPages and PandaScore.getGlobalMatches by default", async () => {
+            const getAllPagesSpy = vi
+                .spyOn(PandaScore, "getAllPages")
+                .mockResolvedValue([activeLeague]);
+            const getGlobalMatchesSpy = vi
+                .spyOn(PandaScore, "getGlobalMatches")
+                .mockResolvedValue([mockMatch]);
+
+            const store = createEmptyMatchStore();
+            const result = await syncManifestsAndStore({
+                referenceDate,
+                matchStore: store,
+                writeFiles: false,
+            });
+
+            expect(getAllPagesSpy).toHaveBeenCalledWith(PandaScore.getLeagues);
+            expect(getGlobalMatchesSpy).toHaveBeenCalledWith({ referenceDate });
+            expect(result.activeLeaguesCount).toBe(1);
+            expect(result.activeTeamsCount).toBe(2);
+
+            getAllPagesSpy.mockRestore();
+            getGlobalMatchesSpy.mockRestore();
         });
     });
 });
