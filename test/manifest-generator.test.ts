@@ -7,6 +7,8 @@ import {
     createTeamManifestItem,
     generateLeaguesManifest,
     generateTeamsManifest,
+    loadLeaguesManifest,
+    loadTeamsManifest,
     serializeLeaguesManifest,
     serializeTeamsManifest,
     syncManifestsAndStore,
@@ -375,6 +377,42 @@ describe("manifest-generator", () => {
             const serialized = serializeTeamsManifest(manifest);
             const parsed = JSON.parse(serialized);
             expect(parsed).toEqual(manifest);
+        });
+    });
+
+    describe("loadLeaguesManifest and loadTeamsManifest", () => {
+        it("returns null if file does not exist or is invalid JSON", () => {
+            expect(
+                loadLeaguesManifest("./non-existent-leagues.json"),
+            ).toBeNull();
+            expect(loadTeamsManifest("./non-existent-teams.json")).toBeNull();
+        });
+
+        it("loads and parses existing manifest files accurately", () => {
+            const tmpDir = fs.mkdtempSync(
+                path.join(os.tmpdir(), "lol-events-load-manifest-"),
+            );
+            const leaguesPath = path.join(tmpDir, "leagues.json");
+            const teamsPath = path.join(tmpDir, "teams.json");
+
+            const leaguesData = {
+                generatedAt: "2026-06-01T00:00:00.000Z",
+                leagues: [],
+            };
+            const teamsData = {
+                generatedAt: "2026-06-01T00:00:00.000Z",
+                teams: [],
+            };
+
+            fs.writeFileSync(leaguesPath, JSON.stringify(leaguesData));
+            fs.writeFileSync(teamsPath, JSON.stringify(teamsData));
+
+            try {
+                expect(loadLeaguesManifest(leaguesPath)).toEqual(leaguesData);
+                expect(loadTeamsManifest(teamsPath)).toEqual(teamsData);
+            } finally {
+                fs.rmSync(tmpDir, { recursive: true, force: true });
+            }
         });
     });
 

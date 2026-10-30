@@ -1,20 +1,16 @@
 import fs from "node:fs";
+import { loadLeaguesManifest } from "../lib/manifest-generator";
 import { generateReadme } from "../lib/readme-generator";
-import type { LeaguesManifest } from "../lib/types";
 
 function main(): void {
     try {
-        const leaguesPath = "./docs/leagues.json";
-        if (!fs.existsSync(leaguesPath)) {
+        const leaguesManifest = loadLeaguesManifest("./docs/leagues.json");
+        if (!leaguesManifest) {
             console.error(
-                `Leagues manifest not found at ${leaguesPath}. Run npm run scripts:manifest first.`,
+                "Leagues manifest not found at ./docs/leagues.json. Run npm run scripts:manifest first.",
             );
             process.exit(1);
         }
-
-        const leaguesManifest = JSON.parse(
-            fs.readFileSync(leaguesPath, "utf-8"),
-        ) as LeaguesManifest;
 
         const readmeContent = generateReadme(leaguesManifest.leagues);
         fs.writeFileSync("./README.md", readmeContent);

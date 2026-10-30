@@ -68,12 +68,18 @@ ${leagueString}
 `;
 };
 
+export function getLeagueLogoUrl(
+    league: PandaScoreLeague | LeagueManifestItem,
+): string | null {
+    return "logoUrl" in league ? league.logoUrl : (league.image_url ?? null);
+}
+
 export function renderSingleLogo(
     league: PandaScoreLeague | LeagueManifestItem,
     width = 24,
     height = 24,
 ): string {
-    const imageUrl = "logoUrl" in league ? league.logoUrl : league.image_url;
+    const imageUrl = getLeagueLogoUrl(league);
     if (!imageUrl) {
         return "-";
     }
@@ -116,7 +122,7 @@ ${rows}
 export function renderSingleLeague(
     league: PandaScoreLeague | LeagueManifestItem,
 ): string | null {
-    const imageUrl = "logoUrl" in league ? league.logoUrl : league.image_url;
+    const imageUrl = getLeagueLogoUrl(league);
     if (!imageUrl) {
         return null;
     }
@@ -183,6 +189,7 @@ export function generateReadme(
 export default {
     README_TEMPLATE,
     generateReadme,
+    getLeagueLogoUrl,
     renderInactiveSection,
     renderLeagueTable,
     renderLeagues,

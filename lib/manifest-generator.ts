@@ -104,6 +104,42 @@ export function serializeLeaguesManifest(
     return JSON.stringify(manifest, null, space);
 }
 
+function writeJsonFileSync(filePath: string, content: string): void {
+    const dir = path.dirname(filePath);
+    if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir, { recursive: true });
+    }
+    fs.writeFileSync(filePath, content, "utf-8");
+}
+
+export function loadLeaguesManifest(
+    filePath: string = "./docs/leagues.json",
+): LeaguesManifest | null {
+    if (!fs.existsSync(filePath)) {
+        return null;
+    }
+    try {
+        const content = fs.readFileSync(filePath, "utf-8");
+        return JSON.parse(content) as LeaguesManifest;
+    } catch {
+        return null;
+    }
+}
+
+export function loadTeamsManifest(
+    filePath: string = "./docs/teams.json",
+): TeamsManifest | null {
+    if (!fs.existsSync(filePath)) {
+        return null;
+    }
+    try {
+        const content = fs.readFileSync(filePath, "utf-8");
+        return JSON.parse(content) as TeamsManifest;
+    } catch {
+        return null;
+    }
+}
+
 export function createTeamManifestItem(
     team: TeamInfo,
     options: ManifestOptions = {},
@@ -197,14 +233,9 @@ export async function syncManifestsAndStore(
     const leaguesManifestPath =
         options.leaguesManifestPath ?? "./docs/leagues.json";
     if (writeFiles) {
-        const dir = path.dirname(leaguesManifestPath);
-        if (!fs.existsSync(dir)) {
-            fs.mkdirSync(dir, { recursive: true });
-        }
-        fs.writeFileSync(
+        writeJsonFileSync(
             leaguesManifestPath,
             serializeLeaguesManifest(leaguesManifest),
-            "utf-8",
         );
     }
 
@@ -233,14 +264,9 @@ export async function syncManifestsAndStore(
 
     const teamsManifestPath = options.teamsManifestPath ?? "./docs/teams.json";
     if (writeFiles) {
-        const dir = path.dirname(teamsManifestPath);
-        if (!fs.existsSync(dir)) {
-            fs.mkdirSync(dir, { recursive: true });
-        }
-        fs.writeFileSync(
+        writeJsonFileSync(
             teamsManifestPath,
             serializeTeamsManifest(teamsManifest),
-            "utf-8",
         );
     }
 
@@ -260,8 +286,10 @@ export default {
     createLeagueManifestItem,
     generateLeaguesManifest,
     serializeLeaguesManifest,
+    loadLeaguesManifest,
     createTeamManifestItem,
     generateTeamsManifest,
     serializeTeamsManifest,
+    loadTeamsManifest,
     syncManifestsAndStore,
 };
