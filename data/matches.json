@@ -1,6 +1,6 @@
 {
     "version": 1,
-    "generatedAt": "2026-10-30T21:58:32.831Z",
+    "generatedAt": "2026-10-31T05:19:46.475Z",
     "matches": {
         "3175": {
             "id": 3175,
@@ -25797,9 +25797,9 @@
         "1711006": {
             "id": 1711006,
             "uid": "1711006@zlypher.github.io",
-            "sequence": 2,
-            "start": "2026-10-30T23:00:00.000Z",
-            "end": "2026-10-31T02:00:00.000Z",
+            "sequence": 3,
+            "start": "2026-10-30T23:10:00.000Z",
+            "end": "2026-10-31T02:10:00.000Z",
             "summary": "(Group Stage) Round 4: HLE vs G2",
             "status": null,
             "leagueId": 297,
@@ -25824,37 +25824,82 @@
         "1711008": {
             "id": 1711008,
             "uid": "1711008@zlypher.github.io",
-            "sequence": 2,
+            "sequence": 3,
             "start": "2026-10-31T17:00:00.000Z",
             "end": "2026-10-31T20:00:00.000Z",
-            "summary": "(Group Stage) Round 5: TBD vs TBD",
+            "summary": "(Group Stage) Round 5: LOS vs LY",
             "status": null,
             "leagueId": 297,
-            "opponents": [],
+            "opponents": [
+                {
+                    "id": 133796,
+                    "name": "LOS",
+                    "slug": "los",
+                    "acronym": "LOS",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/133796/1199px_los_full_allmode.png"
+                },
+                {
+                    "id": 136066,
+                    "name": "LYON",
+                    "slug": "lyon",
+                    "acronym": "LY",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/136066/lyon__25282024_american_team_2529logo_square.png"
+                }
+            ],
             "leagueName": "Worlds"
         },
         "1711009": {
             "id": 1711009,
             "uid": "1711009@zlypher.github.io",
-            "sequence": 2,
+            "sequence": 3,
             "start": "2026-10-31T20:00:00.000Z",
             "end": "2026-10-31T23:00:00.000Z",
-            "summary": "(Group Stage) Round 5: TBD vs TBD",
+            "summary": "(Group Stage) Round 5: KC vs MKOI",
             "status": null,
             "leagueId": 297,
-            "opponents": [],
+            "opponents": [
+                {
+                    "id": 134078,
+                    "name": "Karmine Corp",
+                    "slug": "karmine-corp-academy",
+                    "acronym": "KC",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/134078/karmine_corplogo_square.png"
+                },
+                {
+                    "id": 126536,
+                    "name": "Movistar KOI",
+                    "slug": "mad-lions-league-of-legends",
+                    "acronym": "MKOI",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/126536/movistar_ko_ilogo_square.png"
+                }
+            ],
             "leagueName": "Worlds"
         },
         "1711010": {
             "id": 1711010,
             "uid": "1711010@zlypher.github.io",
-            "sequence": 2,
+            "sequence": 3,
             "start": "2026-10-31T23:00:00.000Z",
             "end": "2026-11-01T02:00:00.000Z",
-            "summary": "(Group Stage) Round 5: TBD vs TBD",
+            "summary": "(Group Stage) Round 5: HLE vs BLG",
             "status": null,
             "leagueId": 297,
-            "opponents": [],
+            "opponents": [
+                {
+                    "id": 2883,
+                    "name": "Hanwha Life Esports",
+                    "slug": "hanwha-life-esports",
+                    "acronym": "HLE",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/2883/hanwha-life-esports-1s04vbu0.png"
+                },
+                {
+                    "id": 1566,
+                    "name": "Bilibili Gaming",
+                    "slug": "bilibili-gaming",
+                    "acronym": "BLG",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/1566/qw_yi_qu_j.png"
+                }
+            ],
             "leagueName": "Worlds"
         },
         "1711013": {

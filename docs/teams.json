@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T21:58:26.346Z",
+  "generatedAt": "2026-10-31T05:19:39.965Z",
   "teams": [
     {
       "id": 138170,
@@ -801,15 +801,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/138853/ezgif_868bc1cd08695395.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/138853.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/138853.json"
-    },
-    {
-      "id": 131007,
-      "name": "Vietnam",
-      "slug": "vietnam-league-of-legends",
-      "acronym": "VIE",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/131007/vietnam_flag.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/131007.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/131007.json"
     },
     {
       "id": 137371,
