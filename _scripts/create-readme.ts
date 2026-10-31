@@ -1,5 +1,8 @@
 import fs from "node:fs";
-import { loadLeaguesManifest } from "../lib/manifest-generator";
+import {
+    loadLeaguesManifest,
+    loadTeamsManifest,
+} from "../lib/manifest-generator";
 import { generateReadme } from "../lib/readme-generator";
 
 function main(): void {
@@ -12,9 +15,13 @@ function main(): void {
             process.exit(1);
         }
 
-        const readmeContent = generateReadme(leaguesManifest.leagues);
+        const teamsManifest = loadTeamsManifest("./docs/teams.json");
+
+        const readmeContent = generateReadme(leaguesManifest.leagues, {
+            teams: teamsManifest?.teams ?? [],
+        });
         fs.writeFileSync("./README.md", readmeContent);
-        console.log("Updated README.md from leagues manifest.");
+        console.log("Updated README.md from leagues and teams manifests.");
         process.exit(0);
     } catch (err) {
         console.error("Error creating README:", err);

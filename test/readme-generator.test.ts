@@ -1,11 +1,25 @@
 import { describe, expect, it } from "vitest";
 import { generateLeaguesManifest } from "../lib/manifest-generator";
 import {
+    DEFAULT_TEAM_CALENDAR_BASE_URL,
     generateReadme,
+    getTeamCalendarUrl,
+    getTeamLogoUrl,
+    partitionTeams,
     README_TEMPLATE,
     renderInactiveSection,
+    renderInactiveTeamSection,
+    renderSingleTeamLogo,
+    renderTeamCalendarSection,
+    renderTeamTable,
+    sortTeamsByName,
+    TEAM_TABLE_HEADER,
 } from "../lib/readme-generator";
-import type { PandaScoreLeague } from "../lib/types";
+import type {
+    PandaScoreLeague,
+    TeamInfo,
+    TeamManifestItem,
+} from "../lib/types";
 import rawLeaguesFixture from "./fixtures/pandascore-leagues.json" with { type: "json" };
 
 describe("readme-generator", () => {
@@ -49,6 +63,165 @@ describe("readme-generator", () => {
 
         it("returns an empty string when inactive leagues list is empty", () => {
             expect(renderInactiveSection([])).toBe("");
+        });
+    });
+
+    describe("team utilities", () => {
+        const teamWithLogoUrl: TeamManifestItem = {
+            id: 1533,
+            name: "T1",
+            slug: "t1",
+            acronym: "T1",
+            logoUrl: "https://example.com/t1.png",
+            calendarUrl:
+                "https://zlypher.github.io/lol-events/cal/team/1533.ical",
+            jsonUrl: "https://zlypher.github.io/lol-events/cal/team/1533.json",
+        };
+
+        const teamWithImageUrl: TeamInfo = {
+            id: 100,
+            name: "Gen.G",
+            imageUrl: "https://example.com/geng.png",
+        };
+
+        const teamWithoutLogo: TeamInfo = {
+            id: 200,
+            name: "No Logo Team",
+        };
+
+        describe("getTeamLogoUrl and renderSingleTeamLogo", () => {
+            it("extracts logo URL from logoUrl, imageUrl, or image_url", () => {
+                expect(getTeamLogoUrl(teamWithLogoUrl)).toBe(
+                    "https://example.com/t1.png",
+                );
+                expect(getTeamLogoUrl(teamWithImageUrl)).toBe(
+                    "https://example.com/geng.png",
+                );
+                expect(getTeamLogoUrl(teamWithoutLogo)).toBeNull();
+                expect(
+                    getTeamLogoUrl({
+                        id: 300,
+                        name: "Panda Team",
+                        image_url: "https://example.com/panda.png",
+                    }),
+                ).toBe("https://example.com/panda.png");
+            });
+
+            it("renders img tag when logo URL exists and dash when missing", () => {
+                expect(renderSingleTeamLogo(teamWithLogoUrl)).toBe(
+                    '<img src="https://example.com/t1.png" alt="T1 Logo" width="24" height="24" />',
+                );
+                expect(renderSingleTeamLogo(teamWithoutLogo)).toBe("-");
+            });
+        });
+
+        describe("getTeamCalendarUrl", () => {
+            it("uses calendarUrl if present on team object", () => {
+                expect(getTeamCalendarUrl(teamWithLogoUrl)).toBe(
+                    "https://zlypher.github.io/lol-events/cal/team/1533.ical",
+                );
+            });
+
+            it("constructs team calendar URL with numeric id when calendarUrl is absent", () => {
+                expect(getTeamCalendarUrl(teamWithImageUrl)).toBe(
+                    `${DEFAULT_TEAM_CALENDAR_BASE_URL}/100.ical`,
+                );
+            });
+
+            it("supports custom baseUrl", () => {
+                expect(
+                    getTeamCalendarUrl(
+                        teamWithImageUrl,
+                        "https://custom.com/team",
+                    ),
+                ).toBe("https://custom.com/team/100.ical");
+            });
+        });
+
+        describe("renderTeamTable", () => {
+            it("renders markdown table rows for teams", () => {
+                const rows = renderTeamTable([
+                    teamWithLogoUrl,
+                    teamWithoutLogo,
+                ]);
+                expect(rows).toBe(
+                    '| <img src="https://example.com/t1.png" alt="T1 Logo" width="24" height="24" /> | T1 | https://zlypher.github.io/lol-events/cal/team/1533.ical\n| - | No Logo Team | https://zlypher.github.io/lol-events/cal/team/200.ical',
+                );
+            });
+        });
+
+        describe("renderInactiveTeamSection", () => {
+            it("renders a details block when inactive teams are provided", () => {
+                const result = renderInactiveTeamSection([teamWithoutLogo]);
+                expect(result).toContain("<details>");
+                expect(result).toContain(
+                    "<summary>Inactive Teams (1)</summary>",
+                );
+                expect(result).toContain(TEAM_TABLE_HEADER);
+                expect(result).toContain(
+                    "| - | No Logo Team | https://zlypher.github.io/lol-events/cal/team/200.ical",
+                );
+                expect(result).toContain("</details>");
+            });
+
+            it("returns empty string when inactive teams list is empty", () => {
+                expect(renderInactiveTeamSection([])).toBe("");
+            });
+        });
+
+        describe("sortTeamsByName", () => {
+            it("sorts teams alphabetically by name", () => {
+                const teams = [
+                    { id: 1, name: "T1" },
+                    { id: 2, name: "Cloud9" },
+                    { id: 3, name: "Fnatic" },
+                ];
+                sortTeamsByName(teams);
+                expect(teams.map((t) => t.name)).toEqual([
+                    "Cloud9",
+                    "Fnatic",
+                    "T1",
+                ]);
+            });
+        });
+
+        describe("partitionTeams", () => {
+            it("partitions teams based on active property", () => {
+                const teams = [
+                    { id: 1, name: "Active 1" },
+                    { id: 2, name: "Active 2", active: true },
+                    { id: 3, name: "Inactive 1", active: false },
+                ];
+                const { active, inactive } = partitionTeams(teams);
+                expect(active.map((t) => t.name)).toEqual([
+                    "Active 1",
+                    "Active 2",
+                ]);
+                expect(inactive.map((t) => t.name)).toEqual(["Inactive 1"]);
+            });
+        });
+
+        describe("renderTeamCalendarSection", () => {
+            it("assembles team section with active table and inactive details", () => {
+                const activeTeams = [teamWithLogoUrl];
+                const inactiveTeams = [teamWithoutLogo];
+                const lastUpdate = "31.10.2026, 12:00";
+
+                const section = renderTeamCalendarSection(
+                    activeTeams,
+                    inactiveTeams,
+                    lastUpdate,
+                );
+
+                expect(section).toContain("## Calendars by Team");
+                expect(section).toContain(`Last update: ${lastUpdate}`);
+                expect(section).toContain(TEAM_TABLE_HEADER);
+                expect(section).toContain("| T1 |");
+                expect(section).toContain(
+                    "<summary>Inactive Teams (1)</summary>",
+                );
+                expect(section).toContain("| No Logo Team |");
+            });
         });
     });
 
@@ -175,6 +348,101 @@ describe("readme-generator", () => {
 
             expect(readmeFromManifest).toBe(readmeFromRaw);
         });
+
+        it("omits ## Calendars by Team section when teams option is not provided", () => {
+            const readme = generateReadme(leagues, {
+                referenceDate,
+                lastUpdate: "01.06.2026, 12:00",
+            });
+            expect(readme).not.toContain("## Calendars by Team");
+        });
+
+        it("renders ## Calendars by Team with active and inactive teams when teams option is provided", () => {
+            const teams = [
+                {
+                    id: 1,
+                    name: "T1",
+                    slug: "t1",
+                    logoUrl: "https://example.com/t1.png",
+                    calendarUrl:
+                        "https://zlypher.github.io/lol-events/cal/team/1.ical",
+                    jsonUrl:
+                        "https://zlypher.github.io/lol-events/cal/team/1.json",
+                },
+                {
+                    id: 2,
+                    name: "Cloud9",
+                    slug: "cloud9",
+                    logoUrl: null,
+                    calendarUrl:
+                        "https://zlypher.github.io/lol-events/cal/team/2.ical",
+                    jsonUrl:
+                        "https://zlypher.github.io/lol-events/cal/team/2.json",
+                },
+                {
+                    id: 3,
+                    name: "Old Team",
+                    slug: "old-team",
+                    logoUrl: null,
+                    calendarUrl:
+                        "https://zlypher.github.io/lol-events/cal/team/3.ical",
+                    jsonUrl:
+                        "https://zlypher.github.io/lol-events/cal/team/3.json",
+                    active: false,
+                },
+            ];
+
+            const readme = generateReadme(leagues, {
+                referenceDate,
+                lastUpdate: "01.06.2026, 12:00",
+                teams,
+            });
+
+            expect(readme).toContain("## Calendars by Team");
+            const teamSection = readme.split("## Calendars by Team")[1];
+            const gettingStartedSection =
+                teamSection.split("## Getting Started")[0];
+
+            // Primary table contains sorted active teams (Cloud9 before T1)
+            const [primaryTablePart, inactivePart] =
+                gettingStartedSection.split("<details>");
+            expect(primaryTablePart).toContain("| Cloud9 |");
+            expect(primaryTablePart).toContain("| T1 |");
+            expect(primaryTablePart).not.toContain("| Old Team |");
+
+            const c9Index = primaryTablePart.indexOf("| Cloud9 |");
+            const t1Index = primaryTablePart.indexOf("| T1 |");
+            expect(c9Index).toBeLessThan(t1Index);
+
+            // Inactive section contains Old Team
+            expect(inactivePart).toContain(
+                "<summary>Inactive Teams (1)</summary>",
+            );
+            expect(inactivePart).toContain("| Old Team |");
+        });
+
+        it("omits inactive teams details section when all teams are active", () => {
+            const teams = [
+                {
+                    id: 1,
+                    name: "T1",
+                    calendarUrl:
+                        "https://zlypher.github.io/lol-events/cal/team/1.ical",
+                },
+            ];
+
+            const readme = generateReadme(leagues, {
+                referenceDate,
+                lastUpdate: "01.06.2026, 12:00",
+                teams,
+            });
+
+            expect(readme).toContain("## Calendars by Team");
+            const teamSection = readme.split("## Calendars by Team")[1];
+            expect(teamSection).toContain("| T1 |");
+            expect(teamSection).not.toContain("Inactive Teams");
+            expect(teamSection).not.toContain("<details>");
+        });
     });
 
     describe("README_TEMPLATE", () => {
@@ -189,6 +457,24 @@ describe("readme-generator", () => {
             expect(readme).toContain("<details>inactive</details>");
             expect(readme).toContain("<a>logo</a>");
             expect(readme).toContain("Last update: 01.01.2026, 12:00");
+        });
+
+        it("assembles markdown with team section placed between league section and Getting Started", () => {
+            const readme = README_TEMPLATE(
+                "| league-row |",
+                "<details>inactive-league</details>",
+                "<a>logo</a>",
+                "01.01.2026, 12:00",
+                "## Calendars by Team\n\n| team-row |",
+            );
+
+            expect(readme).toContain("## Calendars by Team\n\n| team-row |");
+            const leagueIndex = readme.indexOf("## Calendars by League");
+            const teamIndex = readme.indexOf("## Calendars by Team");
+            const gettingStartedIndex = readme.indexOf("## Getting Started");
+
+            expect(leagueIndex).toBeLessThan(teamIndex);
+            expect(teamIndex).toBeLessThan(gettingStartedIndex);
         });
     });
 });
