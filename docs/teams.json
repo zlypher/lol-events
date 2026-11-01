@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T05:19:39.965Z",
+  "generatedAt": "2026-11-01T05:48:08.289Z",
   "teams": [
     {
       "id": 138170,
@@ -362,15 +362,6 @@
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/318.json"
     },
     {
-      "id": 138473,
-      "name": "JSK Esports",
-      "slug": "jsk-esports",
-      "acronym": "JSK",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/138473/jsk_esportslogo_profile.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/138473.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/138473.json"
-    },
-    {
       "id": 136646,
       "name": "KaBuM! Ilha das Lendas",
       "slug": "kabum-ilha-das-lendas",
@@ -423,15 +414,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/408/lgd_gaminglogo_square.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/408.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/408.json"
-    },
-    {
-      "id": 132497,
-      "name": "Lodis",
-      "slug": "lodis-by-illuminar-league-of-legends",
-      "acronym": "LDS",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/132497/lodis_by_illuminarlogo_square.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/132497.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/132497.json"
     },
     {
       "id": 133796,
@@ -596,24 +578,6 @@
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/138127.json"
     },
     {
-      "id": 133303,
-      "name": "Saudi Arabia",
-      "slug": "saudi-arabia-league-of-legends",
-      "acronym": "KSA",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/133303/saudi_arabia__2528_national_team_2529logo_square.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/133303.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/133303.json"
-    },
-    {
-      "id": 132064,
-      "name": "Senshi Esports",
-      "slug": "senshi-esports-club",
-      "acronym": "SEC",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/132064/senshi_e_sports__2528_benelux_team_2529logo_square.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/132064.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/132064.json"
-    },
-    {
       "id": 134001,
       "name": "Shopify Rebellion",
       "slug": "shopify-rebellion-league-of-legends",
@@ -704,15 +668,6 @@
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/390.json"
     },
     {
-      "id": 129409,
-      "name": "Team Phantasma",
-      "slug": "team-phantasma",
-      "acronym": "TP",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/129409/190px_team_phantasma_teamcard.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/129409.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/129409.json"
-    },
-    {
       "id": 136073,
       "name": "Team Secret Whales",
       "slug": "team-secret-whales",
@@ -738,15 +693,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/2574/300px-Team_WElogo_square.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/2574.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/2574.json"
-    },
-    {
-      "id": 137229,
-      "name": "The Otter Side",
-      "slug": "the-otter-side",
-      "acronym": "TOS",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/137229/ezgif_78720f1ede9ea2de.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/137229.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/137229.json"
     },
     {
       "id": 136547,

@@ -1,6 +1,6 @@
 {
     "version": 1,
-    "generatedAt": "2026-10-31T05:19:46.475Z",
+    "generatedAt": "2026-11-01T05:48:14.676Z",
     "matches": {
         "3175": {
             "id": 3175,
@@ -25824,9 +25824,9 @@
         "1711008": {
             "id": 1711008,
             "uid": "1711008@zlypher.github.io",
-            "sequence": 3,
-            "start": "2026-10-31T17:00:00.000Z",
-            "end": "2026-10-31T20:00:00.000Z",
+            "sequence": 4,
+            "start": "2026-10-31T18:55:00.000Z",
+            "end": "2026-10-31T21:55:00.000Z",
             "summary": "(Group Stage) Round 5: LOS vs LY",
             "status": null,
             "leagueId": 297,
@@ -25851,9 +25851,9 @@
         "1711009": {
             "id": 1711009,
             "uid": "1711009@zlypher.github.io",
-            "sequence": 3,
-            "start": "2026-10-31T20:00:00.000Z",
-            "end": "2026-10-31T23:00:00.000Z",
+            "sequence": 4,
+            "start": "2026-10-31T17:05:00.000Z",
+            "end": "2026-10-31T20:05:00.000Z",
             "summary": "(Group Stage) Round 5: KC vs MKOI",
             "status": null,
             "leagueId": 297,
@@ -25878,9 +25878,9 @@
         "1711010": {
             "id": 1711010,
             "uid": "1711010@zlypher.github.io",
-            "sequence": 3,
-            "start": "2026-10-31T23:00:00.000Z",
-            "end": "2026-11-01T02:00:00.000Z",
+            "sequence": 4,
+            "start": "2026-10-31T22:00:00.000Z",
+            "end": "2026-11-01T01:00:00.000Z",
             "summary": "(Group Stage) Round 5: HLE vs BLG",
             "status": null,
             "leagueId": 297,
@@ -25905,49 +25905,109 @@
         "1711013": {
             "id": 1711013,
             "uid": "1711013@zlypher.github.io",
-            "sequence": 2,
-            "start": "2026-11-03T22:00:00.000Z",
-            "end": "2026-11-04T03:00:00.000Z",
-            "summary": "(Playoffs) Quarterfinal 1: TBD vs TBD",
+            "sequence": 3,
+            "start": "2026-11-05T22:00:00.000Z",
+            "end": "2026-11-06T03:00:00.000Z",
+            "summary": "(Playoffs) Quarterfinal 1: DK vs BLG",
             "status": null,
             "leagueId": 297,
-            "opponents": [],
+            "opponents": [
+                {
+                    "id": 132531,
+                    "name": "Dplus KIA",
+                    "slug": "dplus-kia",
+                    "acronym": "DK",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/132531/800px_dplus_lightmode.png"
+                },
+                {
+                    "id": 1566,
+                    "name": "Bilibili Gaming",
+                    "slug": "bilibili-gaming",
+                    "acronym": "BLG",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/1566/qw_yi_qu_j.png"
+                }
+            ],
             "leagueName": "Worlds"
         },
         "1711016": {
             "id": 1711016,
             "uid": "1711016@zlypher.github.io",
-            "sequence": 2,
-            "start": "2026-11-04T22:00:00.000Z",
-            "end": "2026-11-05T03:00:00.000Z",
-            "summary": "(Playoffs) Quarterfinal 2: TBD vs TBD",
+            "sequence": 3,
+            "start": "2026-11-06T22:00:00.000Z",
+            "end": "2026-11-07T03:00:00.000Z",
+            "summary": "(Playoffs) Quarterfinal 2: KC vs T1",
             "status": null,
             "leagueId": 297,
-            "opponents": [],
+            "opponents": [
+                {
+                    "id": 134078,
+                    "name": "Karmine Corp",
+                    "slug": "karmine-corp-academy",
+                    "acronym": "KC",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/134078/karmine_corplogo_square.png"
+                },
+                {
+                    "id": 126061,
+                    "name": "T1",
+                    "slug": "t1",
+                    "acronym": "T1",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/126061/t_oscq04.png"
+                }
+            ],
             "leagueName": "Worlds"
         },
         "1711017": {
             "id": 1711017,
             "uid": "1711017@zlypher.github.io",
-            "sequence": 2,
-            "start": "2026-11-05T22:00:00.000Z",
-            "end": "2026-11-06T03:00:00.000Z",
-            "summary": "(Playoffs) Quarterfinal 3: TBD vs TBD",
+            "sequence": 3,
+            "start": "2026-11-04T22:00:00.000Z",
+            "end": "2026-11-05T03:00:00.000Z",
+            "summary": "(Playoffs) Quarterfinal 3: GEN vs LY",
             "status": null,
             "leagueId": 297,
-            "opponents": [],
+            "opponents": [
+                {
+                    "id": 2882,
+                    "name": "Gen.G",
+                    "slug": "geng",
+                    "acronym": "GEN",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/2882/699px_gen.g_esports_2026_allmode.png"
+                },
+                {
+                    "id": 136066,
+                    "name": "LYON",
+                    "slug": "lyon",
+                    "acronym": "LY",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/136066/lyon__25282024_american_team_2529logo_square.png"
+                }
+            ],
             "leagueName": "Worlds"
         },
         "1711018": {
             "id": 1711018,
             "uid": "1711018@zlypher.github.io",
-            "sequence": 2,
-            "start": "2026-11-06T22:00:00.000Z",
-            "end": "2026-11-07T03:00:00.000Z",
-            "summary": "(Playoffs) Quarterfinal 4: TBD vs TBD",
+            "sequence": 3,
+            "start": "2026-11-03T22:00:00.000Z",
+            "end": "2026-11-04T03:00:00.000Z",
+            "summary": "(Playoffs) Quarterfinal 4: TES vs IG",
             "status": null,
             "leagueId": 297,
-            "opponents": [],
+            "opponents": [
+                {
+                    "id": 126059,
+                    "name": "Top Esports",
+                    "slug": "top-esports",
+                    "acronym": "TES",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/126059/top_esportslogo_square.png"
+                },
+                {
+                    "id": 411,
+                    "name": "Invictus Gaming",
+                    "slug": "invictus-gaming",
+                    "acronym": "IG",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/411/invictus_gaminglogo_square.png"
+                }
+            ],
             "leagueName": "Worlds"
         },
         "1711019": {
