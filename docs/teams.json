@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T05:48:08.289Z",
+  "generatedAt": "2026-11-02T05:47:41.952Z",
   "teams": [
     {
       "id": 138170,
@@ -92,15 +92,6 @@
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/134115.json"
     },
     {
-      "id": 138056,
-      "name": "BOMBA Team",
-      "slug": "bomba-team",
-      "acronym": "BOOM",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/138056/bomba_teamlogo_square.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/138056.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/138056.json"
-    },
-    {
       "id": 136070,
       "name": "Bushido Wildcats",
       "slug": "bushido-wildcats",
@@ -110,15 +101,6 @@
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/136070.json"
     },
     {
-      "id": 133295,
-      "name": "Chinese Taipei",
-      "slug": "chinese-taipei",
-      "acronym": "TPE",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/133295/team_chinese_taipeilogo_square.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/133295.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/133295.json"
-    },
-    {
       "id": 1097,
       "name": "Cloud9",
       "slug": "cloud9",
@@ -126,15 +108,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/1097/cloud9-gnd9b0gn.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/1097.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/1097.json"
-    },
-    {
-      "id": 136722,
-      "name": "Colossal Gaming",
-      "slug": "colossal-gaming",
-      "acronym": "CG",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/136722/colossal_gaminglogo_square.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/136722.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/136722.json"
     },
     {
       "id": 130355,
@@ -443,15 +416,6 @@
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/136066.json"
     },
     {
-      "id": 132626,
-      "name": "MAGAZA",
-      "slug": "magaza",
-      "acronym": "MGZ",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/132626/magaz_alogo_square.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/132626.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/132626.json"
-    },
-    {
       "id": 130635,
       "name": "Maryville University",
       "slug": "maryville-university",
@@ -515,15 +479,6 @@
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/137057.json"
     },
     {
-      "id": 136087,
-      "name": "NightBirds",
-      "slug": "nightbirds",
-      "acronym": "NBS",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/136087/nightbirdslogo_square.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/136087.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/136087.json"
-    },
-    {
       "id": 139359,
       "name": "Nothin'Here",
       "slug": "nothin-here",
@@ -540,15 +495,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/139361/part_timers_allmode.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/139361.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/139361.json"
-    },
-    {
-      "id": 137929,
-      "name": "PCIFIC ",
-      "slug": "pcific-league-of-legends",
-      "acronym": "PCIFIC",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/137929/800px_pcific_esports_allmode.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/137929.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/137929.json"
     },
     {
       "id": 161,
@@ -614,15 +560,6 @@
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/1449.json"
     },
     {
-      "id": 133694,
-      "name": "South Korea",
-      "slug": "south-korea-league-of-legends",
-      "acronym": "KOR",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/133694/south_korea__28_national_team_29logo_square.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/133694.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/133694.json"
-    },
-    {
       "id": 126061,
       "name": "T1",
       "slug": "t1",
@@ -630,15 +567,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/126061/t_oscq04.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/126061.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/126061.json"
-    },
-    {
-      "id": 131040,
-      "name": "T1 Academy",
-      "slug": "t1-academy",
-      "acronym": "T1.A",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/131040/t1logo_profile.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/131040.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/131040.json"
     },
     {
       "id": 139117,
