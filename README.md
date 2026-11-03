@@ -13,7 +13,7 @@ The `.ical` files for all leagues are updated daily. The last update date can be
 
 ## Calendars by League
 
-Last update: 02.11.2026, 05:47
+Last update: 03.11.2026, 06:29
 
 |                                                                                                                                                                                  | League                             |                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -164,7 +164,7 @@ Last update: 02.11.2026, 05:47
 
 ## Calendars by Team
 
-Last update: 02.11.2026, 05:47
+Last update: 03.11.2026, 06:29
 
 |                                                                                                                                                                                  | Team                               |                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -212,7 +212,6 @@ Last update: 02.11.2026, 05:47
 | <img src="https://cdn-api.pandascore.co/images/team/image/63/kt_rolsterlogo_profile.png" alt="KT Rolster Logo" width="24" height="24" /> | KT Rolster | https://zlypher.github.io/lol-events/cal/team/63.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/408/lgd_gaminglogo_square.png" alt="LGD Gaming Logo" width="24" height="24" /> | LGD Gaming | https://zlypher.github.io/lol-events/cal/team/408.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/133796/1199px_los_full_allmode.png" alt="LOS Logo" width="24" height="24" /> | LOS | https://zlypher.github.io/lol-events/cal/team/133796.ical
-| <img src="https://cdn-api.pandascore.co/images/team/image/128313/lou_dlogo_square.png" alt="LOUD Logo" width="24" height="24" /> | LOUD | https://zlypher.github.io/lol-events/cal/team/128313.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/136066/lyon__25282024_american_team_2529logo_square.png" alt="LYON Logo" width="24" height="24" /> | LYON | https://zlypher.github.io/lol-events/cal/team/136066.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/130635/maryville_universitylogo_square.png" alt="Maryville University Logo" width="24" height="24" /> | Maryville University | https://zlypher.github.io/lol-events/cal/team/130635.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/137577/mental_rushlogo_square.png" alt="Mental Rush Logo" width="24" height="24" /> | Mental Rush | https://zlypher.github.io/lol-events/cal/team/137577.ical
@@ -261,7 +260,7 @@ See official steps here: [Sync your calendar with computer programs](https://sup
 
 ## Supported Leagues
 
-Last update: 02.11.2026, 05:47
+Last update: 03.11.2026, 06:29
 
 <a href="null" target="_blank"><img src="https://cdn-api.pandascore.co/images/league/image/296/all-star_2020_logo-png" alt="All-Star Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn-api.pandascore.co/images/league/image/5292/americas_challengers-png" alt="Americas Challengers Logo" width="50" height="50" /></a>

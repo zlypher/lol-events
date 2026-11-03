@@ -5,14 +5,6 @@ URL:https://zlypher.github.io/lol-events/
 NAME:Shopify Rebellion
 X-WR-CALNAME:Shopify Rebellion
 BEGIN:VEVENT
-UID:1694349@zlypher.github.io
-SEQUENCE:2
-DTSTAMP:20261003T100000Z
-DTSTART:20261003T100000Z
-DTEND:20261003T110000Z
-SUMMARY:[Demacia Cup Global Invitational] (Group Stage) Round 1: SR vs KT
-END:VEVENT
-BEGIN:VEVENT
 UID:1694360@zlypher.github.io
 SEQUENCE:2
 DTSTAMP:20261005T104000Z

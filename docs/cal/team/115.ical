@@ -5,15 +5,6 @@ URL:https://zlypher.github.io/lol-events/
 NAME:Team Vitality
 X-WR-CALNAME:Team Vitality
 BEGIN:VEVENT
-UID:1694351@zlypher.github.io
-SEQUENCE:2
-DTSTAMP:20261003T110000Z
-DTSTART:20261003T110000Z
-DTEND:20261003T120000Z
-SUMMARY:[Demacia Cup Global Invitational] (Group Stage) Round 1: VIT vs BF
- X
-END:VEVENT
-BEGIN:VEVENT
 UID:1694359@zlypher.github.io
 SEQUENCE:2
 DTSTAMP:20261005T070000Z

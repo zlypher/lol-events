@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T05:47:41.952Z",
+  "generatedAt": "2026-11-03T06:29:02.851Z",
   "teams": [
     {
       "id": 138170,
@@ -396,15 +396,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/133796/1199px_los_full_allmode.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/133796.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/133796.json"
-    },
-    {
-      "id": 128313,
-      "name": "LOUD",
-      "slug": "loud",
-      "acronym": "LLL",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/128313/lou_dlogo_square.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/128313.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/128313.json"
     },
     {
       "id": 136066,
