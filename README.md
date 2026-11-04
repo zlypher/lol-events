@@ -13,7 +13,7 @@ The `.ical` files for all leagues are updated daily. The last update date can be
 
 ## Calendars by League
 
-Last update: 03.11.2026, 06:29
+Last update: 04.11.2026, 06:00
 
 |                                                                                                                                                                                  | League                             |                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -164,7 +164,7 @@ Last update: 03.11.2026, 06:29
 
 ## Calendars by Team
 
-Last update: 03.11.2026, 06:29
+Last update: 04.11.2026, 06:00
 
 |                                                                                                                                                                                  | Team                               |                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -172,7 +172,6 @@ Last update: 03.11.2026, 06:29
 | <img src="https://cdn-api.pandascore.co/images/team/image/131053/anubis_gaminglogo_profile.png" alt="Anubis Gaming Logo" width="24" height="24" /> | Anubis Gaming | https://zlypher.github.io/lol-events/cal/team/131053.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/129971/1083px_anyone_s_legend_full_lightmode.png" alt="Anyone's Legend Logo" width="24" height="24" /> | Anyone's Legend | https://zlypher.github.io/lol-events/cal/team/129971.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/139017/ezgif_4609a8b13c09c0a2.png" alt="AZ Rising Eterna Logo" width="24" height="24" /> | AZ Rising Eterna | https://zlypher.github.io/lol-events/cal/team/139017.ical
-| <img src="https://cdn-api.pandascore.co/images/team/image/130103/bar_253_fa_e_sportslogo_square.png" alt="Barça eSports Logo" width="24" height="24" /> | Barça eSports | https://zlypher.github.io/lol-events/cal/team/130103.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/138903/600px_barczaca_esports_allmode.png" alt="Barcząca Esports Babylon Logo" width="24" height="24" /> | Barcząca Esports Babylon | https://zlypher.github.io/lol-events/cal/team/138903.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/125905/berlin_international_gaminglogo_square.png" alt="BIG Logo" width="24" height="24" /> | BIG | https://zlypher.github.io/lol-events/cal/team/125905.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/1566/qw_yi_qu_j.png" alt="Bilibili Gaming Logo" width="24" height="24" /> | Bilibili Gaming | https://zlypher.github.io/lol-events/cal/team/1566.ical
@@ -236,10 +235,8 @@ Last update: 03.11.2026, 06:29
 | <img src="https://cdn-api.pandascore.co/images/team/image/136073/1200px_secret_whales_lightmode.png" alt="Team Secret Whales Logo" width="24" height="24" /> | Team Secret Whales | https://zlypher.github.io/lol-events/cal/team/136073.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/115/team_vitalitylogo_square.png" alt="Team Vitality Logo" width="24" height="24" /> | Team Vitality | https://zlypher.github.io/lol-events/cal/team/115.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/2574/300px-Team_WElogo_square.png" alt="Team WE Logo" width="24" height="24" /> | Team WE | https://zlypher.github.io/lol-events/cal/team/2574.ical
-| <img src="https://cdn-api.pandascore.co/images/team/image/136547/the_secret_club_esportlogo_square.png" alt="The Secret Club Logo" width="24" height="24" /> | The Secret Club | https://zlypher.github.io/lol-events/cal/team/136547.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/137898/tln_pirates_2026_allmode.png" alt="TLN Pirates Logo" width="24" height="24" /> | TLN Pirates | https://zlypher.github.io/lol-events/cal/team/137898.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/126059/top_esportslogo_square.png" alt="Top Esports Logo" width="24" height="24" /> | Top Esports | https://zlypher.github.io/lol-events/cal/team/126059.ical
-| <img src="https://cdn-api.pandascore.co/images/team/image/126737/577px_ucam_esports_club_allmode.png" alt="UCAM Esports Club Logo" width="24" height="24" /> | UCAM Esports Club | https://zlypher.github.io/lol-events/cal/team/126737.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/126832/ezgif_5c9b92b2ec54b782.png" alt="Unicorns Of Love Sexy Edition Logo" width="24" height="24" /> | Unicorns Of Love Sexy Edition | https://zlypher.github.io/lol-events/cal/team/126832.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/138853/ezgif_868bc1cd08695395.png" alt="Valerion Logo" width="24" height="24" /> | Valerion | https://zlypher.github.io/lol-events/cal/team/138853.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/137371/rising_bees_lightmode.png" alt="Vitality Rising Bees Logo" width="24" height="24" /> | Vitality Rising Bees | https://zlypher.github.io/lol-events/cal/team/137371.ical
@@ -260,7 +257,7 @@ See official steps here: [Sync your calendar with computer programs](https://sup
 
 ## Supported Leagues
 
-Last update: 03.11.2026, 06:29
+Last update: 04.11.2026, 06:00
 
 <a href="null" target="_blank"><img src="https://cdn-api.pandascore.co/images/league/image/296/all-star_2020_logo-png" alt="All-Star Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn-api.pandascore.co/images/league/image/5292/americas_challengers-png" alt="Americas Challengers Logo" width="50" height="50" /></a>

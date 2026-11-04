@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T06:29:02.851Z",
+  "generatedAt": "2026-11-04T06:00:20.725Z",
   "teams": [
     {
       "id": 138170,
@@ -36,15 +36,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/139017/ezgif_4609a8b13c09c0a2.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/139017.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/139017.json"
-    },
-    {
-      "id": 130103,
-      "name": "Barça eSports",
-      "slug": "barca-esports",
-      "acronym": "BAR",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/130103/bar_253_fa_e_sportslogo_square.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/130103.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/130103.json"
     },
     {
       "id": 138903,
@@ -614,15 +605,6 @@
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/2574.json"
     },
     {
-      "id": 136547,
-      "name": "The Secret Club",
-      "slug": "the-secret-club-esport",
-      "acronym": "TSC",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/136547/the_secret_club_esportlogo_square.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/136547.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/136547.json"
-    },
-    {
       "id": 137898,
       "name": "TLN Pirates",
       "slug": "tln-pirates",
@@ -639,15 +621,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/126059/top_esportslogo_square.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/126059.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/126059.json"
-    },
-    {
-      "id": 126737,
-      "name": "UCAM Esports Club",
-      "slug": "ucam-esports-club",
-      "acronym": "UCAM",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/126737/577px_ucam_esports_club_allmode.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/126737.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/126737.json"
     },
     {
       "id": 126832,

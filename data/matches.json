@@ -1,6 +1,6 @@
 {
     "version": 1,
-    "generatedAt": "2026-11-03T06:29:09.167Z",
+    "generatedAt": "2026-11-04T06:00:25.846Z",
     "matches": {
         "3175": {
             "id": 3175,
@@ -25986,9 +25986,9 @@
         "1711018": {
             "id": 1711018,
             "uid": "1711018@zlypher.github.io",
-            "sequence": 3,
-            "start": "2026-11-03T22:00:00.000Z",
-            "end": "2026-11-04T03:00:00.000Z",
+            "sequence": 4,
+            "start": "2026-11-03T22:10:00.000Z",
+            "end": "2026-11-04T03:10:00.000Z",
             "summary": "(Playoffs) Quarterfinal 4: TES vs IG",
             "status": null,
             "leagueId": 297,
@@ -26025,13 +26025,21 @@
         "1711020": {
             "id": 1711020,
             "uid": "1711020@zlypher.github.io",
-            "sequence": 2,
+            "sequence": 3,
             "start": "2026-11-08T22:00:00.000Z",
             "end": "2026-11-09T03:00:00.000Z",
-            "summary": "(Playoffs) Semifinal 2: TBD vs TBD",
+            "summary": "(Playoffs) Semifinal 2: IG vs TBD",
             "status": null,
             "leagueId": 297,
-            "opponents": [],
+            "opponents": [
+                {
+                    "id": 411,
+                    "name": "Invictus Gaming",
+                    "slug": "invictus-gaming",
+                    "acronym": "IG",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/411/invictus_gaminglogo_square.png"
+                }
+            ],
             "leagueName": "Worlds"
         },
         "1711021": {
