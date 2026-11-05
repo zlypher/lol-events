@@ -1,6 +1,6 @@
 {
     "version": 1,
-    "generatedAt": "2026-11-04T06:00:25.846Z",
+    "generatedAt": "2026-11-05T06:26:59.916Z",
     "matches": {
         "3175": {
             "id": 3175,
@@ -25959,9 +25959,9 @@
         "1711017": {
             "id": 1711017,
             "uid": "1711017@zlypher.github.io",
-            "sequence": 3,
-            "start": "2026-11-04T22:00:00.000Z",
-            "end": "2026-11-05T03:00:00.000Z",
+            "sequence": 4,
+            "start": "2026-11-04T22:05:00.000Z",
+            "end": "2026-11-05T03:05:00.000Z",
             "summary": "(Playoffs) Quarterfinal 3: GEN vs LY",
             "status": null,
             "leagueId": 297,
@@ -26013,9 +26013,9 @@
         "1711019": {
             "id": 1711019,
             "uid": "1711019@zlypher.github.io",
-            "sequence": 2,
-            "start": "2026-11-07T22:00:00.000Z",
-            "end": "2026-11-08T03:00:00.000Z",
+            "sequence": 3,
+            "start": "2026-11-08T22:00:00.000Z",
+            "end": "2026-11-09T03:00:00.000Z",
             "summary": "(Playoffs) Semifinal 1: TBD vs TBD",
             "status": null,
             "leagueId": 297,
@@ -26025,10 +26025,10 @@
         "1711020": {
             "id": 1711020,
             "uid": "1711020@zlypher.github.io",
-            "sequence": 3,
-            "start": "2026-11-08T22:00:00.000Z",
-            "end": "2026-11-09T03:00:00.000Z",
-            "summary": "(Playoffs) Semifinal 2: IG vs TBD",
+            "sequence": 4,
+            "start": "2026-11-07T22:00:00.000Z",
+            "end": "2026-11-08T03:00:00.000Z",
+            "summary": "(Playoffs) Semifinal 2: IG vs GEN",
             "status": null,
             "leagueId": 297,
             "opponents": [
@@ -26038,6 +26038,13 @@
                     "slug": "invictus-gaming",
                     "acronym": "IG",
                     "imageUrl": "https://cdn-api.pandascore.co/images/team/image/411/invictus_gaminglogo_square.png"
+                },
+                {
+                    "id": 2882,
+                    "name": "Gen.G",
+                    "slug": "geng",
+                    "acronym": "GEN",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/2882/699px_gen.g_esports_2026_allmode.png"
                 }
             ],
             "leagueName": "Worlds"

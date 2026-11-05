@@ -1,15 +1,6 @@
 {
-  "generatedAt": "2026-11-04T06:00:20.725Z",
+  "generatedAt": "2026-11-05T06:26:54.901Z",
   "teams": [
-    {
-      "id": 138170,
-      "name": "9z Globant",
-      "slug": "9z-globant-league-of-legends",
-      "acronym": "9ZG",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/138170/ezgif_8d063d0a78978452.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/138170.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/138170.json"
-    },
     {
       "id": 131053,
       "name": "Anubis Gaming",
@@ -657,15 +648,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/129934/west_point_esportslogo_square.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/129934.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/129934.json"
-    },
-    {
-      "id": 136730,
-      "name": "Zeu5 Esports",
-      "slug": "zeu5-esports",
-      "acronym": "Z5",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/136730/zeu5_esportslogo_square.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/136730.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/136730.json"
     }
   ]
 }
