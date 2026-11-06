@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T06:26:54.901Z",
+  "generatedAt": "2026-11-06T06:20:41.738Z",
   "teams": [
     {
       "id": 131053,
@@ -38,15 +38,6 @@
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/138903.json"
     },
     {
-      "id": 125905,
-      "name": "BIG",
-      "slug": "big-league-of-legends",
-      "acronym": "BIG",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/125905/berlin_international_gaminglogo_square.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/125905.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/125905.json"
-    },
-    {
       "id": 1566,
       "name": "Bilibili Gaming",
       "slug": "bilibili-gaming",
@@ -72,15 +63,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/134115/663px_fear_x_icon_lightmode.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/134115.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/134115.json"
-    },
-    {
-      "id": 136070,
-      "name": "Bushido Wildcats",
-      "slug": "bushido-wildcats",
-      "acronym": "BW",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/136070/ezgif_52ad93b2c5a076a2.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/136070.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/136070.json"
     },
     {
       "id": 1097,
@@ -146,15 +128,6 @@
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/139360.json"
     },
     {
-      "id": 128363,
-      "name": "Estral Esports",
-      "slug": "estral-esports-league-of-legends",
-      "acronym": "EST",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/128363/estral_esportslogo_square.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/128363.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/128363.json"
-    },
-    {
       "id": 132655,
       "name": "FENNEL",
       "slug": "fennel-league-of-legends",
@@ -180,15 +153,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/130352/600px_frank_esports_2022_lightmode_full.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/130352.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/130352.json"
-    },
-    {
-      "id": 137833,
-      "name": "Frites Esports Club",
-      "slug": "frites-esports-club",
-      "acronym": "FEC",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/137833/frites_esports_club_lightmode.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/137833.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/137833.json"
     },
     {
       "id": 1636,
@@ -621,15 +585,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/126832/ezgif_5c9b92b2ec54b782.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/126832.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/126832.json"
-    },
-    {
-      "id": 138853,
-      "name": "Valerion",
-      "slug": "valerion",
-      "acronym": "VLR",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/138853/ezgif_868bc1cd08695395.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/138853.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/138853.json"
     },
     {
       "id": 137371,

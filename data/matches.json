@@ -1,6 +1,6 @@
 {
     "version": 1,
-    "generatedAt": "2026-11-05T06:26:59.916Z",
+    "generatedAt": "2026-11-06T06:20:46.882Z",
     "matches": {
         "3175": {
             "id": 3175,
@@ -25905,9 +25905,9 @@
         "1711013": {
             "id": 1711013,
             "uid": "1711013@zlypher.github.io",
-            "sequence": 3,
-            "start": "2026-11-05T22:00:00.000Z",
-            "end": "2026-11-06T03:00:00.000Z",
+            "sequence": 4,
+            "start": "2026-11-05T22:10:00.000Z",
+            "end": "2026-11-06T03:10:00.000Z",
             "summary": "(Playoffs) Quarterfinal 1: DK vs BLG",
             "status": null,
             "leagueId": 297,
@@ -26013,13 +26013,21 @@
         "1711019": {
             "id": 1711019,
             "uid": "1711019@zlypher.github.io",
-            "sequence": 3,
+            "sequence": 4,
             "start": "2026-11-08T22:00:00.000Z",
             "end": "2026-11-09T03:00:00.000Z",
-            "summary": "(Playoffs) Semifinal 1: TBD vs TBD",
+            "summary": "(Playoffs) Semifinal 1: BLG vs TBD",
             "status": null,
             "leagueId": 297,
-            "opponents": [],
+            "opponents": [
+                {
+                    "id": 1566,
+                    "name": "Bilibili Gaming",
+                    "slug": "bilibili-gaming",
+                    "acronym": "BLG",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/1566/qw_yi_qu_j.png"
+                }
+            ],
             "leagueName": "Worlds"
         },
         "1711020": {
