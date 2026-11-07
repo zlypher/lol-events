@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T06:20:41.738Z",
+  "generatedAt": "2026-11-07T05:45:52.911Z",
   "teams": [
     {
       "id": 131053,
@@ -207,15 +207,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/136019/galionslogo_square.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/136019.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/136019.json"
-    },
-    {
-      "id": 124414,
-      "name": "GAM Esports",
-      "slug": "gam-esports",
-      "acronym": "GAM",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/124414/Adonis_Marineslogo_square.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/124414.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/124414.json"
     },
     {
       "id": 2882,
@@ -443,15 +434,6 @@
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/161.json"
     },
     {
-      "id": 136177,
-      "name": "Ruddy Corporation",
-      "slug": "the-ruddy-sack",
-      "acronym": "RUD",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/136177/1157px_ruddy_esports_2026_allmode.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/136177.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/136177.json"
-    },
-    {
       "id": 138127,
       "name": "Saigon Warriors",
       "slug": "saigon-warriors",
@@ -461,15 +443,6 @@
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/138127.json"
     },
     {
-      "id": 134001,
-      "name": "Shopify Rebellion",
-      "slug": "shopify-rebellion-league-of-legends",
-      "acronym": "SR",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/134001/600px_shopify_rebellion.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/134001.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/134001.json"
-    },
-    {
       "id": 137170,
       "name": "SK Gaming Avarosa",
       "slug": "sk-gaming-avarosa",
@@ -477,15 +450,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/137170/175px_sk_gaming_2003_lightmode.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/137170.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/137170.json"
-    },
-    {
-      "id": 134158,
-      "name": "Skillcamp Esport",
-      "slug": "skillcamp-esport",
-      "acronym": "SC",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/134158/skillcamplogo_square.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/134158.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/134158.json"
     },
     {
       "id": 1449,
@@ -513,15 +477,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/139117/team_gromp_fls_2026_allmode.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/139117.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/139117.json"
-    },
-    {
-      "id": 132212,
-      "name": "Team Heretics Academy",
-      "slug": "team-heretics-academy",
-      "acronym": "HRTS",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/132212/team_hereticslogo_square.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/132212.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/132212.json"
     },
     {
       "id": 390,
@@ -576,15 +531,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/126059/top_esportslogo_square.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/126059.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/126059.json"
-    },
-    {
-      "id": 126832,
-      "name": "Unicorns Of Love Sexy Edition",
-      "slug": "unicorns-of-love-sexy-edition",
-      "acronym": "USE",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/126832/ezgif_5c9b92b2ec54b782.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/126832.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/126832.json"
     },
     {
       "id": 137371,

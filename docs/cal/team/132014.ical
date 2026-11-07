@@ -5,14 +5,6 @@ URL:https://zlypher.github.io/lol-events/
 NAME:Kaufland Hangry Knights
 X-WR-CALNAME:Kaufland Hangry Knights
 BEGIN:VEVENT
-UID:1698602@zlypher.github.io
-SEQUENCE:2
-DTSTAMP:20261007T160000Z
-DTSTART:20261007T160000Z
-DTEND:20261007T210000Z
-SUMMARY:[EMEA Masters] (Playoffs) Round of 16 Match 8: KHK vs USE
-END:VEVENT
-BEGIN:VEVENT
 UID:1698606@zlypher.github.io
 SEQUENCE:2
 DTSTAMP:20261009T160000Z

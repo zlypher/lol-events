@@ -4,21 +4,5 @@ PRODID:-//Zlypher//LOL Events//EN
 URL:https://zlypher.github.io/lol-events/
 NAME:Shopify Rebellion
 X-WR-CALNAME:Shopify Rebellion
-BEGIN:VEVENT
-UID:1694365@zlypher.github.io
-SEQUENCE:2
-DTSTAMP:20261007T083000Z
-DTSTART:20261007T083000Z
-DTEND:20261007T113000Z
-SUMMARY:[Demacia Cup Global Invitational] (Group Stage) Round 3: GAM vs SR
-END:VEVENT
-BEGIN:VEVENT
-UID:1694366@zlypher.github.io
-SEQUENCE:2
-DTSTAMP:20261007T101500Z
-DTSTART:20261007T101500Z
-DTEND:20261007T131500Z
-SUMMARY:[Demacia Cup Global Invitational] (Group Stage) Round 3: FLY vs SR
-END:VEVENT
 X-WR-CALDESC:Shopify Rebellion
 END:VCALENDAR
