@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T05:45:52.911Z",
+  "generatedAt": "2026-11-08T05:49:19.663Z",
   "teams": [
     {
       "id": 131053,
@@ -398,15 +398,6 @@
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/137803.json"
     },
     {
-      "id": 137057,
-      "name": "Natus Vincere",
-      "slug": "natus-vincere-league-of-legends",
-      "acronym": "Navi",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/137057/natus_vincerelogo_square.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/137057.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/137057.json"
-    },
-    {
       "id": 139359,
       "name": "Nothin'Here",
       "slug": "nothin-here",
@@ -423,15 +414,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/139361/part_timers_allmode.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/139361.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/139361.json"
-    },
-    {
-      "id": 161,
-      "name": "RED Canids",
-      "slug": "red-canids",
-      "acronym": "RED",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/161/red-canids-3ci94wz2.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/161.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/161.json"
     },
     {
       "id": 138127,

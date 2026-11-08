@@ -1,6 +1,6 @@
 {
     "version": 1,
-    "generatedAt": "2026-11-07T05:45:58.096Z",
+    "generatedAt": "2026-11-08T05:49:24.697Z",
     "matches": {
         "3175": {
             "id": 3175,
@@ -26040,9 +26040,9 @@
         "1711020": {
             "id": 1711020,
             "uid": "1711020@zlypher.github.io",
-            "sequence": 4,
-            "start": "2026-11-07T22:00:00.000Z",
-            "end": "2026-11-08T03:00:00.000Z",
+            "sequence": 5,
+            "start": "2026-11-07T22:05:00.000Z",
+            "end": "2026-11-08T03:05:00.000Z",
             "summary": "(Playoffs) Semifinal 2: IG vs GEN",
             "status": null,
             "leagueId": 297,
@@ -26067,13 +26067,21 @@
         "1711021": {
             "id": 1711021,
             "uid": "1711021@zlypher.github.io",
-            "sequence": 2,
+            "sequence": 3,
             "start": "2026-11-14T19:00:00.000Z",
             "end": "2026-11-15T00:00:00.000Z",
-            "summary": "(Playoffs) Grand Final: TBD vs TBD",
+            "summary": "(Playoffs) Grand Final: GEN vs TBD",
             "status": null,
             "leagueId": 297,
-            "opponents": [],
+            "opponents": [
+                {
+                    "id": 2882,
+                    "name": "Gen.G",
+                    "slug": "geng",
+                    "acronym": "GEN",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/2882/699px_gen.g_esports_2026_allmode.png"
+                }
+            ],
             "leagueName": "Worlds"
         },
         "1735944": {

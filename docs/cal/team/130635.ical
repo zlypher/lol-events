@@ -5,14 +5,6 @@ URL:https://zlypher.github.io/lol-events/
 NAME:Maryville University
 X-WR-CALNAME:Maryville University
 BEGIN:VEVENT
-UID:1691711@zlypher.github.io
-SEQUENCE:2
-DTSTAMP:20261008T210000Z
-DTSTART:20261008T210000Z
-DTEND:20261009T020000Z
-SUMMARY:[LCS] (Playoffs) Upper bracket final: MVU vs CPD
-END:VEVENT
-BEGIN:VEVENT
 UID:1691728@zlypher.github.io
 SEQUENCE:2
 DTSTAMP:20261012T230000Z
