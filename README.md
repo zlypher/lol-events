@@ -13,7 +13,7 @@ The `.ical` files for all leagues are updated daily. The last update date can be
 
 ## Calendars by League
 
-Last update: 08.11.2026, 05:49
+Last update: 09.11.2026, 05:59
 
 |                                                                                                                                                                                  | League                             |                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -164,7 +164,7 @@ Last update: 08.11.2026, 05:49
 
 ## Calendars by Team
 
-Last update: 08.11.2026, 05:49
+Last update: 09.11.2026, 05:59
 
 |                                                                                                                                                                                  | Team                               |                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -185,7 +185,6 @@ Last update: 08.11.2026, 05:49
 | <img src="https://cdn-api.pandascore.co/images/team/image/132655/424px_fennel_2021_may_lightmode.png" alt="FENNEL Logo" width="24" height="24" /> | FENNEL | https://zlypher.github.io/lol-events/cal/team/132655.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/311/fly_questlogo_square.png" alt="FlyQuest Logo" width="24" height="24" /> | FlyQuest | https://zlypher.github.io/lol-events/cal/team/311.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/130352/600px_frank_esports_2022_lightmode_full.png" alt="Frank Esports Logo" width="24" height="24" /> | Frank Esports | https://zlypher.github.io/lol-events/cal/team/130352.ical
-| <img src="https://cdn-api.pandascore.co/images/team/image/1636/fuego-ada0g8rs.png" alt="Fuego Logo" width="24" height="24" /> | Fuego | https://zlypher.github.io/lol-events/cal/team/1636.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/126688/220px_furia_uppercutlogo_square.png" alt="FURIA Esports Logo" width="24" height="24" /> | FURIA Esports | https://zlypher.github.io/lol-events/cal/team/126688.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/88/g2-esports.png" alt="G2 Esports Logo" width="24" height="24" /> | G2 Esports | https://zlypher.github.io/lol-events/cal/team/88.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/137372/600px_g2_esports_2020_lightmode.png" alt="G2 HEL Logo" width="24" height="24" /> | G2 HEL | https://zlypher.github.io/lol-events/cal/team/137372.ical
@@ -201,7 +200,6 @@ Last update: 08.11.2026, 05:49
 | <img src="https://cdn-api.pandascore.co/images/team/image/136646/800px_ka_bu_m__esports_2022_12_allmode.png" alt="KaBuM! Ilha das Lendas Logo" width="24" height="24" /> | KaBuM! Ilha das Lendas | https://zlypher.github.io/lol-events/cal/team/136646.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/134078/karmine_corplogo_square.png" alt="Karmine Corp Logo" width="24" height="24" /> | Karmine Corp | https://zlypher.github.io/lol-events/cal/team/134078.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/128268/600px_karmine_corp_allmode.png" alt="Karmine Corp Blue Logo" width="24" height="24" /> | Karmine Corp Blue | https://zlypher.github.io/lol-events/cal/team/128268.ical
-| <img src="https://cdn-api.pandascore.co/images/team/image/132014/ezgif_5e43e49cb8f1f5a8.png" alt="Kaufland Hangry Knights Logo" width="24" height="24" /> | Kaufland Hangry Knights | https://zlypher.github.io/lol-events/cal/team/132014.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/63/kt_rolsterlogo_profile.png" alt="KT Rolster Logo" width="24" height="24" /> | KT Rolster | https://zlypher.github.io/lol-events/cal/team/63.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/408/lgd_gaminglogo_square.png" alt="LGD Gaming Logo" width="24" height="24" /> | LGD Gaming | https://zlypher.github.io/lol-events/cal/team/408.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/133796/1199px_los_full_allmode.png" alt="LOS Logo" width="24" height="24" /> | LOS | https://zlypher.github.io/lol-events/cal/team/133796.ical
@@ -223,7 +221,6 @@ Last update: 08.11.2026, 05:49
 | <img src="https://cdn-api.pandascore.co/images/team/image/136073/1200px_secret_whales_lightmode.png" alt="Team Secret Whales Logo" width="24" height="24" /> | Team Secret Whales | https://zlypher.github.io/lol-events/cal/team/136073.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/115/team_vitalitylogo_square.png" alt="Team Vitality Logo" width="24" height="24" /> | Team Vitality | https://zlypher.github.io/lol-events/cal/team/115.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/2574/300px-Team_WElogo_square.png" alt="Team WE Logo" width="24" height="24" /> | Team WE | https://zlypher.github.io/lol-events/cal/team/2574.ical
-| <img src="https://cdn-api.pandascore.co/images/team/image/137898/tln_pirates_2026_allmode.png" alt="TLN Pirates Logo" width="24" height="24" /> | TLN Pirates | https://zlypher.github.io/lol-events/cal/team/137898.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/126059/top_esportslogo_square.png" alt="Top Esports Logo" width="24" height="24" /> | Top Esports | https://zlypher.github.io/lol-events/cal/team/126059.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/137371/rising_bees_lightmode.png" alt="Vitality Rising Bees Logo" width="24" height="24" /> | Vitality Rising Bees | https://zlypher.github.io/lol-events/cal/team/137371.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/129934/west_point_esportslogo_square.png" alt="West Point Esports PH Logo" width="24" height="24" /> | West Point Esports PH | https://zlypher.github.io/lol-events/cal/team/129934.ical
@@ -242,7 +239,7 @@ See official steps here: [Sync your calendar with computer programs](https://sup
 
 ## Supported Leagues
 
-Last update: 08.11.2026, 05:49
+Last update: 09.11.2026, 05:59
 
 <a href="null" target="_blank"><img src="https://cdn-api.pandascore.co/images/league/image/296/all-star_2020_logo-png" alt="All-Star Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn-api.pandascore.co/images/league/image/5292/americas_challengers-png" alt="Americas Challengers Logo" width="50" height="50" /></a>

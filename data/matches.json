@@ -1,6 +1,6 @@
 {
     "version": 1,
-    "generatedAt": "2026-11-08T05:49:24.697Z",
+    "generatedAt": "2026-11-09T05:59:43.344Z",
     "matches": {
         "3175": {
             "id": 3175,
@@ -26013,9 +26013,9 @@
         "1711019": {
             "id": 1711019,
             "uid": "1711019@zlypher.github.io",
-            "sequence": 5,
-            "start": "2026-11-08T22:00:00.000Z",
-            "end": "2026-11-09T03:00:00.000Z",
+            "sequence": 6,
+            "start": "2026-11-08T22:10:00.000Z",
+            "end": "2026-11-09T03:10:00.000Z",
             "summary": "(Playoffs) Semifinal 1: BLG vs T1",
             "status": null,
             "leagueId": 297,
@@ -26067,13 +26067,20 @@
         "1711021": {
             "id": 1711021,
             "uid": "1711021@zlypher.github.io",
-            "sequence": 3,
+            "sequence": 4,
             "start": "2026-11-14T19:00:00.000Z",
             "end": "2026-11-15T00:00:00.000Z",
-            "summary": "(Playoffs) Grand Final: GEN vs TBD",
+            "summary": "(Playoffs) Grand Final: BLG vs GEN",
             "status": null,
             "leagueId": 297,
             "opponents": [
+                {
+                    "id": 1566,
+                    "name": "Bilibili Gaming",
+                    "slug": "bilibili-gaming",
+                    "acronym": "BLG",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/1566/qw_yi_qu_j.png"
+                },
                 {
                     "id": 2882,
                     "name": "Gen.G",

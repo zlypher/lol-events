@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T05:49:19.663Z",
+  "generatedAt": "2026-11-09T05:59:38.348Z",
   "teams": [
     {
       "id": 131053,
@@ -155,15 +155,6 @@
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/130352.json"
     },
     {
-      "id": 1636,
-      "name": "Fuego",
-      "slug": "fuego",
-      "acronym": "FUE",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/1636/fuego-ada0g8rs.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/1636.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/1636.json"
-    },
-    {
       "id": 126688,
       "name": "FURIA Esports",
       "slug": "furia-uppercut",
@@ -297,15 +288,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/128268/600px_karmine_corp_allmode.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/128268.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/128268.json"
-    },
-    {
-      "id": 132014,
-      "name": "Kaufland Hangry Knights",
-      "slug": "kaufland-hangry-knights",
-      "acronym": "KHK",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/132014/ezgif_5e43e49cb8f1f5a8.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/132014.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/132014.json"
     },
     {
       "id": 63,
@@ -495,15 +477,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/2574/300px-Team_WElogo_square.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/2574.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/2574.json"
-    },
-    {
-      "id": 137898,
-      "name": "TLN Pirates",
-      "slug": "tln-pirates",
-      "acronym": "TLNP",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/137898/tln_pirates_2026_allmode.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/137898.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/137898.json"
     },
     {
       "id": 126059,
