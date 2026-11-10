@@ -4,13 +4,5 @@ PRODID:-//Zlypher//LOL Events//EN
 URL:https://zlypher.github.io/lol-events/
 NAME:Cupid Esports
 X-WR-CALNAME:Cupid Esports
-BEGIN:VEVENT
-UID:1691731@zlypher.github.io
-SEQUENCE:2
-DTSTAMP:20261010T210000Z
-DTSTART:20261010T210000Z
-DTEND:20261011T020000Z
-SUMMARY:[LCS] (Playoffs) Lower bracket final: CPD vs DSG
-END:VEVENT
 X-WR-CALDESC:Cupid Esports
 END:VCALENDAR

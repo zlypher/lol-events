@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T05:59:38.348Z",
+  "generatedAt": "2026-11-10T07:02:06.364Z",
   "teams": [
     {
       "id": 131053,
@@ -81,15 +81,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/130355/ctbc_flying_oysterlogo_square.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/130355.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/130355.json"
-    },
-    {
-      "id": 138937,
-      "name": "Cupid Esports",
-      "slug": "cupid-esports",
-      "acronym": "CPD",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/138937/698px_cupid_e_sports_allmode.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/138937.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/138937.json"
     },
     {
       "id": 89,
@@ -182,15 +173,6 @@
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/137372.json"
     },
     {
-      "id": 137945,
-      "name": "G2 NORD",
-      "slug": "g2-nord",
-      "acronym": "G2N",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/137945/ezgif_82457a6b2740471e.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/137945.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/137945.json"
-    },
-    {
       "id": 136019,
       "name": "Galions",
       "slug": "galions",
@@ -279,15 +261,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/134078/karmine_corplogo_square.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/134078.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/134078.json"
-    },
-    {
-      "id": 128268,
-      "name": "Karmine Corp Blue",
-      "slug": "karmine-corp",
-      "acronym": "KCB",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/128268/600px_karmine_corp_allmode.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/128268.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/128268.json"
     },
     {
       "id": 63,
