@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T07:02:06.364Z",
+  "generatedAt": "2026-11-11T05:55:49.386Z",
   "teams": [
     {
       "id": 131053,
@@ -27,15 +27,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/139017/ezgif_4609a8b13c09c0a2.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/139017.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/139017.json"
-    },
-    {
-      "id": 138903,
-      "name": "Barcząca Esports Babylon",
-      "slug": "barczaca-esports-babylon",
-      "acronym": "BCEB",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/138903/600px_barczaca_esports_allmode.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/138903.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/138903.json"
     },
     {
       "id": 1566,
@@ -191,15 +182,6 @@
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/2882.json"
     },
     {
-      "id": 139403,
-      "name": "Good Chi Sakura",
-      "slug": "good-chi-sakura",
-      "acronym": null,
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/139403/75px_good_chi_allmode.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/139403.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/139403.json"
-    },
-    {
       "id": 132568,
       "name": "Ground Zero Gaming",
       "slug": "ground-zero-gaming-league-of-legends",
@@ -335,15 +317,6 @@
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/363.json"
     },
     {
-      "id": 138126,
-      "name": "MVK Academy",
-      "slug": "mvk-academy",
-      "acronym": "MVKA",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/138126/mvk_esportslogo_profile.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/138126.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/138126.json"
-    },
-    {
       "id": 137803,
       "name": "MVK Esports",
       "slug": "mvk-esports",
@@ -360,15 +333,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/139359/nothin_here_allmode.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/139359.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/139359.json"
-    },
-    {
-      "id": 139361,
-      "name": "PART TIMERS",
-      "slug": "part-timers-league-of-legends",
-      "acronym": "PT",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/139361/part_timers_allmode.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/139361.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/139361.json"
     },
     {
       "id": 138127,

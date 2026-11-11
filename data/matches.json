@@ -1,6 +1,6 @@
 {
     "version": 1,
-    "generatedAt": "2026-11-10T07:02:11.344Z",
+    "generatedAt": "2026-11-11T05:55:54.506Z",
     "matches": {
         "3175": {
             "id": 3175,
@@ -26499,9 +26499,9 @@
         "1766740": {
             "id": 1766740,
             "uid": "1766740@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-11-10T09:00:00.000Z",
-            "end": "2026-11-10T14:00:00.000Z",
+            "sequence": 2,
+            "start": "2026-11-10T08:00:00.000Z",
+            "end": "2026-11-10T13:00:00.000Z",
             "summary": "(Playoffs) Quarterfinal 2: SGW vs Team Gromp",
             "status": null,
             "opponents": [
@@ -26526,12 +26526,27 @@
         "1766741": {
             "id": 1766741,
             "uid": "1766741@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-11-12T09:00:00.000Z",
             "end": "2026-11-12T14:00:00.000Z",
-            "summary": "(Playoffs) Semifinal: TBD vs TBD",
+            "summary": "(Playoffs) Semifinal: NH vs SGW",
             "status": null,
-            "opponents": [],
+            "opponents": [
+                {
+                    "id": 139359,
+                    "name": "Nothin'Here",
+                    "slug": "nothin-here",
+                    "acronym": "NH",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/139359/nothin_here_allmode.png"
+                },
+                {
+                    "id": 138127,
+                    "name": "Saigon Warriors",
+                    "slug": "saigon-warriors",
+                    "acronym": "SGW",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/138127/ezgif_5e268d1a7560187d.png"
+                }
+            ],
             "leagueId": 5351,
             "leagueName": "LCP"
         },
