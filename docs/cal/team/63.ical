@@ -5,15 +5,6 @@ URL:https://zlypher.github.io/lol-events/
 NAME:KT Rolster
 X-WR-CALNAME:KT Rolster
 BEGIN:VEVENT
-UID:1694370@zlypher.github.io
-SEQUENCE:2
-DTSTAMP:20261012T060000Z
-DTSTART:20261012T060000Z
-DTEND:20261012T110000Z
-SUMMARY:[Demacia Cup Global Invitational] (Playoffs) Quarterfinal 2: KT vs
-  VIT
-END:VEVENT
-BEGIN:VEVENT
 UID:1694373@zlypher.github.io
 SEQUENCE:2
 DTSTAMP:20261014T090000Z

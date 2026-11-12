@@ -4,14 +4,5 @@ PRODID:-//Zlypher//LOL Events//EN
 URL:https://zlypher.github.io/lol-events/
 NAME:JD Gaming
 X-WR-CALNAME:JD Gaming
-BEGIN:VEVENT
-UID:1694369@zlypher.github.io
-SEQUENCE:2
-DTSTAMP:20261012T103000Z
-DTSTART:20261012T103000Z
-DTEND:20261012T153000Z
-SUMMARY:[Demacia Cup Global Invitational] (Playoffs) Quarterfinal 1: BFX v
- s JDG
-END:VEVENT
 X-WR-CALDESC:JD Gaming
 END:VCALENDAR

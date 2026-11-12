@@ -4,13 +4,5 @@ PRODID:-//Zlypher//LOL Events//EN
 URL:https://zlypher.github.io/lol-events/
 NAME:Disguised
 X-WR-CALNAME:Disguised
-BEGIN:VEVENT
-UID:1691728@zlypher.github.io
-SEQUENCE:2
-DTSTAMP:20261012T230000Z
-DTSTART:20261012T230000Z
-DTEND:20261013T040000Z
-SUMMARY:[LCS] (Playoffs) Grand final: MVU vs DSG
-END:VEVENT
 X-WR-CALDESC:Disguised
 END:VCALENDAR

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T05:55:49.386Z",
+  "generatedAt": "2026-11-12T06:58:56.655Z",
   "teams": [
     {
       "id": 131053,
@@ -20,15 +20,6 @@
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/129971.json"
     },
     {
-      "id": 139017,
-      "name": "AZ Rising Eterna",
-      "slug": "az-rising-eterna",
-      "acronym": "AZRE",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/139017/ezgif_4609a8b13c09c0a2.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/139017.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/139017.json"
-    },
-    {
       "id": 1566,
       "name": "Bilibili Gaming",
       "slug": "bilibili-gaming",
@@ -36,15 +27,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/1566/qw_yi_qu_j.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/1566.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/1566.json"
-    },
-    {
-      "id": 137381,
-      "name": "Blue Otter Europe",
-      "slug": "blue-otter-europe",
-      "acronym": "BLU",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/137381/blue_otterlogo_square.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/137381.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/137381.json"
     },
     {
       "id": 134115,
@@ -81,15 +63,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/89/780px_detonatio_n_focus_me_2022_lightmode.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/89.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/89.json"
-    },
-    {
-      "id": 133267,
-      "name": "Disguised",
-      "slug": "disguised-league-of-legends",
-      "acronym": "DSG",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/133267/disguisedlogo_square.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/133267.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/133267.json"
     },
     {
       "id": 132531,
@@ -218,24 +191,6 @@
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/411.json"
     },
     {
-      "id": 318,
-      "name": "JD Gaming",
-      "slug": "qg-reapers",
-      "acronym": "JDG",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/318/746px_jd_gaming_2021_full_allmode.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/318.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/318.json"
-    },
-    {
-      "id": 136646,
-      "name": "KaBuM! Ilha das Lendas",
-      "slug": "kabum-ilha-das-lendas",
-      "acronym": "KBM",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/136646/800px_ka_bu_m__esports_2022_12_allmode.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/136646.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/136646.json"
-    },
-    {
       "id": 134078,
       "name": "Karmine Corp",
       "slug": "karmine-corp-academy",
@@ -279,15 +234,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/136066/lyon__25282024_american_team_2529logo_square.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/136066.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/136066.json"
-    },
-    {
-      "id": 130635,
-      "name": "Maryville University",
-      "slug": "maryville-university",
-      "acronym": "MVU",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/130635/maryville_universitylogo_square.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/130635.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/130635.json"
     },
     {
       "id": 137577,
@@ -398,15 +344,6 @@
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/136073.json"
     },
     {
-      "id": 115,
-      "name": "Team Vitality",
-      "slug": "vitality",
-      "acronym": "VIT",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/115/team_vitalitylogo_square.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/115.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/115.json"
-    },
-    {
       "id": 2574,
       "name": "Team WE",
       "slug": "we",
@@ -432,15 +369,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/137371/rising_bees_lightmode.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/137371.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/137371.json"
-    },
-    {
-      "id": 129934,
-      "name": "West Point Esports PH",
-      "slug": "west-point-esports-ph",
-      "acronym": "WPE",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/129934/west_point_esportslogo_square.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/129934.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/129934.json"
     }
   ]
 }
