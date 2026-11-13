@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T06:58:56.655Z",
+  "generatedAt": "2026-11-13T06:24:08.499Z",
   "teams": [
     {
       "id": 131053,
@@ -74,15 +74,6 @@
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/132531.json"
     },
     {
-      "id": 139360,
-      "name": "essences",
-      "slug": "essences",
-      "acronym": "ESSE",
-      "logoUrl": null,
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/139360.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/139360.json"
-    },
-    {
       "id": 132655,
       "name": "FENNEL",
       "slug": "fennel-league-of-legends",
@@ -90,15 +81,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/132655/424px_fennel_2021_may_lightmode.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/132655.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/132655.json"
-    },
-    {
-      "id": 311,
-      "name": "FlyQuest",
-      "slug": "flyquest",
-      "acronym": "FLY",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/311/fly_questlogo_square.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/311.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/311.json"
     },
     {
       "id": 130352,
@@ -209,15 +191,6 @@
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/63.json"
     },
     {
-      "id": 408,
-      "name": "LGD Gaming",
-      "slug": "lgd-gaming",
-      "acronym": "LGD",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/408/lgd_gaminglogo_square.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/408.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/408.json"
-    },
-    {
       "id": 133796,
       "name": "LOS",
       "slug": "los",
@@ -252,15 +225,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/126536/movistar_ko_ilogo_square.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/126536.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/126536.json"
-    },
-    {
-      "id": 363,
-      "name": "⁠Movistar KOI Fénix",
-      "slug": "movistar-riders",
-      "acronym": "MKF",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/363/movistar_ko_ilogo_square.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/363.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/363.json"
     },
     {
       "id": 137803,

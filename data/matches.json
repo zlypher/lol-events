@@ -1,6 +1,6 @@
 {
     "version": 1,
-    "generatedAt": "2026-11-12T06:59:01.592Z",
+    "generatedAt": "2026-11-13T06:24:13.495Z",
     "matches": {
         "3175": {
             "id": 3175,
@@ -26553,10 +26553,10 @@
         "1766742": {
             "id": 1766742,
             "uid": "1766742@zlypher.github.io",
-            "sequence": 1,
-            "start": "2026-11-13T09:00:00.000Z",
-            "end": "2026-11-13T14:00:00.000Z",
-            "summary": "(Playoffs) Grand final: DFM vs TBD",
+            "sequence": 2,
+            "start": "2026-11-13T06:10:00.000Z",
+            "end": "2026-11-13T11:10:00.000Z",
+            "summary": "(Playoffs) Grand final: DFM vs SGW",
             "status": null,
             "opponents": [
                 {
@@ -26565,10 +26565,164 @@
                     "slug": "detonation-focusme",
                     "acronym": "DFM",
                     "imageUrl": "https://cdn-api.pandascore.co/images/team/image/89/780px_detonatio_n_focus_me_2022_lightmode.png"
+                },
+                {
+                    "id": 138127,
+                    "name": "Saigon Warriors",
+                    "slug": "saigon-warriors",
+                    "acronym": "SGW",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/138127/ezgif_5e268d1a7560187d.png"
                 }
             ],
             "leagueId": 5351,
             "leagueName": "LCP"
+        },
+        "1808144": {
+            "id": 1808144,
+            "uid": "1808144@zlypher.github.io",
+            "sequence": 1,
+            "start": "2026-12-05T13:00:00.000Z",
+            "end": "2026-12-05T14:00:00.000Z",
+            "summary": "(Group Stage) MKOI vs KC",
+            "status": null,
+            "opponents": [
+                {
+                    "id": 126536,
+                    "name": "Movistar KOI",
+                    "slug": "mad-lions-league-of-legends",
+                    "acronym": "MKOI",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/126536/movistar_ko_ilogo_square.png"
+                },
+                {
+                    "id": 134078,
+                    "name": "Karmine Corp",
+                    "slug": "karmine-corp-academy",
+                    "acronym": "KC",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/134078/karmine_corplogo_square.png"
+                }
+            ],
+            "leagueId": 5184,
+            "leagueName": "Red Bull League of Its Own"
+        },
+        "1808145": {
+            "id": 1808145,
+            "uid": "1808145@zlypher.github.io",
+            "sequence": 1,
+            "start": "2026-12-05T14:00:00.000Z",
+            "end": "2026-12-05T15:00:00.000Z",
+            "summary": "(Group Stage) G2 vs MKOI",
+            "status": null,
+            "opponents": [
+                {
+                    "id": 88,
+                    "name": "G2 Esports",
+                    "slug": "g2-esports",
+                    "acronym": "G2",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/88/g2-esports.png"
+                },
+                {
+                    "id": 126536,
+                    "name": "Movistar KOI",
+                    "slug": "mad-lions-league-of-legends",
+                    "acronym": "MKOI",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/126536/movistar_ko_ilogo_square.png"
+                }
+            ],
+            "leagueId": 5184,
+            "leagueName": "Red Bull League of Its Own"
+        },
+        "1808146": {
+            "id": 1808146,
+            "uid": "1808146@zlypher.github.io",
+            "sequence": 1,
+            "start": "2026-12-05T15:00:00.000Z",
+            "end": "2026-12-05T16:00:00.000Z",
+            "summary": "(Group Stage) TBD vs TBD",
+            "status": null,
+            "opponents": [],
+            "leagueId": 5184,
+            "leagueName": "Red Bull League of Its Own"
+        },
+        "1808147": {
+            "id": 1808147,
+            "uid": "1808147@zlypher.github.io",
+            "sequence": 1,
+            "start": "2026-12-05T16:00:00.000Z",
+            "end": "2026-12-05T17:00:00.000Z",
+            "summary": "(Group Stage) T1 vs KC",
+            "status": null,
+            "opponents": [
+                {
+                    "id": 126061,
+                    "name": "T1",
+                    "slug": "t1",
+                    "acronym": "T1",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/126061/t_oscq04.png"
+                },
+                {
+                    "id": 134078,
+                    "name": "Karmine Corp",
+                    "slug": "karmine-corp-academy",
+                    "acronym": "KC",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/134078/karmine_corplogo_square.png"
+                }
+            ],
+            "leagueId": 5184,
+            "leagueName": "Red Bull League of Its Own"
+        },
+        "1808148": {
+            "id": 1808148,
+            "uid": "1808148@zlypher.github.io",
+            "sequence": 1,
+            "start": "2026-12-05T17:00:00.000Z",
+            "end": "2026-12-05T18:00:00.000Z",
+            "summary": "(Group Stage) T1 vs G2",
+            "status": null,
+            "opponents": [
+                {
+                    "id": 126061,
+                    "name": "T1",
+                    "slug": "t1",
+                    "acronym": "T1",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/126061/t_oscq04.png"
+                },
+                {
+                    "id": 88,
+                    "name": "G2 Esports",
+                    "slug": "g2-esports",
+                    "acronym": "G2",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/88/g2-esports.png"
+                }
+            ],
+            "leagueId": 5184,
+            "leagueName": "Red Bull League of Its Own"
+        },
+        "1808149": {
+            "id": 1808149,
+            "uid": "1808149@zlypher.github.io",
+            "sequence": 1,
+            "start": "2026-12-05T18:00:00.000Z",
+            "end": "2026-12-05T19:00:00.000Z",
+            "summary": "(Group Stage) T1 vs MKOI",
+            "status": null,
+            "opponents": [
+                {
+                    "id": 126061,
+                    "name": "T1",
+                    "slug": "t1",
+                    "acronym": "T1",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/126061/t_oscq04.png"
+                },
+                {
+                    "id": 126536,
+                    "name": "Movistar KOI",
+                    "slug": "mad-lions-league-of-legends",
+                    "acronym": "MKOI",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/126536/movistar_ko_ilogo_square.png"
+                }
+            ],
+            "leagueId": 5184,
+            "leagueName": "Red Bull League of Its Own"
         }
     }
 }

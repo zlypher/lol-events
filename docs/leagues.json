@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T06:58:56.655Z",
+  "generatedAt": "2026-11-13T06:24:08.499Z",
   "leagues": [
     {
       "id": 296,
@@ -1129,7 +1129,7 @@
       "url": null,
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-red-bull-league-of-its-own.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-red-bull-league-of-its-own.json",
-      "active": false
+      "active": true
     },
     {
       "id": 5358,
