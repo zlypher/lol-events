@@ -1,15 +1,6 @@
 {
-  "generatedAt": "2026-11-13T06:24:08.499Z",
+  "generatedAt": "2026-11-14T06:03:32.506Z",
   "teams": [
-    {
-      "id": 131053,
-      "name": "Anubis Gaming",
-      "slug": "anubis-gaming-league-of-legends",
-      "acronym": "ANB",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/131053/anubis_gaminglogo_profile.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/131053.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/131053.json"
-    },
     {
       "id": 129971,
       "name": "Anyone's Legend",
@@ -180,15 +171,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/134078/karmine_corplogo_square.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/134078.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/134078.json"
-    },
-    {
-      "id": 63,
-      "name": "KT Rolster",
-      "slug": "kt-rolster",
-      "acronym": "KT",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/63/kt_rolsterlogo_profile.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/63.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/63.json"
     },
     {
       "id": 133796,
