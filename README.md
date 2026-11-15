@@ -13,7 +13,7 @@ The `.ical` files for all leagues are updated daily. The last update date can be
 
 ## Calendars by League
 
-Last update: 14.11.2026, 06:03
+Last update: 15.11.2026, 06:09
 
 |                                                                                                                                                                                  | League                             |                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -164,7 +164,7 @@ Last update: 14.11.2026, 06:03
 
 ## Calendars by Team
 
-Last update: 14.11.2026, 06:03
+Last update: 15.11.2026, 06:09
 
 |                                                                                                                                                                                  | Team                               |                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -183,7 +183,6 @@ Last update: 14.11.2026, 06:03
 | <img src="https://cdn-api.pandascore.co/images/team/image/136019/galionslogo_square.png" alt="Galions Logo" width="24" height="24" /> | Galions | https://zlypher.github.io/lol-events/cal/team/136019.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/2882/699px_gen.g_esports_2026_allmode.png" alt="Gen.G Logo" width="24" height="24" /> | Gen.G | https://zlypher.github.io/lol-events/cal/team/2882.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/132568/ground_zero_gaminglogo_square.png" alt="Ground Zero Gaming Logo" width="24" height="24" /> | Ground Zero Gaming | https://zlypher.github.io/lol-events/cal/team/132568.ical
-| <img src="https://cdn-api.pandascore.co/images/team/image/128218/628px_brion_2023_lightmode.png" alt="HANJIN BRION Logo" width="24" height="24" /> | HANJIN BRION | https://zlypher.github.io/lol-events/cal/team/128218.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/2883/hanwha-life-esports-1s04vbu0.png" alt="Hanwha Life Esports Logo" width="24" height="24" /> | Hanwha Life Esports | https://zlypher.github.io/lol-events/cal/team/2883.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/411/invictus_gaminglogo_square.png" alt="Invictus Gaming Logo" width="24" height="24" /> | Invictus Gaming | https://zlypher.github.io/lol-events/cal/team/411.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/134078/karmine_corplogo_square.png" alt="Karmine Corp Logo" width="24" height="24" /> | Karmine Corp | https://zlypher.github.io/lol-events/cal/team/134078.ical
@@ -218,7 +217,7 @@ See official steps here: [Sync your calendar with computer programs](https://sup
 
 ## Supported Leagues
 
-Last update: 14.11.2026, 06:03
+Last update: 15.11.2026, 06:09
 
 <a href="null" target="_blank"><img src="https://cdn-api.pandascore.co/images/league/image/296/all-star_2020_logo-png" alt="All-Star Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn-api.pandascore.co/images/league/image/5292/americas_challengers-png" alt="Americas Challengers Logo" width="50" height="50" /></a>

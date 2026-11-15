@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T06:03:32.506Z",
+  "generatedAt": "2026-11-15T06:09:35.041Z",
   "teams": [
     {
       "id": 129971,
@@ -135,15 +135,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/132568/ground_zero_gaminglogo_square.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/132568.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/132568.json"
-    },
-    {
-      "id": 128218,
-      "name": "HANJIN BRION",
-      "slug": "fredit-brion",
-      "acronym": "BRO",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/128218/628px_brion_2023_lightmode.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/128218.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/128218.json"
     },
     {
       "id": 2883,

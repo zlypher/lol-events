@@ -1,6 +1,6 @@
 {
     "version": 1,
-    "generatedAt": "2026-11-14T06:03:37.546Z",
+    "generatedAt": "2026-11-15T06:09:40.046Z",
     "matches": {
         "3175": {
             "id": 3175,
@@ -26067,9 +26067,9 @@
         "1711021": {
             "id": 1711021,
             "uid": "1711021@zlypher.github.io",
-            "sequence": 4,
-            "start": "2026-11-14T19:00:00.000Z",
-            "end": "2026-11-15T00:00:00.000Z",
+            "sequence": 5,
+            "start": "2026-11-14T19:40:00.000Z",
+            "end": "2026-11-15T00:40:00.000Z",
             "summary": "(Playoffs) Grand Final: BLG vs GEN",
             "status": null,
             "leagueId": 297,
