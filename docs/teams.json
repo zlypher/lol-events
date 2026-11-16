@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T06:09:35.041Z",
+  "generatedAt": "2026-11-16T06:08:41.097Z",
   "teams": [
     {
       "id": 129971,
@@ -27,15 +27,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/134115/663px_fear_x_icon_lightmode.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/134115.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/134115.json"
-    },
-    {
-      "id": 1097,
-      "name": "Cloud9",
-      "slug": "cloud9",
-      "acronym": "C9",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/1097/cloud9-gnd9b0gn.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/1097.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/1097.json"
     },
     {
       "id": 130355,
