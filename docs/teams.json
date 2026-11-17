@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T06:08:41.097Z",
+  "generatedAt": "2026-11-17T07:43:35.722Z",
   "teams": [
     {
       "id": 129971,
@@ -18,15 +18,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/1566/qw_yi_qu_j.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/1566.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/1566.json"
-    },
-    {
-      "id": 134115,
-      "name": "BNK FEARX",
-      "slug": "fearx",
-      "acronym": "BFX",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/134115/663px_fear_x_icon_lightmode.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/134115.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/134115.json"
     },
     {
       "id": 130355,
@@ -72,15 +63,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/130352/600px_frank_esports_2022_lightmode_full.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/130352.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/130352.json"
-    },
-    {
-      "id": 126688,
-      "name": "FURIA Esports",
-      "slug": "furia-uppercut",
-      "acronym": "FUR",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/126688/220px_furia_uppercutlogo_square.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/126688.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/126688.json"
     },
     {
       "id": 88,
@@ -270,15 +252,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/136073/1200px_secret_whales_lightmode.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/136073.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/136073.json"
-    },
-    {
-      "id": 2574,
-      "name": "Team WE",
-      "slug": "we",
-      "acronym": "WE",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/2574/300px-Team_WElogo_square.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/2574.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/2574.json"
     },
     {
       "id": 126059,
