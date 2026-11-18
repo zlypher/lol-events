@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T07:43:35.722Z",
+  "generatedAt": "2026-11-18T07:07:51.777Z",
   "teams": [
     {
       "id": 129971,
@@ -171,15 +171,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/126536/movistar_ko_ilogo_square.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/126536.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/126536.json"
-    },
-    {
-      "id": 137803,
-      "name": "MVK Esports",
-      "slug": "mvk-esports",
-      "acronym": "MVK",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/137803/mvk_esportslogo_profile.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/137803.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/137803.json"
     },
     {
       "id": 139359,
