@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T07:07:51.777Z",
+  "generatedAt": "2026-11-19T07:08:33.003Z",
   "teams": [
     {
       "id": 129971,
@@ -189,15 +189,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/138127/ezgif_5e268d1a7560187d.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/138127.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/138127.json"
-    },
-    {
-      "id": 137170,
-      "name": "SK Gaming Avarosa",
-      "slug": "sk-gaming-avarosa",
-      "acronym": "SK.A",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/137170/175px_sk_gaming_2003_lightmode.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/137170.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/137170.json"
     },
     {
       "id": 1449,

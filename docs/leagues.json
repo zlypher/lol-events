@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T07:07:51.777Z",
+  "generatedAt": "2026-11-19T07:08:33.003Z",
   "leagues": [
     {
       "id": 296,
@@ -569,7 +569,7 @@
       "url": null,
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-kespa-cup.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-kespa-cup.json",
-      "active": true
+      "active": false
     },
     {
       "id": 4916,

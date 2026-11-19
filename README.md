@@ -13,7 +13,7 @@ The `.ical` files for all leagues are updated daily. The last update date can be
 
 ## Calendars by League
 
-Last update: 18.11.2026, 07:07
+Last update: 19.11.2026, 07:08
 
 |                                                                                                                                                                                  | League                             |                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -28,7 +28,6 @@ Last update: 18.11.2026, 07:07
 | - | FLASH | https://zlypher.github.io/lol-events/cal/league-of-legends-flash.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/4433/800px-hitpoint_masters_lightmode-png" alt="Hitpoint Masters Logo" width="24" height="24" /> | Hitpoint Masters | https://zlypher.github.io/lol-events/cal/league-of-legends-hitpoint-masters.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/5355/hellenic_legends_league_logo-png" alt="HLL Logo" width="24" height="24" /> | HLL | https://zlypher.github.io/lol-events/cal/league-of-legends-hll.ical
-| <img src="https://cdn-api.pandascore.co/images/league/image/2711/220px-2019_KeSPA_Cup.png" alt="KeSPA Cup Logo" width="24" height="24" /> | KeSPA Cup | https://zlypher.github.io/lol-events/cal/league-of-legends-kespa-cup.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/293/lck_2021_logo-png" alt="LCK Logo" width="24" height="24" /> | LCK | https://zlypher.github.io/lol-events/cal/league-of-legends-lck-champions-korea.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/4553/LCK_CL_logo.png" alt="LCK Challengers League Logo" width="24" height="24" /> | LCK Challengers League | https://zlypher.github.io/lol-events/cal/league-of-legends-lck-challengers-league.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/5351/lcp_logo-png" alt="LCP Logo" width="24" height="24" /> | LCP | https://zlypher.github.io/lol-events/cal/league-of-legends-lcp.ical
@@ -56,7 +55,7 @@ Last update: 18.11.2026, 07:07
 | <img src="https://cdn-api.pandascore.co/images/league/image/297/worlds-png" alt="Worlds Logo" width="24" height="24" /> | Worlds | https://zlypher.github.io/lol-events/cal/league-of-legends-world-championship.ical
 
 <details>
-<summary>Inactive Leagues (99)</summary>
+<summary>Inactive Leagues (100)</summary>
 
 |                                                                                                                                                                                  | League                             |                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -105,6 +104,7 @@ Last update: 18.11.2026, 07:07
 | <img src="https://cdn-api.pandascore.co/images/league/image/299/CwXOhtN.png" alt="International Wildcard Logo" width="24" height="24" /> | International Wildcard | https://zlypher.github.io/lol-events/cal/league-of-legends-international-wildcard.ical
 | - | Karmine Corp vs Ibai Showmatch | https://zlypher.github.io/lol-events/cal/league-of-legends-karmine-corp.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/5210/kcx_3_allmode-png" alt="KCX3: Karmine Corp vs The World Logo" width="24" height="24" /> | KCX3: Karmine Corp vs The World | https://zlypher.github.io/lol-events/cal/league-of-legends-kcx3-karmine-corp-vs-the-world.ical
+| <img src="https://cdn-api.pandascore.co/images/league/image/2711/220px-2019_KeSPA_Cup.png" alt="KeSPA Cup Logo" width="24" height="24" /> | KeSPA Cup | https://zlypher.github.io/lol-events/cal/league-of-legends-kespa-cup.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/4916/la_comic_con_allmode-png" alt="LA Comic Con Invitational Logo" width="24" height="24" /> | LA Comic Con Invitational | https://zlypher.github.io/lol-events/cal/league-of-legends-la-comic-con-invitational.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/4786/lck_academy_series_2021_lightmode-png" alt="LCK Academy Logo" width="24" height="24" /> | LCK Academy | https://zlypher.github.io/lol-events/cal/league-of-legends-lck-academy-series.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/4004/220px-LCL2020_logo.png" alt="LCL Logo" width="24" height="24" /> | LCL | https://zlypher.github.io/lol-events/cal/league-of-legends-lcl.ical
@@ -164,7 +164,7 @@ Last update: 18.11.2026, 07:07
 
 ## Calendars by Team
 
-Last update: 18.11.2026, 07:07
+Last update: 19.11.2026, 07:08
 
 |                                                                                                                                                                                  | Team                               |                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -189,7 +189,6 @@ Last update: 18.11.2026, 07:07
 | <img src="https://cdn-api.pandascore.co/images/team/image/126536/movistar_ko_ilogo_square.png" alt="Movistar KOI Logo" width="24" height="24" /> | Movistar KOI | https://zlypher.github.io/lol-events/cal/team/126536.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/139359/nothin_here_allmode.png" alt="Nothin'Here Logo" width="24" height="24" /> | Nothin'Here | https://zlypher.github.io/lol-events/cal/team/139359.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/138127/ezgif_5e268d1a7560187d.png" alt="Saigon Warriors Logo" width="24" height="24" /> | Saigon Warriors | https://zlypher.github.io/lol-events/cal/team/138127.ical
-| <img src="https://cdn-api.pandascore.co/images/team/image/137170/175px_sk_gaming_2003_lightmode.png" alt="SK Gaming Avarosa Logo" width="24" height="24" /> | SK Gaming Avarosa | https://zlypher.github.io/lol-events/cal/team/137170.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/1449/123px_solarylogo_square.png" alt="Solary Logo" width="24" height="24" /> | Solary | https://zlypher.github.io/lol-events/cal/team/1449.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/126061/t_oscq04.png" alt="T1 Logo" width="24" height="24" /> | T1 | https://zlypher.github.io/lol-events/cal/team/126061.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/139117/team_gromp_fls_2026_allmode.png" alt="Team Gromp Logo" width="24" height="24" /> | Team Gromp | https://zlypher.github.io/lol-events/cal/team/139117.ical
@@ -212,7 +211,7 @@ See official steps here: [Sync your calendar with computer programs](https://sup
 
 ## Supported Leagues
 
-Last update: 18.11.2026, 07:07
+Last update: 19.11.2026, 07:08
 
 <a href="null" target="_blank"><img src="https://cdn-api.pandascore.co/images/league/image/296/all-star_2020_logo-png" alt="All-Star Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn-api.pandascore.co/images/league/image/5292/americas_challengers-png" alt="Americas Challengers Logo" width="50" height="50" /></a>
