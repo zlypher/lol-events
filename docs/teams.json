@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T07:08:33.003Z",
+  "generatedAt": "2026-11-20T06:58:41.582Z",
   "teams": [
     {
       "id": 129971,
@@ -72,15 +72,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/88/g2-esports.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/88.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/88.json"
-    },
-    {
-      "id": 137372,
-      "name": "G2 HEL",
-      "slug": "g2-hel",
-      "acronym": "G2H",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/137372/600px_g2_esports_2020_lightmode.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/137372.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/137372.json"
     },
     {
       "id": 136019,
