@@ -13,7 +13,7 @@ The `.ical` files for all leagues are updated daily. The last update date can be
 
 ## Calendars by League
 
-Last update: 21.11.2026, 06:54
+Last update: 22.11.2026, 06:29
 
 |                                                                                                                                                                                  | League                             |                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -45,6 +45,7 @@ Last update: 21.11.2026, 06:54
 | - | Nexus League | https://zlypher.github.io/lol-events/cal/league-of-legends-nexus-league.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/4411/nlc_2022_logo-png" alt="NLC Logo" width="24" height="24" /> | NLC | https://zlypher.github.io/lol-events/cal/league-of-legends-nlc.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/4961/nacl_full_logo-png" alt="North American Challengers League Logo" width="24" height="24" /> | North American Challengers League | https://zlypher.github.io/lol-events/cal/league-of-legends-north-american-challengers-league.ical
+| - | Nova Series | https://zlypher.github.io/lol-events/cal/league-of-legends-nova-series.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/4302/440px-prime_league_lightmode-png" alt="Prime League 1st Division Logo" width="24" height="24" /> | Prime League 1st Division | https://zlypher.github.io/lol-events/cal/league-of-legends-prime-league-pro-division.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/5184/red_bull_league_of_its_own_allmode-png" alt="Red Bull League of Its Own Logo" width="24" height="24" /> | Red Bull League of Its Own | https://zlypher.github.io/lol-events/cal/league-of-legends-red-bull-league-of-its-own.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/5358/rift_legends_icon_allmode-png" alt="Rift Legends Logo" width="24" height="24" /> | Rift Legends | https://zlypher.github.io/lol-events/cal/league-of-legends-rift-legends.ical
@@ -55,7 +56,7 @@ Last update: 21.11.2026, 06:54
 | <img src="https://cdn-api.pandascore.co/images/league/image/297/worlds-png" alt="Worlds Logo" width="24" height="24" /> | Worlds | https://zlypher.github.io/lol-events/cal/league-of-legends-world-championship.ical
 
 <details>
-<summary>Inactive Leagues (100)</summary>
+<summary>Inactive Leagues (99)</summary>
 
 |                                                                                                                                                                                  | League                             |                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -134,7 +135,6 @@ Last update: 21.11.2026, 06:54
 | <img src="https://cdn-api.pandascore.co/images/league/image/4096/na-scouting-grounds-486lp5q8.png" alt="NA Scouting Grounds Logo" width="24" height="24" /> | NA Scouting Grounds | https://zlypher.github.io/lol-events/cal/league-of-legends-na-scouting-grounds.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/4225/nest_2020-png" alt="NEST Logo" width="24" height="24" /> | NEST | https://zlypher.github.io/lol-events/cal/league-of-legends-nest.ical
 | - | NNO Cup | https://zlypher.github.io/lol-events/cal/league-of-legends-nno-cup.ical
-| - | Nova Series | https://zlypher.github.io/lol-events/cal/league-of-legends-nova-series.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/301/OPL_2018_Logo_Color.png" alt="OPL Logo" width="24" height="24" /> | OPL | https://zlypher.github.io/lol-events/cal/league-of-legends-opl.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/4288/PCS_logo_full.png" alt="PCS Logo" width="24" height="24" /> | PCS | https://zlypher.github.io/lol-events/cal/league-of-legends-pcs.ical
 | <img src="https://cdn-api.pandascore.co/images/league/image/4405/494px-pg_nationals_2021_icon_allmode-png" alt="PG Nationals Logo" width="24" height="24" /> | PG Nationals | https://zlypher.github.io/lol-events/cal/league-of-legends-pg-nationals.ical
@@ -164,7 +164,7 @@ Last update: 21.11.2026, 06:54
 
 ## Calendars by Team
 
-Last update: 21.11.2026, 06:54
+Last update: 22.11.2026, 06:29
 
 |                                                                                                                                                                                  | Team                               |                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -176,7 +176,6 @@ Last update: 21.11.2026, 06:54
 | <img src="https://cdn-api.pandascore.co/images/team/image/132655/424px_fennel_2021_may_lightmode.png" alt="FENNEL Logo" width="24" height="24" /> | FENNEL | https://zlypher.github.io/lol-events/cal/team/132655.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/130352/600px_frank_esports_2022_lightmode_full.png" alt="Frank Esports Logo" width="24" height="24" /> | Frank Esports | https://zlypher.github.io/lol-events/cal/team/130352.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/88/g2-esports.png" alt="G2 Esports Logo" width="24" height="24" /> | G2 Esports | https://zlypher.github.io/lol-events/cal/team/88.ical
-| <img src="https://cdn-api.pandascore.co/images/team/image/136019/galionslogo_square.png" alt="Galions Logo" width="24" height="24" /> | Galions | https://zlypher.github.io/lol-events/cal/team/136019.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/2882/699px_gen.g_esports_2026_allmode.png" alt="Gen.G Logo" width="24" height="24" /> | Gen.G | https://zlypher.github.io/lol-events/cal/team/2882.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/132568/ground_zero_gaminglogo_square.png" alt="Ground Zero Gaming Logo" width="24" height="24" /> | Ground Zero Gaming | https://zlypher.github.io/lol-events/cal/team/132568.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/2883/hanwha-life-esports-1s04vbu0.png" alt="Hanwha Life Esports Logo" width="24" height="24" /> | Hanwha Life Esports | https://zlypher.github.io/lol-events/cal/team/2883.ical
@@ -188,7 +187,8 @@ Last update: 21.11.2026, 06:54
 | <img src="https://cdn-api.pandascore.co/images/team/image/126536/movistar_ko_ilogo_square.png" alt="Movistar KOI Logo" width="24" height="24" /> | Movistar KOI | https://zlypher.github.io/lol-events/cal/team/126536.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/139359/nothin_here_allmode.png" alt="Nothin'Here Logo" width="24" height="24" /> | Nothin'Here | https://zlypher.github.io/lol-events/cal/team/139359.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/138127/ezgif_5e268d1a7560187d.png" alt="Saigon Warriors Logo" width="24" height="24" /> | Saigon Warriors | https://zlypher.github.io/lol-events/cal/team/138127.ical
-| <img src="https://cdn-api.pandascore.co/images/team/image/1449/123px_solarylogo_square.png" alt="Solary Logo" width="24" height="24" /> | Solary | https://zlypher.github.io/lol-events/cal/team/1449.ical
+| - | Six Tung Tung Tung Sahurs | https://zlypher.github.io/lol-events/cal/team/139640.ical
+| <img src="https://cdn-api.pandascore.co/images/team/image/137170/175px_sk_gaming_2003_lightmode.png" alt="SK Gaming Avarosa Logo" width="24" height="24" /> | SK Gaming Avarosa | https://zlypher.github.io/lol-events/cal/team/137170.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/126061/t_oscq04.png" alt="T1 Logo" width="24" height="24" /> | T1 | https://zlypher.github.io/lol-events/cal/team/126061.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/139117/team_gromp_fls_2026_allmode.png" alt="Team Gromp Logo" width="24" height="24" /> | Team Gromp | https://zlypher.github.io/lol-events/cal/team/139117.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/390/ezgif_1497965c786bdb14.png" alt="Team Liquid Logo" width="24" height="24" /> | Team Liquid | https://zlypher.github.io/lol-events/cal/team/390.ical
@@ -210,7 +210,7 @@ See official steps here: [Sync your calendar with computer programs](https://sup
 
 ## Supported Leagues
 
-Last update: 21.11.2026, 06:54
+Last update: 22.11.2026, 06:29
 
 <a href="null" target="_blank"><img src="https://cdn-api.pandascore.co/images/league/image/296/all-star_2020_logo-png" alt="All-Star Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn-api.pandascore.co/images/league/image/5292/americas_challengers-png" alt="Americas Challengers Logo" width="50" height="50" /></a>

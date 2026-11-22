@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Zlypher//LOL Events//EN
+URL:https://zlypher.github.io/lol-events/
+NAME:Six Tung Tung Tung Sahurs
+X-WR-CALNAME:Six Tung Tung Tung Sahurs
+BEGIN:VEVENT
+UID:1827197@zlypher.github.io
+SEQUENCE:1
+DTSTAMP:20261121T180000Z
+DTSTART:20261121T180000Z
+DTEND:20261121T210000Z
+SUMMARY:[Nova Series] (Playoffs) Semifinal 2: SK.A vs 6TT
+END:VEVENT
+X-WR-CALDESC:Six Tung Tung Tung Sahurs
+END:VCALENDAR

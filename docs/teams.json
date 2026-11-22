@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T06:54:20.876Z",
+  "generatedAt": "2026-11-22T06:29:28.639Z",
   "teams": [
     {
       "id": 129971,
@@ -72,15 +72,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/88/g2-esports.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/88.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/88.json"
-    },
-    {
-      "id": 136019,
-      "name": "Galions",
-      "slug": "galions",
-      "acronym": "GAL",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/136019/galionslogo_square.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/136019.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/136019.json"
     },
     {
       "id": 2882,
@@ -182,13 +173,22 @@
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/138127.json"
     },
     {
-      "id": 1449,
-      "name": "Solary",
-      "slug": "solary",
-      "acronym": "SLY",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/1449/123px_solarylogo_square.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/1449.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/1449.json"
+      "id": 139640,
+      "name": "Six Tung Tung Tung Sahurs",
+      "slug": "six-tung-tung-tung-sahurs",
+      "acronym": "6TT",
+      "logoUrl": null,
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/139640.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/139640.json"
+    },
+    {
+      "id": 137170,
+      "name": "SK Gaming Avarosa",
+      "slug": "sk-gaming-avarosa",
+      "acronym": "SK.A",
+      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/137170/175px_sk_gaming_2003_lightmode.png",
+      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/137170.ical",
+      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/137170.json"
     },
     {
       "id": 126061,

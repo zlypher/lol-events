@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T06:54:20.876Z",
+  "generatedAt": "2026-11-22T06:29:28.639Z",
   "leagues": [
     {
       "id": 296,
@@ -1039,7 +1039,7 @@
       "url": null,
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-nova-series.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/league-of-legends-nova-series.json",
-      "active": false
+      "active": true
     },
     {
       "id": 301,
