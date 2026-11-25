@@ -1,6 +1,6 @@
 {
     "version": 1,
-    "generatedAt": "2026-11-24T09:41:22.344Z",
+    "generatedAt": "2026-11-25T08:14:06.998Z",
     "matches": {
         "3175": {
             "id": 3175,
@@ -26781,12 +26781,27 @@
         "1827198": {
             "id": 1827198,
             "uid": "1827198@zlypher.github.io",
-            "sequence": 1,
+            "sequence": 2,
             "start": "2026-12-06T16:00:00.000Z",
             "end": "2026-12-06T21:00:00.000Z",
-            "summary": "(Playoffs) Grand Final: TBD vs TBD",
+            "summary": "(Playoffs) Grand Final: RB vs SK.A",
             "status": null,
-            "opponents": [],
+            "opponents": [
+                {
+                    "id": 137371,
+                    "name": "Vitality Rising Bees",
+                    "slug": "rising-bees",
+                    "acronym": "RB",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/137371/rising_bees_lightmode.png"
+                },
+                {
+                    "id": 137170,
+                    "name": "SK Gaming Avarosa",
+                    "slug": "sk-gaming-avarosa",
+                    "acronym": "SK.A",
+                    "imageUrl": "https://cdn-api.pandascore.co/images/team/image/137170/175px_sk_gaming_2003_lightmode.png"
+                }
+            ],
             "leagueId": 5455,
             "leagueName": "Nova Series"
         }
