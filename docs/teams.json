@@ -1,15 +1,6 @@
 {
-  "generatedAt": "2026-11-25T08:14:01.999Z",
+  "generatedAt": "2026-11-26T08:00:31.391Z",
   "teams": [
-    {
-      "id": 129971,
-      "name": "Anyone's Legend",
-      "slug": "anyone-s-legend",
-      "acronym": "AL",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/129971/1083px_anyone_s_legend_full_lightmode.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/129971.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/129971.json"
-    },
     {
       "id": 1566,
       "name": "Bilibili Gaming",
@@ -216,15 +207,6 @@
       "logoUrl": "https://cdn-api.pandascore.co/images/team/image/390/ezgif_1497965c786bdb14.png",
       "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/390.ical",
       "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/390.json"
-    },
-    {
-      "id": 136073,
-      "name": "Team Secret Whales",
-      "slug": "team-secret-whales",
-      "acronym": "TSW",
-      "logoUrl": "https://cdn-api.pandascore.co/images/team/image/136073/1200px_secret_whales_lightmode.png",
-      "calendarUrl": "https://zlypher.github.io/lol-events/cal/team/136073.ical",
-      "jsonUrl": "https://zlypher.github.io/lol-events/cal/team/136073.json"
     },
     {
       "id": 126059,

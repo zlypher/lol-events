@@ -13,7 +13,7 @@ The `.ical` files for all leagues are updated daily. The last update date can be
 
 ## Calendars by League
 
-Last update: 25.11.2026, 08:14
+Last update: 26.11.2026, 08:00
 
 |                                                                                                                                                                                  | League                             |                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -164,11 +164,10 @@ Last update: 25.11.2026, 08:14
 
 ## Calendars by Team
 
-Last update: 25.11.2026, 08:14
+Last update: 26.11.2026, 08:00
 
 |                                                                                                                                                                                  | Team                               |                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------- |
-| <img src="https://cdn-api.pandascore.co/images/team/image/129971/1083px_anyone_s_legend_full_lightmode.png" alt="Anyone's Legend Logo" width="24" height="24" /> | Anyone's Legend | https://zlypher.github.io/lol-events/cal/team/129971.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/1566/qw_yi_qu_j.png" alt="Bilibili Gaming Logo" width="24" height="24" /> | Bilibili Gaming | https://zlypher.github.io/lol-events/cal/team/1566.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/130355/ctbc_flying_oysterlogo_square.png" alt="CTBC Flying Oyster Logo" width="24" height="24" /> | CTBC Flying Oyster | https://zlypher.github.io/lol-events/cal/team/130355.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/89/780px_detonatio_n_focus_me_2022_lightmode.png" alt="DetonatioN FocusMe Logo" width="24" height="24" /> | DetonatioN FocusMe | https://zlypher.github.io/lol-events/cal/team/89.ical
@@ -192,7 +191,6 @@ Last update: 25.11.2026, 08:14
 | <img src="https://cdn-api.pandascore.co/images/team/image/126061/t_oscq04.png" alt="T1 Logo" width="24" height="24" /> | T1 | https://zlypher.github.io/lol-events/cal/team/126061.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/139117/team_gromp_fls_2026_allmode.png" alt="Team Gromp Logo" width="24" height="24" /> | Team Gromp | https://zlypher.github.io/lol-events/cal/team/139117.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/390/ezgif_1497965c786bdb14.png" alt="Team Liquid Logo" width="24" height="24" /> | Team Liquid | https://zlypher.github.io/lol-events/cal/team/390.ical
-| <img src="https://cdn-api.pandascore.co/images/team/image/136073/1200px_secret_whales_lightmode.png" alt="Team Secret Whales Logo" width="24" height="24" /> | Team Secret Whales | https://zlypher.github.io/lol-events/cal/team/136073.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/126059/top_esportslogo_square.png" alt="Top Esports Logo" width="24" height="24" /> | Top Esports | https://zlypher.github.io/lol-events/cal/team/126059.ical
 | <img src="https://cdn-api.pandascore.co/images/team/image/137371/rising_bees_lightmode.png" alt="Vitality Rising Bees Logo" width="24" height="24" /> | Vitality Rising Bees | https://zlypher.github.io/lol-events/cal/team/137371.ical
 
@@ -210,7 +208,7 @@ See official steps here: [Sync your calendar with computer programs](https://sup
 
 ## Supported Leagues
 
-Last update: 25.11.2026, 08:14
+Last update: 26.11.2026, 08:00
 
 <a href="null" target="_blank"><img src="https://cdn-api.pandascore.co/images/league/image/296/all-star_2020_logo-png" alt="All-Star Logo" width="50" height="50" /></a>
 <a href="null" target="_blank"><img src="https://cdn-api.pandascore.co/images/league/image/5292/americas_challengers-png" alt="Americas Challengers Logo" width="50" height="50" /></a>

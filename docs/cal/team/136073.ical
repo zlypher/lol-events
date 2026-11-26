@@ -4,13 +4,5 @@ PRODID:-//Zlypher//LOL Events//EN
 URL:https://zlypher.github.io/lol-events/
 NAME:Team Secret Whales
 X-WR-CALNAME:Team Secret Whales
-BEGIN:VEVENT
-UID:1710999@zlypher.github.io
-SEQUENCE:2
-DTSTAMP:20261026T190000Z
-DTSTART:20261026T190000Z
-DTEND:20261026T220000Z
-SUMMARY:[Worlds] (Group Stage) Round 3: LOS vs TSW
-END:VEVENT
 X-WR-CALDESC:Team Secret Whales
 END:VCALENDAR
